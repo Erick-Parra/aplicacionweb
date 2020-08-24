@@ -32,18 +32,18 @@
             <h1 style="text-align: center;padding: 26px;height: 0px;">SERVICIOS</h1>
             <div class="row site-section" style="border-width: 0px;border-radius: 0px;margin: 32px;padding: 37px;height: 421px;">
                 <div class="col-md-4" style="height: 349px;text-align: center;padding: 2px;margin: 0px;border-radius: 0px;background-color: #96cbf2;border-bottom-left-radius: 0px;opacity: 1;filter: blur(0px) hue-rotate(0deg) invert(0%) sepia(0%);border-width: 0px;border-right-width: 0px;border-right-style: dashed;width: 162px;"><i class="material-icons" style="text-align: center;">account_balance</i>
-                    <h1 style="font-size: 15px;text-align: center;">Técnicos</h1>
+                    <h1 style="font-size: 15px;text-align: center;">CONTABILIDAD Y FACTURACIÓN ELECTRÓNICA</h1>
                     <p></p>
                     <p class="text-center" style="text-align: left;font-family: Raleway, sans-serif;height: 315px;margin: 0px;padding: 0px;font-size: 16px;">Se ofrece el servicio contable de acuerdo al catálogo de cuentas del AYA. Incluye la elaboración de estados financieros mensuales, declaraciones anuales al ministerio de hacienda, asesoramiento en el egreso, manejo de caja chica, registro
                         de ingresos, egresos, acompañamiento en asambleas y facturación electrónica mediante dos plataformas.</p>
                 </div>
                 <div class="col-md-4" style="text-align: center;font-size: 24px;padding: 2px;background-color: #b7defb;width: 162px;height: 360px;"><i class="fa fa-legal"></i>
-                    <h1 style="font-size: 15px;">LEGALES</h1>
+                    <h1 style="font-size: 15px;">ASESORÍA LEGAL</h1>
                     <p class="text-center" style="font-size: 16px;text-align: left;font-family: Raleway, sans-serif;">Se brinda asesoría para trámites legales que tengan que ver con la adquisición e inscripción de terrenos, propiedades, máquinaria u otros, recursos de amparo, notariado, tramitación de personería jurídica, procesos de cobros judiciales
                         a usuarios que han sido suspendidos y atención a reclamos administrativos.</p>
                 </div>
                 <div class="col-md-4" style="height: 349px;text-align: center;font-size: 24px;padding: 2px;background-color: #96cbf2;width: 162px;"><i class="icon ion-waterdrop" style="font-size: 24px;"></i>
-                    <h1 style="font-size: 15px;">ADMINISTRATIVOS</h1>
+                    <h1 style="font-size: 15px;">CALIDAD DE AGUA</h1>
                     <p class="text-center" style="font-size: 16px;text-align: left;font-family: Raleway, sans-serif;">Ofrecemos la fabricación e instalación de cloradores, control operativo y muestreo para análisis de laboratorio.</p>
                 </div>
             </div>
