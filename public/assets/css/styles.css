@@ -1,0 +1,111 @@
+body {
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, Red Hat Text, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#logo {
+  max-height: 42px;
+  margin-right: 10px;
+  margin-top: -3px;
+  display: inline-block;
+}
+
+#logoleras {
+  max-width: 225px;
+  margin-top: 50px;
+}
+
+.navbar {
+  background-color: #ffff;
+}
+
+#information p {
+  max-width: 800px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+#info {
+  padding: 40px;
+  text-align: center;
+  background: url(../../assets/img/rain-455120_1920.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  #info {
+    padding: 20px;
+  }
+}
+
+#info .jumbotron {
+  border-radius: 30px;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.80);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 360px) {
+  #info .jumbotron {
+    padding: 20px;
+  }
+}
+
+.site-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.dark-section {
+  background-color: #def5ff;
+}
+
+.dark-section-ubication {
+  background-color: grey;
+}
+
+.dark-section-final {
+  background-color: white;
+}
+
+.site-section h2 {
+  font-weight: normal;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+#services .item h3 {
+  font-weight: normal;
+}
+
+.fa.fa-check-square-o {
+  font-size: 42px;
+}
+
+.fa.fa-eye {
+  font-size: 42px;
+}
+
+p {
+  text-align: center;
+  margin: auto;
+}
+
+#largas {
+}
+
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #96cbf2;
+}
+
+.logoU {
+  text-align: left;
+  margin-top: -50px;
+}
+
+.col.item.social {
+  margin-top: -70px;
+}
+
