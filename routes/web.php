@@ -11,3 +11,7 @@ Route::view('/contactenos','contact')->name('contact');
 Route::view('/admin','admin.index')->name('admin');
 
 
+
+Auth::routes(['register' => false]);
+
+
