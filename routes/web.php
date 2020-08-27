@@ -15,7 +15,3 @@ Route::view('/admin','admin.index')->name('admin');
 Auth::routes(['register' => false]);
 
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
