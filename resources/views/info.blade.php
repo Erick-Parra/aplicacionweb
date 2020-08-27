@@ -15,50 +15,85 @@
 	}
 </style>
 <body>
-	<h1> ASADAS DEL AREA DE INFLUENCIA DE LA LCA</h1>
-	<table>
-		<tr>
-			<th> Canton </th>
-			<th> # Abonados</th>
-			<th> # Usuarios Agua</th>
-			<th> # ASADAS Cantón</th>
-			<th> % ASADAS/Canton</th>
-			
-		</tr>
-		<tr>
-			<td> Hojancha </td>
-			<td> 1,359 </td>
-			<td> 5,053 </td>
-			<td> 14 </td>
-			<td> 12 </td>
-		</tr>
-		<tr>
-			<td> Nandayure </td>
-			<td> 2,682 </td>
-			<td> 9,919 </td>
-            <td> 32 </td>
-            <td> 27 </td>
-		</tr>
-		<tr>
-			<td> Nicoya </td>
-			<td> 10,581 </td>
-			<td> 39,141 </td>
-			<td> 72 </td>
-			<td> 61 </td>
-		</tr>
-		<tr>
-			<td> Total</td>
-			<td> 14,622 </td>
-			<td> 54,113</td>
-			<td> 118</td>
-			<td> 100</td>
-		</tr>
-	</table>
+	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA</h1>
+	<table class="egt">
+
+  <tr>
+
+    <th scope="row">CANTÓN</th>
+
+    <th># ABONADOS</th>
+
+    <th># USUARIOS AGUA</th>
+
+    <th># ASADAS CANTÓN</th>
+
+    <th>% ASADAS/CANTÓN</th>
+
+  </tr>
+
+  <tr>
+
+    <th>Hojancha</th>
+
+    <td>1,359</td>
+
+    <td>5,053</td>
+
+    <td>14</td>
+
+    <td>12</td>
+
+  </tr>
+
+  <tr>
+
+    <th>Nandayure</th>
+
+    <td>2,682</td>
+
+    <td>9,919</td>
+
+    <td>32</td>
+
+    <td>27</td>
+
+  </tr>
+
+  <tr>
+
+    <th>Nicoya</th>
+
+    <td>10,581</td>
+
+    <td>39,141</td>
+
+    <td>72</td>
+
+    <td>61</td>
+
+  </tr>
+
+   <tr>
+
+    <th>Total</th>
+
+    <td>14,622</td>
+
+    <td>54,113</td>
+
+    <td>118</td>
+
+    <td>300</td>
+
+  </tr>
+
+</table>
 	<br>
 	<br>
 	<br>
 
-	<h1> ASADAS DEL AREA DE INFLUENCIA DE LA LCA (Abonados)</h1>
+	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA (Abonados)</h1>
 	<table>
 		<tr>
 			<th> Rango </th>
