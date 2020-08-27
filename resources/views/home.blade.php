@@ -90,7 +90,7 @@
     </div>
     <div class="dark-section-final">
         <div class="container site-section" id="convenios">
-            <h1>Covenios</h1>
+            <h1>Convenios</h1>
             <section class="bg-light">
                 <div class="container">
                     <div class="row">
