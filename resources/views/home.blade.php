@@ -99,8 +99,9 @@
                                 <div class="text-center w-100"><img class="card-img-width" src="assets/img/Covenios/PNUD.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">PNUD</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">Organización que se dedica al fortalecimiento de las organizaciones de la sociedad civil a través de la capacitación, asesoría, consultoría e investigación.&nbsp;<strong>Cuenta con diferentes programas como son:</strong><br><br>Programa
-                                        de Inducción al Sector.<br>Programa de Capacitación.<br>Programa de Pláticas Fortalecedoras.<br>Programa Permanente de Consultoría y Acompañamiento.<br>Programa de Creación y Fortalecimiento a Redes<br></p>
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">
+                                    Con el proyecto de fortalecimiento de Asadas PNUD, para el apoyo a la creación 
+                                      y operación de la USEDES para prestar servicios a las Asadas.</p>
                                 </div>
                             </div>
                         </div>
@@ -109,9 +110,7 @@
                                 <div class="text-center w-100"><img class="card-img-width" src="assets/img/Covenios/ElToledo.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">EL TOledo</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">Institución no lucrativa cuya misión es otorgar becas y créditos educativos a estudiantes sonorenses que los necesiten, a fin de promover la formación de líderes comprometidos para contribuir a un acelerado desarrollo
-                                        económico y social del estado.<br><br>Se otorgan becas, a solicitantes que realicen o deseen realizar estudios a nivel medio básico, medio superior y terminal medio, en instituciones educativas oficiales, o en aquellas
-                                        que reciban subsidios estatales<br></p>
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">  Para la ejecución de proyectos y administración de oficinas de la sede de la LCA, fortalecimiento y consolidación organizacional de la Liga.</p>
                                 </div>
                             </div>
                         </div>
@@ -120,9 +119,8 @@
                                 <div class="text-center w-100"><img class="card-img-width" src="assets/img/Covenios/TecnoLab.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">Tecnolab</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">Organización que representa el vínculo comunitario entre la sociedad con capacidad de donar y las organizaciones de la sociedad civil, en beneficio de los más necesitados y procurando soluciones sustentables a los problemas
-                                        más apremiantes. Se enfoca las siguientes líneas estratégicas:Movilización de recursos para apoyar proyectos de diversas OSCs del Estado de Sonora.Promoción de la filantropía y la responsabilidad social empresarial
-                                        con el .<br></p>
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;"> 
+                                    Para dar el servicio de análisis de la calidad del agua del las Asadas.</p>
                                 </div>
                             </div>
                         </div>
@@ -133,9 +131,7 @@
                                 <div class="text-center w-100"><img class="card-img-width2" src="assets/img/Covenios/FondoComunitario.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">Fondo comunitario guanacaste</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">Asociación Civil sin fines de lucro constituida formalmente en el 2004 que tiene como misión promover junto con la comunidad la formación de personas conscientes, capaces que construyen una sociedad lectora y responsable
-                                        con el medio ambiente. Como parte de su programa de lectura se tienen los una Biblioteca Pública, una Biblioteca Móvil, el desarrollo del Taller de lectura de Atención en escuelas primarias, el diseño de diferentes
-                                        talleres educativos y culturales. Por otro lado el programa de Medio ambiente está integrado por la m<br></p>
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">  Para el fortalecimiento de la LCA y las Asadas.</p>
                                 </div>
                             </div>
                         </div>
@@ -144,9 +140,8 @@
                                 <div class="text-center w-100"><img class="card-img-width2" src="assets/img/Covenios/Harmoy.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">the harmony hotel</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">Asociación que busca la protección, conservación, restauración y recuperación del patrimonio cultural de la nación, en los términos de la ley federal sobre monumentos y zonas arqueológicas, artísticos e históricos y
-                                        la ley general de bienes nacionales; así como el arte de las comunidades indígenas en todas las manifestaciones primigenias de sus propias lenguas, los usos y costumbres, artesanías y tradiciones de la composición
-                                        pluricultural que conforman el país.<br></p>
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">
+                                        Con el programa de responsabilidad empresarial del Hotel Harmony para el fortalecimiento y consolidación de la LCA.</p>
                                 </div>
                             </div>
                         </div>
@@ -155,9 +150,8 @@
                                 <div class="text-center w-100"><img class="card-img-width2" src="assets/img/Covenios/Avina.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">fundación avina</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">Es una institución que aun cuando en su origen, en la década de los años sesenta, estuvo orientada a la atención de menores con secuelas de poliomielitis, se ha especializado en la rehabilitación de niños y jóvenes
-                                        con parálisis cerebral, desde 1990 con la afiliación a APAC MÉXICO, siendo el único centro de rehabilitación con esa especialidad en el estado de Guanajuato. Se atienden niños desde recién nacidos hasta los 18 años;
-                                        el 30% de la población proviene de la&nbsp;<br></p>
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">
+                                        Para la creación y operación de la Unidad de Prestación de Servicios a las Asadas (USEDES).</p>
                                 </div>
                             </div>
                         </div>
@@ -168,8 +162,8 @@
                                 <div class="text-center w-100"><img class="card-img-width2" src="assets/img/Covenios/Asesoreslegales.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">ASESORÍA legal</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">Institución que se dedica a la promoción, difusión y apoyo a las actividades de educación e investigación artística. Promoción y difusión de música, artes plásticas, artes dramáticas, danza, literatura, arquitectura
-                                        y cinematografía, así como el apoyo a las actividades de las actividades<br></p>
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">
+                                        Con tres asesores legales para dar servicios de asesoría legal y trámites legales a las Asadas.</p>
                                 </div>
                             </div>
                         </div>
@@ -178,8 +172,10 @@
                                 <div class="text-center w-100"><img class="card-img-width2" src="assets/img/Covenios/ICE.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">instituto costarricense de electricidad</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">Institución que cuenta con los servicios de: Sala general, Sala de consulta, Sala infantil, Fotocopiadora, Modulo de Servicios Digitales msd, Internet, Mapoteca, Hemeroteca, Videoteca y Medios audiovisuales, Salón de
-                                        usos múltiples y Auditorio.<br></p>
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">
+                                        Para la donación de árboles cada año, destinados a la campaña de reforestación de áreas de recarga y zonas de protección de nacientes 
+                                        y pozos de las Asadas.
+                                    </p>
                                 </div>
                             </div>
                         </div>
