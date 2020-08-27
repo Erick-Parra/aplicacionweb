@@ -16,7 +16,8 @@
 </style>
 <body>
 	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA</h1>
-	<table class="egt">
+	<div style="text-align:center;">
+	<table border="1" style="margin: 0 auto;">
 
   <tr>
 
