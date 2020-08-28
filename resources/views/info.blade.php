@@ -3,30 +3,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Información LCA</title>
+
 </head>
 <style type="text/css">
-	table, th, td{
-		border: 1px solid blue;
-		border-collapse: collapse;
 
-		color: blue; 
+	table, th, td {
+		border: 6px solid DODGERBLUE;
+		border-collapse: collapse;
+		color: MIDNIGHTBLUE; 
+		background-color: SKYBLUE;
 	}
 	th, td{
-		padding: 10px;
+		padding: 15px;
+
 	}
 </style>
 <body>
 	<br>
 	<br>
+	<div style="text-align:center; background-color: PALETURQUOISE;">
+    <br>
 	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA</h1>
-	<br>
-	<br>
+    <br>
 	<div style="text-align:center;">
-	<table border="5" style="margin: 0 auto;">
+	<table class= "table table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">
+		<caption>Lista de ASADAS del área de influencia de la LCA</caption>
+		<thead class="thead-dark">
   <tr>
 
-    <th scope="row">CANTÓN</th>
+    <th>CANTÓN</th>
 
     <th># ABONADOS</th>
 
@@ -48,7 +54,7 @@
 
     <td>14</td>
 
-    <td>12</td>
+    <td>12%</td>
 
   </tr>
 
@@ -62,7 +68,7 @@
 
     <td>32</td>
 
-    <td>27</td>
+    <td>27%</td>
 
   </tr>
 
@@ -76,7 +82,7 @@
 
     <td>72</td>
 
-    <td>61</td>
+    <td>61%</td>
 
   </tr>
 
@@ -90,83 +96,148 @@
 
     <td>118</td>
 
-    <td>300</td>
+    <td>100%</td>
+
+  </tr>
+ 
+</table>
+    <br>
+	<br>
+	<div style="text-align:center; background-color: PALETURQUOISE;">
+    <br>
+   
+	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA</h1>
+    <br>
+	<div style="text-align:center;">
+   
+	<table class= "table table-hover table-dark" style="opacity: 1; border="5" title="center" style="margin: 0 auto;">
+		<caption>Lista de ASADAS del área de influencia de la LCA</caption>
+		<thead class="thead-dark">
+
+		 <th>Rango</th>
+
+    <th colspan="2">Hojancha</th>
+
+    <th colspan="2">Nandayure</th>
+
+    <th colspan="2">Nicoya</th>
+
+    <th>Total</th>
+
+    <th>Porcentaje</th>
 
   </tr>
 
-</table>
-	<br>
-	<br>
-	<br>
+  <tr>
 
-	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA (Abonados)</h1>
-	<br>
-	<br>
-	<div style="text-align:center;">
-	<table border="5" style="margin: 0 auto;">
-		<tr>
-			<th> Rango </th>
-			<th colspan="2"> Hojancha </th>
-			<th colspan="2"> Nandayure </th>
-			<th colspan="2"> Nicoya </th>
-			<th> Total </th>
-			<th> Porcentaje </th>
-		</tr>
-		<tr>
-			<td> < a 50 abonados </td>
-			<td> 05 </td>
-			<td> 36 </td>
-			<td> 08 </td>
-			<td> 25 </td>
-			<td> 15 </td>
-			<td> 21 </td>
-			<td> 28 </td>
-			<td> 25 </td>
-		</tr>
-		<tr>
-			<td> 51-150 abonados </td>
-			<td> 04 </td>
-			<td> 28 </td>
-			<td> 21 </td>
-			<td> 66 </td>
-			<td> 38 </td>
-			<td> 53 </td>
-			<td> 63 </td>
-			<td> 53 </td>
-		</tr>
-		<tr>
-			<td> 151-300 abonados </td>
-			<td> 05 </td>
-			<td> 36 </td>
-			<td> 01 </td>
-			<td> 03 </td>
-			<td> 11 </td>
-			<td> 15 </td>
-			<td> 17 </td>
-			<td> 14 </td>
-		</tr>
-		<tr>
-			<td> 301-700 abonados </td>
-			<td> 0 </td>
-			<td> 0 </td>
-			<td> 02 </td>
-			<td> 06 </td>
-			<td> 08 </td>
-			<td> 11 </td>
-			<td> 10 </td>
-			<td> 09 </td>
-		</tr>
-		<tr>
-			<td> Total </td>
-			<td> 14 </td>
-			<td> 100 </td>
-			<td> 32 </td>
-			<td> 100 </td>
-			<td> 72 </td>
-			<td> 100 </td>
-			<td> 118 </td>
-			<td> 100 </td>
-		</tr>
+    <th>< a 50 abonados</th>
+
+    <td>05</td>
+
+    <td>36%</td>
+
+    <td>08</td>
+
+    <td>25%</td>
+
+    <td>15</td>
+
+    <td>21%</td>
+
+    <td>28</td>
+
+    <td>24%</td>
+
+  </tr>
+
+  <tr>
+
+    <th>51-150 abonados</th>
+
+    <td>04</td>
+
+    <td>28%</td>
+
+    <td>21</td>
+
+    <td>66%</td>
+
+    <td>38</td>
+
+    <td>53%</td>
+
+    <td>63</td>
+
+    <td>53%</td>
+
+  </tr>
+
+  <tr>
+
+    <th>150-300 abonados</th>
+
+    <td>05</td>
+
+    <td>36%</td>
+
+    <td>01</td>
+
+    <td>03%</td>
+
+    <td>11</td>
+
+    <td>15%</td>
+
+    <td>17</td>
+
+    <td>14%</td>
+
+  </tr>
+
+   <tr>
+
+    <th>301-700 abonados</th>
+
+    <td>0</td>
+
+    <td>0%</td>
+
+    <td>02</td>
+
+    <td>06%</td>
+
+    <td>08</td>
+
+    <td>11%</td>
+
+    <td>10</td>
+
+    <td>09%</td>
+
+  </tr>
+
+  <tr>
+
+    <th>Total</th>
+
+    <td>14</td>
+
+    <td>100%</td>
+
+    <td>32</td>
+
+    <td>100%</td>
+
+    <td>72</td>
+
+    <td>100%</td>
+
+    <td>118</td>
+
+    <td>100%</td>
+
+  </tr>
+
 	</table>
 
 <br>
