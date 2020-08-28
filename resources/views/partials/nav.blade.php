@@ -28,7 +28,7 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('inicio') }}>Inicio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href={{ route('home') }}>Inicio</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('who') }}>¿Quiénes Somos?</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('services') }}>Servicios</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{{ route('info') }}">Información</a></li>
