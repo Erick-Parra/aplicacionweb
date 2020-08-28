@@ -16,9 +16,10 @@
 </style>
 <body>
 	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA</h1>
+	<br>
+	<br>
 	<div style="text-align:center;">
-	<table border="1" style="margin: 0 auto;">
-
+	<table border="5" style="margin: 0 auto;">
   <tr>
 
     <th scope="row">CANTÓN</th>
@@ -95,12 +96,15 @@
 	<br>
 
 	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA (Abonados)</h1>
-	<table>
+	<br>
+	<br>
+	<div style="text-align:center;">
+	<table border="5" style="margin: 0 auto;">
 		<tr>
 			<th> Rango </th>
-			<th colspan="2"> Hojancha </th>
-			<th colspan="2"> Nadayure </th>
-			<th colspan="2"> Nicoya </th>
+			<th colspan="3"> Hojancha </th>
+			<th colspan="3"> Nandayure </th>
+			<th colspan="3"> Nicoya </th>
 			<th> Total </th>
 			<th> Porcentaje </th>
 		</tr>
@@ -166,5 +170,4 @@
 <br>
 
 </body>
-
 </html>
