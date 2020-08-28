@@ -115,7 +115,7 @@
 		<caption>Lista de ASADAS del área de influencia de la LCA</caption>
 		<thead class="thead-dark">
 
-		 <th>Rango</th>
+		 <th>Rango Por Abonados</th>
 
     <th colspan="2">Hojancha</th>
 
@@ -131,7 +131,7 @@
 
   <tr>
 
-    <th>< a 50 abonados</th>
+    <th>< a 50</th>
 
     <td>05</td>
 
@@ -153,7 +153,7 @@
 
   <tr>
 
-    <th>51-150 abonados</th>
+    <th>51-150</th>
 
     <td>04</td>
 
@@ -175,7 +175,7 @@
 
   <tr>
 
-    <th>150-300 abonados</th>
+    <th>150-300</th>
 
     <td>05</td>
 
@@ -197,7 +197,7 @@
 
    <tr>
 
-    <th>301-700 abonados</th>
+    <th>301-700</th>
 
     <td>0</td>
 
