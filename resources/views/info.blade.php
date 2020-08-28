@@ -102,9 +102,9 @@
 	<table border="5" style="margin: 0 auto;">
 		<tr>
 			<th> Rango </th>
-			<th colspan="3"> Hojancha </th>
-			<th colspan="3"> Nandayure </th>
-			<th colspan="3"> Nicoya </th>
+			<th colspan="2"> Hojancha </th>
+			<th colspan="2"> Nandayure </th>
+			<th colspan="2"> Nicoya </th>
 			<th> Total </th>
 			<th> Porcentaje </th>
 		</tr>
