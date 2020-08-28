@@ -39,12 +39,11 @@
                 </div>
                 <div class="col-md-4" style="text-align: center;font-size: 24px;padding: 2px;background-color: #b7defb;width: 162px;height: 360px;"><i class="fa fa-legal"></i>
                     <h1 style="font-size: 15px;">SERVICIOS LEGALES</h1>
-                    <p class="text-center" style="font-size: 16px;text-align: left;font-family: Raleway, sans-serif;">Se brinda asesoría para trámites legales que tengan que ver con la adquisición e inscripción de terrenos, propiedades, máquinaria u otros, recursos de amparo, notariado, tramitación de personería jurídica, procesos de cobros judiciales
-                        a usuarios que han sido suspendidos y atención a reclamos administrativos.</p>
+                    <p class="text-center" style="font-size: 16px;text-align: left;font-family: Raleway, sans-serif;">Con el propósito de que las ASADAS tengan servicios legales a precios razonables y además pueda cumplir con todas las obligaciones legales que demandan una ASADA, la LCA llego a un acuerdo con un grupo de profesionales legales capacitados y con amplio conocimiento en el manejo de ASADAS para brindar este servicio.</p>
                 </div>
                 <div class="col-md-4" style="height: 349px;text-align: center;font-size: 24px;padding: 2px;background-color: #96cbf2;width: 162px;"><i class="icon ion-waterdrop" style="font-size: 24px;"></i>
-                    <h1 style="font-size: 15px;">ESTUDIOS TÉCNICOS</h1>
-                    <p class="text-center" style="font-size: 16px;text-align: left;font-family: Raleway, sans-serif;">Ofrecemos la fabricación e instalación de cloradores, control operativo y muestreo para análisis de laboratorio.</p>
+                    <h1 style="font-size: 15px;">SERVICIOS TÉCNICOS</h1>
+                    <p class="text-center" style="font-size: 16px;text-align: left;font-family: Raleway, sans-serif;">Con el fin de cubrir las necesidades de las ASADAS y protegerlas de los cobros excesivos, la LCA realizó un acuerdo con un grupo de profesionales capacitados en servicios técnicos y con precios razonables, esto con el fin de que las ASADAS tengan la oportunidad de hacer los estudios que necesiten.</p>
                 </div>
             </div>
         </div>
@@ -206,9 +205,9 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>SERVICIOS</h3>
                         <ul>
-                            <li><a href="#" style="opacity: 1;font-size: 15px;">-Contabilidad y facturación electrónica</a></li>
-                            <li><a href="#" style="opacity: 1;font-size: 15px;">-Asesoría legal</a></li>
-                            <li><a href="#" style="opacity: 1;font-size: 15px;">-Calidad del agua</a></li>
+                            <li><a href="#" style="opacity: 1;font-size: 15px;">-Administrativos</a></li>
+                            <li><a href="#" style="opacity: 1;font-size: 15px;">-Servicios Legales</a></li>
+                            <li><a href="#" style="opacity: 1;font-size: 15px;">-Servicios Técnicos</a></li>
                         </ul>
                     </div>
                 </div>
