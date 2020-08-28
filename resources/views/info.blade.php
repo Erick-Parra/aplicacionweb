@@ -9,12 +9,16 @@
 	table, th, td{
 		border: 1px solid blue;
 		border-collapse: collapse;
+
+		color: blue; 
 	}
 	th, td{
 		padding: 10px;
 	}
 </style>
 <body>
+	<br>
+	<br>
 	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA</h1>
 	<br>
 	<br>
