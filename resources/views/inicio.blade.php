@@ -100,7 +100,7 @@
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">PNUD</h5>
                                     <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">
-                                    Con el proyecto de fortalecimiento de Asadas PNUD, para el apoyo a la creación 
+                                    Con el proyecto de fortalecimiento de Asadas PNUD, para el apoyo a la creación
                                       y operación de la USEDES para prestar servicios a las Asadas.</p>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@
                                 <div class="text-center w-100"><img class="card-img-width" src="assets/img/Covenios/TecnoLab.jpeg" style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">Tecnolab</h5>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;"> 
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">
                                     Para dar el servicio de análisis de la calidad del agua del las Asadas.</p>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h5 class="text-center" style="font-family: Antic, sans-serif;color: #38ae53;">instituto costarricense de electricidad</h5>
                                     <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;">
-                                        Para la donación de árboles cada año, destinados a la campaña de reforestación de áreas de recarga y zonas de protección de nacientes 
+                                        Para la donación de árboles cada año, destinados a la campaña de reforestación de áreas de recarga y zonas de protección de nacientes
                                         y pozos de las Asadas.
                                     </p>
                                 </div>
