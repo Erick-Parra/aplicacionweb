@@ -21,8 +21,19 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/Team-Clean.css">
 </head>
+    <style type="text/css">
+        .nav li ul{
+            display: none;
+            position: absolute;
+            min-width: 100px;
+        }
 
+        .nav li:hover > ul{
+            display: block;
+        }
+    </style>
 <body>
+
     <nav class="navbar navbar-light navbar-expand sticky-top">
         <div class="container"><img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png"><a class="navbar-brand" href="#"><strong>Liga Comunal del Agua</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
@@ -30,7 +41,13 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href={{ route('inicio') }}>Inicio</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('who') }}>¿Quiénes Somos?</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('services') }}>Servicios</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('services') }}>Servicios</a>
+                        <ul>
+                            <li><a href="">Administrativos</a></li>
+                            <li><a href="">Técnicos</a></li>
+                            <li><a href="">Legales</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{{ route('info') }}">Información</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{{ route('contact') }}">CONTÁCTENOS</a></li>
                 </ul>
