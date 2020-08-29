@@ -125,9 +125,9 @@
     <th colspan="2"><p>Nicoya</p> <br>
     Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Procentaje</th>
 
-    <th>Total</th>
+    <th><p>Total</p><br><br></th>
 
-    <th>Porcentaje</th>
+    <th><p>Porcentaje</p><br><br></th>
 
   </tr>
 
