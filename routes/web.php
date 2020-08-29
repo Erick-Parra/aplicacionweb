@@ -9,7 +9,8 @@ Route::view('/informacion','info')->name('info');
 Route::view('/contactenos','contact')->name('contact');
 
 Route::view('/admin','admin.index')->name('admin');
+Route::view('/crear-asada','admin.createasada')->name('crearasada');
 
 
 
-Auth::routes(['register' => false]);
+Auth::routes();
