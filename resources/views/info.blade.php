@@ -115,13 +115,15 @@
 		<caption>Lista de ASADAS del área de influencia de la LCA</caption>
 		<thead class="thead-dark">
 
-		 <th>Rango Por Abonados</th>
+		<th>Rango Por Abonados</th>
 
-    <th colspan="2">Hojancha</th>
+    <th colspan="2"><p>  Hojancha</p> <br>
+    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Procentaje</th>
+    <th colspan="2"><p> Nandayure</p> <br>
+    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Procentaje</th>
 
-    <th colspan="2">Nandayure</th>
-
-    <th colspan="2">Nicoya</th>
+    <th colspan="2"><p>Nicoya</p> <br>
+    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Procentaje</th>
 
     <th>Total</th>
 
@@ -131,10 +133,10 @@
 
   <tr>
 
-    <th>< a 50</th>
+    <th>> a 50</th>
 
     <td>05</td>
-
+    
     <td>36%</td>
 
     <td>08</td>
