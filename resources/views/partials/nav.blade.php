@@ -58,13 +58,13 @@
                     <li class="nav-item" role="presentation"><a class="nav-link active" href={{ route('inicio') }}>Inicio</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="">¿Quiénes Somos?</a>
                      <ul>
-                            <li><a href={{ route('who') }}>Junta Directiva</a></li>
-                            <li><a href="">Funcionarios</a></li>
+                            <li><a href={{ route('JuntaDirectiva') }}>Junta Directiva</a></li>
+                            <li><a href={{ route('Funcionarios') }}>Funcionarios</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="">Servicios</a>
                         <ul>
-                            <li><a href={{ route('services') }}>Administrativos</a></li>
+                            <li><a href={{ route('servicesAdmi') }}>Administrativos</a></li>
                             <li><a href={{ route('servicesTecn') }}>Técnicos</a></li>
                             <li><a href={{ route('servicesLegal') }}>Legales</a></li>
                         </ul>
