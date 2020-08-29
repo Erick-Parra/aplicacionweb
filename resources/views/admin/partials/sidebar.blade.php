@@ -9,6 +9,8 @@
       <span class="brand-text font-weight-light">Liga del agua</span>
     </a>
 
+
+
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
@@ -38,9 +40,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
+                <a href="{{ route('crearasada') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Crear una nueva Asada</p>
+                </a>
+                 <a href="../../index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista de Asadas</p>
                 </a>
               </li>
             </ul>
