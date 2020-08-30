@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/','inicio')->name('inicio');
+Route::get('/','HomeController@index')->name('inicio');
 Route::view('/junta-directiva','partials.Quienes Somos.JuntaDirectiva')
 ->name('JuntaDirectiva');
 Route::view('/funcionarios','partials.Quienes Somos.Funcionarios')->name('Funcionarios');
