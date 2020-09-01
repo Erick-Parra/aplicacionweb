@@ -3,8 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/','HomeController@index')->name('inicio');
-Route::view('/junta-directiva','partials.Quienes Somos.JuntaDirectiva')
-->name('JuntaDirectiva');
+Route::view('/junta-directiva','partials.Quienes Somos.JuntaDirectiva')->name('JuntaDirectiva');
 Route::view('/funcionarios','partials.Quienes Somos.Funcionarios')->name('Funcionarios');
 
 Route::view('/serviciosAdmi','partials.servicios.servicesAdmi')->name('servicesAdmi');
@@ -14,8 +13,9 @@ Route::view('/serviciosTecn','partials.servicios.servicesLegal')->name('services
 Route::view('/informacion','info')->name('info');
 Route::view('/contactenos','contact')->name('contact');
 
-Route::view('/admin','admin.index')->name('admin');
-Route::view('/crear-asada','admin.createasada')->name('crearasada');
+Route::get('/admin','AdminController@index')->name('admin');
+Route::get('/admin/crear','AdminController@create')->name('create');
+
 
 
 
