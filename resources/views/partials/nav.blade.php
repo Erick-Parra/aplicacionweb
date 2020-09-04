@@ -22,11 +22,17 @@
     <link rel="stylesheet" href="/assets/css/Team-Clean.css">
 </head>
     <style type="text/css">
+        .nav ul{
+            list-style: none;
+            padding: 0;
+        }
 
         .nav li ul{
             display: none;
             position: absolute;
+            min-width: 100px;
         }
+   
 
         .nav li:hover > ul{
             display: block;
@@ -34,39 +40,28 @@
 
         .nav li ul li{
             position: relative;
-            background-color: #fff;
-        }
-        .nav  li ul li ul a{
-            padding: 1rem 2rem;
-            line-height: unset;
-            white-space: nowrap;
-        }
-          .nav ul li ul li a:hover{
-            background-color: #e6e6e6;
-
-          }
-
-
+            background-color: #ffff;
     </style>
-<body>
 
+<body>
     <nav class="navbar navbar-light navbar-expand sticky-top">
-        <div class="container"><img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png"><a class="navbar-brand" href="#"><strong>Liga Comunal del Agua</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png"><a class="navbar-brand" href="#"><strong>Liga Comunal del Agua</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>       
+            
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href={{ route('inicio') }}>Inicio</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="">¿Quiénes Somos?</a>
                      <ul>
-                            <li><a href={{ route('JuntaDirectiva') }}>Junta Directiva</a></li>
-                            <li><a href={{ route('Funcionarios') }}>Funcionarios</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('JuntaDirectiva') }}>Junta Directiva</a></li>
+                           <li class="nav-item" role="presentation" ><a class="nav-link"  href={{ route('Funcionarios') }}>  Funcionarios</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="">Servicios</a>
                         <ul>
-                            <li><a href={{ route('servicesAdmi') }}>Administrativos</a></li>
-                            <li><a href={{ route('servicesTecn') }}>Técnicos</a></li>
-                            <li><a href={{ route('servicesLegal') }}>Legales</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('servicesAdmi') }}>Administrativos</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('servicesTecn') }}>Técnicos</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('servicesLegal') }}>Legales</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{{ route('info') }}">Información</a></li>

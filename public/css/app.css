@@ -4416,7 +4416,6 @@ input[type=button].btn-block {
   display: block;
   padding: 0.5rem 1rem;
 }
-
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
@@ -4587,7 +4586,7 @@ input[type=button].btn-block {
   background-size: 100% 100%;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 320px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid,
   .navbar-expand-sm > .container-sm,
@@ -4934,6 +4933,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
+
 
 .card {
   position: relative;
