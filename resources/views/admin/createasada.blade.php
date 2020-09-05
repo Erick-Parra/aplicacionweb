@@ -45,16 +45,89 @@
 
     <!-- Main content -->
     <section class="content">
-      <form>
+      <form method="POST" action="{{ route('create.store')}}">
+        @csrf
         <label>
           Nombre de la asada <br>
-        <input type="text" name="">
+        <input type="text" name="Nom_Asada">
       </label>
       <br>
       <label>
-          Fecha de Solicitud <br>
-        <input type="date" name="">
+          Fecha de Registro <br>
+        <input type="date" name="Fecha_Registro">
       </label>
+      <br>
+        <label>
+          Numero de Cédula Juridica <br>
+        <input type="int" name="ced_Juridica">
+      </label>
+      <br>
+        <label>
+          Número de Convenio <br>
+        <input type="int" name="Num_Convenio">
+      </label>
+      <br>
+        <label>
+          Cantidad de Abonados <br>
+        <input type="int" name="Cant_Abonados">
+      </label>
+       <br>
+      <label>
+          Fecha de Solicitud <br>
+        <input type="date" name="Fecha_Solicitud">
+      </label>
+      <br>
+      <label>
+          Numero de Seccción<br>
+        <input type="int" name="Num_Sesion">
+      </label>
+      <br>
+        <label>
+          Presidente<br>
+        <input type="text" name="Presidente">
+      </label>
+      <br>
+       <label>
+          VicePresidente<br>
+        <input type="text" name="VicePresidente">
+      </label>
+      <br>
+      <label>
+          Tesorero<br>
+        <input type="text" name="Tesorero">
+      </label>
+      <br>
+      <label>
+          Vocal 1<br>
+        <input type="text" name="Vocal_1">
+      </label>
+      <br>
+      <label>
+          Vocal 2<br>
+        <input type="text" name="Vocal_2">
+      </label>
+      <br>
+      <label>
+          Fiscal<br>
+        <input type="text" name="Fiscal">
+      </label>
+      <br>
+      <label>
+          Razón de Afiliación<br>
+        <textarea name="Razon_Afiliacion"></textarea>
+      </label>
+      <br>
+      <label>
+          Telefono<br>
+        <input type="int" name="Telefono">
+      </label>
+      <br>
+      <label>
+          Correo<br>
+        <input type="text" name="Correo">
+      </label>
+      <br>
+      <button>Crear</button>
       </form>
     </section>
     <!-- /.content -->

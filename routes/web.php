@@ -15,6 +15,7 @@ Route::view('/contactenos','contact')->name('contact');
 
 Route::get('/admin','AdminController@index')->name('admin');
 Route::get('/admin/crear','AdminController@create')->name('create');
+Route::post('/admin','AdminController@store')->name('create.store');
 
 
 

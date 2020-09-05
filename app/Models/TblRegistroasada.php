@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class TblRegistroasada
- * 
+ *
  * @property string $Nom_Asada
  * @property Carbon $Fecha_Registro
  * @property int $ced_Juridica
@@ -29,7 +29,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $Razon_Afiliacion
  * @property int $Telefono
  * @property string $Correo
- * 
+ *
  * @property Collection|TblControloperativo[] $tbl_controloperativos
  * @property Collection|TblMapeo[] $tbl_mapeos
  *
@@ -55,6 +55,7 @@ class TblRegistroasada extends Model
 	];
 
 	protected $fillable = [
+		'Nom_Asada',
 		'Fecha_Registro',
 		'ced_Juridica',
 		'Num_Convenio',
