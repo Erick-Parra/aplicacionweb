@@ -13,11 +13,13 @@ Route::view('/serviciosTecn','partials.servicios.servicesLegal')->name('services
 Route::view('/informacion','info')->name('info');
 Route::view('/contactenos','contact')->name('contact');
 
+//Rutas controlador registro con diferente rutas, /admin
 Route::get('/admin','AdminController@index')->name('admin');
 Route::get('/admin/crear','AdminController@create')->name('create');
 Route::post('/admin','AdminController@store')->name('create.store');
 
-
-
+//Rutas controlador control operativo con diferente rutas /administracion
+Route::get('/adcontrolop/crearbitacora', 'BitacoraController@create')->name('bitacora');
+Route::post('/adcontrolop', 'BitacoraController@store')->name('bitacora.store');
 
 Auth::routes();
