@@ -1,22 +1,21 @@
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-10" 
+
+  style= "background-color: rgb(13, 71, 161) ;">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link">
-      <img src="../../dist/img/AdminLTELogo.png"
+    <a href="../../index3.html" class="brand-link user-panel mt-3 pb-3 mb-3 d-flex">
+      <img src="../../dist/img/LCA.png"
            alt="AdminLTE Logo"
-           class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">Liga del agua</span>
+           class="brand-image img-circle elevation-10"
+           style="opacity: .9">
+      <span class="brand-text font-weight-light" style= "font-size: 18px;">Liga Comunal del Agua</span>
     </a>
-
-
-
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar" style= "background-color: rgb(13, 71, 161);">
       <!-- Sidebar user (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="user-panel mt-2 pb-2 mb-2 d-flex">
         <div class="image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="../../dist/img/usuario.png" class="img-circle elevation-1" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">
@@ -32,7 +31,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa fa-edit"></i>
               <p>
                 Registros
                 <i class="right fas fa-angle-left"></i>
@@ -43,19 +42,19 @@
 
                   <a href="{{ route('create') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                  <p>Crear una nueva Asada</p>
+                  <p>Crear una nueva ASADA</p>
                   </a>
 
                  <a href="../../index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Lista de Asadas</p>
+                  <p>Lista de ASADAS</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="nav-icon fas fa-cog"></i>
               <p>
                 Control Operativo
                 <i class="right fas fa-angle-left"></i>
@@ -84,7 +83,7 @@
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
+              <i class="nav-icon fas  fa-map"></i>
               <p>
                 Mapeos
                 <i class="fas fa-angle-left right"></i>
@@ -119,7 +118,7 @@
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
+              <i class="nav-icon fas  fa-file"></i>
               <p>
                 Notas
                 <i class="fas fa-angle-left right"></i>

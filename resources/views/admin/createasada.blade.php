@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Administración</title>
+  <title>Administración LCA</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,14 +29,19 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
-        <div class="row mb-2">
+        <div class="row mb-1">
           <div class="col-sm-6">
-            <h1>Crear Asasdas</h1>
+            
+         
           </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
+          <div class="col-sm-12">
+            
+          <div class="card">
+            <div class="card-header">
+
+            <ol class="breadcrumb float-sm-left">
+              <li class="breadcrumb-item"><a href="{{ route('admin') }}">Regresar al inicio</a></li>
+              <li class="breadcrumb-item active">Administración Liga Comunal del Agua</li>
             </ol>
           </div>
         </div>
@@ -47,88 +52,174 @@
     <section class="content">
       <form method="POST" action="{{ route('create.store')}}">
         @csrf
-        <label>
-          Nombre de la asada <br>
-        <input type="text" name="Nom_Asada">
-      </label>
-      <br>
-      <label>
-          Fecha de Registro <br>
-        <input type="date" name="Fecha_Registro">
-      </label>
-      <br>
-        <label>
-          Numero de Cédula Juridica <br>
-        <input type="int" name="ced_Juridica">
-      </label>
-      <br>
-        <label>
-          Número de Convenio <br>
-        <input type="int" name="Num_Convenio">
-      </label>
-      <br>
-        <label>
-          Cantidad de Abonados <br>
-        <input type="int" name="Cant_Abonados">
-      </label>
-       <br>
-      <label>
-          Fecha de Solicitud <br>
-        <input type="date" name="Fecha_Solicitud">
-      </label>
-      <br>
-      <label>
-          Numero de Seccción<br>
-        <input type="int" name="Num_Sesion">
-      </label>
-      <br>
-        <label>
-          Presidente<br>
-        <input type="text" name="Presidente">
-      </label>
-      <br>
-       <label>
-          VicePresidente<br>
-        <input type="text" name="VicePresidente">
-      </label>
-      <br>
-      <label>
-          Tesorero<br>
-        <input type="text" name="Tesorero">
-      </label>
-      <br>
-      <label>
-          Vocal 1<br>
-        <input type="text" name="Vocal_1">
-      </label>
-      <br>
-      <label>
-          Vocal 2<br>
-        <input type="text" name="Vocal_2">
-      </label>
-      <br>
-      <label>
-          Fiscal<br>
-        <input type="text" name="Fiscal">
-      </label>
-      <br>
-      <label>
-          Razón de Afiliación<br>
-        <textarea name="Razon_Afiliacion"></textarea>
-      </label>
-      <br>
-      <label>
-          Telefono<br>
-        <input type="int" name="Telefono">
-      </label>
-      <br>
-      <label>
-          Correo<br>
-        <input type="text" name="Correo">
-      </label>
-      <br>
-      <button>Crear</button>
-      </form>
+        <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Módulo de registro de ASADAS</legend>
+
+                        <div class="form-group row">
+                            
+                          
+                            <span class="col-md-2 col-md-offset-2 text-center"></span>
+                            
+                            <div class="col-md-8">
+                            <label>
+                                Nombre de la ASADA<br></label>
+                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control">
+        
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Fecha de registro<br></label>
+                                <input name="Fecha_Registro" type="date" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Número de cédula jurídica<br></label>
+                                <input name="ced_Juridica" type="int" placeholder="Ingrese el número de cédula jurídica" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Número de convenio<br></label>
+                                <input name="Num_Convenio" type="int" placeholder="Ingrese el número de convenio" class="form-control">
+                            </div>
+                        </div>
+                            <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Cantidad de abonados<br></label>
+                                <input name="Cant_Abonados" type="int" placeholder="Ingrese la cantidad de abonados" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Fecha de solicitud<br></label>
+                                <input name="Fecha_Solicitud" type="date" class="form-control">
+                            </div>
+                        </div>
+
+
+                         <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Número de sección<br></label>
+                                <input name="Num_Sesion" type="int" placeholder="Ingrese el número de sección" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Presidente<br></label>
+                                <input name="Presidente" type="text" placeholder="Ingrese el nombre del presidente" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Vicepresidente<br></label>
+                                <input name="VicePresidente" type="text" placeholder="Ingrese el nombre del vicepresidente" class="form-control">
+                            </div>
+                        </div>
+
+                         <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Tesorero<br></label>
+                                <input name="Tesorero" type="text" placeholder="Ingrese el nombre del tesorero" class="form-control">
+                            </div>
+                        </div>
+
+                         <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Vocal 1<br></label>
+                                <input name="Vocal_1" type="text" placeholder="Ingrese el nombre del vocal 1" class="form-control">
+                            </div>
+                        </div>
+
+                         <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Vocal 2<br></label>
+                                <input name="Vocal_2" type="text" placeholder="Ingrese el nombre del vocal 2" class="form-control">
+                            </div>
+                        </div>
+
+                         <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Fiscal<br></label>
+                                <input name="Fiscal" type="text" placeholder="Ingrese el nombre del fiscal" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Razón de afiliación<br></label>
+                                <textarea class="form-control" id="message" name="Razon_Afiliacion" placeholder="Explique la razón de su a afiliación" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Teléfono<br></label>
+                                <input id="phone" name="Telefono" type="int" placeholder="Ingrese el número de teléfono" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Correo<br></label>
+                                <input id="email" name="Correo" type="email" placeholder="Ingrese el correo electrónico" class="form-control">
+                                <br>
+                            </div>
+
+                            <div class="col-sm-12 col-xs-12" align="center">
+                             <button class="btn btn-primary border rounded">REGISTRAR</button>
+                             <button class="btn btn-primary border rounded">ELIMINAR</button>
+                             <button class="btn btn-primary border rounded">MODIFICAR</button>
+                        </div>
+
+   
+
+
+
+
+
+</form>
     </section>
     <!-- /.content -->
   </div>
@@ -136,9 +227,9 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.5
+      <b>Created By</b> NEPV
     </div>
-    <strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
+    <strong>Copyright &copy; 2020.</strong> All rights
     reserved.
   </footer>
 
@@ -148,8 +239,6 @@
   </aside>
   <!-- /.control-sidebar -->
 </div>
-<!-- ./wrapper -->
-
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
