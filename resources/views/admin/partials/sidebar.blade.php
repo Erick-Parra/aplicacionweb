@@ -62,15 +62,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../charts/chartjs.html" class="nav-link">
+                <a href="{{ route('bitacora') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
+                  <p>Bitacora Control Operativo</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../charts/flot.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
+                  <p>Buscar Bitacora</p>
                 </a>
               </li>
               <li class="nav-item">
