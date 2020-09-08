@@ -17,7 +17,8 @@ Route::get('/admin','AdminController@index')->name('admin');
 Route::get('/admin/crear','AdminController@create')->name('create');
 Route::post('/admin','AdminController@store')->name('create.store');
 
-
+Route::get('/admapeo/crearmapeo','ControllerMap@create')->name('map');
+Route::post('/admapeo','ControllerMap@store')->name('map.store');
 
 
 Auth::routes();
