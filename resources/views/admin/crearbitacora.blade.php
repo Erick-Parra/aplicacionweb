@@ -27,16 +27,21 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+   <section class="content-header">
       <div class="container-fluid">
-        <div class="row mb-2">
+        <div class="row mb-1">
           <div class="col-sm-6">
-            <h1>Bitacora Control Operativo</h1>
+            
+         
           </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
+          <div class="col-sm-12">
+            
+          <div class="card">
+            <div class="card-header">
+
+            <ol class="breadcrumb float-sm-left">
+              <li class="breadcrumb-item"><a href="{{ route('admin') }}">Regresar al inicio</a></li>
+              <li class="breadcrumb-item active">Administración Liga Comunal del Agua</li>
             </ol>
           </div>
         </div>
@@ -47,64 +52,120 @@
     <section class="content">
       <form method="POST" action="{{ route('bitacora.store')}}">
         @csrf
-        <label>
-          Nombre de la asada <br>
-        <input type="text" name="Nom_Asada">
-      </label>
-      <br>
-      <label>
-          Fecha Control <br>
-        <input type="date" name="Fecha_Control">
-      </label>
-      <br>
-        <label>
-          Encargado <br>
-        <input type="text" name="Encargado">
-      </label>
-      <br>
-        <label>
-          Ubicación/acueducto <br>
-        <input type="text" name="Ubicacion">
-      </label>
-      <br>
-      <h1>Detalles de resultado del monitoreo</h1>
-        <label>
-          Turbiedad <br>
-        <input type="text" name="Turbiedad">
-      </label>
-       <br>
-      <label>
-          Olor <br>
-        <input type="text" name="Olor">
-      </label>
-      <br>
-      <label>
-          Cloro residual<br>
-        <input type="text" name="Cloro">
-      </label>
-      <br>
-        <label>
-          PH<br>
-        <input type="text" name="PH">
-      </label>
-      <br>
-       <label>
-          Sabor<br>
-        <input type="text" name="Sabor">
-      </label>
-      <br>
-      <label>
-          Temperatura<br>
-        <input type="text" name="Temperatura">
-      </label>
-      <br>
-      <label>
-          Observacion<br>
-        <textarea name="Observaciones"></textarea>
-      </label>
-      <br>
-      <br>
-      <button>Guardar</button>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                      <legend class="text-center header">Unidades de servicios de desarrollo
+                      (USEDES)</legend>
+                        <legend class="text-center header">Bitacora Control Operativo</legend>
+
+                        <div class="form-group row">
+                            
+                          
+                            <span class="col-md-2 col-md-offset-2 text-center"></span>
+                            
+                            <div class="col-md-8">
+                            <label>
+                                Nombre de la ASADA<br></label>
+                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control">
+        
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Fecha Control<br></label>
+                                <input name="Fecha Control" type="date" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Encargado<br></label>
+                                <input style="display: table-column text-align: center" name="Encargado" type="text" placeholder="Nombre del Encargado" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Ubicación/acueducto<br></label>
+                                <input name="Ubicacion" type="text" placeholder="Digite Ubicación/acueducto" class="form-control">
+                            </div>
+                        </div>
+                        <legend class="text-center header">Detalles de resultado del monitoreo</legend>
+                            <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Turbiedad<br></label>
+                                <input name="Turbiedad" type="text" placeholder="Ingrese rango alerta:1 max.adamisible: 5 " class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Olor<br></label>
+                                <input name="Olor" type="text" placeholder="No aceptable / aceptable " class="form-control">
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Cloro residual<br></label>
+                                <input name="Cloro" type="text" placeholder="Ingrese rango 0,3 A 0,6" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                PH<br></label>
+                                <input name="PH" type="text" placeholder="Ingrese rango 0,6 A 8,0" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Sabor<br></label>
+                                <input name="Sabor" type="text" placeholder="No aceptable / aceptable" class="form-control">
+                            </div>
+                        </div>
+
+                         <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Temperatura<br></label>
+                                <input name="Temperatura" type="text" placeholder="NO aplica" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Observaciones<br></label>
+                                <textarea class="form-control" id="message" name="Observacion" placeholder="Observaciones" rows="4"></textarea>
+                            </div>
+                        </div>
+                            <div class="col-sm-12 col-xs-12" align="center">
+                             <button class="btn btn-primary border rounded">REGISTRAR</button>
+                             <button class="btn btn-primary border rounded">ELIMINAR</button>
+                             <button class="btn btn-primary border rounded">MODIFICAR</button>
+                        </div>
       </form>
     </section>
     <!-- /.content -->

@@ -22,4 +22,8 @@ Route::post('/admin','AdminController@store')->name('create.store');
 Route::get('/adcontrolop/crearbitacora', 'BitacoraController@create')->name('bitacora');
 Route::post('/adcontrolop', 'BitacoraController@store')->name('bitacora.store');
 
+Route::get('/buscar', 'BitacoraController@buscar')->name('buscar');
+Route::post('/buscar', 'BitacoraController@show')->name('bitacora.show');
+
+
 Auth::routes();

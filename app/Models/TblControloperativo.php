@@ -42,6 +42,7 @@ class TblControloperativo extends Model
 	];
 
 	protected $fillable = [
+		'Fecha_Control',
 		'Encargado',
 		'Ubicacion',
 		'Turbiedad',
@@ -63,4 +64,5 @@ class TblControloperativo extends Model
 	{
 		return $this->hasMany(TblEmpleadocontrol::class, 'Fecha_Control');
 	}
+
 }

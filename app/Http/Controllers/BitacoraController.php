@@ -8,9 +8,15 @@ use App\Models\TblControloperativo;
 class BitacoraController extends Controller
 {
 
-    public function show()
+    public function show(Posts $posts )
     {
+       return view('admin', compact('posts'));
 
+    }
+
+    public function buscar()
+    {
+        return view('admin.buscarbitacora');
     }
 
     public function create()
@@ -32,5 +38,7 @@ class BitacoraController extends Controller
             'Temperatura' => Request('Temperatura'),
             'Observacion' => Request('Observacion'),
         ]);
+
+        return back();
     }
 }
