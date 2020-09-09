@@ -18,8 +18,13 @@ Route::get('/admin','AdminController@index')->name('admin');
 Route::get('/admin/crear','AdminController@create')->name('create');
 Route::post('/admin','AdminController@store')->name('create.store');
 
+//Rutas controlador mapeo con diferente rutas
+Route::get('/admapeo/crearmapeo','ControllerMap@create')->name('map');
+Route::post('/admapeo','ControllerMap@store')->name('map.store');
+
 //Rutas controlador control operativo con diferente rutas /administracion
 Route::get('/adcontrolop/crearbitacora', 'BitacoraController@create')->name('bitacora');
 Route::post('/adcontrolop', 'BitacoraController@store')->name('bitacora.store');
+
 
 Auth::routes();
