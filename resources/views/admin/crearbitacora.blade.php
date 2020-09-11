@@ -160,12 +160,12 @@
                                 Observaciones<br></label>
                                 <textarea class="form-control" id="message" name="Observacion" placeholder="Observaciones" rows="4"></textarea>
                             </div>
-                        </div>
-                            <div class="col-sm-12 col-xs-12" align="center">
-                             <button class="btn btn-primary border rounded">REGISTRAR</button>
-                             <button class="btn btn-primary border rounded">ELIMINAR</button>
-                             <button class="btn btn-primary border rounded">MODIFICAR</button>
-                        </div>
+                            </div>
+  <div class="col-sm-12 col-xs-12" align="center">
+    <button class="btn btn-primary border rounded">REGISTRAR</button>
+  </div>
+  <br>
+  <br>
       </form>
     </section>
     <!-- /.content -->
@@ -174,9 +174,9 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.5
+      <b>Created By</b> NEPV
     </div>
-    <strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
+    <strong>Copyright &copy; 2020.</strong> All rights
     reserved.
   </footer>
 
@@ -198,3 +198,6 @@
 <script src="../../dist/js/demo.js"></script>
 </body>
 </html>
+
+
+

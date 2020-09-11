@@ -64,22 +64,16 @@
               <li class="nav-item">
                 <a href="{{ route('bitacora') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Bitacora Control Operativo</p>
+                  <p>Crear Bitacora</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{ route('buscar') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buscar Bitacora</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="../charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-            </ul>
+              </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">

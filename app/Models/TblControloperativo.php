@@ -24,6 +24,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $Temperatura
  * @property string $Observacion
  * @property string $Nom_Asada
+ * @property int $idControl
  * 
  * @property TblRegistroasada $tbl_registroasada
  * @property Collection|TblEmpleadocontrol[] $tbl_empleadocontrols
@@ -33,8 +34,8 @@ use Illuminate\Database\Eloquent\Model;
 class TblControloperativo extends Model
 {
 	protected $table = 'tbl_controloperativo';
-	protected $primaryKey = 'Fecha_Control';
-	public $incrementing = false;
+	protected $primaryKey = 'idControl';
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $dates = [
@@ -52,7 +53,8 @@ class TblControloperativo extends Model
 		'Sabor',
 		'Temperatura',
 		'Observacion',
-		'Nom_Asada'
+		'Nom_Asada',
+		'idControl'
 	];
 
 	public function tbl_registroasada()
@@ -62,7 +64,7 @@ class TblControloperativo extends Model
 
 	public function tbl_empleadocontrols()
 	{
-		return $this->hasMany(TblEmpleadocontrol::class, 'Fecha_Control');
+		return $this->hasMany(TblEmpleadocontrol::class, 'idControl');
 	}
 
 }

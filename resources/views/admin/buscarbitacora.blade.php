@@ -37,6 +37,7 @@
 {{-- Sidebar en la carpeta admin/partials --}}
 @include('admin.partials.sidebar')
 
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -84,25 +85,29 @@
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">
                               <label>
-                                Fecha Control<br></label>
-                                <form action="/buscar" method="get">
+                                Nombre ASADA<br></label>
+                                <form action="{{ route('search')}}" method="GET">
                                 <div class="input-group">
-                                  <input name="Fecha Control" type="date" class="form-control">
+                                  <input name="Nom_Asada" type="search" class="form-control">
                                   <span class="input-group-prepend">
                                     <button type="submit" class="btn btn-primary">BUSCAR</button><br>
                                   </span>
                                 </div>
                               </form>    
-                            </div><br>
-                            
-                            <div class="col-md-12">
+                            </div>
+                            <br>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              </div>
                               <br>
-                            <table class= "table table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">
+                              <div class="table-responsive">
+                            <table class= "table table-striped table-bordered table-condense table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">
     <caption>Registros Control Operativo</caption>
     <thead class="thead-dark">
   <tr>
-
+    
     <th>Nombre ASADA</th>
+
+    <th>Fecha Control</th>
 
     <th>Encargado</th>
 
@@ -122,34 +127,47 @@
 
     <th>Observaciones</th>
 
+    <th>Accion</th>
+
   </tr>
  
   
+  @foreach($registro as $reg)
   <tr>
+    
+    <td>{{$reg->Nom_Asada}}</td>
 
-    <th></th>
+    <td>{{$reg->Fecha_Control}}</td>
 
-    <td></td>
+    <td>{{$reg->Encargado}}</td>
 
-    <td></td>
+    <td>{{$reg->Ubicacion}}</td>
 
-    <td></td>
+    <td>{{$reg->Turbiedad}}</td>
 
-    <td></td>
+    <td>{{$reg->Olor}}</td>
 
-    <td></td>
+    <td>{{$reg->Cloro}}</td>
 
-    <td></td>
+    <td>{{$reg->PH}}</td>
 
-    <td></td>
+    <td>{{$reg->Sabor}}</td>
 
-    <td></td>
+    <td>{{$reg->Temperatura}}</td>
 
-    <td></td>
+    <td>{{$reg->Observacion}}</td>
+
+    <td>
+      <a href="{{route('notas.editar', $reg)}}" class="btn btn-warning btn-sm">Editar</a>
+      <form action="{{ route('notas.eliminar', $reg) }}" class="d-inline" method="POST">
+    @method('DELETE')
+    @csrf
+    <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+</form>
+    </td>
 
   </tr>
- 
-
+ @endforeach
 
 </table>
 </div>
