@@ -11,7 +11,6 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="/" class="nav-link">Regresar a la página informativa</a>
       </li>
-
       <form class="form-inline ml-2">
       <div class="input-group input-group-sm">
         <input class="form-control form-control-navbar" type="search" placeholder="Buscar" aria-label="Search">

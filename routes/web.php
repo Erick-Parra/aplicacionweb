@@ -27,5 +27,15 @@ Route::get('/adcontrolop/crearbitacora', 'BitacoraController@create')->name('bit
 Route::post('/adcontrolop', 'BitacoraController@store')->name('bitacora.store');
 
 
+Route::get('/buscar/buscarbitacora','BitacoraController@buscar')->name('buscar');
+Route::get('/search','BitacoraController@index')->name('search');
+
+//CRUD CONTROL OPERATIVO
+Route::get('/editar/{id}', 'BitacoraController@editar' )->name('notas.editar');
+Route::put('/editar/{id}', 'BitacoraController@update' )->name('notas.update');
+
+Route::delete('/eliminar/{id}', 'BitacoraController@eliminar')->name('notas.eliminar');
+
+
 
 Auth::routes();

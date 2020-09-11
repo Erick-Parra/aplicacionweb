@@ -4,19 +4,62 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TblControloperativo;
+use App;
 
 class BitacoraController extends Controller
 {
-
-    public function show(Posts $posts )
+    public function index()
     {
-       return view('admin', compact('posts'));
+        if($request)
+        {
+            $result = trim($request->get(key::search));
+            $nom = Nom_Asada::where('Nom_Asada', 'like', '%'.search.'%')
+            ->paginate(5);
+            return view('admin.index', ['Nom_Asada' => $nom, 'search'=>$result]);
+        }
+    }
 
+    public function show()
+    {
+       
     }
 
     public function buscar()
     {
-        return view('admin.buscarbitacora');
+        $registro = TblControloperativo::all();
+        return view('admin.buscarbitacora', compact('registro'));
+    }
+
+    public function editar($id)
+    {
+        $nota = TblControloperativo::findOrFail($id);
+        return view('admin.editarbitacora', compact('nota'));
+    }
+
+    public function update(Request $request, $Nom_Asada)
+    {
+
+        $notaActualizada = TblControloperativo::findOrFail($Nom_Asada);
+        $notaActualizada->Nom_Asada = $request->input('Nom_Asada');
+        $notaActualizada->Encargado = $request->input('Encargado');
+        $notaActualizada->Ubicacion = $request->input('Ubicacion');
+        $notaActualizada->Turbiedad = $request->input('Turbiedad');
+        $notaActualizada->Olor = $request->input('Olor');
+        $notaActualizada->Cloro = $request->input('Cloro');
+        $notaActualizada->PH = $request->input('PH');
+        $notaActualizada->Sabor = $request->input('Sabor');
+        $notaActualizada->Temperatura = $request->input('Temperatura');
+        $notaActualizada->Observacion = $request->input('Observacion');
+        $notaActualizada->save();
+
+            return back();
+    }
+    public function eliminar($id){
+
+        $notaEliminar = TblControloperativo::findOrFail($id);
+        $notaEliminar->delete();
+
+        return back();
     }
 
     public function create()
@@ -25,7 +68,9 @@ class BitacoraController extends Controller
     }
 
     public function store(){
+
         TblControloperativo::create([
+            'idControl' => Request('idControl'),
             'Nom_Asada' => Request('Nom_Asada'),
             'Fecha_Control' => Request('Fecha_Control'),
             'Encargado' => Request('Encargado'),
@@ -37,6 +82,7 @@ class BitacoraController extends Controller
             'Sabor' =>Request('Sabor'),
             'Temperatura' => Request('Temperatura'),
             'Observacion' => Request('Observacion'),
+
         ]);
 
         return back();
