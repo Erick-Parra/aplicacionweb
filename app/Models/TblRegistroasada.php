@@ -29,6 +29,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $Razon_Afiliacion
  * @property int $Telefono
  * @property string $Correo
+ * @property int $idAsada
  *
  * @property Collection|TblControloperativo[] $tbl_controloperativos
  * @property Collection|TblMapeo[] $tbl_mapeos
@@ -38,15 +39,16 @@ use Illuminate\Database\Eloquent\Model;
 class TblRegistroasada extends Model
 {
 	protected $table = 'tbl_registroasada';
-	protected $primaryKey = 'Nom_Asada';
-	public $incrementing = false;
+	protected $primaryKey = 'idAsada';
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [
 		'ced_Juridica' => 'int',
 		'Cant_Abonados' => 'int',
 		'Num_Sesion' => 'int',
-		'Telefono' => 'int'
+		'Telefono' => 'int',
+		'idAsada' => 'int'
 	];
 
 	protected $dates = [
@@ -55,6 +57,7 @@ class TblRegistroasada extends Model
 	];
 
 	protected $fillable = [
+		'idAsada',
 		'Nom_Asada',
 		'Fecha_Registro',
 		'ced_Juridica',
@@ -75,11 +78,11 @@ class TblRegistroasada extends Model
 
 	public function tbl_controloperativos()
 	{
-		return $this->hasMany(TblControloperativo::class, 'Nom_Asada');
+		return $this->hasMany(TblControloperativo::class, 'Nom_Asada', 'Nom_Asada');
 	}
 
 	public function tbl_mapeos()
 	{
-		return $this->hasMany(TblMapeo::class, 'Nom_Asada');
+		return $this->hasMany(TblMapeo::class, 'Nom_Asada', 'Nom_Asada');
 	}
 }
