@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class TblRegistroasada
- *
+ * 
  * @property string $Nom_Asada
  * @property Carbon $Fecha_Registro
  * @property int $ced_Juridica
@@ -29,7 +29,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $Razon_Afiliacion
  * @property int $Telefono
  * @property string $Correo
- *
+ * @property int $idAsada
+ * @property string $nombreRegion
+ * 
  * @property Collection|TblControloperativo[] $tbl_controloperativos
  * @property Collection|TblMapeo[] $tbl_mapeos
  *
@@ -38,8 +40,7 @@ use Illuminate\Database\Eloquent\Model;
 class TblRegistroasada extends Model
 {
 	protected $table = 'tbl_registroasada';
-	protected $primaryKey = 'Nom_Asada';
-	public $incrementing = false;
+	protected $primaryKey = 'idAsada';
 	public $timestamps = false;
 
 	protected $casts = [
@@ -70,16 +71,21 @@ class TblRegistroasada extends Model
 		'Fiscal',
 		'Razon_Afiliacion',
 		'Telefono',
-		'Correo'
+		'Correo',
+		'nombreRegion'
 	];
 
 	public function tbl_controloperativos()
 	{
-		return $this->hasMany(TblControloperativo::class, 'Nom_Asada');
+		return $this->hasMany(TblControloperativo::class, 'Nom_Asada', 'Nom_Asada');
 	}
 
 	public function tbl_mapeos()
 	{
-		return $this->hasMany(TblMapeo::class, 'Nom_Asada');
+		return $this->hasMany(TblMapeo::class, 'Nom_Asada', 'Nom_Asada');
 	}
+
+	public function tbl_region(){ 
+      return $this->hasMany(TblRegion::class);
+  }
 }

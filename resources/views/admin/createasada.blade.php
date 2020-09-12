@@ -72,6 +72,16 @@
         
                             </div>
                         </div>
+
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Nombre Region<br></label>
+                                <input name="nombreRegion" type="text" placeholder="Ingrese el nombre Region" class="form-control">
+                            </div>
+                        </div>
+
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">

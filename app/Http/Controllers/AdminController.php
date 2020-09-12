@@ -28,7 +28,9 @@ class AdminController extends Controller
 
     public function store(){
         TblRegistroasada::create([
+            'idAsada' => Request('idAsada'),
             'Nom_Asada' => Request('Nom_Asada'),
+            'nombreRegion' => Request('nombreRegion'),
             'Fecha_Registro' => Request('Fecha_Registro'),
             'ced_Juridica' => Request('ced_Juridica'),
             'Num_Convenio' => Request('Num_Convenio'),
