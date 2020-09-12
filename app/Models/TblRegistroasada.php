@@ -85,7 +85,4 @@ class TblRegistroasada extends Model
 		return $this->hasMany(TblMapeo::class, 'Nom_Asada', 'Nom_Asada');
 	}
 
-	public function tbl_region(){ 
-      return $this->hasMany(TblRegion::class);
-  }
 }
