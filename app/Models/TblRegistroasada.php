@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class TblRegistroasada
- * 
+ *
  * @property string $Nom_Asada
  * @property Carbon $Fecha_Registro
  * @property int $ced_Juridica
@@ -34,7 +34,7 @@ use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
  *
 =======
- * 
+ *
 >>>>>>> 91076b8b1643b8279469f979072e5693c1ddc38e
  * @property Collection|TblControloperativo[] $tbl_controloperativos
  * @property Collection|TblMapeo[] $tbl_mapeos
@@ -89,11 +89,11 @@ class TblRegistroasada extends Model
 		return $this->hasMany(TblMapeo::class, 'Nom_Asada', 'Nom_Asada');
 	}
 
-<<<<<<< HEAD
+
 	public function getRouteKeyName()
 	{
 		return 'Nom_Asada';
 	}
-=======
->>>>>>> 91076b8b1643b8279469f979072e5693c1ddc38e
+
+
 }
