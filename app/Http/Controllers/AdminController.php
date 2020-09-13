@@ -87,5 +87,10 @@ class AdminController extends Controller
         return redirect()->route('admin.show',$asada);
 
     }
+    public function destroy(TblRegistroasada $asada)
+    {
+        $asada->delete();
 
+        return redirect()->route('admin');
+    }
 }
