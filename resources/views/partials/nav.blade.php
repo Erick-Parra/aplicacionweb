@@ -64,7 +64,12 @@
                             <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('servicesLegal') }}>Legales</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="{{ route('info') }}">Información</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="">Información</a>
+                         <ul>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href={{route('info') }}>Gráficos</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('news') }}>Noticias</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{{ route('contact') }}">CONTÁCTENOS</a></li>
                 </ul>
         </div>

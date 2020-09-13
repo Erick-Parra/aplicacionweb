@@ -23,10 +23,11 @@ class TblMapeo extends Model
 {
 	protected $table = 'tbl_mapeo';
 	protected $primaryKey = 'IdMapeo';
+	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [
-		'Archivo_SHP' => 'mediumblob'
+		'Archivo_SHP' => 'string'
 	];
 
 	protected $fillable = [

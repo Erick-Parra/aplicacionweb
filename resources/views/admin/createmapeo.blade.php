@@ -81,8 +81,6 @@
 
                             <div class="col-sm-12 col-xs-12" align="center">
                              <button class="btn btn-primary border rounded">REGISTRAR</button>
-                             <button class="btn btn-primary border rounded">ELIMINAR</button>
-                             <button class="btn btn-primary border rounded">MODIFICAR</button>
                         </div>
 
 </form>

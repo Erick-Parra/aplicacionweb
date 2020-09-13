@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Administración LCA</title>
+  <title>Administración</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,19 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
+<style type="text/css">
+
+  table, th, td {
+    border: 6px solid DODGERBLUE;
+    border-collapse: collapse;
+    color: MIDNIGHTBLUE; 
+    background-color: SKYBLUE;
+  }
+  th, td{
+    padding: 15px;
+
+  }
+</style>
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -24,10 +37,11 @@
 {{-- Sidebar en la carpeta admin/partials --}}
 @include('admin.partials.sidebar')
 
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+   <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-1">
           <div class="col-sm-6">
@@ -50,51 +64,78 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="POST" action="{{ route('map.store')}}">
+      <form method="GET" action="{{ route('buscarmap')}}">
         @csrf
-        <div class="container">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Módulo de registro Mapeo</legend>
+                        <legend class="text-center header">Registros de Mapeo</legend>
 
                         <div class="form-group row">
                             
                           
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
-                            
-                            <div class="col-md-8">
-                            <label>
-                                Nombre de la ASADA<br></label>
-                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control">
-        
-                            </div>
-                        </div>
 
-                        <div class="form-group row">
+                            <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">
                               <label>
-                                Archivo SHP<br></label>
-                                <input name="" type="text" placeholder="" class="form-control">
+                                Nombre ASADA<br></label>
+                                <div class="input-group">
+                                  <input name="buscarpor" type="" class="form-control">
+                                  <span class="input-group-prepend">
+                                  <button type="submit" class="btn btn-primary">BUSCAR</button><br>
+                                  </span>
+                                </div>
+                              </form>                              
+
+
+                              
                             </div>
-                        </div>
+                            <br>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              </div>
+                              <br>
+                              <div class="table-responsive">
+                            <table class= "table table-striped table-bordered table-condense table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">
+    <caption>Registros Mapeo</caption>
+    <thead class="thead-dark">
+  <tr>
+    
+    <th>Nombre ASADA</th>
 
-                            <div class="col-sm-12 col-xs-12" align="center">
-                             <button class="btn btn-primary border rounded">REGISTRAR</button>
-                             <button class="btn btn-primary border rounded">ELIMINAR</button>
-                             <button class="btn btn-primary border rounded">MODIFICAR</button>
-                        </div>
+    <th>Archivo SHP</th>
 
-   
+    <th>Accion</th>
 
-
-
-
-
+  </tr>
+ 
+  
+  @foreach($registro as $map)
+  <tr>
+    <td>{{$map->Nom_Asada}}</td>
+ 
+    <td>
+    <img src="Images/{{$map->Archivo_SHP}}"/>
+    </td>
+    <td>
+      <a href="{{route('mapeos.editar', $map)}}" class="btn btn-warning btn-sm">Editar</a>
+      <form action="{{ route('mapeos.eliminar', $map) }}" class="d-inline" method="POST">
+    @method('DELETE')
+    @csrf
+    <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
 </form>
+    </td>
+
+  </tr>
+ @endforeach
+
+</table>
+</div>
+      </form>
     </section>
     <!-- /.content -->
   </div>
@@ -102,9 +143,9 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Created By</b> NEPV
+      <b>Version</b> 3.0.5
     </div>
-    <strong>Copyright &copy; 2020.</strong> All rights
+    <strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -114,6 +155,8 @@
   </aside>
   <!-- /.control-sidebar -->
 </div>
+<!-- ./wrapper -->
+
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->

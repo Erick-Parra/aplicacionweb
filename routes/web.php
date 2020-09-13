@@ -11,6 +11,7 @@ Route::view('/serviciosLegal','partials.servicios.servicesTecn')->name('services
 Route::view('/serviciosTecn','partials.servicios.servicesLegal')->name('servicesLegal');
 
 Route::view('/informacion','info')->name('info');
+Route::view('/noticias','news')->name('news');
 Route::view('/contactenos','contact')->name('contact');
 
 //Rutas controlador registro con diferente rutas, /admin
@@ -21,6 +22,15 @@ Route::post('/admin','AdminController@store')->name('create.store');
 //Rutas controlador mapeo con diferente rutas
 Route::get('/admapeo/crearmapeo','ControllerMap@create')->name('map');
 Route::post('/admapeo','ControllerMap@store')->name('map.store');
+
+Route::get('/buscarmapeo/mapbuscar','ControllerMap@buscar')->name('buscarmap');
+Route::get('/searchmap','ControllerMap@index')->name('searchmap');
+
+//CRUD Mapeo
+Route::get('/editarmapeo/{idmap}','ControllerMap@editar')->name('mapeos.editar');
+Route::put('/editarmapeo/{idmap}','ControllerMap@update')->name('mapeos.update');
+
+Route::delete('/eliminarmapeo/{idmap}', 'ControllerMap@eliminar')->name('mapeos.eliminar');
 
 //Rutas controlador control operativo con diferente rutas /administracion
 Route::get('/adcontrolop/crearbitacora', 'BitacoraController@create')->name('bitacora');
