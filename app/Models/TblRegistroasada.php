@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class TblRegistroasada
- *
+ * 
  * @property string $Nom_Asada
  * @property Carbon $Fecha_Registro
  * @property int $ced_Juridica
@@ -30,7 +30,12 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $Telefono
  * @property string $Correo
  * @property int $idAsada
+ * @property string $nombreRegion
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 91076b8b1643b8279469f979072e5693c1ddc38e
  * @property Collection|TblControloperativo[] $tbl_controloperativos
  * @property Collection|TblMapeo[] $tbl_mapeos
  *
@@ -40,15 +45,13 @@ class TblRegistroasada extends Model
 {
 	protected $table = 'tbl_registroasada';
 	protected $primaryKey = 'idAsada';
-	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $casts = [
 		'ced_Juridica' => 'int',
 		'Cant_Abonados' => 'int',
 		'Num_Sesion' => 'int',
-		'Telefono' => 'int',
-		'idAsada' => 'int'
+		'Telefono' => 'int'
 	];
 
 	protected $dates = [
@@ -57,7 +60,6 @@ class TblRegistroasada extends Model
 	];
 
 	protected $fillable = [
-		'idAsada',
 		'Nom_Asada',
 		'Fecha_Registro',
 		'ced_Juridica',
@@ -73,7 +75,8 @@ class TblRegistroasada extends Model
 		'Fiscal',
 		'Razon_Afiliacion',
 		'Telefono',
-		'Correo'
+		'Correo',
+		'nombreRegion'
 	];
 
 	public function tbl_controloperativos()
@@ -85,4 +88,12 @@ class TblRegistroasada extends Model
 	{
 		return $this->hasMany(TblMapeo::class, 'Nom_Asada', 'Nom_Asada');
 	}
+
+<<<<<<< HEAD
+	public function getRouteKeyName()
+	{
+		return 'Nom_Asada';
+	}
+=======
+>>>>>>> 91076b8b1643b8279469f979072e5693c1ddc38e
 }

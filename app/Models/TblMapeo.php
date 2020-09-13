@@ -36,6 +36,6 @@ class TblMapeo extends Model
 
 	public function tbl_registroasada()
 	{
-		return $this->belongsTo(TblRegistroasada::class, 'Nom_Asada');
+		return $this->belongsTo(TblRegistroasada::class, 'Nom_Asada', 'Nom_Asada');
 	}
 }
