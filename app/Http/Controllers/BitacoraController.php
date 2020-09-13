@@ -36,10 +36,10 @@ class BitacoraController extends Controller
         return view('admin.editarbitacora', compact('nota'));
     }
 
-    public function update(Request $request, $Nom_Asada)
+    public function update(Request $request, $id)
     {
 
-        $notaActualizada = TblControloperativo::findOrFail($Nom_Asada);
+        $notaActualizada = TblControloperativo::findOrFail($id);
         $notaActualizada->Nom_Asada = $request->input('Nom_Asada');
         $notaActualizada->Encargado = $request->input('Encargado');
         $notaActualizada->Ubicacion = $request->input('Ubicacion');

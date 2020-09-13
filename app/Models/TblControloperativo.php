@@ -35,7 +35,6 @@ class TblControloperativo extends Model
 {
 	protected $table = 'tbl_controloperativo';
 	protected $primaryKey = 'idControl';
-	public $incrementing = true;
 	public $timestamps = false;
 
 	protected $dates = [
@@ -59,12 +58,11 @@ class TblControloperativo extends Model
 
 	public function tbl_registroasada()
 	{
-		return $this->belongsTo(TblRegistroasada::class, 'Nom_Asada');
+		return $this->belongsTo(TblRegistroasada::class, 'Nom_Asada', 'Nom_Asada');
 	}
 
 	public function tbl_empleadocontrols()
 	{
 		return $this->hasMany(TblEmpleadocontrol::class, 'idControl');
 	}
-
 }

@@ -17,7 +17,11 @@ Route::view('/contactenos','contact')->name('contact');
 //Rutas controlador registro con diferente rutas, /admin
 Route::get('/admin','AdminController@index')->name('admin');
 Route::get('/admin/crear','AdminController@create')->name('create');
+Route::get('/admin/{asada}/editar','AdminController@edit')->name('admin.edit');
+Route::patch('/admin/{asada}','AdminController@update')->name('admin.update');
 Route::post('/admin','AdminController@store')->name('create.store');
+Route::get('/admin/{asada}','AdminController@show')->name('admin.show');
+Route::delete('/admin/{asada}', 'AdminController@destroy')->name('admin.destroy');
 
 //Rutas controlador mapeo con diferente rutas
 Route::get('/admapeo/crearmapeo','ControllerMap@create')->name('map');

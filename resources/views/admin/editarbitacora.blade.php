@@ -51,7 +51,7 @@
 		<!-- Main content -->
 		<!-- <h1>Editar {{$nota->Nom_Asada}}</h1>-->
 		<section class="content">
-			<form action="{{ route('notas.update', $nota->Nom_Asada) }}" method="POST">
+			<form action="{{ route('notas.update', $nota->idControl) }}" method="POST">
 		@method('PUT')
 		@csrf
 <div class="container">

@@ -48,7 +48,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Lista de Asadas</h3>
+          <h3 class="card-title">Informacion de la asada</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -58,14 +58,17 @@
           </div>
         </div>
         <div class="card-body">
-          <ul>
-            @forelse($asadas as $asadaitem)
-            <li><a href="{{ route('admin.show', $asadaitem)}}">{{ $asadaitem->Nom_Asada }}</a></li>
-            @empty
-            <li>No hay asadas registradas</li>
-            @endforelse
-            {{$asadas->links()}}
-          </ul>
+          <a href="{{ route('admin.edit', $asadas) }}">Editar</a>
+          <form method="POST" action="{{ route('admin.destroy', $asadas)}}">
+            @csrf @method('DELETE')
+            <button>Eliminar</button>
+          </form>
+          <h1>{{$asadas->Nom_Asada}}</h1>
+          <h5>Se registro el día: {{$asadas->Fecha_Registro}}</h5>
+          <h5>Presidente: {{$asadas->Presidente}}</h5>
+          <h5>Telefono: {{$asadas->Telefono}}</h5>
+          <h5>Correo: {{$asadas->Correo}}</h5>
+
         </div>
         <!-- /.card-body -->
         <div class="card-footer">

@@ -50,15 +50,15 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="POST" action="{{ route('create.store')}}">
-        @csrf
+      <form method="POST" action="{{ route('admin.update', $asadas)}}">
+        @csrf @method('PATCH')
         <div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Módulo de registro de ASADAS</legend>
+                        <legend class="text-center header">Editar Módulo de registro de ASADAS</legend>
 
                         <div class="form-group row">
 
@@ -68,7 +68,7 @@
                             <div class="col-md-8">
                             <label>
                                 Nombre de la ASADA<br></label>
-                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control">
+                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$asadas->Nom_Asada}}" class="form-control">
 
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                             <div class="col-md-8">
                               <label>
                                 Fecha de registro<br></label>
-                                <input name="Fecha_Registro" type="date" class="form-control">
+                                <input name="Fecha_Registro" type="date" value="{{$asadas->Fecha_Registro}}" class="form-control">
                             </div>
                         </div>
 
@@ -86,7 +86,7 @@
                             <div class="col-md-8">
                               <label>
                                 Número de cédula jurídica<br></label>
-                                <input name="ced_Juridica" type="int" placeholder="Ingrese el número de cédula jurídica" class="form-control">
+                                <input name="ced_Juridica" type="int" value="{{$asadas->ced_Juridica}}" class="form-control">
                             </div>
                         </div>
 
@@ -95,7 +95,7 @@
                             <div class="col-md-8">
                               <label>
                                 Número de convenio<br></label>
-                                <input name="Num_Convenio" type="int" placeholder="Ingrese el número de convenio" class="form-control">
+                                <input name="Num_Convenio" type="int" value="{{$asadas->Num_Convenio}}" class="form-control">
                             </div>
                         </div>
                             <div class="form-group row">
@@ -103,7 +103,7 @@
                             <div class="col-md-8">
                               <label>
                                 Cantidad de abonados<br></label>
-                                <input name="Cant_Abonados" type="int" placeholder="Ingrese la cantidad de abonados" class="form-control">
+                                <input name="Cant_Abonados" type="int" value="{{$asadas->Cant_Abonados}}" class="form-control">
                             </div>
                         </div>
 
@@ -122,7 +122,7 @@
                             <div class="col-md-8">
                               <label>
                                 Número de sección<br></label>
-                                <input name="Num_Sesion" type="int" placeholder="Ingrese el número de sección" class="form-control">
+                                <input name="Num_Sesion" type="int"value="{{$asadas->Num_Sesion}}" class="form-control">
                             </div>
                         </div>
 
@@ -131,7 +131,7 @@
                             <div class="col-md-8">
                               <label>
                                 Presidente<br></label>
-                                <input name="Presidente" type="text" placeholder="Ingrese el nombre del presidente" class="form-control">
+                                <input name="Presidente" type="text" value="{{$asadas->Presidente}}" class="form-control">
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@
                             <div class="col-md-8">
                               <label>
                                 Vicepresidente<br></label>
-                                <input name="VicePresidente" type="text" placeholder="Ingrese el nombre del vicepresidente" class="form-control">
+                                <input name="VicePresidente" type="text" value="{{$asadas->VicePresidente}}" class="form-control">
                             </div>
                         </div>
 
@@ -149,7 +149,7 @@
                             <div class="col-md-8">
                               <label>
                                 Tesorero<br></label>
-                                <input name="Tesorero" type="text" placeholder="Ingrese el nombre del tesorero" class="form-control">
+                                <input name="Tesorero" type="text" value="{{$asadas->Tesorero}}" class="form-control">
                             </div>
                         </div>
 
@@ -158,7 +158,7 @@
                             <div class="col-md-8">
                               <label>
                                 Vocal 1<br></label>
-                                <input name="Vocal_1" type="text" placeholder="Ingrese el nombre del vocal 1" class="form-control">
+                                <input name="Vocal_1" type="text" value="{{$asadas->Vocal_1}}" class="form-control">
                             </div>
                         </div>
 
@@ -167,7 +167,7 @@
                             <div class="col-md-8">
                               <label>
                                 Vocal 2<br></label>
-                                <input name="Vocal_2" type="text" placeholder="Ingrese el nombre del vocal 2" class="form-control">
+                                <input name="Vocal_2" type="text" value="{{$asadas->Vocal_2}}" class="form-control">
                             </div>
                         </div>
 
@@ -176,7 +176,7 @@
                             <div class="col-md-8">
                               <label>
                                 Fiscal<br></label>
-                                <input name="Fiscal" type="text" placeholder="Ingrese el nombre del fiscal" class="form-control">
+                                <input name="Fiscal" type="text" value="{{$asadas->Fiscal}}" class="form-control">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -184,7 +184,7 @@
                             <div class="col-md-8">
                               <label>
                                 Region<br></label>
-                                <input name="Region" type="text" placeholder="Ingrese la región" class="form-control">
+                                <input name="Region" type="text" value="{{$asadas->nombreRegion}}" class="form-control">
                             </div>
                         </div>
 
@@ -193,7 +193,7 @@
                             <div class="col-md-8">
                               <label>
                                 Razón de afiliación<br></label>
-                                <textarea class="form-control" id="message" name="Razon_Afiliacion" placeholder="Explique la razón de su a afiliación" rows="4"></textarea>
+                                <textarea class="form-control" id="message" name="Razon_Afiliacion" rows="4">{{$asadas->Razon_Afiliacion}}</textarea>
                             </div>
                         </div>
 
@@ -202,7 +202,7 @@
                             <div class="col-md-8">
                               <label>
                                 Teléfono<br></label>
-                                <input id="phone" name="Telefono" type="int" placeholder="Ingrese el número de teléfono" class="form-control">
+                                <input id="phone" name="Telefono" type="int" value="{{$asadas->Telefono}}" class="form-control">
                             </div>
                         </div>
 
@@ -211,16 +211,22 @@
                             <div class="col-md-8">
                               <label>
                                 Correo<br></label>
-                                <input id="email" name="Correo" type="email" placeholder="Ingrese el correo electrónico" class="form-control">
+                                <input id="email" name="Correo" type="email" value="{{$asadas->Correo}}" class="form-control">
                                 <br>
                             </div>
 
                             <div class="col-sm-12 col-xs-12" align="center">
-                             <button class="btn btn-primary border rounded">REGISTRAR</button>
+                             <button class="btn btn-primary border rounded">Actualizar</button>
                         </div>
 
-                </form>
-       </section>
+
+
+
+
+
+
+</form>
+    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
