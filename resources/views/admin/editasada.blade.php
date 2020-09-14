@@ -72,14 +72,6 @@
 
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Fecha de registro<br></label>
-                                <input name="Fecha_Registro" type="date" value="{{$asadas->Fecha_Registro}}" class="form-control">
-                            </div>
-                        </div>
 
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
@@ -109,11 +101,6 @@
 
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Fecha de solicitud<br></label>
-                                <input name="Fecha_Solicitud" type="date" class="form-control">
-                            </div>
                         </div>
 
 
