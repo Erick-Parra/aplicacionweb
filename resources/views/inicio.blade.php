@@ -9,13 +9,16 @@
         </div>
     </div>
     <div class="site-section text-primary dark-section" id="information" style="font-size: 16px; background-color:
-    #BBDEFB;">
+    #d7f5f5;">
         <h1>¿Quiénes Somos?</h1>
         <p style="font-size: 16px;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE NICOYA, HOJANCHA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
     </div>
-    <div class="text-secondary dark-section">
+    <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #d7f5f5;">
+         <p><img id="logoleras" src="assets/img/logos/olas.png" style="max-width:100%;width:100%;height:auto; margin-top: 0px;"></p>
+     </div>
+    <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
         <div class="container site-section" id="mision" style="padding: 21px;">
-            <p><img id="logoleras" src="assets/img/logos/Logotipo-LigadelAgua.png"></p>
+            
             <div class="row">
                 <div class="col-md-6"><i class="fa fa-check-square-o"></i>
                     <h3>MISIÓN</h3>
@@ -29,13 +32,14 @@
         </div>
     </div>
     <div>
+         
          <div class="container site-section" id="convenios">
             <h1>SERVICIOS</h1>
             <section class="bg-light">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-md-4" style="margin-top: 10px; background-color: #2196F3;">
-                            <div style="background-color:#B3E5FC;" class="border rounded shadow" data-aos="fade" data-aos-duration="600" data-aos-delay="500" data-aos-once="true">
+                        <div class="col-xs-12 col-md-4" style="margin-top: 10px; background-color: #005c79;">
+                            <div style="background-color:#d7f5f5;" class="border rounded shadow" data-aos="fade" data-aos-duration="600" data-aos-delay="500" data-aos-once="true">
                                 <div class="text-center w-100"><img  style="margin-top: 10px; "></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h1 style="font-size: 15px;text-align: center;">ADMINISTRATIVO</h1><i class=" fa fa-cogs"></i>
@@ -47,8 +51,8 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-xs-12 col-md-4" style="margin-top: 10px; background-color: #2196F3;">
-                            <div  style="background-color: #90CAF9;"class="border rounded shadow" data-aos="fade" data-aos-duration="600" data-aos-delay="500" data-aos-once="true">
+                         <div class="col-xs-12 col-md-4" style="margin-top: 10px; background-color: #005c79;">
+                            <div  style="background-color: #d7f5f5;"class="border rounded shadow" data-aos="fade" data-aos-duration="600" data-aos-delay="500" data-aos-once="true">
                                 <div class="text-center w-100"><img style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h1 style="font-size: 15px; text-align: center;">SERVICIOS LEGALES</h1><i class="fa fa-legal"></i>
@@ -59,8 +63,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-md-4" style="margin-top: 10px; background-color: #2196F3;">
-                            <div style="background-color: #B3E5FC;"class="border rounded shadow" data-aos="fade" data-aos-duration="600" data-aos-delay="500" data-aos-once="true">
+                        <div class="col-xs-12 col-md-4" style="margin-top: 10px; background-color: #005c79;">
+                            <div style="background-color: #d7f5f5;"class="border rounded shadow" data-aos="fade" data-aos-duration="600" data-aos-delay="500" data-aos-once="true">
                                 <div class="text-center w-100"><img style="margin-top: 10px;"></div>
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h1 style="font-size: 15px;text-align: center;">SERVICIOS TÉCNICOS</h1><i class="icon ion-waterdrop"></i>
@@ -77,6 +81,7 @@
         </div>
     </div>
     <div>
+        <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
         <div class="container site-section" id="Gallery">
             <h1>GALERÍA</h1>
             <p style="font-size: 15px;"></p>
@@ -116,10 +121,11 @@
 </div></div>
     </div>
     <div class="dark-section-final">
-        <div class="container site-section" id="convenios">
+        <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
+        <div class="container site-section" id="convenios" style="background-color: #d7f5f5;">
             <h1>Convenios</h1>
             <section class="bg-light">
-                <div class="container">
+                <div class="container" style="background-color: #d7f5f5;">
                     <div class="row">
                         <div class="col-sm-10 col-md-6 col-lg-4 offset-sm-1 offset-md-0 order-md-1 order-lg-1" style="margin-top: 20px;">
                             <div class="border rounded shadow bg-white" data-aos="fade" data-aos-duration="600" data-aos-delay="200" data-aos-once="true">
@@ -218,9 +224,9 @@
             </section>
         </div>
     </div>
-    <div class="footer-dark" style="background-color: rgb(48,165,215);">
+    <div class="footer-dark" style="background-color: #337894;">
         <div style="text-align:center;">
-            <h2 class="divider-style" style="margin-top:0px;"><span style="background-color: rgb(48,165,215);"><a href="#"></a>&nbsp;LIGA COMUNAL DEL AGUA</span></h2>
+            <h2 class="divider-style" style="margin-top:0px;"><span style="background-color: #337894;"><a href="#"></a>&nbsp;LIGA COMUNAL DEL AGUA</span></h2>
         </div>
         <footer>
             <div class="container">

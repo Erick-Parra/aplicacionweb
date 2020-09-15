@@ -44,7 +44,7 @@
     </style>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand sticky-top">
+    <nav class="navbar navbar-light navbar-expand sticky-top" style="background-color: #d7f5f5;">
         <div class="container"><img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png"><a class="navbar-brand" href="#"><strong>Liga Comunal del Agua</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>       
             
             <div
@@ -53,21 +53,21 @@
                     <li class="nav-item" role="presentation"><a class="nav-link active" href={{ route('inicio') }}>Inicio</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="">¿Quiénes Somos?</a>
                      <ul>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('JuntaDirectiva') }}>Junta Directiva</a></li>
-                           <li class="nav-item" role="presentation" ><a class="nav-link"  href={{ route('Funcionarios') }}>  Funcionarios</a></li>
+                            <li class="nav-item" style="background-color: #d7f5f5;" role="presentation"><a class="nav-link" href={{ route('JuntaDirectiva') }}>Junta Directiva</a></li>
+                           <li class="nav-item" style="background-color: #d7f5f5;" role="presentation" ><a class="nav-link"  href={{ route('Funcionarios') }}>  Funcionarios</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="">Servicios</a>
                         <ul>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('servicesAdmi') }}>Administrativos</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('servicesTecn') }}>Técnicos</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('servicesLegal') }}>Legales</a></li>
+                            <li class="nav-item" style="background-color: #d7f5f5;" role="presentation"><a class="nav-link" href={{ route('servicesAdmi') }}>Administrativos</a></li>
+                            <li class="nav-item" style="background-color: #d7f5f5;" role="presentation"><a class="nav-link" href={{ route('servicesTecn') }}>Técnicos</a></li>
+                            <li class="nav-item" style="background-color: #d7f5f5;" role="presentation"><a class="nav-link" href={{ route('servicesLegal') }}>Legales</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="">Información</a>
                          <ul>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href={{route('info') }}>Gráficos</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href={{ route('news') }}>Noticias</a></li>
+                            <li class="nav-item" style="background-color: #d7f5f5;" role="presentation"><a class="nav-link" href={{route('info') }}>Gráficos</a></li>
+                            <li class="nav-item" style="background-color: #d7f5f5;" role="presentation"><a class="nav-link" href={{ route('news') }}>Noticias</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{{ route('contact') }}">CONTÁCTENOS</a></li>

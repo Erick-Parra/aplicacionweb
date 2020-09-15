@@ -3,7 +3,8 @@
 <div class="container" id="info-container">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="text-center text-info" style="color: rgba(243,246,248,0.99); background-color: rgb(214, 234, 248);">CONTÁCTENOS</h2>
+            <br>
+            <h2 class="text-center text-info" style="color: rgba(243,246,248,0.99); ">CONTÁCTENOS</h2>
         </div>
         <div class="col-12 col-sm-6 col-md-6"  id="contact-box">
 
@@ -11,7 +12,7 @@
             <div class="info-box"><i class="fa fa-map my-info-icons"></i><span class="text-uppercase text-info">DIRECCIÓN: </span><span>Del supermercado hermanos Pineda, 200mtrs al oeste, edificio a mano izquierda</span></div>
             <br>
             <div class="info-box"><i class="fa fa-envelope my-info-icons"></i><span class="text-uppercase text-info">EMAIL: </span><span>ligacomunaldelagua@gmail.com</span></div>
-            <br>
+            <br>s
             <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">TELÉFONO: </span><span>4034-9529</span></div>
         </div>
         <div class="col-12 col-sm-6 col-md-6 site-form">
