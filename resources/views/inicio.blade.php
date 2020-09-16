@@ -1,11 +1,13 @@
 @include('partials.nav')
 
    </nav>
+
     <div id="info" style="height: 244px;">
         <div class="jumbotron" >
-            <h1 style="font-size: 20px;">Horario: Lunes a viernes de 8: 00 am a 4: 00 pm</h1>
+            
+            <p style="font-size: 20px;">Horario: Lunes a viernes de 8: 00 am a 4: 00 pm</p>
             <p style="font-size: 20px;">Somos su mejor opción para mejorar los servicios de las ASADAS de Nicoya, Hojancha y Nandayure</p>
-            <p><a class="btn btn-primary border rounded" role="button" style="color: rgba(243,246,248,0.99);background-color: rgb(15,112,183);">LEER MÁS</a></p>
+            <p><a class="btn btn-primary border rounded" role="button" style="color: rgba(243,246,248,0.99);background-color: #337894;">LEER MÁS</a></p>
         </div>
     </div>
     <div class="site-section text-primary dark-section" id="information" style="font-size: 16px; background-color:
@@ -84,6 +86,7 @@
         <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
         <div class="container site-section" id="Gallery">
             <h1>GALERÍA</h1>
+            <br>
             <p style="font-size: 15px;"></p>
             <div class="row">
                 <div class="col-md-4" >
@@ -121,11 +124,11 @@
 </div></div>
     </div>
     <div class="dark-section-final">
-        <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
-        <div class="container site-section" id="convenios" style="background-color: #d7f5f5;">
-            <h1>Convenios</h1>
+        <div class="text-secondary dark-section"  style="background-color: #80c5e8;">
+        <div class="container site-section"  id="convenios"><h1>Convenios</h1>
+            <br>
             <section class="bg-light">
-                <div class="container" style="background-color: #d7f5f5;">
+                <div class="container" style="background-color: #005c79;" >
                     <div class="row">
                         <div class="col-sm-10 col-md-6 col-lg-4 offset-sm-1 offset-md-0 order-md-1 order-lg-1" style="margin-top: 20px;">
                             <div class="border rounded shadow bg-white" data-aos="fade" data-aos-duration="600" data-aos-delay="200" data-aos-once="true">
@@ -224,19 +227,19 @@
             </section>
         </div>
     </div>
-    <div class="footer-dark" style="background-color: #337894;">
+    <div class="footer-dark" style="background-color: #003357;">
         <div style="text-align:center;">
-            <h2 class="divider-style" style="margin-top:0px;"><span style="background-color: #337894;"><a href="#"></a>&nbsp;LIGA COMUNAL DEL AGUA</span></h2>
+            <h2 class="divider-style" style="margin-top:0px;"><span style="background-color:#003357; color: rgba(243,246,248,0.99);"><a href="#"></a>&nbsp;LIGA COMUNAL DEL AGUA</span></h2>
         </div>
         <footer>
             <div class="container">
                 <div class="row" style="margin-top:10px;">
                     <div class="col-md-5 item text" style="margin-bottom:0px; text-align: left;">
-                        <h3>desarrollado por</h3>
+                        <h3 style="color: #78909C;">desarrollado por</h3>
                         <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).png" width="150" height="200" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.png" width="100" style="filter: contrast(200%);"></p>
                     </div>
                     <div class="col-sm-6 col-md-4 item" style="margin: 0px;padding: -5px;width: 168px;">
-                        <h3>CONTÁCTOS</h3>
+                        <h3 style="color: #78909C;">CONTÁCTOS</h3>
                         <ul>
                             <li style="font-size: 15px; text-align: left;">CORREO: ligacomunaldelagua@gmail.com</li>
                             <li><a href="#" style="opacity: 1;font-size: 15px;">OFICINA: 4034-9529</a></li>
@@ -244,7 +247,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
-                        <h3>SERVICIOS</h3>
+                        <h3 style="color: #78909C;">SERVICIOS</h3>
                         <ul>
                             <li><a href="#" style="opacity: 1;font-size: 15px;">Servicios Administrativos</a></li>
                             <li><a href="#" style="opacity: 1;font-size: 15px;">Servicios Legales</a></li>
@@ -253,7 +256,7 @@
                     </div>
                 </div>
                 <div class="col item social" style="margin-top:15px;"><a href="#"><i class="fa fa-facebook-official" style="filter: brightness(200%) contrast(200%);"></i></a><a href="#"><i class="icon ion-social-whatsapp-outline" style="filter: brightness(200%) contrast(200%);"></i></a></div>
-                <div style="text-align:center;margin-top:-40px;">
+                <div style="text-align:center;margin-top:-40px; color: #78909C;">
                     <h2 class="divider-style"></h2>
                 </div>
                 <p class="copyright" style="filter: blur(0px) contrast(80%) grayscale(5%) saturate(115%) sepia(0%);opacity: 0.99;">Created by NEPV © 2020</p>
