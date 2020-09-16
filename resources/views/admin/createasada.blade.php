@@ -183,7 +183,7 @@
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">
                               <label>
-                                Region<br></label>
+                                Región<br></label>
                                 <input name="Region" type="text" placeholder="Ingrese la región" class="form-control">
                             </div>
                         </div>
