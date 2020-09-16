@@ -12,13 +12,13 @@
                     <p class="description">DIRECCIÓN EJECUTIVA DE LA LCA</p>
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/IMG-20200817-WA0009.jpg">
+                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/primero.jpeg">
                     <h3 class="name" style="font-size: 20px;text-align: center;">JESÚS MONTERO PRENDAS</h3>
                     <p class="title" style="color: rgb(11,11,11);">ING. AGRÓNOMO</p>
                     <p class="description">USEDES DEPARTAMENTO TÉCNICO</p>
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/IMG-20200817-WA0008.jpg">
+                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/segundo.jpeg">
                     <h3 class="name" style="font-size: 20px;">GAN CARLOS BARRANTES</h3>
                     <p class="title" style="color: rgb(11,11,11);">ING. AGRÓNOMO</p>
                     <p class="description">USEDES DEPARTAMENTO TÉCNICO</p>
