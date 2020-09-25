@@ -5,7 +5,7 @@
     <div id="info" style="height: 244px;">
         <div class="jumbotron" >
             
-            <p style="font-size: 20px;">Horario: Lunes a viernes de 8: 00 am a 4: 00 pm</p>
+            <p style="font-size: 20px;">Horario: lunes a viernes de 8: 00 am a 4: 00 pm</p>
             <p style="font-size: 20px;">Somos su mejor opción para mejorar los servicios de las ASADAS de Nicoya, Hojancha y Nandayure</p>
             <p><a class="btn btn-primary border rounded" role="button" style="color: rgba(243,246,248,0.99);background-color: #337894;">LEER MÁS</a></p>
         </div>
@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-md-6"><i class="fa fa-check-square-o"></i>
                     <h3>MISIÓN</h3>
-                    <p style="font-size: 16px;">FORTALECEMOS LA GESTIÓN COMUNITARIA DEL AGUA, PROMOVIENDO ORGANIZACIONES QUE PRESTEN SERVICIOS DE CALIDAD TRABAJAMOS PARA CONSOLIDAR LA ASOCIATIVIDAD.</p>
+                    <p style="font-size: 16px;">FORTALECEMOS LA GESTIÓN COMUNITARIA DEL AGUA, PROMOVIENDO ORGANIZACIONES QUE PRESTEN SERVICIOS DE CALIDAD. TRABAJAMOS PARA CONSOLIDAR LA ASOCIATIVIDAD, ARTICULANDO ESFUERZOS CON LOS ACTORES INVOLUCRADOS EN LA GESTIÓN INTEGRAL DEL RECURSO HÍDRICO.</p>
                 </div>
                 <div class="col-md-6"><i class="fa fa-eye"></i>
                     <h3>Visión</h3>
@@ -48,7 +48,7 @@
                     <p></p>
                                     <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;
                                     height:270px; font-size: 16px;"> 
-                                    Se ofrece el servicio contable de acuerdo al catálogo de cuentas del AYA. Incluye la elaboración de estados financieros mensuales, declaraciones anuales al ministerio de hacienda, asesoramiento en el egreso, manejo de caja chica, registro
+                                    Se ofrece el servicio contable de acuerdo al catálogo de cuentas del AyA. Incluye la elaboración de estados financieros mensuales, declaraciones anuales al ministerio de hacienda, asesoramiento en el egreso, manejo de caja chica, registro
                         de ingresos, egresos, acompañamiento en asambleas y facturación electrónica mediante dos plataformas.</p>
                                 </div>
                             </div>
@@ -242,7 +242,7 @@
                         <h3 style="color: #78909C;">CONTÁCTOS</h3>
                         <ul>
                             <li style="font-size: 15px; text-align: left;">CORREO: ligacomunaldelagua@gmail.com</li>
-                            <li><a href="#" style="opacity: 1;font-size: 15px;">OFICINA: 4034-9529</a></li>
+                            <li><a href="#" style="opacity: 1;font-size: 15px;">OFICINA: 4080-1086</a></li>
                             <li><a href="#"></a></li>
                         </ul>
                     </div>

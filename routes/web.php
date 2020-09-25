@@ -23,6 +23,12 @@ Route::post('/admin','AdminController@store')->name('create.store');
 Route::get('/admin/{asada}','AdminController@show')->name('admin.show');
 Route::delete('/admin/{asada}', 'AdminController@destroy')->name('admin.destroy');
 
+// Rutas Junta Directiva
+Route::get('/buscar/buscarjunta','juntaController@buscar')->name('buscarjunta');
+Route::get('/editarjunta/{idjunta}', 'juntaController@editarjunta' )->name('editar');
+Route::put('/editarjunta/{idjunta}', 'juntaController@update' )->name('update');
+
+
 //Rutas controlador mapeo con diferente rutas
 Route::get('/admapeo/crearmapeo','ControllerMap@create')->name('map');
 Route::post('/admapeo','ControllerMap@store')->name('map.store');

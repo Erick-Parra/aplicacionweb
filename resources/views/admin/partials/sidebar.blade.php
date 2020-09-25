@@ -110,9 +110,9 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../tables/simple.html" class="nav-link">
+                <a href="{{ route('buscarjunta')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
+                  <p>JuntaDirectiva</p>
                 </a>
               </li>
               <li class="nav-item">
