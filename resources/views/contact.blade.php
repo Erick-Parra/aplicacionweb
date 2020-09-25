@@ -12,7 +12,7 @@
             <div class="info-box"><i class="fa fa-map my-info-icons"></i><span class="text-uppercase text-info">DIRECCIÓN: </span><span>Del supermercado hermanos Pineda, 200mtrs al oeste, edificio a mano izquierda</span></div>
             <br>
             <div class="info-box"><i class="fa fa-envelope my-info-icons"></i><span class="text-uppercase text-info">EMAIL: </span><span>ligacomunaldelagua@gmail.com</span></div>
-            <br>s
+            <br>
             <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">TELÉFONO: </span><span>4034-9529</span></div>
         </div>
         <div class="col-12 col-sm-6 col-md-6 site-form">
