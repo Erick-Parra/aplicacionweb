@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -34,7 +35,7 @@
           <div class="col-sm-12">
             <div class="card">
             <div class="card-header">
-            <ol class="breadcrumb float-sm-left">
+            <ol class="breadcrumb float-sm-left"> <img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png">
               <li class="breadcrumb-item active">Administración Liga Comunal del Agua</li>
             </ol>
           </div>

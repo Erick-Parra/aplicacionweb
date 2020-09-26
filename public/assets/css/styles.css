@@ -108,4 +108,6 @@ p {
 .col.item.social {
   margin-top: -70px;
 }
-
+.table {
+  background-color: #FF00FF;
+}
