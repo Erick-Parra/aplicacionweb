@@ -50,10 +50,22 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="POST" action="{{ route('map.store')}}">
-        <form action="Post" method="POST" enctype="multipart/form-data">
+    
+          <form method="POST" action="{{ route('map.store')}}" enctype= "multipart/form-data" >
         @csrf
+       
         <div class="container">
+
+
+<div class="flash-message"> 
+ @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
+  @if(Session::has('alert-' . $msg)) 
+
+  <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p> 
+  @endif 
+ @endforeach 
+ </div> <!-- end .flash-message --> 
+
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
@@ -70,15 +82,21 @@
                             </div>
                         </div>
 
+
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Archivo SHP<br></label>
-                                <input name="Archivo_SHP" type="file" placeholder="Subir Archivo" class="form-control">
-                            </div>
+                            <label>
+                          Archivo SHP
+                              </labe>
+                       
+                         </div>
                         </div>
-
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                          <p><label for="Archivo_SHP">
+                              <input type="file" name="Archivo_SHP">
+                              </label></p>
+                        </div>
                             <div class="col-sm-12 col-xs-12" align="center">
                              <button class="btn btn-primary border rounded">REGISTRAR</button>
                         </div>

@@ -53,6 +53,14 @@
       <form method="POST" action="{{ route('admin.update', $asadas)}}">
         @csrf @method('PATCH')
         <div class="container">
+                <div class="flash-message"> 
+ @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
+  @if(Session::has('alert-' . $msg)) 
+
+  <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p> 
+  @endif 
+ @endforeach 
+ </div> <!-- end .flash-message --> 
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
@@ -203,8 +211,10 @@
                             </div>
 
                             <div class="col-sm-12 col-xs-12" align="center">
-                             <button class="btn btn-primary border rounded">Actualizar</button>
+                             <button class="btn btn-warning border rounded">Actualizar</button>
+                             <a href="{{route('buscaras')}}" class="btn btn-success border rounded">Regresar</a>
                         </div>
+
 
 
 

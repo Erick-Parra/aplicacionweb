@@ -51,10 +51,21 @@
 		<!-- Main content -->
 		
 		<section class="content">
-			<form action="{{ route('mapeos.update', $mapeos->IdMapeo) }}" method="POST">
+
+
+			<form action="{{ route('mapeos.update', $mapeos->IdMapeo) }}" method="POST" enctype= "multipart/form-data">
+			
 		@method('PUT')
 		@csrf
 <div class="container">
+			<div class="flash-message"> 
+ @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
+  @if(Session::has('alert-' . $msg)) 
+
+  <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p> 
+  @endif 
+ @endforeach 
+ </div> <!-- end .flash-message --> 
 		<div class="row">
 				<div class="col-md-12">
 						<div class="well well-sm">
@@ -68,25 +79,27 @@
 												</div>
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+														<br/>
+														<label>
+													Archivo SHP
+												      </label>
+												      <br/>
+												      <br/>
+													<img width="150px" src="{{ Storage::url ($mapeos->Archivo_SHP)}}">	
+													<br/> 
 												</div>
-
+												 </div>
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Archivo SHP<br></label>
-															<br/>
-															 Images/{{ $mapeos->Archivo_SHP}}
-															<br/>	
-																<input style="display: table-column text-align: center" name="Archivo" type="file" class="form-control"
-																value="{{$mapeos->Archivo_SHP}}">
-														</div>
+														<p><label for="Archivo_SHP">
+															<input type="file" name="Archivo_SHP">
+															</label></p>
 												</div>
-														<div class="col-sm-12 col-xs-12" align="center">
-														 <button class="btn btn-warning border rounded" type="submit">Editar</button>
+														<div class="col-sm-13 col-xs-13" align="center">
+														 <button class="btn btn-warning border rounded" type="submit">Actualizar</button>
+														 <a href="{{route('buscarmap')}}" class="btn btn-success border rounded">Regresar</a>
 												</div>
-												<a href="{{route('buscarmap')}}">Regresar</a>
-												<br>
+
 												  <div class="col-md-8">
                             
 			</form>

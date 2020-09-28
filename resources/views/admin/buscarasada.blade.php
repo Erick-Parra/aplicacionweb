@@ -23,13 +23,13 @@
     border-collapse: collapse;
     color: MIDNIGHTBLUE; 
     background-color: SKYBLUE;
+   
   }
   th, td{
    width: 5px;
     height: 5px;
 
   }
- 
 </style>
 <body class="hold-transition sidebar-mini">
 
@@ -66,7 +66,7 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="GET" action="{{ route('buscarmap')}}">
+      <form method="POST" action="{{ route('buscaras')}}">
         @csrf
 <div class="container">
   <div class="flash-message"> 
@@ -82,7 +82,8 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Registros de Mapeo</legend>
+                      <legend class="text-center header"></legend>
+                        <legend class="text-center header">Registro de Asadas</legend>
 
                         <div class="form-group row">
                             
@@ -94,46 +95,84 @@
                             <div class="col-md-8">
                               <label>
                                 Nombre ASADA<br></label>
+                                <form action="{{ route('searchasada')}}" method="GET">
                                 <div class="input-group">
-                                  <input name="buscarpor" type="" class="form-control">
+                                  <input name="Nom_Asada" type="search" class="form-control">
                                   <span class="input-group-prepend">
-                                  <button type="submit" class="btn btn-primary">BUSCAR</button><br>
+                                    <button type="submit" class="btn btn-primary">BUSCAR</button><br>
                                   </span>
                                 </div>
-                              </form>                              
-                              
+                              </form>    
                             </div>
                             <br>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"   >
                               </div>
                               <br>
                               <div class="table-responsive">
-                            <table class= "table table-hover table-striped table-bordered " style="opacity: 1; border="5" style="margin: 0 auto;">
-    <caption>Registros Mapeo</caption>
-
-<!--Table-->
-    <thead class="thead-dark">
+                            <table class= "table table-striped table-bordered " style="opacity: 1; border="2" style="margin: 0 auto" >
+    <caption>Registros de Asadas</caption>
+    <thead class="thead-dark" >
   <tr>
+    
     <th>#</th>
+
     <th>Nombre ASADA</th>
 
-    <th>Archivo SHP</th>
+    <th>Cedula Juridica</th>
 
-    <th>Accion</th>
+    <th>Abonados</th>
+
+    <th>Presidente</th>
+
+    <th>Vicepresidente</th>
+
+    <th>Tesorero</th>
+
+    <th>Vocal1</th>
+
+    <th>Vocal2</th>
+
+    <th>Fiscal</th>
+
+    <th>Telefono</th>
+
+    <th >Correo</th>
+    
+     <th>Accion</th>
+
 
   </tr>
  
-  </thead>
-  @foreach($registro as $map)
+  
+  @foreach($registro as $reg)
   <tr>
     <td>{{$loop->iteration}}</td>
-    <td>{{$map->Nom_Asada}}</td>
+
+    <td>{{$reg->Nom_Asada}}</td>
+
+    <td>{{$reg->ced_Juridica}}</td>
+
+    <td>{{$reg->Cant_Abonados}}</td>
+
+    <td>{{$reg->Presidente}}</td>
+
+    <td>{{$reg->VicePresidente}}</td>
+
+    <td>{{$reg->Tesorero}}</td>
+
+    <td>{{$reg->Vocal_1}}</td>
+
+    <td>{{$reg->Vocal_2}}</td>
+
+    <td>{{$reg->Fiscal}}</td>
+
+    <td>{{$reg->Telefono}}</td>
+
+    <td>{{$reg->Correo}}</td>
+
     <td>
-    <img width="100px"src="{{ Storage::url ($map->Archivo_SHP)}}">
-    </td>
-    <td>
-      <a href="{{route('mapeos.editar', $map)}}" class="btn btn-warning btn-sm">Editar</a>
-      <form action="{{ route('mapeos.eliminar', $map) }}" class="d-inline" method="POST">
+      <a href="{{route('admin.edit', $reg)}}" class="btn btn-warning btn-sm">Editar</a>
+      <form action="{{ route('admin.destroy', $reg) }}" class="d-inline" method="POST">
     @method('DELETE')
     @csrf
     <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>

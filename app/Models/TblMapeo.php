@@ -7,7 +7,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\Collection;
 /**
  * Class TblMapeo
  * 
@@ -17,6 +17,8 @@ use Illuminate\Database\Eloquent\Model;
  * 
  * @property TblRegistroasada $tbl_registroasada
  *
+ *  @property Collection|TblMapeo[]  $tbl_empleadocontrols
+
  * @package App\Models
  */
 class TblMapeo extends Model
@@ -31,12 +33,18 @@ class TblMapeo extends Model
 	];
 
 	protected $fillable = [
-		'Archivo_SHP',
-		'Nom_Asada'
+		'Nom_Asada',
+		'Archivo_SHP'
+
 	];
+	
 
 	public function tbl_registroasada()
 	{
 		return $this->belongsTo(TblRegistroasada::class, 'Nom_Asada', 'Nom_Asada');
+	}
+
+	public function scopeSearch($query, $Nom_Asada){
+		return $query->where('Nom_Asada', 'LIKE', "%$Nom_Asada%");
 	}
 }

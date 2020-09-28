@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TblMapeo;
+use Illuminate\Support\Facades\Storage;
+use App;
 
 class ControllerMap extends Controller
 {
@@ -15,9 +17,13 @@ class ControllerMap extends Controller
 
      public function index(Request $request)
     {
-    
-      $name =$request->get('buscarpor');
-      $registro = TblMapeo::where('Nom_Asada','like',"%Nom_Asada%")->paginate(5);
+
+        //$datos['registro']=TblMapeo::paginate(5);
+      $registro=TblMapeo::search($request->Nom_Asada)->orderBy('idmap', 'DESC')->paginate(5);
+
+   
+    //  $name =$request->get('buscarpor');
+     // $registro = TblMapeo::where('Nom_Asada','like',"%Nom_Asada%")->paginate(5);
 
      return view ('admin.buscarmapeo', compact('registro'));
 
@@ -39,18 +45,34 @@ class ControllerMap extends Controller
 
     public function update (Request $request, $idmap)
     {
+          $mapeoActualizado=request()->except(['_token','_method']);
 
-        $mapeoActualizado = TblMapeo::findOrFail($idmap);
-       // $mapeoActualizado->Nom_Asada = $request->input('Nom_Asada');
-        $mapeoActualizado->Archivo_SHP = $request->input('Archivo_SHP');
-        $mapeoActualizado->save();
+        if($request->hasFile('Archivo_SHP'))
+        {
+          $mapeos= TblMapeo::findOrFail($idmap);
 
+          Storage::delete('public/'.$mapeos->Archivo_SHP);
+        
+          $mapeoActualizado['Archivo_SHP'] = $request->file('Archivo_SHP')->store('public');
+        }
+
+          $request->session()->flash('alert-success', 'Actualización exitosa!'); 
+
+        TblMapeo::where('IdMapeo','=',$idmap)->update($mapeoActualizado);
+
+        $mapeos = TblMapeo::findOrFail($idmap);
+        return view('admin.editarmapeo',compact('mapeos'));
+       // $mapeoActualizado->save();
             return back();
     }
-    public function eliminar($idmap){
+    public function eliminar(Request $request,$idmap){
+     
+        $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
 
         $mapeoEliminar = TblMapeo::findOrFail($idmap);
         $mapeoEliminar->delete();
+ 
+
 
         return back();
     }
@@ -63,27 +85,30 @@ class ControllerMap extends Controller
 
      public function store(Request $request){
 
-        $datosmapeo=request()->all();
-       // $datosmapeo=request()->except('_token');
+     // $campos=[
+       // 'Nombre'=>'required|string|max:100',
+       // 'Archivo'=>'required|max:10000|mimes:jpeg,png,jpg'
+   // ];
+   // $Mensaje=["required"=>'El :attribute es requerido'];
+   // $this->validate($request,$campos,$Mensaje);
 
-        if($archivo=$request->file('Archivo')){
-            $nombre=$archivo->getClientOriginalName();
-            $archivo->move('Images', $nombre);
-            $datosmapeo['Archivo_SHP']=$nombre;
+     //  $mapeoAgregado=request()->all();
+
+        $mapeoAgregado=request()->except('_token');
+
+        if($request->hasFile('Archivo_SHP'))
+       {
+          $mapeoAgregado['Archivo_SHP'] = $request->file('Archivo_SHP')->store('public');
         }
 
-          TblMapeo::create($datosmapeo);
+         $request->session()->flash('alert-success', 'Añadido exitosamente!'); 
 
-        //TblMapeo::create([
-            // 'IdMapeo' => Request('IdMapeo'),
-           // 'Nom_Asada' => Request('Nom_Asada'),
-           // 'Archivo_SHP' => Request('Archivo_SHP'),
+        TblMapeo::create($mapeoAgregado);
 
-        //]);
+  
+        //return response()->json($mapeoAgregado);
 
         return back();
-
-
     }
     }
     
