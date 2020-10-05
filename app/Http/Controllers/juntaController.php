@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\JuntaDirectiva;
+use App\Http\Requests\JuntaRequest;
 use App;
 
 class juntaController extends Controller
@@ -38,7 +39,7 @@ class juntaController extends Controller
         return back();
     }
 
-    public function update(Request $request, $id)
+    public function update(JuntaRequest $request, $id)
     {
 
         $notaActualizada = JuntaDirectiva::findOrFail($id);

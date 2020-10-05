@@ -78,7 +78,9 @@
 														<div class="col-md-8">
 														<label>
 																Presidente<br></label>
-																<input style="display: table-column text-align: center" name="Presidente" type="text"  class="form-control" value="{{$nota->Presidente}}">
+																<input style="display: table-column text-align: center" name="Presidente" type="text"  class="form-control  {{ $errors->has('Presidente')?'is-invalid':''}} " value="{{$nota->Presidente}}">
+																 {!! $errors->first('Presidente','<div class="invalid-feedback">Campo presidente requerido</div>')!!}
+
 				
 														</div>
 												</div>
@@ -91,8 +93,9 @@
 														<div class="col-md-8">
 															<label>
 																vicePresidente<br></label>
-																<input style="display: table-column text-align: center" name="vicePresidente" type="text" class="form-control"
+																<input style="display: table-column text-align: center" name="vicePresidente" type="text" class="form-control  {{ $errors->has('vicePresidente')?'is-invalid':''}} "
 																value="{{$nota->vicePresidente}}">
+																 {!! $errors->first('vicepresidente','<div class="invalid-feedback">Campo  vicepresidente requerido</div>')!!}
 														</div>
 												</div>
 
@@ -101,7 +104,8 @@
 														<div class="col-md-8">
 															<label>
 																Secretario<br></label>
-																<input name="Secretario" type="text" class="form-control" value="{{$nota->Secretario}}">
+																<input name="Secretario" type="text" class="form-control {{ $errors->has('Secretario')?'is-invalid':''}}" value="{{$nota->Secretario}}">
+																 {!! $errors->first('Secretario','<div class="invalid-feedback">Campo secretario requerido</div>')!!}
 														</div>
 												</div>
 												<div class="form-group row">
@@ -112,7 +116,8 @@
 														<div class="col-md-8">
 														<label>
 																Tesorero<br></label>
-																<input style="display: table-column text-align: center" name="Tesorero" type="text"  class="form-control" value="{{$nota->Tesorero}}">
+																<input style="display: table-column text-align: center" name="Tesorero" type="text"  class="form-control  {{ $errors->has('Tesorero')?'is-invalid':''}}" value="{{$nota->Tesorero}}">
+																 {!! $errors->first('Tesorero','<div class="invalid-feedback">Campo tesorero requerido</div>')!!}
 				
 														</div>
 												</div>
@@ -122,7 +127,8 @@
 														<div class="col-md-8">
 															<label>
 																Vocal<br></label>
-																<input name="Vocal" type="text" class="form-control" value="{{$nota->Vocal}}">
+																<input name="Vocal" type="text" class="form-control {{ $errors->has('Vocal')?'is-invalid':''}}" value="{{$nota->Vocal}}">
+																 {!! $errors->first('Vocal','<div class="invalid-feedback">Campo vocal requerido</div>')!!}
 														</div>
 												</div>
 												 <div class="form-group row">
@@ -130,7 +136,8 @@
 														<div class="col-md-8">
 															<label>
 																Suplente1<br></label>
-																<input name="Suplente1" type="text" class="form-control" value="{{$nota->Suplente1}}">
+																<input name="Suplente1" type="text" class="form-control {{ $errors->has('Suplente1')?'is-invalid':''}}" value="{{$nota->Suplente1}}">
+																 {!! $errors->first('Suplente1','<div class="invalid-feedback">Campo suplente 1 requerido</div>')!!}
 														</div>
 												</div>
 
@@ -139,7 +146,8 @@
 														<div class="col-md-8">
 															<label>
 																Suplente2<br></label>
-																<input name="Suplente2" type="text" class="form-control" value="{{$nota->Suplente2}}">
+																<input name="Suplente2" type="text" class="form-control {{ $errors->has('Suplente2')?'is-invalid':''}}" value="{{$nota->Suplente2}}">
+																 {!! $errors->first('Suplente2','<div class="invalid-feedback">Campo suplente 2 requerido</div>')!!}
 														</div>
 												</div>
 
@@ -148,11 +156,13 @@
 														<div class="col-md-8">
 															<label>
 																Fiscal<br></label>
-																<input name="Fiscal" type="text" class="form-control" value="{{$nota->Fiscal}}">
+																<input name="Fiscal" type="text" class="form-control {{ $errors->has('Fiscal')?'is-invalid':''}}" value="{{$nota->Fiscal}}">
+																 {!! $errors->first('Fiscal','<div class="invalid-feedback">Campo fiscal requerido</div>')!!}
 														</div>
 												</div>
 													<div class="col-sm-12 col-xs-12" align="center">
-														 <button class="btn btn-warning border rounded" type="submit">Editar</button>
+														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
+														 	 <a href="{{route('buscarjunta')}}" class="btn btn-success border rounded">Regresar</a>
 												</div>
 			</form>
 		</section>

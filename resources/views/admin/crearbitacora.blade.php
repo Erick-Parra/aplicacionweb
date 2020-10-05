@@ -61,6 +61,7 @@
   @endif 
  @endforeach 
  </div> <!-- end .flash-message --> 
+
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
@@ -78,7 +79,8 @@
                             <div class="col-md-8">
                             <label>
                                 Nombre de la ASADA<br></label>
-                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control">
+                                <input style="display: table-column text-align: center" name="Nom_Asada" value="{{ old('Nom_Asada')}}" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
+                                 {!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
         
                             </div>
                         </div>
@@ -87,7 +89,8 @@
                             <div class="col-md-8">
                               <label>
                                 Fecha Control<br></label>
-                                <input name="Fecha Control" type="date" class="form-control">
+                                <input name="Fecha Control" value="{{ old('Fecha_Control')}}" type="date" class="form-control {{ $errors->has('Fecha_Control')?'is-invalid':''}} ">
+                                 {!! $errors->first('Fecha_Control','<div class="invalid-feedback">Campo fecha requerido</div>')!!}
                             </div>
                         </div>
 
@@ -96,7 +99,8 @@
                             <div class="col-md-8">
                               <label>
                                 Encargado<br></label>
-                                <input style="display: table-column text-align: center" name="Encargado" type="text" placeholder="Nombre del Encargado" class="form-control">
+                                <input style="display: table-column text-align: center" name="Encargado" value="{{ old('Encargado')}}" type="text" placeholder="Nombre del Encargado" class="form-control {{ $errors->has('Encargado')?'is-invalid':''}} ">
+                                 {!! $errors->first('Encargado','<div class="invalid-feedback">Campo encargado requerido</div>')!!}
                             </div>
                         </div>
 
@@ -105,7 +109,8 @@
                             <div class="col-md-8">
                               <label>
                                 Ubicación/acueducto<br></label>
-                                <input name="Ubicacion" type="text" placeholder="Digite Ubicación/acueducto" class="form-control">
+                                <input name="Ubicacion" value="{{ old('Ubicacion')}}"type="text" placeholder="Digite Ubicación/acueducto" class="form-control {{ $errors->has('Ubicacion')?'is-invalid':''}} ">
+                                 {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicacion requerido</div>')!!}
                             </div>
                         </div>
                         <legend class="text-center header">Detalles de resultado del monitoreo</legend>
@@ -114,7 +119,8 @@
                             <div class="col-md-8">
                               <label>
                                 Turbiedad<br></label>
-                                <input name="Turbiedad" type="text" placeholder="Ingrese rango alerta:1 max.adamisible: 5 " class="form-control">
+                                <input name="Turbiedad" value="{{ old('Turbiedad')}}"type="text" placeholder="Ingrese rango alerta:1 max.adamisible: 5 " class="form-control {{ $errors->has('Turbiedad')?'is-invalid':''}} ">
+                                 {!! $errors->first('Turbiedad','<div class="invalid-feedback">Campo turbiedad requerido</div>')!!}
                             </div>
                         </div>
 
@@ -123,7 +129,8 @@
                             <div class="col-md-8">
                               <label>
                                 Olor<br></label>
-                                <input name="Olor" type="text" placeholder="No aceptable / aceptable " class="form-control">
+                                <input name="Olor" value="{{ old('Olor')}}" type="text" placeholder="No aceptable / aceptable " class="form-control {{ $errors->has('Olor')?'is-invalid':''}} ">
+                                 {!! $errors->first('Olor','<div class="invalid-feedback">Campo olor requerido</div>')!!}
                             </div>
                         </div>
                          <div class="form-group row">
@@ -131,7 +138,8 @@
                             <div class="col-md-8">
                               <label>
                                 Cloro residual<br></label>
-                                <input name="Cloro" type="text" placeholder="Ingrese rango 0,3 A 0,6" class="form-control">
+                                <input name="Cloro" value="{{ old('Cloro')}}" type="text" placeholder="Ingrese rango 0,3 A 0,6" class="form-control {{ $errors->has('Cloro')?'is-invalid':''}} ">
+                                 {!! $errors->first('Cloro','<div class="invalid-feedback">Campo cloro requerido</div>')!!}
                             </div>
                         </div>
 
@@ -140,7 +148,8 @@
                             <div class="col-md-8">
                               <label>
                                 PH<br></label>
-                                <input name="PH" type="text" placeholder="Ingrese rango 0,6 A 8,0" class="form-control">
+                                <input name="PH"  value="{{ old('PH')}}"type="text" placeholder="Ingrese rango 0,6 A 8,0" class="form-control {{ $errors->has('PH')?'is-invalid':''}} ">
+                                 {!! $errors->first('PH','<div class="invalid-feedback">Campo PH requerido</div>')!!}
                             </div>
                         </div>
 
@@ -149,7 +158,8 @@
                             <div class="col-md-8">
                               <label>
                                 Sabor<br></label>
-                                <input name="Sabor" type="text" placeholder="No aceptable / aceptable" class="form-control">
+                                <input name="Sabor" value="{{ old('Sabor')}}" type="text" placeholder="No aceptable / aceptable" class="form-control {{ $errors->has('Sabor')?'is-invalid':''}} ">
+                                 {!! $errors->first('Sabor','<div class="invalid-feedback">Campo sabor requerido</div>')!!}
                             </div>
                         </div>
 
@@ -158,7 +168,8 @@
                             <div class="col-md-8">
                               <label>
                                 Temperatura<br></label>
-                                <input name="Temperatura" type="text" placeholder="NO aplica" class="form-control">
+                                <input name="Temperatura" value="{{ old('Temperatura')}}"type="text" placeholder="NO aplica" class="form-control {{ $errors->has('Temperatura')?'is-invalid':''}} ">
+                                 {!! $errors->first('Temperatura','<div class="invalid-feedback">Campo temperatura requerido</div>')!!}
                             </div>
                         </div>
                         <div class="form-group row">
@@ -166,7 +177,8 @@
                             <div class="col-md-8">
                               <label>
                                 Observaciones<br></label>
-                                <textarea class="form-control" id="message" name="Observacion" placeholder="Observaciones" rows="4"></textarea>
+                                <textarea class="form-control {{ $errors->has('Observacion')?'is-invalid':''}} " id="message" name="Observacion" value="{{ old('Observacion')}}"placeholder="Observaciones" rows="4"></textarea>
+                                 {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observacion requerido</div>')!!}
                             </div>
                             </div>
   <div class="col-sm-12 col-xs-12" align="center">

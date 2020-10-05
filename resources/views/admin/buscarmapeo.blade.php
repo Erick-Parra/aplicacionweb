@@ -16,21 +16,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<style type="text/css">
 
-  table, th, td {
-    border: 6px solid DODGERBLUE;
-    border-collapse: collapse;
-    color: MIDNIGHTBLUE; 
-    background-color: SKYBLUE;
-  }
-  th, td{
-   width: 5px;
-    height: 5px;
-
-  }
- 
-</style>
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -67,7 +53,7 @@
     <!-- Main content -->
     <section class="content">
       <form method="GET" action="{{ route('buscarmap')}}">
-        @csrf
+        
 <div class="container">
   <div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
@@ -95,7 +81,7 @@
                               <label>
                                 Nombre ASADA<br></label>
                                 <div class="input-group">
-                                  <input name="buscarpor" type="" class="form-control">
+                                  <input name="Nom_Asada" type="" class="form-control">
                                   <span class="input-group-prepend">
                                   <button type="submit" class="btn btn-primary">BUSCAR</button><br>
                                   </span>
@@ -107,12 +93,10 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               </div>
                               <br>
-                              <div class="table-responsive">
-                            <table class= "table table-hover table-striped table-bordered " style="opacity: 1; border="5" style="margin: 0 auto;">
-    <caption>Registros Mapeo</caption>
+                       <div class="table-responsive">
 
-<!--Table-->
-    <thead class="thead-dark">
+                               <table class="table table-table-striped" style="background-color: #FEFFFF">
+    <thead >
   <tr>
     <th>#</th>
     <th>Nombre ASADA</th>
@@ -132,10 +116,10 @@
     <img width="100px"src="{{ Storage::url ($map->Archivo_SHP)}}">
     </td>
     <td>
-      <a href="{{route('mapeos.editar', $map)}}" class="btn btn-warning btn-sm">Editar</a>
+      <a href="{{route('mapeos.editar', $map)}}" class="btn btn-primary border rounded">Editar</a>
       <form action="{{ route('mapeos.eliminar', $map) }}" class="d-inline" method="POST">
     @method('DELETE')
-    @csrf
+ 
     <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
 </form>
     </td>

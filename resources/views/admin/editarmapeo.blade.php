@@ -74,29 +74,30 @@
 												<legend class="text-center header">Registro de Mapeo</legend>
 
 												<div class="form-group row">
-														<legend class="text-center header">Nombre Asada {{$mapeos->Nom_Asada}}</legend>
+														<legend class="text-center header">Asada: {{$mapeos->Nom_Asada}}</legend>
 
 												</div>
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<br/>
-														<label>
-													Archivo SHP
-												      </label>
-												      <br/>
-												      <br/>
-													<img width="150px" src="{{ Storage::url ($mapeos->Archivo_SHP)}}">	
-													<br/> 
-												</div>
+														<label> Archivo SHP</label>
+												
 												 </div>
+												 <div class="form-group row">
+														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+														 <img width="150px" src="{{ Storage::url ($mapeos->Archivo_SHP)}}">	
+												
+												 </div>
+
+												
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<p><label for="Archivo_SHP">
-															<input type="file" name="Archivo_SHP">
-															</label></p>
+													 <p><label for="Archivo_SHP">
+                              <input type="file" name="Archivo_SHP" value="{{ old('Archivo_SHP')}}"  class="form-control {{ $errors->has('Archivo_SHP')?'is-invalid':''}} ">
+                               {!! $errors->first('Archivo_SHP','<div class="invalid-feedback">Campo archivo requerido</div>')!!}
+                              </label></p>
 												</div>
 														<div class="col-sm-13 col-xs-13" align="center">
-														 <button class="btn btn-warning border rounded" type="submit">Actualizar</button>
+														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
 														 <a href="{{route('buscarmap')}}" class="btn btn-success border rounded">Regresar</a>
 												</div>
 

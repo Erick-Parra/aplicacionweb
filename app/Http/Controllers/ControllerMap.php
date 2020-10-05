@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\TblMapeo;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\MapeoRequest;
 use App;
 
 class ControllerMap extends Controller
@@ -17,15 +18,16 @@ class ControllerMap extends Controller
 
      public function index(Request $request)
     {
+       $query = $request->input('query');
 
-        //$datos['registro']=TblMapeo::paginate(5);
-      $registro=TblMapeo::search($request->Nom_Asada)->orderBy('idmap', 'DESC')->paginate(5);
+    if ( !$query ) {
+        return redirect()->route('searchmap');
+    }
 
-   
-    //  $name =$request->get('buscarpor');
-     // $registro = TblMapeo::where('Nom_Asada','like',"%Nom_Asada%")->paginate(5);
+    $registro = TblMapeo::where('Nom_Asada', 'LIKE', "%{$query}%")
+        ->get();
 
-     return view ('admin.buscarmapeo', compact('registro'));
+     return view ('admin.buscarmapeo')->with('registro', $registro);
 
     
     }
@@ -43,7 +45,7 @@ class ControllerMap extends Controller
         return view('admin.editarmapeo', compact('mapeos'));
     }
 
-    public function update (Request $request, $idmap)
+    public function update (MapeoRequest $request, $idmap)
     {
           $mapeoActualizado=request()->except(['_token','_method']);
 
@@ -83,14 +85,7 @@ class ControllerMap extends Controller
         return view('admin.createmapeo');
     }
 
-     public function store(Request $request){
-
-     // $campos=[
-       // 'Nombre'=>'required|string|max:100',
-       // 'Archivo'=>'required|max:10000|mimes:jpeg,png,jpg'
-   // ];
-   // $Mensaje=["required"=>'El :attribute es requerido'];
-   // $this->validate($request,$campos,$Mensaje);
+     public function store(MapeoRequest $request){
 
      //  $mapeoAgregado=request()->all();
 
