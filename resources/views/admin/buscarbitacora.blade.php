@@ -24,8 +24,9 @@
     color: MIDNIGHTBLUE; 
     background-color: SKYBLUE;
   }
-  th, td{
-    padding: 15px;
+   th, td{
+   width: 5px;
+    height: 5px;
 
   }
 </style>
@@ -67,6 +68,14 @@
       <form method="POST" action="{{ route('buscar')}}">
         @csrf
 <div class="container">
+  <div class="flash-message"> 
+ @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
+  @if(Session::has('alert-' . $msg)) 
+
+  <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p> 
+  @endif 
+ @endforeach 
+ </div> <!-- end .flash-message --> 
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
@@ -96,15 +105,17 @@
                               </form>    
                             </div>
                             <br>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
                               </div>
                               <br>
                               <div class="table-responsive">
-                            <table class= "table table-striped table-bordered table-condense table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">
+                            <table class= "table table-striped table-bordered " style="opacity: 1; border="5" style="margin: 0 auto;">
     <caption>Registros Control Operativo</caption>
     <thead class="thead-dark">
   <tr>
     
+    <th>#</th>
+
     <th>Nombre ASADA</th>
 
     <th>Fecha Control</th>
@@ -127,14 +138,15 @@
 
     <th>Observaciones</th>
 
-    <th>Accion</th>
+    <th >Accion</th>
 
   </tr>
  
   
   @foreach($registro as $reg)
   <tr>
-    
+    <td>{{$loop->iteration}}</td>
+
     <td>{{$reg->Nom_Asada}}</td>
 
     <td>{{$reg->Fecha_Control}}</td>
@@ -162,7 +174,7 @@
       <form action="{{ route('notas.eliminar', $reg) }}" class="d-inline" method="POST">
     @method('DELETE')
     @csrf
-    <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
 </form>
     </td>
 

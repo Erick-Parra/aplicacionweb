@@ -23,6 +23,9 @@ Route::post('/admin','AdminController@store')->name('create.store');
 Route::get('/admin/{asada}','AdminController@show')->name('admin.show');
 Route::delete('/admin/{asada}', 'AdminController@destroy')->name('admin.destroy');
 
+Route::get('/buscaras/buscarasada','AdminController@buscar')->name('buscaras');
+Route::get('/searchasada','AdminController@index')->name('searchasada');
+
 // Rutas Junta Directiva
 Route::get('/buscar/buscarjunta','juntaController@buscar')->name('buscarjunta');
 Route::get('/editarjunta/{idjunta}', 'juntaController@editarjunta' )->name('editar');

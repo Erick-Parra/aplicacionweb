@@ -52,6 +52,8 @@ class juntaController extends Controller
         $notaActualizada->Fiscal = $request->input('Fiscal');
         $notaActualizada->save();
 
+        $request->session()->flash('alert-success', 'Actualización exitosa!'); 
+
         return back();
     }
 }

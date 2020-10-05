@@ -53,6 +53,14 @@
       <form method="POST" action="{{ route('create.store')}}">
         @csrf
         <div class="container">
+          <div class="flash-message"> 
+ @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
+  @if(Session::has('alert-' . $msg)) 
+
+  <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p> 
+  @endif 
+ @endforeach 
+ </div> <!-- end .flash-message --> 
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
@@ -68,7 +76,9 @@
                             <div class="col-md-8">
                             <label>
                                 Nombre de la ASADA<br></label>
-                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control">
+                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control ">
+
+
 
                             </div>
                         </div>

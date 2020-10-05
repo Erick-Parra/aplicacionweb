@@ -52,9 +52,13 @@ class BitacoraController extends Controller
         $notaActualizada->Observacion = $request->input('Observacion');
         $notaActualizada->save();
 
+       $request->session()->flash('alert-success', 'Actualización exitosa!'); 
+
             return back();
     }
-    public function eliminar($id){
+    public function eliminar(Request $request,$id){
+
+        $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
 
         $notaEliminar = TblControloperativo::findOrFail($id);
         $notaEliminar->delete();
@@ -67,7 +71,9 @@ class BitacoraController extends Controller
         return view('admin.crearbitacora');
     }
 
-    public function store(){
+    public function store(Request $request){
+
+        
 
         TblControloperativo::create([
             'idControl' => Request('idControl'),
@@ -84,6 +90,8 @@ class BitacoraController extends Controller
             'Observacion' => Request('Observacion'),
 
         ]);
+
+          $request->session()->flash('alert-success', 'Añadido exitosamente!'); 
 
         return back();
     }

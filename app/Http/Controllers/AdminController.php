@@ -14,7 +14,7 @@ class AdminController extends Controller
     public function index()
     {
         return view('admin.index',[
-            'asadas' => TblRegistroasada::paginate()
+            'asadas' => TblRegistroasada::paginate(5)
         ]);
     }
 
@@ -25,12 +25,21 @@ class AdminController extends Controller
         ]);
     }
 
+      public function buscar()
+    {
+        $registro = TblRegistroasada::all();
+        return view('admin.buscarasada', compact('registro'));
+    }
+
+
     public function create()
     {
         return view('admin.createasada');
     }
 
-    public function store(){
+    public function store(Request $request){
+
+
         TblRegistroasada::create([
             'idAsada' => Request('idAsada'),
             'Nom_Asada' => Request('Nom_Asada'),
@@ -52,7 +61,9 @@ class AdminController extends Controller
             'Telefono' =>Request('Telefono'),
             'Correo' =>Request('Correo'),
         ]);
-        return redirect()->route('admin');
+        $request->session()->flash('alert-success', 'Añadido exitosamente!'); 
+         return back();
+      //  return redirect()->route('admin');
     }
 
     public function edit(TblRegistroasada $asada)
@@ -62,7 +73,7 @@ class AdminController extends Controller
         ]);
     }
 
-    public function update(TblRegistroasada $asada)
+    public function update(Request $request, TblRegistroasada $asada)
     {
         $asada->update([
             'Nom_Asada' => Request('Nom_Asada'),
@@ -82,13 +93,19 @@ class AdminController extends Controller
             'Correo' =>Request('Correo'),
         ]);
 
-        return redirect()->route('admin.show',$asada);
+          $request->session()->flash('alert-success', 'Actualización exitosa!'); 
+
+        return back();
+
+      //  return redirect()->route('admin.show',$asada);
 
     }
-    public function destroy(TblRegistroasada $asada)
+    public function destroy(Request $request, TblRegistroasada $asada)
     {
+        $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
         $asada->delete();
+        return back();
 
-        return redirect()->route('admin');
+      // return redirect()->route('admin');
     }
 }

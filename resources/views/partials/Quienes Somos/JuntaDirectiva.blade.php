@@ -20,7 +20,7 @@
             </div>
             <?php
 // Te recomiendo utilizar esta conexión. 
-$link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', 'rootvivi'); 
+$link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', '1234'); 
 
 ?>
             <table class= "table table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">

@@ -45,7 +45,7 @@
                   <p>Crear una nueva ASADA</p>
                   </a>
 
-                 <a href="../../index.html" class="nav-link">
+                 <a href="{{route('buscaras')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de ASADAS</p>
                 </a>
