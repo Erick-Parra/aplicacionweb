@@ -22,7 +22,6 @@ Route::patch('/admin/{asada}','AdminController@update')->name('admin.update');
 Route::post('/admin','AdminController@store')->name('create.store');
 Route::get('/admin/{asada}','AdminController@show')->name('admin.show');
 Route::delete('/admin/{asada}', 'AdminController@destroy')->name('admin.destroy');
-
 Route::get('/buscaras/buscarasada','AdminController@buscar')->name('buscaras');
 Route::get('/searchasada','AdminController@index')->name('searchasada');
 
@@ -58,6 +57,20 @@ Route::get('/editar/{id}', 'BitacoraController@editar' )->name('notas.editar');
 Route::put('/editar/{id}', 'BitacoraController@update' )->name('notas.update');
 
 Route::delete('/eliminar/{id}', 'BitacoraController@eliminar')->name('notas.eliminar');
+
+//CRUD Usuarios
+Route::get('/usuarios', 'UserController@index')->name('usuarios');
+Route::get('/usuarios/crear', 'UserController@create')->name('usuario.crear');
+Route::get('/usuarios/{id}/editar', 'UserController@edit')->name('usuarios.editar');
+Route::patch('/usuarios/{id}', 'UserController@update')->name('usuarios.update');
+Route::post('/usuarios', 'UserController@store')->name('usuarios.store');
+Route::get('/usuarios/{id}', 'UserController@show')->name('usuarios.show');
+Route::delete('/usuarios/{id}', 'UserController@destroy')->name('usuarios.destroy');
+
+//CRUD Roles
+Route::get('/roles', 'RoleController@index')->name('roles');
+Route::get('roles/crear', 'RoleController@create')->name('roles.create');
+Route::post('/roles', 'RoleController@store')->name('roles.store');
 
 
 
