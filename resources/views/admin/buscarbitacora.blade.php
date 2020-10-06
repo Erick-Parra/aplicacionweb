@@ -16,20 +16,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<style type="text/css">
 
-  table, th, td {
-    border: 6px solid DODGERBLUE;
-    border-collapse: collapse;
-    color: MIDNIGHTBLUE; 
-    background-color: SKYBLUE;
-  }
-   th, td{
-   width: 5px;
-    height: 5px;
-
-  }
-</style>
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -65,8 +52,8 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="POST" action="{{ route('buscar')}}">
-        @csrf
+      <form method="GET" action="{{ route('buscar')}}">
+       
 <div class="container">
   <div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
@@ -109,9 +96,10 @@
                               </div>
                               <br>
                               <div class="table-responsive">
-                            <table class= "table table-striped table-bordered " style="opacity: 1; border="5" style="margin: 0 auto;">
-    <caption>Registros Control Operativo</caption>
-    <thead class="thead-dark">
+
+                               <table class="table table-table-striped" style="background-color: #FEFFFF">
+   
+    <thead >
   <tr>
     
     <th>#</th>
@@ -170,10 +158,10 @@
     <td>{{$reg->Observacion}}</td>
 
     <td>
-      <a href="{{route('notas.editar', $reg)}}" class="btn btn-warning btn-sm">Editar</a>
+      <a href="{{route('notas.editar', $reg)}}" class="btn btn-primary border rounded">Editar</a>
       <form action="{{ route('notas.eliminar', $reg) }}" class="d-inline" method="POST">
     @method('DELETE')
-    @csrf
+
     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
 </form>
     </td>

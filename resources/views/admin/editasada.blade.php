@@ -76,7 +76,8 @@
                             <div class="col-md-8">
                             <label>
                                 Nombre de la ASADA<br></label>
-                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$asadas->Nom_Asada}}" class="form-control">
+                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$asadas->Nom_Asada}}" class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}}  ">
+                                {!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
 
                             </div>
                         </div>
@@ -86,7 +87,8 @@
                             <div class="col-md-8">
                               <label>
                                 Número de cédula jurídica<br></label>
-                                <input name="ced_Juridica" type="int" value="{{$asadas->ced_Juridica}}" class="form-control">
+                                <input name="ced_Juridica" type="int" value="{{$asadas->ced_Juridica}}"  class="form-control {{ $errors->has('ced_Juridica')?'is-invalid':''}}  ">
+                                {!! $errors->first('ced_Juridica','<div class="invalid-feedback">Campo cedula juridica requerido</div>')!!}
                             </div>
                         </div>
 
@@ -95,7 +97,8 @@
                             <div class="col-md-8">
                               <label>
                                 Número de convenio<br></label>
-                                <input name="Num_Convenio" type="int" value="{{$asadas->Num_Convenio}}" class="form-control">
+                                <input name="Num_Convenio" type="int" value="{{$asadas->Num_Convenio}}"  class="form-control {{ $errors->has('Num_Convenio')?'is-invalid':''}}  ">
+                                {!! $errors->first('Num_Convenio','<div class="invalid-feedback">Campo numero convenio requerido</div>')!!}
                             </div>
                         </div>
                             <div class="form-group row">
@@ -103,7 +106,8 @@
                             <div class="col-md-8">
                               <label>
                                 Cantidad de abonados<br></label>
-                                <input name="Cant_Abonados" type="int" value="{{$asadas->Cant_Abonados}}" class="form-control">
+                                <input name="Cant_Abonados" type="int" value="{{$asadas->Cant_Abonados}}" class="form-control {{ $errors->has('Cant_Abonados')?'is-invalid':''}} ">
+                                {!! $errors->first('Cant_Abonados','<div class="invalid-feedback">Campo cantidad abonados requerido</div>')!!}
                             </div>
                         </div>
 
@@ -117,7 +121,8 @@
                             <div class="col-md-8">
                               <label>
                                 Número de sección<br></label>
-                                <input name="Num_Sesion" type="int"value="{{$asadas->Num_Sesion}}" class="form-control">
+                                <input name="Num_Sesion" type="int"value="{{$asadas->Num_Sesion}}"  class="form-control {{ $errors->has('Num_Sesion')?'is-invalid':''}} ">
+                                {!! $errors->first('Num_Sesion','<div class="invalid-feedback">Campo numero sesion requerido</div>')!!}
                             </div>
                         </div>
 
@@ -126,7 +131,8 @@
                             <div class="col-md-8">
                               <label>
                                 Presidente<br></label>
-                                <input name="Presidente" type="text" value="{{$asadas->Presidente}}" class="form-control">
+                                <input name="Presidente" type="text" value="{{$asadas->Presidente}}" class="form-control {{ $errors->has('Presidente')?'is-invalid':''}} ">
+                                {!! $errors->first('Presidente','<div class="invalid-feedback">Campo presidente requerido</div>')!!}
                             </div>
                         </div>
 
@@ -135,7 +141,8 @@
                             <div class="col-md-8">
                               <label>
                                 Vicepresidente<br></label>
-                                <input name="VicePresidente" type="text" value="{{$asadas->VicePresidente}}" class="form-control">
+                                <input name="VicePresidente" type="text" value="{{$asadas->VicePresidente}}" class="form-control {{ $errors->has('Vicepresidente')?'is-invalid':''}} ">
+                                {!! $errors->first('Vicepresidente','<div class="invalid-feedback">Campo vicepresidente requerido</div>')!!}
                             </div>
                         </div>
 
@@ -144,7 +151,8 @@
                             <div class="col-md-8">
                               <label>
                                 Tesorero<br></label>
-                                <input name="Tesorero" type="text" value="{{$asadas->Tesorero}}" class="form-control">
+                                <input name="Tesorero" type="text" value="{{$asadas->Tesorero}}" class="form-control {{ $errors->has('Tesorero')?'is-invalid':''}} ">
+                                {!! $errors->first('Tesorero','<div class="invalid-feedback">Campo tesorero requerido</div>')!!}
                             </div>
                         </div>
 
@@ -153,7 +161,8 @@
                             <div class="col-md-8">
                               <label>
                                 Vocal 1<br></label>
-                                <input name="Vocal_1" type="text" value="{{$asadas->Vocal_1}}" class="form-control">
+                                <input name="Vocal_1" type="text" value="{{$asadas->Vocal_1}}" class="form-control {{ $errors->has('Vocal_1')?'is-invalid':''}} ">
+                                {!! $errors->first('Vocal_1','<div class="invalid-feedback">Campo vocal 1 requerido</div>')!!}
                             </div>
                         </div>
 
@@ -162,7 +171,8 @@
                             <div class="col-md-8">
                               <label>
                                 Vocal 2<br></label>
-                                <input name="Vocal_2" type="text" value="{{$asadas->Vocal_2}}" class="form-control">
+                                <input name="Vocal_2" type="text" value="{{$asadas->Vocal_2}}" class="form-control {{ $errors->has('Vocal_2')?'is-invalid':''}} ">
+                                {!! $errors->first('Vocal_2','<div class="invalid-feedback">Campo vocal 2 requerido</div>')!!}
                             </div>
                         </div>
 
@@ -171,7 +181,8 @@
                             <div class="col-md-8">
                               <label>
                                 Fiscal<br></label>
-                                <input name="Fiscal" type="text" value="{{$asadas->Fiscal}}" class="form-control">
+                                <input name="Fiscal" type="text" value="{{$asadas->Fiscal}}"  class="form-control {{ $errors->has('Fiscal')?'is-invalid':''}} ">
+                                {!! $errors->first('Fiscal','<div class="invalid-feedback">Campo fiscal requerido</div>')!!}
                             </div>
                         </div>
                         <div class="form-group row">
@@ -179,7 +190,8 @@
                             <div class="col-md-8">
                               <label>
                                 Region<br></label>
-                                <input name="Region" type="text" value="{{$asadas->nombreRegion}}" class="form-control">
+                                <input name="Region" type="text" value="{{$asadas->nombreRegion}}" class="form-control {{ $errors->has('Region')?'is-invalid':''}} ">
+                                {!! $errors->first('Region','<div class="invalid-feedback">Campo region requerido</div>')!!}
                             </div>
                         </div>
 
@@ -188,7 +200,8 @@
                             <div class="col-md-8">
                               <label>
                                 Razón de afiliación<br></label>
-                                <textarea class="form-control" id="message" name="Razon_Afiliacion" rows="4">{{$asadas->Razon_Afiliacion}}</textarea>
+                                <textarea class="form-control {{ $errors->has('Razon_Afiliacion')?'is-invalid':''}} " id="message" name="Razon_Afiliacion" rows="4">{{$asadas->Razon_Afiliacion}}</textarea>
+                                 {!! $errors->first('Razon_Afiliacion','<div class="invalid-feedback">Campo razon afiliacion requerido</div>')!!}
                             </div>
                         </div>
 
@@ -197,7 +210,8 @@
                             <div class="col-md-8">
                               <label>
                                 Teléfono<br></label>
-                                <input id="phone" name="Telefono" type="int" value="{{$asadas->Telefono}}" class="form-control">
+                                <input id="phone" name="Telefono" type="int" value="{{$asadas->Telefono}}"  class="form-control {{ $errors->has('Telefono')?'is-invalid':''}} ">
+                                {!! $errors->first('Telefono','<div class="invalid-feedback">Campo telefono requerido</div>')!!}
                             </div>
                         </div>
 
@@ -206,12 +220,13 @@
                             <div class="col-md-8">
                               <label>
                                 Correo<br></label>
-                                <input id="email" name="Correo" type="email" value="{{$asadas->Correo}}" class="form-control">
+                                <input id="email" name="Correo" type="email" value="{{$asadas->Correo}}" class="form-control {{ $errors->has('Correo')?'is-invalid':''}} ">
+                                {!! $errors->first('Correo','<div class="invalid-feedback">Campo correo requerido</div>')!!}
                                 <br>
                             </div>
 
                             <div class="col-sm-12 col-xs-12" align="center">
-                             <button class="btn btn-warning border rounded">Actualizar</button>
+                             <button class="btn btn-primary border rounded">Actualizar</button>
                              <a href="{{route('buscaras')}}" class="btn btn-success border rounded">Regresar</a>
                         </div>
 

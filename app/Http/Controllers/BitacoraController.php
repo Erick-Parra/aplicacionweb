@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TblControloperativo;
+use App\Http\Requests\BitacoraRequest;
 use App;
 
 class BitacoraController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         if($request)
         {
@@ -36,7 +37,7 @@ class BitacoraController extends Controller
         return view('admin.editarbitacora', compact('nota'));
     }
 
-    public function update(Request $request, $id)
+    public function update(BitacoraRequest $request, $id)
     {
 
         $notaActualizada = TblControloperativo::findOrFail($id);
@@ -71,7 +72,8 @@ class BitacoraController extends Controller
         return view('admin.crearbitacora');
     }
 
-    public function store(Request $request){
+    public function store(BitacoraRequest $request){
+
         TblControloperativo::create([
             'idControl' => Request('idControl'),
             'Nom_Asada' => Request('Nom_Asada'),

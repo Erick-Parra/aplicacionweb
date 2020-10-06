@@ -16,6 +16,24 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
+
+<style>
+.card {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:  rgb(3, 169, 244);
+  color: white;
+  text-align: center;
+
+}
+.card-header{
+  background-color: #FFFFFF;
+  color: #050629;
+}
+
+</style>
+
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -57,22 +75,20 @@
               <i class="fas fa-times"></i></button>
           </div>
         </div>
-        <div class="card-body">
-          <a href="{{ route('admin.edit', $asadas) }}">Editar</a>
-          <form method="POST" action="{{ route('admin.destroy', $asadas)}}">
-            @csrf @method('DELETE')
-            <button>Eliminar</button>
-          </form>
+        <div class="card-body">    
+        
           <h1>{{$asadas->Nom_Asada}}</h1>
           <h5>Se registro el día: {{$asadas->Fecha_Registro}}</h5>
           <h5>Presidente: {{$asadas->Presidente}}</h5>
           <h5>Telefono: {{$asadas->Telefono}}</h5>
           <h5>Correo: {{$asadas->Correo}}</h5>
 
+           <a href="{{route('admin')}}" class="btn btn-success border rounded">Regresar</a>
+
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-          Footer
+         
         </div>
         <!-- /.card-footer-->
       </div>

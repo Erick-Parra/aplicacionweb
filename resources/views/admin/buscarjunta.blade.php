@@ -16,19 +16,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<style type="text/css">
 
-  table, th, td {
-    border: 6px solid DODGERBLUE;
-    border-collapse: collapse;
-    color: MIDNIGHTBLUE; 
-    background-color: SKYBLUE;
-  }
-  th, td{
-    padding: 15px;
-
-  }
-</style>
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -82,55 +70,55 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               </div>
                               <br>
-                              <div class="table-responsive">
-                            <table class= "table table-striped table-bordered table-condense table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">
-    <caption>Registros Junta Directiva</caption>
-    <thead class="thead-dark">
+                               <div class=" table-responsive">
+                               <table class="table table-table-striped" style="background-color: #FEFFFF" >
+   
+    <thead >
  <tr>
 
-    <th>PUESTO</th>
+    <th>Puesto</th>
 
-    <th>ENCARGADO</th>
+    <th>Encargado</th>
 
   </tr>
   @foreach($registro as $reg)
   <tr>
 
-    <th>PRESIDENTE</th>
+    <th>Presidente</th>
 
     <td>{{$reg->Presidente}}</td>
 
   </tr>
   <tr>
 
-    <th>VICEPRESIDENTE</th>
+    <th>Vicepresidente</th>
 
     <td>{{$reg->vicePresidente}}</td>
 
   </tr>
   <tr>
 
-    <th>SECRETAIO</th>
+    <th>Secretario</th>
 
     <td>{{$reg->Secretario}}</td>
   </tr>
   <tr>
 
-    <th>TESORERO</th>
+    <th>Tesorero</th>
 
     <td>{{$reg->Tesorero}}</td>
 
   </tr>
   <tr>
 
-    <th>VOCAL</th>
+    <th>Vocal</th>
 
     <td>{{$reg->Vocal}}</td>
 
   </tr>
   <tr>
 
-    <th>SUPLENTE 1</th>
+    <th>Suplente 1</th>
 
     <td>{{$reg->Suplente1}}</td>
 
@@ -138,23 +126,25 @@
   </tr>
   <tr>
 
-    <th>SUPLENTE 2</th>
+    <th>Suplente 2</th>
 
     <td>{{$reg->Suplente2}}</td>
 
   </tr>
   <tr>
 
-    <th>FISCAL</th>
+    <th>Fiscal</th>
 
     <td>{{$reg->Fiscal}}</td>
 
   </tr>
+
   @endforeach
   </div>
-      <a href="{{route('editar', $reg)}}" class="btn btn-warning btn-sm">Editar</a>
+     
     </div>
   </table>
+   <a href="{{route('editar', $reg)}}" class="btn btn-primary border rounded">Actualizar</a>
 </div>
     </section>
     <!-- /.content -->
@@ -175,6 +165,7 @@
   </aside>
   <!-- /.control-sidebar -->
 </div>
+
 <!-- ./wrapper -->
 
 <!-- jQuery -->

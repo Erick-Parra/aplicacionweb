@@ -14,6 +14,12 @@ Route::view('/informacion','info')->name('info');
 Route::view('/noticias','partials.informacion.noticias')->name('news');
 Route::view('/contactenos','contact')->name('contact');
 
+
+//Ruta de contáctenos
+
+Route::post('contactenos', 'MessagesController@store');
+
+
 //Rutas controlador registro con diferente rutas, /admin
 Route::get('/admin','AdminController@index')->name('admin');
 Route::get('/admin/crear','AdminController@create')->name('create');

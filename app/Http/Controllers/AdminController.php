@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TblRegistroasada;
+use App\Http\Requests\AsadasRequest;
+
 class AdminController extends Controller
 {
     /**
@@ -37,13 +39,12 @@ class AdminController extends Controller
         return view('admin.createasada');
     }
 
-    public function store(Request $request){
+    public function store(AsadasRequest $request){
 
 
         TblRegistroasada::create([
             'idAsada' => Request('idAsada'),
             'Nom_Asada' => Request('Nom_Asada'),
-            'nombreRegion' => Request('nombreRegion'),
             'Fecha_Registro' => Request('Fecha_Registro'),
             'ced_Juridica' => Request('ced_Juridica'),
             'Num_Convenio' => Request('Num_Convenio'),
@@ -73,7 +74,7 @@ class AdminController extends Controller
         ]);
     }
 
-    public function update(Request $request, TblRegistroasada $asada)
+    public function update(AsadasRequest $request, TblRegistroasada $asada)
     {
         $asada->update([
             'Nom_Asada' => Request('Nom_Asada'),

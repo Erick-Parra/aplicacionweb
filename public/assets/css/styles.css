@@ -1,7 +1,57 @@
 body {
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, Red Hat Text, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+#carrusel {
+    
+    width:600px;
+    overflow:hidden;
+    height:203px;
+    position:center;
+    margin-top:20px;
+    margin-bottom:20px;
 
+}
+ 
+#carrusel .left-arrow {
+    position:absolute;
+    left:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+#carrusel .right-arrow {
+    position:absolute;
+    right:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+.carrusel {
+    width:4000px;
+    left:0px;
+    position:relative;
+    z-index:0;
+
+}
+ 
+.carrusel>div {
+    float: left;
+    height: 203px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+
+}
+ 
+.carrusel img {
+    cursor:pointer;
+}
+ 
+.product {
+    border:#CCCCCC 1px solid;
+}
 #logo {
   max-height: 42px;
   margin-right: 10px;
@@ -27,7 +77,7 @@ body {
 #info {
   padding: 40px;
   text-align: center;
-  background: url(../../assets/img/gotaagua.jpg) no-repeat;
+  background: url(../../assets/img/water.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -110,4 +160,15 @@ p {
 }
 .table {
   background-color: #FF00FF;
+  size: 200%;
+}
+
+#carrusel {
+    float:left;
+    width:600px;
+    overflow:hidden;
+    height:203px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
 }
