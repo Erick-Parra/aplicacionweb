@@ -72,9 +72,6 @@ class BitacoraController extends Controller
     }
 
     public function store(Request $request){
-
-        
-
         TblControloperativo::create([
             'idControl' => Request('idControl'),
             'Nom_Asada' => Request('Nom_Asada'),

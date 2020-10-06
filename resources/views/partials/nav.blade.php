@@ -1,6 +1,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+    <meta charset="UTF-8"/>
     <title> LCA </title>
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&amp;display=swap">
@@ -68,7 +70,7 @@
                     <li class="nav-item" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="">Información</a>
                          <ul>
                             <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href={{route('info') }}>Gráficos</a></li>
-                            <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href={{ route('news') }}>Noticias</a></li>
+                            <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="{{route('news') }}">Noticias<a></li>
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="{{ route('contact') }}">CONTÁCTENOS</a></li>

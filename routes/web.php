@@ -11,7 +11,7 @@ Route::view('/serviciosLegal','partials.servicios.servicesTecn')->name('services
 Route::view('/serviciosTecn','partials.servicios.servicesLegal')->name('servicesLegal');
 
 Route::view('/informacion','info')->name('info');
-Route::view('/noticias','news')->name('news');
+Route::view('/noticias','partials.informacion.noticias')->name('news');
 Route::view('/contactenos','contact')->name('contact');
 
 //Rutas controlador registro con diferente rutas, /admin
@@ -56,8 +56,18 @@ Route::get('/search','BitacoraController@index')->name('search');
 //CRUD CONTROL OPERATIVO
 Route::get('/editar/{id}', 'BitacoraController@editar' )->name('notas.editar');
 Route::put('/editar/{id}', 'BitacoraController@update' )->name('notas.update');
-
 Route::delete('/eliminar/{id}', 'BitacoraController@eliminar')->name('notas.eliminar');
+
+//Publicaciones
+Route::get('/pub/crearpub','PostsController@create')->name('pub');
+Route::post('/pub','PostsController@store')->name('pub.store');
+
+Route::get('/buscarpub/pubuscar','PostsController@buscar')->name('buscarpub');
+
+Route::get('/editarpub/{idpub}','PostsController@editar')->name('pub.editar');
+Route::put('/editarpub/{idpub}','PostsController@update')->name('pub.update');
+
+Route::delete('/eliminarpub/{idpub}', 'PostsController@eliminar')->name('pub.eliminar');
 
 
 
