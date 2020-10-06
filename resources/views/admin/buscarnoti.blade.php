@@ -16,7 +16,21 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
+<style type="text/css">
 
+  table, th, td {
+    border: 6px solid DODGERBLUE;
+    border-collapse: collapse;
+    color: MIDNIGHTBLUE; 
+    background-color: SKYBLUE;
+  }
+  th, td{
+   width: 5px;
+    height: 5px;
+
+  }
+ 
+</style>
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -52,8 +66,8 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="GET" action="{{ route('buscar')}}">
-       
+      <form method="GET" action="{{ route('buscarpub')}}">
+        @csrf
 <div class="container">
   <div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
@@ -68,9 +82,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                      <legend class="text-center header">Unidades de servicios de desarrollo
-                      (USEDES)</legend>
-                        <legend class="text-center header">Bitacora Control Operativo</legend>
+                        <legend class="text-center header">Registros de Publicaciones</legend>
 
                         <div class="form-group row">
                             
@@ -81,88 +93,53 @@
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">
                               <label>
-                                Nombre ASADA<br></label>
-                                <form action="{{ route('search')}}" method="GET">
+                                Nombre Publicación<br></label>
                                 <div class="input-group">
-                                  <input name="Nom_Asada" type="search" class="form-control">
+                                  <input name="buscarpor" type="" class="form-control">
                                   <span class="input-group-prepend">
-                                    <button type="submit" class="btn btn-primary">BUSCAR</button><br>
+                                  <button type="submit" class="btn btn-primary">BUSCAR</button><br>
                                   </span>
                                 </div>
-                              </form>    
+                              </form>                              
+                              
                             </div>
                             <br>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               </div>
                               <br>
                               <div class="table-responsive">
+                            <table class= "table table-hover table-striped table-bordered " style="opacity: 1; border="5" style="margin: 0 auto;">
+    <caption>Registros Publicaciones</caption>
 
-                               <table class="table table-table-striped" style="background-color: #FEFFFF">
-   
-    <thead >
+<!--Table-->
+    <thead class="thead-dark">
   <tr>
-    
     <th>#</th>
+    <th>Titulo Noticia</th>
 
-    <th>Nombre ASADA</th>
+    <th>Información Notica</th>
 
-    <th>Fecha Control</th>
+    <th>Imagen</th>
 
-    <th>Encargado</th>
-
-    <th>Ubicacion</th>
-
-    <th>Turbiedad</th>
-
-    <th>Olor</th>
-
-    <th>Cloro</th>
-
-    <th>PH</th>
-
-    <th>Sabor</th>
-
-    <th>Temperatura</th>
-
-    <th>Observaciones</th>
-
-    <th >Accion</th>
+    <th>Acción</th>
 
   </tr>
  
-  
-  @foreach($registro as $reg)
+  </thead>
+  @foreach($registro as $pub)
   <tr>
     <td>{{$loop->iteration}}</td>
-
-    <td>{{$reg->Nom_Asada}}</td>
-
-    <td>{{$reg->Fecha_Control}}</td>
-
-    <td>{{$reg->Encargado}}</td>
-
-    <td>{{$reg->Ubicacion}}</td>
-
-    <td>{{$reg->Turbiedad}}</td>
-
-    <td>{{$reg->Olor}}</td>
-
-    <td>{{$reg->Cloro}}</td>
-
-    <td>{{$reg->PH}}</td>
-
-    <td>{{$reg->Sabor}}</td>
-
-    <td>{{$reg->Temperatura}}</td>
-
-    <td>{{$reg->Observacion}}</td>
-
+    <td>{{$pub->TituloNoti}}</td>
+    <td>{{$pub->InfoNoti}}</td>
     <td>
-      <a href="{{route('notas.editar', $reg)}}" class="btn btn-primary border rounded">Editar</a>
-      <form action="{{ route('notas.eliminar', $reg) }}" class="d-inline" method="POST">
+    <img width="100px"src="{{ Storage::url ($pub->imagen)}}">
+    </td>
+    <td>
+      <a href="{{route('pub.editar', $pub)}}" class="btn btn-warning btn-sm">Editar</a>
+      <form action="{{ route('pub.eliminar', $pub) }}" class="d-inline" method="POST">
     @method('DELETE')
-
-    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
+    @csrf
+    <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
 </form>
     </td>
 

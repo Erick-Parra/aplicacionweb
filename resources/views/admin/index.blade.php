@@ -17,6 +17,8 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
+
+
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -59,6 +61,7 @@
           </div>
         </div>
         <div class="card-body">
+        
           <ul>
             @forelse($asadas as $asadaitem)
             <li><a href="{{ route('admin.show', $asadaitem)}}">{{ $asadaitem->Nom_Asada }}</a></li>
@@ -68,6 +71,9 @@
             {{$asadas->links()}}
           </ul>
         </div>
+
+
+
         <!-- /.card-body -->
         <div class="card-footer">
           Footer

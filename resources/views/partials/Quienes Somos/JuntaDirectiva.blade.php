@@ -1,5 +1,9 @@
 @include('partials.nav')
-
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
 <style type="text/css">
 
     table, th, td {
@@ -20,14 +24,12 @@
             </div>
             <?php
 // Te recomiendo utilizar esta conexión. 
-$link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', '1234'); 
-
+$link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', 'rootvivi'); 
 ?>
             <table class= "table table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">
         <caption>Personas responsables en la Junta Directiva de la LCA</caption>
         <thead class="#003357">
             <tr>
-
     <th>PUESTO</th>
 
     <th>ENCARGADO</th>

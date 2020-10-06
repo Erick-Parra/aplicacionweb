@@ -47,18 +47,14 @@
 				</div>
 			</div><!-- /.container-fluid -->
 	</section>
-
 		<!-- Main content -->
 		
 		<section class="content">
-
-
-			<form action="{{ route('mapeos.update', $mapeos->IdMapeo) }}" method="POST" enctype= "multipart/form-data">
-			
+			<form action="{{ route('pub.update', $publicacion->Id) }}" method="POST" enctype= "multipart/form-data">		
 		@method('PUT')
 		@csrf
-<div class="container">
-			<div class="flash-message"> 
+        <div class="container">
+		<div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
   @if(Session::has('alert-' . $msg)) 
 
@@ -71,38 +67,42 @@
 						<div class="well well-sm">
 								<form class="form-horizontal" method="PUT">
 										<fieldset>
-												<legend class="text-center header">Registro de Mapeo</legend>
-
-												<div class="form-group row">
-														<legend class="text-center header">Asada: {{$mapeos->Nom_Asada}}</legend>
-
+												<legend class="text-center header">Registro de Publicación</legend>
+											<div class="col-md-12">
+												<label>Titulo Publicación<br></label>
+												<input style="display: table-column text-align: center" name="TituloNoti" type="text"  class="form-control" value="{{$publicacion->TituloNoti}}">
+											</div>
+											<div class="form-group row">
+												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+													<div class="col-md-8">
+													<label>Información Publicación<br></label>
+													<input textarea class="form-control" id="message" name="InfoNoti"rows="4" value="{{$publicacion->InfoNoti}}"></textarea>
+														</div>
 												</div>
+											<br>
+											<br>
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<label> Archivo SHP</label>
-												
+														<br/>
+														<label>
+													Imagen
+												      </label>
+												      <br/>
+												      <br/>
+													<img width="150px" src="{{ Storage::url ($publicacion->imagen)}}">	
+													<br/> 
+												</div>
 												 </div>
-												 <div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														 <img width="150px" src="{{ Storage::url ($mapeos->Archivo_SHP)}}">	
-												
-												 </div>
-
-												
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-													 <p><label for="Archivo_SHP">
-                              <input type="file" name="Archivo_SHP" value="{{ old('Archivo_SHP')}}"  class="form-control {{ $errors->has('Archivo_SHP')?'is-invalid':''}} ">
-                               {!! $errors->first('Archivo_SHP','<div class="invalid-feedback">Campo archivo requerido</div>')!!}
-                              </label></p>
+														<p><label for="imagen">
+															<input type="file" name="imagen">
+															</label></p>
 												</div>
 														<div class="col-sm-13 col-xs-13" align="center">
-														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
-														 <a href="{{route('buscarmap')}}" class="btn btn-success border rounded">Regresar</a>
-												</div>
-
-												  <div class="col-md-8">
-                            
+														 <button class="btn btn-warning border rounded" type="submit">Actualizar</button>
+														 <a href="{{route('buscarpub')}}" class="btn btn-success border rounded">Regresar</a>
+												</div>                   
 			</form>
 		</section>
 		<!-- /.content -->

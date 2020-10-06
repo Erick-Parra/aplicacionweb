@@ -16,21 +16,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<style type="text/css">
 
-  table, th, td {
-    border: 6px solid DODGERBLUE;
-    border-collapse: collapse;
-    color: MIDNIGHTBLUE; 
-    background-color: SKYBLUE;
-   
-  }
-  th, td{
-   width: 5px;
-    height: 5px;
-
-  }
-</style>
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -108,10 +94,9 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"   >
                               </div>
                               <br>
-                              <div class="table-responsive">
-                            <table class= "table table-striped table-bordered " style="opacity: 1; border="2" style="margin: 0 auto" >
-    <caption>Registros de Asadas</caption>
-    <thead class="thead-dark" >
+                                   <div class="table-responsive">
+                               <table class="table table-table-striped" style="background-color: #FEFFFF">
+    <thead >
   <tr>
     
     <th>#</th>
@@ -171,7 +156,7 @@
     <td>{{$reg->Correo}}</td>
 
     <td>
-      <a href="{{route('admin.edit', $reg)}}" class="btn btn-warning btn-sm">Editar</a>
+      <a href="{{route('admin.edit', $reg)}}" class="btn btn-primary border rounded">Editar</a>
       <form action="{{ route('admin.destroy', $reg) }}" class="d-inline" method="POST">
     @method('DELETE')
     @csrf

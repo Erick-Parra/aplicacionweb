@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Administración</title>
+  <title>Administración LCA</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,7 +16,6 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -25,11 +24,10 @@
 {{-- Sidebar en la carpeta admin/partials --}}
 @include('admin.partials.sidebar')
 
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-   <section class="content-header">
+    <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-1">
           <div class="col-sm-6">
@@ -52,10 +50,13 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="GET" action="{{ route('buscar')}}">
+          <form method="POST" action="{{ route('pub.store')}}" enctype= "multipart/form-data" >
+        @csrf
        
-<div class="container">
-  <div class="flash-message"> 
+        <div class="container">
+
+
+<div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
   @if(Session::has('alert-' . $msg)) 
 
@@ -63,115 +64,45 @@
   @endif 
  @endforeach 
  </div> <!-- end .flash-message --> 
+
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
-                <form class="form-horizontal" method="post">
+                <form class="form-horizontal" method="POST">
                     <fieldset>
-                      <legend class="text-center header">Unidades de servicios de desarrollo
-                      (USEDES)</legend>
-                        <legend class="text-center header">Bitacora Control Operativo</legend>
-
+                        <legend class="text-center header">Publicación</legend>
                         <div class="form-group row">
-                            
-                          
-                            <span class="col-md-2 col-md-offset-2 text-center"></span>
-
-                            <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <span class="col-md-2 col-md-offset-2 text-center"></span>  
                             <div class="col-md-8">
-                              <label>
-                                Nombre ASADA<br></label>
-                                <form action="{{ route('search')}}" method="GET">
-                                <div class="input-group">
-                                  <input name="Nom_Asada" type="search" class="form-control">
-                                  <span class="input-group-prepend">
-                                    <button type="submit" class="btn btn-primary">BUSCAR</button><br>
-                                  </span>
-                                </div>
-                              </form>    
+                            <label>
+                                  Titulo Publicación<br></label>
+                                <input style="display: table-column text-align: center" name="TituloNoti" type="text" placeholder="Ingrese titulo de la Publicación" class="form-control">
                             </div>
-                            <br>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-                              </div>
-                              <br>
-                              <div class="table-responsive">
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                        <div class="col-md-8">
+                              <label>
+                                Información<br></label>
+                                <textarea class="form-control" id="message" name="InfoNoti" placeholder="Información Publicación" rows="4"></textarea>
+                            </div>
+                            </div>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <label>Imagen</labe>
+                         </div>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                          <p><label for="imagen">
+                              <input type="file" name="imagen">
+                              </label></p>
+                        </div>
+                            <div class="col-sm-12 col-xs-12" align="center">
+                             <button class="btn btn-primary border rounded">Guardar</button>
+                        </div>
 
-                               <table class="table table-table-striped" style="background-color: #FEFFFF">
-   
-    <thead >
-  <tr>
-    
-    <th>#</th>
-
-    <th>Nombre ASADA</th>
-
-    <th>Fecha Control</th>
-
-    <th>Encargado</th>
-
-    <th>Ubicacion</th>
-
-    <th>Turbiedad</th>
-
-    <th>Olor</th>
-
-    <th>Cloro</th>
-
-    <th>PH</th>
-
-    <th>Sabor</th>
-
-    <th>Temperatura</th>
-
-    <th>Observaciones</th>
-
-    <th >Accion</th>
-
-  </tr>
- 
-  
-  @foreach($registro as $reg)
-  <tr>
-    <td>{{$loop->iteration}}</td>
-
-    <td>{{$reg->Nom_Asada}}</td>
-
-    <td>{{$reg->Fecha_Control}}</td>
-
-    <td>{{$reg->Encargado}}</td>
-
-    <td>{{$reg->Ubicacion}}</td>
-
-    <td>{{$reg->Turbiedad}}</td>
-
-    <td>{{$reg->Olor}}</td>
-
-    <td>{{$reg->Cloro}}</td>
-
-    <td>{{$reg->PH}}</td>
-
-    <td>{{$reg->Sabor}}</td>
-
-    <td>{{$reg->Temperatura}}</td>
-
-    <td>{{$reg->Observacion}}</td>
-
-    <td>
-      <a href="{{route('notas.editar', $reg)}}" class="btn btn-primary border rounded">Editar</a>
-      <form action="{{ route('notas.eliminar', $reg) }}" class="d-inline" method="POST">
-    @method('DELETE')
-
-    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
 </form>
-    </td>
-
-  </tr>
- @endforeach
-
-</table>
-</div>
-      </form>
     </section>
     <!-- /.content -->
   </div>
@@ -179,9 +110,9 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.5
+      <b>Created By</b> NEPV
     </div>
-    <strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
+    <strong>Copyright &copy; 2020.</strong> All rights
     reserved.
   </footer>
 
@@ -191,8 +122,6 @@
   </aside>
   <!-- /.control-sidebar -->
 </div>
-<!-- ./wrapper -->
-
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->

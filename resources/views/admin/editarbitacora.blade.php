@@ -81,7 +81,8 @@
 														<div class="col-md-8">
 														<label>
 																Nombre de la ASADA<br></label>
-																<input style="display: table-column text-align: center" name="Nom_Asada" type="text"  class="form-control" value="{{$nota->Nom_Asada}}">
+																<input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$nota->Nom_Asada}}"  class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
+                                 {!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
 				
 														</div>
 												</div>
@@ -94,8 +95,8 @@
 														<div class="col-md-8">
 															<label>
 																Encargado<br></label>
-																<input style="display: table-column text-align: center" name="Encargado" type="text" class="form-control"
-																value="{{$nota->Encargado}}">
+																<input style="display: table-column text-align: center" name="Encargado" type="text" value="{{$nota->Encargado}}" class="form-control {{ $errors->has('Encargado')?'is-invalid':''}} ">
+                                 {!! $errors->first('Encargado','<div class="invalid-feedback">Campo encargado requerido</div>')!!}
 														</div>
 												</div>
 
@@ -104,7 +105,8 @@
 														<div class="col-md-8">
 															<label>
 																Ubicación/acueducto<br></label>
-																<input name="Ubicacion" type="text" class="form-control" value="{{$nota->Ubicacion}}">
+																<input name="Ubicacion" type="text" value="{{$nota->Ubicacion}}" class="form-control {{ $errors->has('Ubicacion')?'is-invalid':''}} ">
+                                 {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicacion requerido</div>')!!}
 														</div>
 												</div>
 												<legend class="text-center header">Detalles de resultado del monitoreo</legend>
@@ -113,7 +115,8 @@
 														<div class="col-md-8">
 															<label>
 																Turbiedad<br></label>
-																<input name="Turbiedad" type="text" class="form-control" value="{{$nota->Turbiedad}}">
+																<input name="Turbiedad" type="text" value="{{$nota->Turbiedad}}" class="form-control {{ $errors->has('Turbiedad')?'is-invalid':''}} ">
+                                 {!! $errors->first('Turbiedad','<div class="invalid-feedback">Campo turbiedad requerido</div>')!!}
 														</div>
 												</div>
 
@@ -122,7 +125,8 @@
 														<div class="col-md-8">
 															<label>
 																Olor<br></label>
-																<input name="Olor" type="text" class="form-control" value="{{$nota->Olor}}">
+																<input name="Olor" type="text"  value="{{$nota->Olor}}" class="form-control {{ $errors->has('Olor')?'is-invalid':''}} ">
+                                 {!! $errors->first('Olor','<div class="invalid-feedback">Campo olor requerido</div>')!!}
 														</div>
 												</div>
 												 <div class="form-group row">
@@ -130,7 +134,8 @@
 														<div class="col-md-8">
 															<label>
 																Cloro residual<br></label>
-																<input name="Cloro" type="text" class="form-control" value="{{$nota->Cloro}}">
+																<input name="Cloro" type="text"  value="{{$nota->Cloro}}" class="form-control {{ $errors->has('Cloro')?'is-invalid':''}} ">
+                                 {!! $errors->first('Cloro','<div class="invalid-feedback">Campo cloro requerido</div>')!!}
 														</div>
 												</div>
 
@@ -139,7 +144,8 @@
 														<div class="col-md-8">
 															<label>
 																PH<br></label>
-																<input name="PH" type="text" class="form-control" value="{{$nota->PH}}">
+																<input name="PH" type="text" value="{{$nota->PH}}" class="form-control {{ $errors->has('PH')?'is-invalid':''}} ">
+                                 {!! $errors->first('PH','<div class="invalid-feedback">Campo PH requerido</div>')!!}
 														</div>
 												</div>
 
@@ -148,7 +154,8 @@
 														<div class="col-md-8">
 															<label>
 																Sabor<br></label>
-																<input name="Sabor" type="text" class="form-control" value="{{$nota->Sabor}}">
+																<input name="Sabor" type="text"  value="{{$nota->Sabor}}" class="form-control {{ $errors->has('Sabor')?'is-invalid':''}} ">
+                                 {!! $errors->first('Sabor','<div class="invalid-feedback">Campo sabor requerido</div>')!!}
 														</div>
 												</div>
 
@@ -157,7 +164,8 @@
 														<div class="col-md-8">
 															<label>
 																Temperatura<br></label>
-																<input name="Temperatura" type="text" class="form-control" value="{{$nota->Temperatura}}">
+																<input name="Temperatura" type="text"  value="{{$nota->Temperatura}}"  class="form-control {{ $errors->has('Temperatura')?'is-invalid':''}} ">
+                                 {!! $errors->first('Temperatura','<div class="invalid-feedback">Campo temperatura requerido</div>')!!}
 														</div>
 												</div>
 												<div class="form-group row">
@@ -165,11 +173,12 @@
 														<div class="col-md-8">
 															<label>
 																Observaciones<br></label>
-																<input textarea class="form-control" id="message" name="Observacion"rows="4" value="{{$nota->Observacion}}"></textarea>
+																<input textarea class="form-control {{ $errors->has('Observacion')?'is-invalid':''}} "id="message" name="Observacion"rows="4" value="{{$nota->Observacion}}"></textarea>
+																 {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observacion requerido</div>')!!}
 														</div>
 												</div>
 														<div class="col-sm-12 col-xs-12" align="center">
-														 <button class="btn btn-warning border rounded" type="submit">Actualizar</button>
+														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
 														 <a href="{{route('buscar')}}" class="btn btn-success border rounded">Regresar</a>
 												</div>
 												<br>

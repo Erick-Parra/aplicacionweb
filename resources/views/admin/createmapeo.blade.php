@@ -65,7 +65,7 @@
   @endif 
  @endforeach 
  </div> <!-- end .flash-message --> 
-
+ 
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
@@ -78,7 +78,8 @@
                             <div class="col-md-8">
                             <label>
                                 Nombre de la ASADA<br></label>
-                                <input style="display: table-column text-align: center" name="Nom_Asada" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control">
+                                <input style="display: table-column text-align: center" name="Nom_Asada"  value="{{ old('Nom_Asada')}}" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
+                                 {!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
                             </div>
                         </div>
 
@@ -94,7 +95,8 @@
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                           <p><label for="Archivo_SHP">
-                              <input type="file" name="Archivo_SHP">
+                              <input type="file" name="Archivo_SHP" value="{{ old('Archivo_SHP')}}"  class="form-control {{ $errors->has('Archivo_SHP')?'is-invalid':''}} ">
+                               {!! $errors->first('Archivo_SHP','<div class="invalid-feedback">Campo archivo requerido</div>')!!}
                               </label></p>
                         </div>
                             <div class="col-sm-12 col-xs-12" align="center">

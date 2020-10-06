@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $Id
  * @property string $TituloNoti
  * @property string $InfoNoti
+ * @property string $imagen
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
@@ -27,6 +28,7 @@ class Post extends Model
 
 	protected $fillable = [
 		'TituloNoti',
-		'InfoNoti'
+		'InfoNoti',
+		'imagen'
 	];
 }
