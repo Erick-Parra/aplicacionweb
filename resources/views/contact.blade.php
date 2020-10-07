@@ -36,7 +36,7 @@
                 <div class="form-group"><label class="sr-only" for="firstname">Nombre</label><input type="text" class="form-control" id="firstname" name="firstname" required placeholder="Nombre" autofocus /></div>
                 <div class="form-group"><label class="sr-only" for="lastname">Apellidos</label><input type="text" class="form-control" id="lastname" name="lastname" required placeholder="Apellido" /></div>
                 <div class="form-group"><label class="sr-only" for="phonenumber">Número de teléfono</label><input type="tel" class="form-control" id="phonenumber" name="phonenumber" required placeholder="Número de teléfono" /></div>
-                <div class="form-group"><label class="sr-only" for="email">Email</label><input type="text" class="form-control" 
+                <div class="form-group"><label class="sr-only" for="email">Email</label><input type="email" class="form-control" 
                 id="email" name="email" required placeholder="Email" /></div>
                  <div class="form-group"><label class="sr-only" for="firstname">Asunto</label><input type="text" class="form-control" id="firstname" name="asunto" required placeholder="Asunto" autofocus /></div>
                 <div class="form-group"><label class="sr-only" for="messages">Mensaje</label><textarea class="form-control" name="messages" required placeholder="Realice su solicitud" rows="4"></textarea></div>
