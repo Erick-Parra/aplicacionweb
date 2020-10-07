@@ -1,9 +1,10 @@
 @include('partials.nav')
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+<?xml version="1.0" encoding="UTF-8"?>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 </head>
 <style type="text/css">
 
@@ -18,7 +19,7 @@
 
     }
 </style>
-<body>
+<body> 
    <div class="team-clean" style="background-color: rgb(190,241,241);">
         <div class="container">
             <div class="intro">
@@ -26,7 +27,8 @@
             </div>
             <?php
 // Te recomiendo utilizar esta conexión. 
-$link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', 'rootvivi'); 
+$link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', 'rootvivi');
+
 ?>
             <table class= "table" style="background-color: #7FB3D5; opacity: 1; border="5" style="margin: 0 auto;">
         <caption>Personas responsables en la Junta Directiva de la LCA</caption>
@@ -39,6 +41,7 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', 'rootvivi');
   </tr>
 
   <?php foreach ($link->query('SELECT * from junta_directiva') as $mostrar){
+ 
     ?> 
 <tr>
       <tr>

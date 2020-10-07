@@ -20,7 +20,7 @@
 
 <?php
 // Te recomiendo utilizar esta conexión. 
-$link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', 'rootvivi'); 
+$link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', 'rootvivi'); 
 ?>
 
 <div class="container">

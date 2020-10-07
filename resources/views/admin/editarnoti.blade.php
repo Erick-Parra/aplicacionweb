@@ -68,17 +68,20 @@
 								<form class="form-horizontal" method="PUT">
 										<fieldset>
 												<legend class="text-center header">Registro de Publicación</legend>
-											<div class="col-md-12">
+											<div class="form-group row">
+												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+											<div class="col-md-8">
 												<label>Titulo Publicación<br></label>
 												<input style="display: table-column text-align: center" name="TituloNoti" type="text"  class="form-control" value="{{$publicacion->TituloNoti}}">
+											</div>
 											</div>
 											<div class="form-group row">
 												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
 													<div class="col-md-8">
 													<label>Información Publicación<br></label>
 													<input textarea class="form-control" id="message" name="InfoNoti"rows="4" value="{{$publicacion->InfoNoti}}"></textarea>
-														</div>
-												</div>
+													</div>
+											</div>
 											<br>
 											<br>
 												<div class="form-group row">
