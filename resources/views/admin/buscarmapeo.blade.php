@@ -119,7 +119,7 @@
       <a href="{{route('mapeos.editar', $map)}}" class="btn btn-primary border rounded">Editar</a>
       <form action="{{ route('mapeos.eliminar', $map) }}" class="d-inline" method="POST">
     @method('DELETE')
- 
+    @csrf
     <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
 </form>
     </td>

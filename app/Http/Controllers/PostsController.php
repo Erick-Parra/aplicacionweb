@@ -79,4 +79,11 @@ class PostsController extends Controller
         $pubEliminar->delete();
         return back();
     }
+
+    public function show(Post $idpub)
+    {
+       //$publicacion = Post::findOrFail($idpub);
+        //return view('partials.Informacion.post-view', compact('publicacion'));
+      return view('partials.Informacion.post-view');
+    }
 }

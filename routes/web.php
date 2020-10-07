@@ -89,7 +89,7 @@ Route::put('/editarpub/{idpub}','PostsController@update')->name('pub.update');
 
 Route::delete('/eliminarpub/{idpub}', 'PostsController@eliminar')->name('pub.eliminar');
 
-
+Route::get('/leerpub/{idpub}', 'PostsController@show')->name('pub.leer');
 
 
 Auth::routes();

@@ -1,5 +1,6 @@
 @include('partials.nav')
 <!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
 
     }
 </style>
+<body>
    <div class="team-clean" style="background-color: rgb(190,241,241);">
         <div class="container">
             <div class="intro">
@@ -26,7 +28,7 @@
 // Te recomiendo utilizar esta conexión. 
 $link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', 'rootvivi'); 
 ?>
-            <table class= "table table-hover table-dark" style="opacity: 1; border="5" style="margin: 0 auto;">
+            <table class= "table" style="background-color: #7FB3D5; opacity: 1; border="5" style="margin: 0 auto;">
         <caption>Personas responsables en la Junta Directiva de la LCA</caption>
         <thead class="#003357">
             <tr>
@@ -100,7 +102,10 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca', 'root', 'rootvivi');
   </table>
         </div>
     </div>
+    </body>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    </html>
