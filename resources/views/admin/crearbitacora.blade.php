@@ -69,7 +69,7 @@
                     <fieldset>
                      <b> <legend class="text-center header">Unidades de servicios de desarrollo
                       (USEDES)</legend>
-                        <legend class="text-center header">Bitacora Control Operativo</legend></b>
+                        <legend class="text-center header">Bitácora Control Operativo</legend></b>
 
                         <div class="form-group row">
                             
@@ -110,7 +110,7 @@
                               <label>
                                 Ubicación/acueducto<br></label>
                                 <input name="Ubicacion" value="{{ old('Ubicacion')}}"type="text" placeholder="Digite Ubicación/acueducto" class="form-control {{ $errors->has('Ubicacion')?'is-invalid':''}} ">
-                                 {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicacion requerido</div>')!!}
+                                 {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicación requerido</div>')!!}
                             </div>
                         </div>
                         <b><legend class="text-center header">Detalles de resultado del monitoreo</legend></b>
@@ -178,7 +178,7 @@
                               <label>
                                 Observaciones<br></label>
                                 <textarea class="form-control {{ $errors->has('Observacion')?'is-invalid':''}} " id="message" name="Observacion" value="{{ old('Observacion')}}"placeholder="Observaciones" rows="4"></textarea>
-                                 {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observacion requerido</div>')!!}
+                                 {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observación requerido</div>')!!}
                             </div>
                             </div>
   <div class="col-sm-12 col-xs-12" align="center">

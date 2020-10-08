@@ -14,8 +14,8 @@
  </div> <!-- end .flash-message --> 
 
     <div class="row">
-        <div class="col-md-12">
-            <br>
+        <div class="col-md-12">***
+            <br> 
             <h2 class="text-center text-info" style="color: rgba(243,246,248,0.99); ">CONTÁCTENOS</h2>
             @if(session('status'))
             {{ session('status')}}

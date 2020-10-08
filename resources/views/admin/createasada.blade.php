@@ -99,7 +99,7 @@
                               <label>
                                 Número de cédula jurídica<br></label>
                                 <input name="ced_Juridica" value="{{ old('ced_Juridica')}}" type="int" placeholder="Ingrese el número de cédula jurídica"  class="form-control {{ $errors->has('ced_Juridica')?'is-invalid':''}}  ">
-                                {!! $errors->first('ced_Juridica','<div class="invalid-feedback">Campo cedula juridica requerido</div>')!!}
+                                {!! $errors->first('ced_Juridica','<div class="invalid-feedback">Campo cédula jurídica requerido</div>')!!}
                             </div>
                         </div>
 
@@ -109,7 +109,7 @@
                               <label>
                                 Número de convenio<br></label>
                                 <input name="Num_Convenio" value="{{ old('Num_Convenio')}}" type="int" placeholder="Ingrese el número de convenio" class="form-control {{ $errors->has('Num_Convenio')?'is-invalid':''}}  ">
-                                {!! $errors->first('Num_Convenio','<div class="invalid-feedback">Campo numero convenio requerido</div>')!!}
+                                {!! $errors->first('Num_Convenio','<div class="invalid-feedback">Campo número convenio requerido</div>')!!}
                             </div>
                         </div>
                             <div class="form-group row">
@@ -139,7 +139,7 @@
                               <label>
                                 Número de sección<br></label>
                                 <input name="Num_Sesion" value="{{ old('Num_Sesion')}}" type="int" placeholder="Ingrese el número de sección" class="form-control {{ $errors->has('Num_Sesion')?'is-invalid':''}} ">
-                                {!! $errors->first('Num_Sesion','<div class="invalid-feedback">Campo numero sesion requerido</div>')!!}
+                                {!! $errors->first('Num_Sesion','<div class="invalid-feedback">Campo número sección requerido</div>')!!}
                             </div>
                         </div>
 
@@ -208,7 +208,7 @@
                               <label>
                                 Región<br></label>
                                 <input name="Region" value="{{ old('Region')}}" type="text" placeholder="Ingrese la región" class="form-control {{ $errors->has('Region')?'is-invalid':''}} ">
-                                {!! $errors->first('Region','<div class="invalid-feedback">Campo region requerido</div>')!!}
+                                {!! $errors->first('Region','<div class="invalid-feedback">Campo región requerido</div>')!!}
                             </div>
                         </div>
 

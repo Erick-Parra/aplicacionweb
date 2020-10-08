@@ -48,7 +48,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="container">
-        <h2>Lista de usuarios registrados  <a href="{{route('usuario.crear')}}">
+        <h2>Lista de usuarios registrados <a href="{{route('usuario.crear')}}">
           <button type="button" class="btn btn-success float-right">Agregar Usuario</button></a></h2>
           @if($search)
           <h6>

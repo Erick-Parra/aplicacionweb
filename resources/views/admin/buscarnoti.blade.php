@@ -99,7 +99,7 @@
     <thead >
   <tr>
     <th>#</th>
-    <th>Titulo Noticia</th>
+    <th>Título Noticia</th>
 
     <th>Información Notica</th>
 
@@ -123,7 +123,7 @@
       <form action="{{ route('pub.eliminar', $pub) }}" class="d-inline" method="POST">
     @method('DELETE')
     @csrf
-    <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
+    <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Está seguro de eliminar el registro?')">Eliminar</button>
 </form>
     </td>
 
@@ -138,11 +138,11 @@
   </div>
   <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
+    <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.5
+      <b>Created By</b> NEPV
     </div>
-    <strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
+    <strong>Copyright &copy; 2020.</strong> All rights
     reserved.
   </footer>
 

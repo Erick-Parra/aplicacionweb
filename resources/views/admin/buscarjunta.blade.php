@@ -60,7 +60,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                     <b> <legend class="text-center header">JUNTA DIRECTIVA</legend></b>
+                     <b> <legend class="text-center header">Junta Directiva</legend></b>
 
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
@@ -152,9 +152,9 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.5
+      <b>Created By</b> NEPV
     </div>
-    <strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
+    <strong>Copyright &copy; 2020.</strong> All rights
     reserved.
   </footer>
 
