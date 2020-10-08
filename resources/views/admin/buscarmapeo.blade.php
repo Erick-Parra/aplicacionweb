@@ -53,6 +53,7 @@
     <!-- Main content -->
     <section class="content">
       <form method="GET" action="{{ route('buscarmap')}}">
+       
         
 <div class="container">
   <div class="flash-message"> 
@@ -68,7 +69,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Registros de Mapeo</legend>
+                      <b><legend class="text-center header">Registros de Mapeo</legend></b>
 
                         <div class="form-group row">
                             

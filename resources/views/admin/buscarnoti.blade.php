@@ -16,21 +16,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<style type="text/css">
 
-  table, th, td {
-    border: 6px solid DODGERBLUE;
-    border-collapse: collapse;
-    color: MIDNIGHTBLUE; 
-    background-color: SKYBLUE;
-  }
-  th, td{
-   width: 5px;
-    height: 5px;
-
-  }
- 
-</style>
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -82,7 +68,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Registros de Publicaciones</legend>
+                       <b> <legend class="text-center header">Registros de Publicaciones</legend></b>
 
                         <div class="form-group row">
                             
@@ -106,13 +92,11 @@
                             <br>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               </div>
-                              <br>
-                              <div class="table-responsive">
-                            <table class= "table table-hover table-striped table-bordered " style="opacity: 1; border="5" style="margin: 0 auto;">
-    <caption>Registros Publicaciones</caption>
+                              </br>
+                                         <div class="table-responsive">
 
-<!--Table-->
-    <thead class="thead-dark">
+                               <table class="table table-table-striped" style="background-color: #FEFFFF">
+    <thead >
   <tr>
     <th>#</th>
     <th>Titulo Noticia</th>
@@ -135,7 +119,7 @@
     <img width="100px"src="{{ Storage::url ($pub->imagen)}}">
     </td>
     <td>
-      <a href="{{route('pub.editar', $pub)}}" class="btn btn-warning btn-sm">Editar</a>
+      <a href="{{route('pub.editar', $pub)}}" class="btn btn-primary border rounded">Editar</a>
       <form action="{{ route('pub.eliminar', $pub) }}" class="d-inline" method="POST">
     @method('DELETE')
     @csrf

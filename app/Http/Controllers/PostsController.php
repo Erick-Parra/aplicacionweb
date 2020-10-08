@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use Illuminate\Support\Facades\Storage;
+Use App\Http\Requests\PostRequest;
 use App;
 
 class PostsController extends Controller
@@ -20,7 +21,7 @@ class PostsController extends Controller
         return view('admin.crearnoti');
     }
 
-    public function store(Request $request){
+    public function store(PostRequest $request){
         	
         $pubAgregado=request()->except('_token');
 
@@ -71,7 +72,7 @@ class PostsController extends Controller
        
             return back();
     }
-    public function eliminar(Request $request,$idmap){
+    public function eliminar(Request $request,$idpub){
      
         $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
 

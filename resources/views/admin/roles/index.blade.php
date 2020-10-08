@@ -49,7 +49,7 @@
     <section class="content">
       <div class="container">
         <h2>Roles de usuario<a href="{{route('roles.create')}}">
-          <button type="button" class="btn btn-success float-right">Agragar Rol</button></a>
+          <button type="button" class="btn btn-success float-right">Agregar Rol</button></a>
       </h2>
 <table class="table table-hover", style="background-color: white">
   <thead>

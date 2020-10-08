@@ -67,7 +67,7 @@
 						<div class="well well-sm">
 								<form class="form-horizontal" method="PUT">
 										<fieldset>
-												<legend class="text-center header">Registro de Publicación</legend>
+												<b><legend class="text-center header">Registro de Publicación</legend></b>
 											<div class="form-group row">
 												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
 											<div class="col-md-8">
@@ -82,20 +82,17 @@
 													<input textarea class="form-control" id="message" name="InfoNoti"rows="4" value="{{$publicacion->InfoNoti}}"></textarea>
 													</div>
 											</div>
-											<br>
-											<br>
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<br/>
-														<label>
-													Imagen
-												      </label>
-												      <br/>
-												      <br/>
-													<img width="150px" src="{{ Storage::url ($publicacion->imagen)}}">	
-													<br/> 
-												</div>
+														<label> Imagen</label>
+												
 												 </div>
+												 <div class="form-group row">
+														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+														 <img width="150px" src="{{ Storage::url ($publicacion->imagen)}}">	
+												
+												 </div>
+									
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
 														<p><label for="imagen">
@@ -103,7 +100,7 @@
 															</label></p>
 												</div>
 														<div class="col-sm-13 col-xs-13" align="center">
-														 <button class="btn btn-warning border rounded" type="submit">Actualizar</button>
+														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
 														 <a href="{{route('buscarpub')}}" class="btn btn-success border rounded">Regresar</a>
 												</div>                   
 			</form>

@@ -66,7 +66,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Informacion de la asada</h3>
+         <b> <h3 class="card-title">Informacion de la asada</h3></b>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">

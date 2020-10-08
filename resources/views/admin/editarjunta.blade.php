@@ -68,7 +68,7 @@
 						<div class="well well-sm">
 								<form class="form-horizontal" method="PUT">
 										<fieldset>
-											<legend class="text-center header">JUNTA DIRECTIVA</legend>
+											<b><legend class="text-center header">JUNTA DIRECTIVA</legend></b>
 
 												<div class="form-group row">
 														

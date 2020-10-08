@@ -69,9 +69,9 @@
 						<div class="well well-sm">
 								<form class="form-horizontal" method="PUT">
 										<fieldset>
-											<legend class="text-center header">Unidades de servicios de desarrollo
+											<b><legend class="text-center header">Unidades de servicios de desarrollo
 											(USEDES)</legend>
-												<legend class="text-center header">Bitacora Control Operativo</legend>
+												<legend class="text-center header">Bitacora Control Operativo</legend></b>
 
 												<div class="form-group row">
 														
@@ -109,7 +109,7 @@
                                  {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicacion requerido</div>')!!}
 														</div>
 												</div>
-												<legend class="text-center header">Detalles de resultado del monitoreo</legend>
+												<b><legend class="text-center header">Detalles de resultado del monitoreo</legend></b>
 														<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
 														<div class="col-md-8">
@@ -181,7 +181,7 @@
 														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
 														 <a href="{{route('buscar')}}" class="btn btn-success border rounded">Regresar</a>
 												</div>
-												<br>
+											
 			</form>
 		</section>
 		<!-- /.content -->

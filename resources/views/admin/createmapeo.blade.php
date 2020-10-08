@@ -71,7 +71,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Registro de Mapeo</legend>
+                       <b> <legend class="text-center header">Registro de Mapeo</legend></b>
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
                             

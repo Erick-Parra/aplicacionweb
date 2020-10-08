@@ -68,7 +68,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Módulo de registro de ASADAS</legend>
+                        <b><legend class="text-center header">Módulo de registro de ASADAS</legend></b>
 
                         <div class="form-group row">
 

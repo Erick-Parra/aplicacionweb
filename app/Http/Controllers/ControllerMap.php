@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\TblMapeo;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\MapeoRequest;
-use App;
+
 
 class ControllerMap extends Controller
 {
@@ -18,20 +18,12 @@ class ControllerMap extends Controller
 
      public function index(Request $request)
     {
-       $query = $request->input('query');
 
-    if ( !$query ) {
-        return redirect()->route('searchmap');
-    }
-
-    $registro = TblMapeo::where('Nom_Asada', 'LIKE', "%{$query}%")
-        ->get();
-
-     return view ('admin.buscarmapeo')->with('registro', $registro);
+         
 
     
-    }
-
+    
+}
    public function buscar()
     {
       $registro = TblMapeo::all();
@@ -39,13 +31,15 @@ class ControllerMap extends Controller
      
     }
 
+
+
     public function editar($idmap)
     {
         $mapeos = TblMapeo::findOrFail($idmap);
         return view('admin.editarmapeo', compact('mapeos'));
     }
 
-    public function update (MapeoRequest $request, $idmap)
+    public function update (Request $request, $idmap)
     {
           $mapeoActualizado=request()->except(['_token','_method']);
 
@@ -101,7 +95,7 @@ class ControllerMap extends Controller
         TblMapeo::create($mapeoAgregado);
 
   
-        //return response()->json($mapeoAgregado);
+     
 
         return back();
     }

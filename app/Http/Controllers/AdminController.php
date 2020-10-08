@@ -74,7 +74,7 @@ class AdminController extends Controller
         ]);
     }
 
-    public function update(AsadasRequest $request, TblRegistroasada $asada)
+    public function update(Request $request, TblRegistroasada $asada)
     {
         $asada->update([
             'Nom_Asada' => Request('Nom_Asada'),
@@ -97,6 +97,8 @@ class AdminController extends Controller
           $request->session()->flash('alert-success', 'Actualización exitosa!'); 
 
         return back();
+
+
 
       //  return redirect()->route('admin.show',$asada);
 

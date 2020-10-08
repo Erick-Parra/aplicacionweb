@@ -68,9 +68,9 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                      <legend class="text-center header">Unidades de servicios de desarrollo
+                      <b><legend class="text-center header">Unidades de servicios de desarrollo
                       (USEDES)</legend>
-                        <legend class="text-center header">Bitacora Control Operativo</legend>
+                        <legend class="text-center header">Bitacora Control Operativo</legend></b>
 
                         <div class="form-group row">
                             

@@ -70,13 +70,15 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="POST">
                     <fieldset>
-                        <legend class="text-center header">Publicación</legend>
+                        <b><legend class="text-center header">Publicación</legend></b>
+                        
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></span>  
                             <div class="col-md-8">
                             <label>
                                   Titulo Publicación<br></label>
-                                <input style="display: table-column text-align: center" name="TituloNoti" type="text" placeholder="Ingrese titulo de la Publicación" class="form-control">
+                                <input style="display: table-column text-align: center" name="TituloNoti" type="text" placeholder="Ingrese titulo de la Publicación" class="form-control {{ $errors->has('TituloNoti')?'is-invalid':''}} "  value="{{ old('TituloNoti')}}">
+                                 {!! $errors->first('TituloNoti','<div class="invalid-feedback">Campo titulo requerido</div>')!!}
                             </div>
                         </div>
                         <div class="form-group row">
@@ -84,7 +86,8 @@
                         <div class="col-md-8">
                               <label>
                                 Información<br></label>
-                                <textarea class="form-control" id="message" name="InfoNoti" placeholder="Información Publicación" rows="4"></textarea>
+                                <textarea class="form-control {{ $errors->has('InfoNoti')?'is-invalid':''}} " id="message" name="InfoNoti" placeholder="Información Publicación" rows="4"  value="{{ old('InfoNoti')}}"></textarea>
+                                 {!! $errors->first('InfoNoti','<div class="invalid-feedback">Campo informacion requerido</div>')!!}
                             </div>
                             </div>
                         <div class="form-group row">
@@ -95,11 +98,12 @@
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                           <p><label for="imagen">
-                              <input type="file" name="imagen">
+                              <input type="file" name="imagen"  class="form-control {{ $errors->has('imagen')?'is-invalid':''}} "  value="{{ old('imagen')}}">
                               </label></p>
+                               {!! $errors->first('imagen','<div class="invalid-feedback">Campo imagen requerido</div>')!!}
                         </div>
                             <div class="col-sm-12 col-xs-12" align="center">
-                             <button class="btn btn-primary border rounded">Guardar</button>
+                             <button class="btn btn-primary border rounded">Registrar</button>
                         </div>
 
 </form>

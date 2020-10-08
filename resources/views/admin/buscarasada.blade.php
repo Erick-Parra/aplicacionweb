@@ -69,7 +69,7 @@
                 <form class="form-horizontal" method="post">
                     <fieldset>
                       <legend class="text-center header"></legend>
-                        <legend class="text-center header">Registro de Asadas</legend>
+                        <b><legend class="text-center header">Registro de Asadas</legend></b>
 
                         <div class="form-group row">
                             

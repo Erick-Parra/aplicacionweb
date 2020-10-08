@@ -3,9 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\TblMapeo;
+use Post;
 
-class MapeoRequest extends FormRequest
+class PostRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,8 +25,9 @@ class MapeoRequest extends FormRequest
     public function rules()
     {
         return [
-            'Nom_Asada' => ' required',
-            'Archivo_SHP' => ' required |mimes:jpg,jpeg,bmp,png',
+                'TituloNoti' => ' required',
+                'InfoNoti' => ' required',
+                'imagen' => ' required|mimes:jpg,jpeg,bmp,png',
         ];
     }
 }
