@@ -52,8 +52,14 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="GET" action="{{ route('buscarmap')}}">
-       
+      <form method="GET" action="{{ route('searchmap')}}">
+      @if($searchm)
+          <h6>
+            <div class="alert alert-primary" role="alert">
+                 Los resultados para '{{$searchm}}' son:
+            </div>
+          </h6>
+          @endif
         
 <div class="container">
   <div class="flash-message"> 
@@ -64,6 +70,8 @@
   @endif 
  @endforeach 
  </div> <!-- end .flash-message --> 
+
+
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
@@ -72,8 +80,6 @@
                       <b><legend class="text-center header">Registros de Mapeo</legend></b>
 
                         <div class="form-group row">
-                            
-                          
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
 
                             <div class="form-group row">
@@ -81,37 +87,40 @@
                             <div class="col-md-8">
                               <label>
                                 Nombre ASADA<br></label>
-                                <div class="input-group">
-                                  <input name="Nom_Asada" type="" class="form-control">
-                                  <span class="input-group-prepend">
-                                  <button type="submit" class="btn btn-primary">BUSCAR</button><br>
-                                  </span>
+                                <form class="form-inline ml-2">
+                              <div class="input-group input-group-sm">
+                                <input class="form-control " name="searchm" type="search">
+                                <div class="input-group-append">
+                                  <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                  </button>
                                 </div>
-                              </form>                              
-                              
+                              </div>
+                            </form>
                             </div>
                             <br>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               </div>
                               <br>
+           
                        <div class="table-responsive">
 
-                               <table class="table table-table-striped" style="background-color: #FEFFFF">
+                               <table class="table table-hover", style="background-color: white">
     <thead >
   <tr>
-    <th>#</th>
-    <th>Nombre ASADA</th>
+    <th scope="col">#</th>
+    <th scope="col">Nombre ASADA</th>
 
-    <th>Archivo SHP</th>
+    <th scope="col">Archivo SHP</th>
 
-    <th>Accion</th>
+    <th scope="col">Accion</th>
 
   </tr>
  
   </thead>
-  @foreach($registro as $map)
+  @foreach($mapeo as $map)
   <tr>
-    <td>{{$loop->iteration}}</td>
+    <td scope="row">{{$loop->iteration}}</td>
     <td>{{$map->Nom_Asada}}</td>
     <td>
     <img width="100px"src="{{ Storage::url ($map->Archivo_SHP)}}">

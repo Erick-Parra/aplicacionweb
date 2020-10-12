@@ -12,8 +12,16 @@ class PostsController extends Controller
 {
 	 public function index(Request $request)
     {
-      $registro=Post::search($request->TituloNoti)->orderBy('id', 'DESC')->paginate(5);
-      return view ('admin.buscarpub', compact('registro'));
+        if ($request){
+                $query = trim($request->get('searchpu'));
+
+                $noticia = Post::where('TituloNoti', 'LIKE', '%' . $query . '%')
+                          ->orderBy('Id', 'asc')
+                        ->paginate(5);
+
+                return view('admin.buscarnoti', ['noticia' => $noticia, 'searchpu' => $query]);
+                
+            }
     }
 
 	public function create()
@@ -35,13 +43,6 @@ class PostsController extends Controller
         Post::create($pubAgregado);
 
         return back();
-    }
-
-    public function buscar()
-    {
-      $registro = Post::all();
-      return view('admin.buscarnoti', compact('registro'));
-     
     }
 
     public function editar($idpub)

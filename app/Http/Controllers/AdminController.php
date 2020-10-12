@@ -13,11 +13,18 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('admin.index',[
-            'asadas' => TblRegistroasada::paginate(5)
-        ]);
+        if ($request){
+                $query = trim($request->get('searchasa'));
+
+                $asada = TblRegistroasada::where('Nom_Asada', 'LIKE', '%' . $query . '%')
+                          ->orderBy('idAsada', 'asc')
+                        ->paginate(5);
+
+                return view('admin.buscarasada', ['asada' => $asada, 'searchasa' => $query]);
+                
+            }
     }
 
     public function show(TblRegistroasada $asada)
@@ -27,11 +34,6 @@ class AdminController extends Controller
         ]);
     }
 
-      public function buscar()
-    {
-        $registro = TblRegistroasada::all();
-        return view('admin.buscarasada', compact('registro'));
-    }
 
 
     public function create()

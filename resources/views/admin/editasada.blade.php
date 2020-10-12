@@ -227,7 +227,7 @@
 
                             <div class="col-sm-12 col-xs-12" align="center">
                              <button class="btn btn-primary border rounded">Actualizar</button>
-                             <a href="{{route('buscaras')}}" class="btn btn-success border rounded">Regresar</a>
+                             <a href="{{route('searchasada')}}" class="btn btn-success border rounded">Regresar</a>
                         </div>
 
 

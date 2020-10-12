@@ -65,86 +65,55 @@
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
 
-                            <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                        
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               </div>
                               <br>
                                <div class=" table-responsive">
-                               <table class="table table-table-striped" style="background-color: #FEFFFF" >
+                               <table class="table table-hover", style="background-color: white">
    
     <thead >
  <tr>
 
-    <th>Puesto</th>
+     </th>
 
-    <th>Encargado</th>
+      <th scope="col">#</th>
+       
+       <th scope="col">Nombre</th>
+        
+       <th scope="col">Puesto</th>
+
+      <th scope="col">Asada</th>
+
+      <th scope="col">Acción</th>
 
   </tr>
+</thead>
   @foreach($registro as $reg)
-  <tr>
+  <tr >
 
-    <th>Presidente</th>
+    <td scope="row">{{$loop->iteration}}</td>
 
-    <td>{{$reg->Presidente}}</td>
+    <td>{{$reg->Nombre}}</td>
 
-  </tr>
-  <tr>
+    <td>{{$reg->Puesto}}</td>
+    
+    <td>{{$reg->Asada}}</td>
 
-    <th>Vicepresidente</th>
-
-    <td>{{$reg->vicePresidente}}</td>
-
-  </tr>
-  <tr>
-
-    <th>Secretario</th>
-
-    <td>{{$reg->Secretario}}</td>
-  </tr>
-  <tr>
-
-    <th>Tesorero</th>
-
-    <td>{{$reg->Tesorero}}</td>
-
-  </tr>
-  <tr>
-
-    <th>Vocal</th>
-
-    <td>{{$reg->Vocal}}</td>
-
-  </tr>
-  <tr>
-
-    <th>Suplente 1</th>
-
-    <td>{{$reg->Suplente1}}</td>
-
-
-  </tr>
-  <tr>
-
-    <th>Suplente 2</th>
-
-    <td>{{$reg->Suplente2}}</td>
-
-  </tr>
-  <tr>
-
-    <th>Fiscal</th>
-
-    <td>{{$reg->Fiscal}}</td>
+      <td>
+     <a href="{{route('editar', $reg)}}" class="btn btn-primary border rounded">Editar</a>
+</form>
+    </td>
 
   </tr>
 
+</thead>
   @endforeach
   </div>
      
     </div>
   </table>
-   <a href="{{route('editar', $reg)}}" class="btn btn-primary border rounded">Actualizar</a>
+   
 </div>
     </section>
     <!-- /.content -->

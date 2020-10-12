@@ -66,7 +66,7 @@
                   <p>Crear una nueva ASADA</p>
                   </a>
 
-                 <a href="{{route('buscaras')}}" class="nav-link">
+                 <a href="{{route('searchasada')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de ASADAS</p>
                 </a>
@@ -89,7 +89,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('buscar') }}" class="nav-link">
+                <a href="{{ route('search') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buscar Bitacora</p>
                 </a>
@@ -114,7 +114,7 @@
             </ul>
              <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('buscarmap')}}" class="nav-link">
+                <a href="{{ route('searchmap')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buscar Mapeos</p>
                 </a>

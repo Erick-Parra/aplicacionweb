@@ -33,10 +33,15 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '12
             <table class= "table" style="background-color: #7FB3D5; opacity: 1; border="5" style="margin: 0 auto;">
         <caption>Personas responsables en la Junta Directiva de la LCA</caption>
         <thead class="#003357">
-            <tr>
-    <th>PUESTO</th>
+             <tr>
 
-    <th>ENCARGADO</th>
+     </th>
+       
+       <th scope="col">Nombre</th>
+        
+       <th scope="col">Puesto</th>
+
+      <th scope="col">Asada</th>
 
   </tr>
 
@@ -44,61 +49,17 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '12
  
     ?> 
 <tr>
-      <tr>
 
-    <th>PRESIDENTE</th>
 
-    <td><?php echo $mostrar["Presidente"]?></td>
+    <td><?php echo $mostrar["Nombre"]?></td>
 
-  </tr>
-  <tr>
-
-    <th>VICEPRESIDENTE</th>
-
-    <td><?php echo $mostrar["vicePresidente"]?></td>
+    <td><?php echo $mostrar["Puesto"]?></td>
+    
+    <td><?php echo $mostrar["Asada"]?></td>
+    
 
   </tr>
-  <tr>
-
-    <th>SECRETARIO</th>
-
-    <td><?php echo $mostrar["Secretario"]?></td>
-
-  </tr>
-  <tr>
-
-    <th>TESORERO</th>
-
-    <td><?php echo $mostrar["Tesorero"]?></td>
-
-  </tr>
-  <tr>
-
-    <th>VOCAL</th>
-
-    <td><?php echo $mostrar["Vocal"]?></td>
-
-  </tr>
-  <tr>
-
-    <th>SUPLENTE 1</th>
-
-    <td><?php echo $mostrar["Suplente1"]?></td>
-
-  </tr>
-  <tr>
-
-    <th>SUPLENTE 2</th>
-
-    <td><?php echo $mostrar["Suplente2"]?></td>
-
-  </tr>
-  <tr>
-
-    <th>FISCAL</th>
-
-    <td><?php echo $mostrar["Fiscal"]?></td>
- </tr>
+ 
 <?php
   }
 ?>

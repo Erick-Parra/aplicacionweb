@@ -63,6 +63,7 @@
       <form method="POST" action="{{ route('usuarios.update', $user->id)}} ">
             @method('PATCH')
              @csrf
+              
          <div class="form-group">
            <label for="name">Nombre</label>
            <input type="text" class="form-control" name="name" value="{{$user->name}}" placeholder="Escribe tu nombre">
@@ -71,8 +72,9 @@
            <label for="email">Correo</label>
            <input type="email" class="form-control" name="email" value="{{$user->email}}" placeholder="Escribe el correo">
           </div>
-       <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+       <button type="submit" class="btn btn-primary">Guardar</button>
        <button type="reset" class="btn btn-danger">Cancelar</button>
+        <a href="{{route('usuarios')}}" class="btn btn-success border rounded">Regresar</a>
     </form>
         </div>
     </div>

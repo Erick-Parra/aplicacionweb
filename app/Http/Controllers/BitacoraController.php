@@ -10,14 +10,17 @@ use App\Models\TblControloperativo;
 class BitacoraController extends Controller
 {
     public function index(Request $request)
-    {
-        if($request)
-        {
-            $result = trim($request->get(key::search));
-            $nom = Nom_Asada::where('Nom_Asada', 'like', '%'.search.'%')
-            ->paginate(5);
-            return view('admin.index', ['Nom_Asada' => $nom, 'search'=>$result]);
-        }
+    { 
+        if ($request){
+                $query = trim($request->get('searchcon'));
+
+                $control = TblControloperativo::where('Nom_Asada', 'LIKE', '%' . $query . '%')
+                          ->orderBy('idControl', 'asc')
+                        ->paginate(5);
+
+                return view('admin.buscarbitacora', ['control' => $control, 'searchcon' => $query]);
+                
+            }
     }
 
     public function show()
@@ -25,11 +28,6 @@ class BitacoraController extends Controller
        
     }
 
-    public function buscar()
-    {
-        $registro = TblControloperativo::all();
-        return view('admin.buscarbitacora', compact('registro'));
-    }
 
     public function editar($id)
     {

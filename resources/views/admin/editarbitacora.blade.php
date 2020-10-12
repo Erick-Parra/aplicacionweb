@@ -179,7 +179,7 @@
 												</div>
 														<div class="col-sm-12 col-xs-12" align="center">
 														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
-														 <a href="{{route('buscar')}}" class="btn btn-success border rounded">Regresar</a>
+														 <a href="{{route('search')}}" class="btn btn-success border rounded">Regresar</a>
 												</div>
 											
 			</form>

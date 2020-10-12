@@ -53,7 +53,13 @@
     <!-- Main content -->
     <section class="content">
       <form method="GET" action="{{ route('buscarpub')}}">
-        @csrf
+          @if($searchpu)
+          <h6>
+            <div class="alert alert-primary" role="alert">
+                 Los resultados para '{{$searchpu}}' son:
+            </div>
+          </h6>
+          @endif
 <div class="container">
   <div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
@@ -79,14 +85,17 @@
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">
                               <label>
-                                Nombre Publicación<br></label>
-                                <div class="input-group">
-                                  <input name="buscarpor" type="" class="form-control">
-                                  <span class="input-group-prepend">
-                                  <button type="submit" class="btn btn-primary">BUSCAR</button><br>
-                                  </span>
+                                Nombre Publicación <br></label>
+                                <form class="form-inline ml-2">
+                              <div class="input-group input-group-sm">
+                                <input class="form-control " name="searchpu" type="search">
+                                <div class="input-group-append">
+                                  <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                  </button>
                                 </div>
-                              </form>                              
+                              </div>
+                            </form>                            
                               
                             </div>
                             <br>
@@ -94,25 +103,24 @@
                               </div>
                               </br>
                                          <div class="table-responsive">
-
-                               <table class="table table-table-striped" style="background-color: #FEFFFF">
+<table class="table table-hover", style="background-color: white">
     <thead >
   <tr>
-    <th>#</th>
-    <th>Titulo Noticia</th>
+    <th scope="col">#</th>
+    <th scope="col">Titulo Noticia</th>
 
-    <th>Información Notica</th>
+    <th scope="col">Información Notica</th>
 
-    <th>Imagen</th>
+    <th scope="col">Imagen</th>
 
-    <th>Acción</th>
+    <th scope="col">Acción</th>
 
   </tr>
  
   </thead>
-  @foreach($registro as $pub)
+  @foreach($noticia as $pub)
   <tr>
-    <td>{{$loop->iteration}}</td>
+    <td scope="row">{{$loop->iteration}}</td>
     <td>{{$pub->TituloNoti}}</td>
     <td>{{$pub->InfoNoti}}</td>
     <td>

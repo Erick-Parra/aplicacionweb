@@ -50,10 +50,10 @@
       <div class="container">
         <h2>Lista de usuarios registrados  <a href="{{route('usuario.crear')}}">
           <button type="button" class="btn btn-success float-right">Agregar Usuario</button></a></h2>
-          @if($search)
+            @if($search)
           <h6>
             <div class="alert alert-primary" role="alert">
-                 Los Resultados para '{{$search}}' son:
+                 Los resultados para '{{$search}}' son:
             </div>
           </h6>
           @endif

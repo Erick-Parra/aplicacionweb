@@ -75,6 +75,8 @@
           </div>
        <button type="submit" class="btn btn-primary">Registrar</button>
        <button type="reset" class="btn btn-danger">Cancelar</button>
+       <a href="{{route('usuarios')}}" class="btn btn-success border rounded">Regresar</a>
+              
     </form>
         </div>
     </div>

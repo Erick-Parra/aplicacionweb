@@ -28,7 +28,6 @@ Route::patch('/admin/{asada}','AdminController@update')->name('admin.update');
 Route::post('/admin','AdminController@store')->name('create.store');
 Route::get('/admin/{asada}','AdminController@show')->name('admin.show');
 Route::delete('/admin/{asada}', 'AdminController@destroy')->name('admin.destroy');
-Route::get('/buscaras/buscarasada','AdminController@buscar')->name('buscaras');
 Route::get('/searchasada','AdminController@index')->name('searchasada');
 
 // Rutas Junta Directiva
@@ -40,8 +39,6 @@ Route::put('/editarjunta/{idjunta}', 'juntaController@update' )->name('update');
 //Rutas controlador mapeo con diferente rutas
 Route::get('/admapeo/crearmapeo','ControllerMap@create')->name('map');
 Route::post('/admapeo','ControllerMap@store')->name('map.store');
-
-Route::get('/buscarmapeo/mapbuscar','ControllerMap@buscar')->name('buscarmap');
 Route::get('/searchmap','ControllerMap@index')->name('searchmap');
 
 //CRUD Mapeo
@@ -53,9 +50,6 @@ Route::delete('/eliminarmapeo/{idmap}', 'ControllerMap@eliminar')->name('mapeos.
 //Rutas controlador control operativo con diferente rutas /administracion
 Route::get('/adcontrolop/crearbitacora', 'BitacoraController@create')->name('bitacora');
 Route::post('/adcontrolop', 'BitacoraController@store')->name('bitacora.store');
-
-
-Route::get('/buscar/buscarbitacora','BitacoraController@buscar')->name('buscar');
 Route::get('/search','BitacoraController@index')->name('search');
 
 //CRUD CONTROL OPERATIVO
@@ -82,7 +76,7 @@ Route::post('/roles', 'RoleController@store')->name('roles.store');
 Route::get('/pub/crearpub','PostsController@create')->name('pub');
 Route::post('/pub','PostsController@store')->name('pub.store');
 
-Route::get('/buscarpub/pubuscar','PostsController@buscar')->name('buscarpub');
+Route::get('/buscarpub','PostsController@index')->name('buscarpub');
 
 Route::get('/editarpub/{idpub}','PostsController@editar')->name('pub.editar');
 Route::put('/editarpub/{idpub}','PostsController@update')->name('pub.update');

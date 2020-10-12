@@ -33,13 +33,8 @@ class JuntaDirectiva extends Model
 	protected $primaryKey = 'id';
 
 	protected $fillable = [
-		'Presidente',
-		'vicePresidente',
-		'Secretario',
-		'Tesorero',
-		'Vocal',
-		'Suplente1',
-		'Suplente2',
-		'Fiscal'
+		'Asada',
+		'Nombre',
+		'Puesto',
 	];
 }

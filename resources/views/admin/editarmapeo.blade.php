@@ -83,7 +83,7 @@
 												</div>
 														<div class="col-sm-13 col-xs-13" align="center">
 														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
-														 <a href="{{route('buscarmap')}}" class="btn btn-success border rounded">Regresar</a>
+														 <a href="{{route('searchmap')}}" class="btn btn-success border rounded">Regresar</a>
 												</div>
                             
 	    </form>

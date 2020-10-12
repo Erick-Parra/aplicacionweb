@@ -52,8 +52,14 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="POST" action="{{ route('buscaras')}}">
-        @csrf
+      <form method="GET" action="{{ route('searchasada')}}">
+           @if($searchasa)
+          <h6>
+            <div class="alert alert-primary" role="alert">
+                 Los resultados para '{{$searchasa}}' son:
+            </div>
+          </h6>
+          @endif
 <div class="container">
   <div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
@@ -81,57 +87,56 @@
                             <div class="col-md-8">
                               <label>
                                 Nombre ASADA<br></label>
-                                <form action="{{ route('searchasada')}}" method="GET">
-                                <div class="input-group">
-                                  <input name="Nom_Asada" type="search" class="form-control">
-                                  <span class="input-group-prepend">
-                                    <button type="submit" class="btn btn-primary">BUSCAR</button><br>
-                                  </span>
+                                <form class="form-inline ml-2">
+                              <div class="input-group input-group-sm">
+                                <input class="form-control " name="searchasa" type="search">
+                                <div class="input-group-append">
+                                  <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                  </button>
                                 </div>
-                              </form>    
+                              </div>
+                            </form>   
                             </div>
                             <br>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"   >
                               </div>
                               <br>
                                    <div class="table-responsive">
-                               <table class="table table-table-striped" style="background-color: #FEFFFF">
+                          <table class="table table-hover", style="background-color: white">
     <thead >
   <tr>
     
-    <th>#</th>
+    <th  scope="col">#</th>
 
-    <th>Nombre ASADA</th>
+    <th  scope="col">Nombre ASADA</th>
 
-    <th>Cedula Juridica</th>
+    <th  scope="col">Cedula Juridica</th>
 
-    <th>Abonados</th>
+    <th  scope="col">Abonados</th>
 
-    <th>Presidente</th>
+    <th scope="col">Presidente</th>
 
-    <th>Vicepresidente</th>
+    <th scope="col">Vicepresidente</th>
 
-    <th>Tesorero</th>
+    <th scope="col">Tesorero</th>
 
-    <th>Vocal1</th>
+    <th scope="col">Vocal1</th>
 
-    <th>Vocal2</th>
+    <th scope="col">Vocal2</th>
 
-    <th>Fiscal</th>
+    <th scope="col">Fiscal</th>
 
-    <th>Telefono</th>
+    <th scope="col">Telefono</th>
 
-    <th >Correo</th>
+    <th  scope="col">Correo</th>
     
-     <th>Accion</th>
-
-
+     <th scope="col">Accion</th>
   </tr>
- 
-  
-  @foreach($registro as $reg)
+  </thead>
+  @foreach($asada as $reg)
   <tr>
-    <td>{{$loop->iteration}}</td>
+    <td scope="row">{{$loop->iteration}}</td>
 
     <td>{{$reg->Nom_Asada}}</td>
 

@@ -58,6 +58,7 @@
          </div>
        <button type="submit" class="btn btn-primary">Crear</button>
        <button type="reset" class="btn btn-danger">Cancelar</button>
+      <a href="{{route('roles')}}" class="btn btn-success border rounded">Regresar</a>
     </form>
         </div>
     </div>

@@ -18,20 +18,19 @@ class ControllerMap extends Controller
 
      public function index(Request $request)
     {
+         if ($request){
+                $query = trim($request->get('searchm'));
 
-         
+                $mapeo = TblMapeo::where('Nom_Asada', 'LIKE', '%' . $query . '%')
+                          ->orderBy('IdMapeo', 'asc')
+                        ->paginate(5);
 
-    
-    
+                return view('admin.buscarmapeo', ['mapeo' => $mapeo, 'searchm' => $query]);
+                
+            }
+   
 }
-   public function buscar()
-    {
-      $registro = TblMapeo::all();
-      return view('admin.buscarmapeo', compact('registro'));
-     
-    }
-
-
+   
 
     public function editar($idmap)
     {

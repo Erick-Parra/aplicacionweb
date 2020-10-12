@@ -52,8 +52,16 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="GET" action="{{ route('buscar')}}">
-       
+      <form method="GET" action="{{ route('search')}}">
+
+        @if($searchcon)
+          <h6>
+            <div class="alert alert-primary" role="alert">
+                 Los resultados para '{{$searchcon}}' son:
+            </div>
+          </h6>
+          @endif  
+
 <div class="container">
   <div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
@@ -81,94 +89,93 @@
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">
                               <label>
-                                Nombre ASADA<br></label>
-                                <form action="{{ route('search')}}" method="GET">
-                                <div class="input-group">
-                                  <input name="Nom_Asada" type="search" class="form-control">
-                                  <span class="input-group-prepend">
-                                    <button type="submit" class="btn btn-primary">BUSCAR</button><br>
-                                  </span>
+                                 Nombre ASADA<br></label>
+                                <form class="form-inline ml-2">
+                              <div class="input-group input-group-sm">
+                                <input class="form-control " name="searchcon" type="search">
+                                <div class="input-group-append">
+                                  <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                  </button>
                                 </div>
-                              </form>    
+                              </div>
+                            </form>  
                             </div>
                             <br>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
                               </div>
                               <br>
-                              <div class="table-responsive">
-
-                               <table class="table table-table-striped" style="background-color: #FEFFFF">
-   
+ 
+                       <div class="table-responsive">
+                       <table class="table table-hover", style="background-color: white">
     <thead >
-  <tr>
-    
-    <th>#</th>
+ <tr>
 
-    <th>Nombre ASADA</th>
+    <th scope="col">#</th>
 
-    <th>Fecha Control</th>
+    <th scope="col">Nombre ASADA</th>
 
-    <th>Encargado</th>
+    <th scope="col">Fecha Control</th>
 
-    <th>Ubicacion</th>
+    <th scope="col">Encargado</th>
 
-    <th>Turbiedad</th>
+    <th scope="col">Ubicacion</th>
 
-    <th>Olor</th>
+    <th scope="col">Turbiedad</th>
 
-    <th>Cloro</th>
+    <th scope="col">Olor</th>
 
-    <th>PH</th>
+    <th scope="col">Cloro</th>
 
-    <th>Sabor</th>
+    <th scope="col">PH</th>
 
-    <th>Temperatura</th>
+    <th scope="col">Sabor</th>
 
-    <th>Observaciones</th>
+    <th scope="col">Temperatura</th>
 
-    <th >Accion</th>
+    <th scope="col">Observaciones</th>
+
+    <th scope="col">Accion</th>
 
   </tr>
- 
+ </thead>
   
-  @foreach($registro as $reg)
+  @foreach($control as $con)
   <tr>
-    <td>{{$loop->iteration}}</td>
+    <td scope="row">{{$loop->iteration}}</td>
 
-    <td>{{$reg->Nom_Asada}}</td>
+    <td>{{$con->Nom_Asada}}</td>
 
-    <td>{{$reg->Fecha_Control}}</td>
+    <td>{{$con->Fecha_Control}}</td>
 
-    <td>{{$reg->Encargado}}</td>
+    <td>{{$con->Encargado}}</td>
 
-    <td>{{$reg->Ubicacion}}</td>
+    <td>{{$con->Ubicacion}}</td>
 
-    <td>{{$reg->Turbiedad}}</td>
+    <td>{{$con->Turbiedad}}</td>
 
-    <td>{{$reg->Olor}}</td>
+    <td>{{$con->Olor}}</td>
 
-    <td>{{$reg->Cloro}}</td>
+    <td>{{$con->Cloro}}</td>
 
-    <td>{{$reg->PH}}</td>
+    <td>{{$con->PH}}</td>
 
-    <td>{{$reg->Sabor}}</td>
+    <td>{{$con->Sabor}}</td>
 
-    <td>{{$reg->Temperatura}}</td>
+    <td>{{$con->Temperatura}}</td>
 
-    <td>{{$reg->Observacion}}</td>
+    <td>{{$con->Observacion}}</td>
 
     <td>
-      <a href="{{route('notas.editar', $reg)}}" class="btn btn-primary border rounded">Editar</a>
-      <form action="{{ route('notas.eliminar', $reg) }}" class="d-inline" method="POST">
+      <a href="{{route('notas.editar', $con)}}" class="btn btn-primary border rounded">Editar</a>
+      <form action="{{ route('notas.eliminar', $con) }}" class="d-inline" method="POST">
     @method('DELETE')
     @csrf
     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
 </form>
     </td>
-
   </tr>
  @endforeach
-
 </table>
 </div>
       </form>
