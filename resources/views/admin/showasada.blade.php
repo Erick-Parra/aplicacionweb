@@ -66,7 +66,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-         <b> <h3 class="card-title">Informacion de la asada</h3></b>
+         <b> <h3 class="card-title">Información de la ASADA</h3></b>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -78,9 +78,9 @@
         <div class="card-body">    
         
           <h1>{{$asadas->Nom_Asada}}</h1>
-          <h5>Se registro el día: {{$asadas->Fecha_Registro}}</h5>
+          <h5>Se registró el día: {{$asadas->Fecha_Registro}}</h5>
           <h5>Presidente: {{$asadas->Presidente}}</h5>
-          <h5>Telefono: {{$asadas->Telefono}}</h5>
+          <h5>Teléfono: {{$asadas->Telefono}}</h5>
           <h5>Correo: {{$asadas->Correo}}</h5>
 
            <a href="{{route('admin')}}" class="btn btn-success border rounded">Regresar</a>

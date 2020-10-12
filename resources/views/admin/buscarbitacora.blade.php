@@ -78,7 +78,7 @@
                     <fieldset>
                       <b><legend class="text-center header">Unidades de servicios de desarrollo
                       (USEDES)</legend>
-                        <legend class="text-center header">Bitacora Control Operativo</legend></b>
+                        <legend class="text-center header">Bitácora Control Operativo</legend></b>
 
                         <div class="form-group row">
                             
@@ -119,7 +119,7 @@
 
     <th scope="col">Encargado</th>
 
-    <th scope="col">Ubicacion</th>
+    <th scope="col">Ubicación</th>
 
     <th scope="col">Turbiedad</th>
 
@@ -135,7 +135,7 @@
 
     <th scope="col">Observaciones</th>
 
-    <th scope="col">Accion</th>
+    <th scope="col">Acción</th>
 
   </tr>
  </thead>
@@ -186,9 +186,9 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.5
+      <b>Created By</b> NEPV
     </div>
-    <strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
+    <strong>Copyright &copy; 2020.</strong> All rights
     reserved.
   </footer>
 

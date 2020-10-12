@@ -71,7 +71,7 @@
 										<fieldset>
 											<b><legend class="text-center header">Unidades de servicios de desarrollo
 											(USEDES)</legend>
-												<legend class="text-center header">Bitacora Control Operativo</legend></b>
+												<legend class="text-center header">Bitácora Control Operativo</legend></b>
 
 												<div class="form-group row">
 														
@@ -106,7 +106,7 @@
 															<label>
 																Ubicación/acueducto<br></label>
 																<input name="Ubicacion" type="text" value="{{$nota->Ubicacion}}" class="form-control {{ $errors->has('Ubicacion')?'is-invalid':''}} ">
-                                 {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicacion requerido</div>')!!}
+                                 {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicación requerido</div>')!!}
 														</div>
 												</div>
 												<b><legend class="text-center header">Detalles de resultado del monitoreo</legend></b>
@@ -174,7 +174,7 @@
 															<label>
 																Observaciones<br></label>
 																<input textarea class="form-control {{ $errors->has('Observacion')?'is-invalid':''}} "id="message" name="Observacion"rows="4" value="{{$nota->Observacion}}"></textarea>
-																 {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observacion requerido</div>')!!}
+																 {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observación requerido</div>')!!}
 														</div>
 												</div>
 														<div class="col-sm-12 col-xs-12" align="center">
@@ -189,12 +189,12 @@
 	<!-- /.content-wrapper -->
 
 	<footer class="main-footer">
-		<div class="float-right d-none d-sm-block">
-			<b>Version</b> 3.0.5
-		</div>
-		<strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
-		reserved.
-	</footer>
+    <div class="float-right d-none d-sm-block">
+      <b>Created By</b> NEPV
+    </div>
+    <strong>Copyright &copy; 2020.</strong> All rights
+    reserved.
+  </footer>
 
 	<!-- Control Sidebar -->
 	<aside class="control-sidebar control-sidebar-dark">

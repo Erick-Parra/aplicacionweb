@@ -88,7 +88,7 @@
                               <label>
                                 Número de cédula jurídica<br></label>
                                 <input name="ced_Juridica" type="int" value="{{$asadas->ced_Juridica}}"  class="form-control {{ $errors->has('ced_Juridica')?'is-invalid':''}}  ">
-                                {!! $errors->first('ced_Juridica','<div class="invalid-feedback">Campo cedula juridica requerido</div>')!!}
+                                {!! $errors->first('ced_Juridica','<div class="invalid-feedback">Campo cédula jurídica requerido</div>')!!}
                             </div>
                         </div>
 
@@ -98,7 +98,7 @@
                               <label>
                                 Número de convenio<br></label>
                                 <input name="Num_Convenio" type="int" value="{{$asadas->Num_Convenio}}"  class="form-control {{ $errors->has('Num_Convenio')?'is-invalid':''}}  ">
-                                {!! $errors->first('Num_Convenio','<div class="invalid-feedback">Campo numero convenio requerido</div>')!!}
+                                {!! $errors->first('Num_Convenio','<div class="invalid-feedback">Campo número convenio requerido</div>')!!}
                             </div>
                         </div>
                             <div class="form-group row">
@@ -122,7 +122,7 @@
                               <label>
                                 Número de sección<br></label>
                                 <input name="Num_Sesion" type="int"value="{{$asadas->Num_Sesion}}"  class="form-control {{ $errors->has('Num_Sesion')?'is-invalid':''}} ">
-                                {!! $errors->first('Num_Sesion','<div class="invalid-feedback">Campo numero sesion requerido</div>')!!}
+                                {!! $errors->first('Num_Sesion','<div class="invalid-feedback">Campo número sección requerido</div>')!!}
                             </div>
                         </div>
 
@@ -189,9 +189,9 @@
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">
                               <label>
-                                Region<br></label>
+                                Región<br></label>
                                 <input name="Region" type="text" value="{{$asadas->nombreRegion}}" class="form-control {{ $errors->has('Region')?'is-invalid':''}} ">
-                                {!! $errors->first('Region','<div class="invalid-feedback">Campo region requerido</div>')!!}
+                                {!! $errors->first('Region','<div class="invalid-feedback">Campo región requerido</div>')!!}
                             </div>
                         </div>
 
@@ -201,7 +201,7 @@
                               <label>
                                 Razón de afiliación<br></label>
                                 <textarea class="form-control {{ $errors->has('Razon_Afiliacion')?'is-invalid':''}} " id="message" name="Razon_Afiliacion" rows="4">{{$asadas->Razon_Afiliacion}}</textarea>
-                                 {!! $errors->first('Razon_Afiliacion','<div class="invalid-feedback">Campo razon afiliacion requerido</div>')!!}
+                                 {!! $errors->first('Razon_Afiliacion','<div class="invalid-feedback">Campo razon afiliación requerido</div>')!!}
                             </div>
                         </div>
 
@@ -211,7 +211,7 @@
                               <label>
                                 Teléfono<br></label>
                                 <input id="phone" name="Telefono" type="int" value="{{$asadas->Telefono}}"  class="form-control {{ $errors->has('Telefono')?'is-invalid':''}} ">
-                                {!! $errors->first('Telefono','<div class="invalid-feedback">Campo telefono requerido</div>')!!}
+                                {!! $errors->first('Telefono','<div class="invalid-feedback">Campo teléfono requerido</div>')!!}
                             </div>
                         </div>
 

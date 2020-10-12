@@ -71,7 +71,7 @@
 											<div class="form-group row">
 												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
 											<div class="col-md-8">
-												<label>Titulo Publicación<br></label>
+												<label>Título Publicación<br></label>
 												<input style="display: table-column text-align: center" name="TituloNoti" type="text"  class="form-control" value="{{$publicacion->TituloNoti}}">
 											</div>
 											</div>
@@ -110,12 +110,12 @@
 	<!-- /.content-wrapper -->
 
 	<footer class="main-footer">
-		<div class="float-right d-none d-sm-block">
-			<b>Version</b> 3.0.5
-		</div>
-		<strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
-		reserved.
-	</footer>
+    <div class="float-right d-none d-sm-block">
+      <b>Created By</b> NEPV
+    </div>
+    <strong>Copyright &copy; 2020.</strong> All rights
+    reserved.
+  </footer>
 
 	<!-- Control Sidebar -->
 	<aside class="control-sidebar control-sidebar-dark">

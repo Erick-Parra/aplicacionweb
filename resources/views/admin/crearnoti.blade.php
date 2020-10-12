@@ -76,9 +76,9 @@
                             <span class="col-md-2 col-md-offset-2 text-center"></span>  
                             <div class="col-md-8">
                             <label>
-                                  Titulo Publicación<br></label>
+                                  Título Publicación<br></label>
                                 <input style="display: table-column text-align: center" name="TituloNoti" type="text" placeholder="Ingrese titulo de la Publicación" class="form-control {{ $errors->has('TituloNoti')?'is-invalid':''}} "  value="{{ old('TituloNoti')}}">
-                                 {!! $errors->first('TituloNoti','<div class="invalid-feedback">Campo titulo requerido</div>')!!}
+                                 {!! $errors->first('TituloNoti','<div class="invalid-feedback">Campo título requerido</div>')!!}
                             </div>
                         </div>
                         <div class="form-group row">
@@ -87,7 +87,7 @@
                               <label>
                                 Información<br></label>
                                 <textarea class="form-control {{ $errors->has('InfoNoti')?'is-invalid':''}} " id="message" name="InfoNoti" placeholder="Información Publicación" rows="4"  value="{{ old('InfoNoti')}}"></textarea>
-                                 {!! $errors->first('InfoNoti','<div class="invalid-feedback">Campo informacion requerido</div>')!!}
+                                 {!! $errors->first('InfoNoti','<div class="invalid-feedback">Campo información requerido</div>')!!}
                             </div>
                             </div>
                         <div class="form-group row">

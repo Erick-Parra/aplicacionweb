@@ -32,7 +32,7 @@
         @can('administrador')
           <li class="nav-item has-treeview">
             <a href="{{route('usuarios')}}" class="nav-link">
-              <i class="nav-icon fas fa fa-edit"></i>
+              <i class="nav-icon fas fa fa-user"></i>
               <p>
                 Usuarios
               </p>
@@ -42,7 +42,7 @@
        @can('administrador')
           <li class="nav-item has-treeview">
             <a href="{{route('roles')}}" class="nav-link">
-              <i class="nav-icon fas fa fa-edit"></i>
+              <i class="nav-icon fas fa fa-cogs"></i>
               <p>
                 Roles
               </p>
@@ -85,13 +85,13 @@
               <li class="nav-item">
                 <a href="{{ route('bitacora') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Crear Bitacora</p>
+                  <p>Crear Bitácora</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ route('search') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Buscar Bitacora</p>
+                  <p>Buscar Bitácora</p>
                 </a>
               </li>
               </ul>
@@ -133,7 +133,7 @@
               <li class="nav-item">
                 <a href="{{ route('buscarjunta')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>JuntaDirectiva</p>
+                  <p>Junta Directiva</p>
                 </a>
               </li>
               <li class="nav-item">

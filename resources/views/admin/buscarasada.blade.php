@@ -75,7 +75,7 @@
                 <form class="form-horizontal" method="post">
                     <fieldset>
                       <legend class="text-center header"></legend>
-                        <b><legend class="text-center header">Registro de Asadas</legend></b>
+                        <b><legend class="text-center header">Registro de ASADAS</legend></b>
 
                         <div class="form-group row">
                             
@@ -111,7 +111,7 @@
 
     <th  scope="col">Nombre ASADA</th>
 
-    <th  scope="col">Cedula Juridica</th>
+    <th  scope="col">Cédula Jurídica</th>
 
     <th  scope="col">Abonados</th>
 
@@ -127,11 +127,12 @@
 
     <th scope="col">Fiscal</th>
 
-    <th scope="col">Telefono</th>
+    <th scope="col">Teléfono</th>
 
     <th  scope="col">Correo</th>
     
-     <th scope="col">Accion</th>
+     <th scope="col">Acción</th>
+
   </tr>
   </thead>
   @foreach($asada as $reg)
@@ -180,11 +181,11 @@
   </div>
   <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
+ <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.5
+      <b>Created By</b> NEPV
     </div>
-    <strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
+    <strong>Copyright &copy; 2020.</strong> All rights
     reserved.
   </footer>
 

@@ -63,7 +63,7 @@
 											<b><legend class="text-center header">Registro de Mapeo</legend></b>
 
 												<div class="form-group row">
-														<legend class="text-center header">Asada: {{$mapeos->Nom_Asada}}</legend>
+														<legend class="text-center header">ASADA: {{$mapeos->Nom_Asada}}</legend>
 												</div>
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
@@ -101,12 +101,12 @@
   <!-- /.content-wrapper -->
 
 	<footer class="main-footer">
-		<div class="float-right d-none d-sm-block">
-			<b>Version</b> 3.0.5
-		</div>
-		<strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
-		reserved.
-	</footer>
+    <div class="float-right d-none d-sm-block">
+      <b>Created By</b> NEPV
+    </div>
+    <strong>Copyright &copy; 2020.</strong> All rights
+    reserved.
+  </footer>
 
 	<!-- Control Sidebar -->
 	<aside class="control-sidebar control-sidebar-dark">

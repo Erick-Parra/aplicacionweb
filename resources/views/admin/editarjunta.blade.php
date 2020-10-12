@@ -68,12 +68,22 @@
 						<div class="well well-sm">
 								<form class="form-horizontal" method="PUT">
 										<fieldset>
-											<b><legend class="text-center header">JUNTA DIRECTIVA</legend></b>
+											<b><legend class="text-center header">Junta Directiva</legend></b>
 
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
 												</div>
 
+												<div class="form-group row">
+														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+														<div class="col-md-8">
+															<label>
+																vicePresidente<br></label>
+																<input style="display: table-column text-align: center" name="vicePresidente" type="text" class="form-control  {{ $errors->has('vicePresidente')?'is-invalid':''}} "
+																value="{{$nota->vicePresidente}}">
+																 {!! $errors->first('vicepresidente','<div class="invalid-feedback">Campo vicepresidente requerido</div>')!!}
+														</div>
+												</div>
 
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
@@ -114,12 +124,12 @@
 	<!-- /.content-wrapper -->
 
 	<footer class="main-footer">
-		<div class="float-right d-none d-sm-block">
-			<b>Version</b> 3.0.5
-		</div>
-		<strong>Copyright &copy; 2020 <a href="/">Home</a>.</strong> All rights
-		reserved.
-	</footer>
+    <div class="float-right d-none d-sm-block">
+      <b>Created By</b> NEPV
+    </div>
+    <strong>Copyright &copy; 2020.</strong> All rights
+    reserved.
+  </footer>
 
 	<!-- Control Sidebar -->
 	<aside class="control-sidebar control-sidebar-dark">
