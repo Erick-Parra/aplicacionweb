@@ -22,7 +22,7 @@ Route::post('contactenos', 'MessagesController@store');
 
 
 //Rutas controlador registro con diferente rutas, /admin
-Route::get('/admin','AdminController@index')->name('admin');
+Route::get('/admin','AdminController@buscar')->name('admin');
 Route::get('/admin/crear','AdminController@create')->name('create');
 Route::get('/admin/{asada}/editar','AdminController@edit')->name('admin.edit');
 Route::patch('/admin/{asada}','AdminController@update')->name('admin.update');
