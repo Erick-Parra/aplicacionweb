@@ -12,11 +12,12 @@ Route::view('/serviciosTecn','partials.servicios.servicesLegal')->name('services
 
 Route::view('/informacion','info')->name('info');
 Route::view('/noticias','partials.informacion.noticias')->name('news');
-Route::view('/contactenos','contact')->name('contact');
+Route::post('comentario', 'comentsController@store');
 
 
 //Ruta de contáctenos
 
+Route::view('/contactenos','contact')->name('contact');
 Route::post('contactenos', 'MessagesController@store');
 
 
