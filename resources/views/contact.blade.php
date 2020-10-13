@@ -17,9 +17,7 @@
         <div class="col-md-12">
             <br> 
             <h2 class="text-center text-info" style="color: rgba(243,246,248,0.99); ">CONTÁCTENOS</h2>
-            @if(session('status'))
-            {{ session('status')}}
-            @endif
+           
             <form method="POST" action="{{ route('contact')}}">
            @csrf
         </div>
@@ -31,18 +29,87 @@
             <br>
             <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">TELÉFONO: </span><span>4080-1086</span></div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 site-form">
-            <form id="my-form">
-                <div class="form-group"><label class="sr-only" for="firstname">Nombre</label><input type="text" class="form-control" id="firstname" name="firstname" required placeholder="Nombre" autofocus /></div>
-                <div class="form-group"><label class="sr-only" for="lastname">Apellidos</label><input type="text" class="form-control" id="lastname" name="lastname" required placeholder="Apellido" /></div>
-                <div class="form-group"><label class="sr-only" for="phonenumber">Número de teléfono</label><input type="tel" class="form-control" id="phonenumber" name="phonenumber" required placeholder="Número de teléfono" /></div>
-                <div class="form-group"><label class="sr-only" for="email">Email</label><input type="email" class="form-control" 
-                id="email" name="email" required placeholder="Email" /></div>
-                 <div class="form-group"><label class="sr-only" for="firstname">Asunto</label><input type="text" class="form-control" id="firstname" name="asunto" required placeholder="Asunto" autofocus /></div>
-                <div class="form-group"><label class="sr-only" for="messages">Mensaje</label><textarea class="form-control" name="messages" required placeholder="Realice su solicitud" rows="4"></textarea></div>
+        <div class="col-12 col-sm-6 col-md-6 shadow rounded py-3 site-form" style="background-color: #d7f5f5;">
+            <form style="background-color: #FF0000;">
+                <div class="form-group">
 
+                    <input type="text" class="form-control bg-light shadow-sm @error('firstname') is-invalid @else border-0 @enderror" id="firstname" name="firstname" placeholder="Nombre" 
+                    value="{{ old('firstname')}}">
+                    @error('firstname')
+                    <span class="invalid-feedback" role="alert">
+                        <strong><small style="font-size: 12px;">Campo nombre requerido.</small></strong>
+                    </span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control bg-light shadow-sm @error('lastname') is-invalid @else border-0 @enderror" id="lastname" 
+                    name="lastname" placeholder="Apellido" value="{{ old('lastname')}}">
+
+                       @error('lastname')
+                    <span class="invalid-feedback" role="alert">
+                        <strong><small style="font-size: 12px;">Campo apellido requerido.</small></strong>
+                    </span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <input type="int" class="form-control bg-light shadow-sm @error('phonenumber') is-invalid @enderror" id="phonenumber" name="phonenumber" placeholder="Número de teléfono"
+                    value="{{ old('phonenumber')}}">  
+
+                       @error('phonenumber')
+                    <span class="invalid-feedback" role="alert">
+                        <strong><small style="font-size: 12px;">Campo número de teléfono requerido.</small></strong>
+                    </span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control bg-light shadow-sm @error('email') is-invalid @else border-0 @enderror" id="email" 
+                    name="email" placeholder="Email" value="{{ old('email')}}">
+                      
+                         @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong><small style="font-size: 12px;">Campo email requerido.</small></strong>
+                    </span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control bg-light shadow-sm @error('nameasada') is-invalid @else border-0 @enderror" id="nameasada" 
+                    name="nameasada" placeholder="Nombre de la ASADA a la que pertenece" value="{{ old('nameasada')}}">
+
+                       @error('nameasada')
+                    <span class="invalid-feedback" role="alert">
+                        <strong><small style="font-size: 12px;">Campo nombre de la ASADA requerido.</small></strong>
+                    </span>
+                    @enderror
+                </div>
+
+                 <div class="form-group">
+                    <input type="text" class="form-control bg-light shadow-sm @error('asunto') is-invalid @else border-0 @enderror" id="firstname" 
+                    name="asunto" placeholder="Asunto" autofocus 
+                    value="{{ old('asunto')}}">
+
+                      @error('nameasada')
+                    <span class="invalid-feedback" role="alert">
+                        <strong><small style="font-size: 12px;">Campo asunto requerido.</small></strong>
+                    </span>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control bg-light shadow-sm @error('messages') is-invalid @else border-0 @enderror" name="messages" 
+                    placeholder="Realice su solicitud" rows="2">{{ old('messages')}}</textarea>
+                    
+                      @error('messages')
+                    <span class="invalid-feedback" role="alert">
+                        <strong><small style="font-size: 12px;">Campo realice su solicitud requerido.</small></strong>
+                    </span>
+                    @enderror
+                </div>
                 <div class="col-sm-12 col-xs-12" align="center">
-                <button class="btn btn-primary border rounded" role="button" style="color: rgba(243,246,248,0.99); background-color: rgb(15,112,183);">Enviar</button></form>
+                <button class="btn btn-primary shadow btn-block border rounded" role="button" style="color: rgba(243,246,248,0.99); background-color: rgb(15,112,183);">Enviar</button></form>
+                <br>
         </div>
     </form>
         <div class="clearfix"></div>

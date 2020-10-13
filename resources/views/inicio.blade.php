@@ -6,14 +6,14 @@
         <br>
         <div class="jumbotron">
             <p style="font-size: 20px;">Horario: lunes a viernes de 8: 00 am a 4: 00 pm</p>
-            <p style="font-size: 20px;">Somos su mejor opción para mejorar los servicios de las ASADAS de Nicoya, Hojancha y Nandayure</p>
+            <p style="font-size: 20px;">Somos su mejor opción para mejorar los servicios de las ASADAS de Hojancha, Nicoya y Nandayure.</p>
             <p><a class="btn btn-primary border rounded" role="button" style="color: rgba(243,246,248,0.99);background-color: #337894;">LEER MÁS</a></p>
         </div>
     </div>
     <div class="site-section text-primary dark-section" id="information" style="font-size: 16px; background-color:
     #d7f5f5;">
         <h1>¿Quiénes Somos?</h1>
-        <p style="font-size: 16px;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE NICOYA, HOJANCHA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
+        <p style="font-size: 16px;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
     </div>
     <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #d7f5f5;">
          <p><img id="logoleras" src="assets/img/logos/olas.png" style="max-width:100%;width:100%;height:auto; margin-top: 0px;"></p>
@@ -45,7 +45,7 @@
                     <p></p>
                                     <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;
                                     font-size: 16px; height: 300px;"> 
-                                    Se ofrece el servicio contable de acuerdo al catálogo de cuentas del AyA. Incluye la elaboración de estados financieros mensuales, declaraciones anuales al ministerio de hacienda, asesoramiento en el egreso, manejo de caja chica, registro
+                                    Se ofrece el servicio contable de acuerdo al catálogo de cuentas del AyA. Incluye la elaboración de estados financieros mensuales, declaraciones anuales al ministerio de hacienda, manejo de caja chica, registro
                         de ingresos, egresos, acompañamiento en asambleas y facturación electrónica mediante dos plataformas.</p>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
         <div class="container site-section" id="convenios" style= "height:650px;"><h1 style="color: #1B2631;">Convenios</h1>
         <br>     
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators" style="background-color: #2E4053; margin-right:  400px; margin-left: 400px;">
+  <ol class="carousel-indicators" style="background-color: #003357;">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -133,6 +133,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
   </ol>
   <div class="carousel-inner" style="height: 420px; background-color: #FDFEFE;">
 
@@ -209,11 +210,21 @@
                                         y pozos de las ASADAS.</p>
     </div>
      </div>
-     <a class="carousel-control-prev" style="background-color: #2E4053; width: 30px;" href="#carouselExampleIndicators" role="button" data-slide="prev">
+     <div class="carousel-item">
+      <img class="card-img-width" src="assets/img/convenios/corredorbiologico.jpg" style="height: 300px;" alt="Nine slide">
+       <div class="carousel-caption d-none d-md-block" style="height: 10px;">
+        <br>
+        <br>
+        
+         <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">CORREDOR BIOLÓGICO RÍO NOSARA</h5>
+          
+    </div>
+     </div>
+     <a class="carousel-control-prev" style="background-color: #003357;width: 30px;" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" style="background-color: #2E4053; width: 30px;" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next" style="background-color: #003357;width: 30px;" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>

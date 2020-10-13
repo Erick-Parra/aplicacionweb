@@ -25,7 +25,7 @@
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
                 <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/3.jpg">
-                    <h3 class="name">Lic. Yohaire arias lópez</h3>
+                    <h3 class="name">Lic. YOHAIRY ARIAS LÓPEZ</h3>
                     <p class="title" style="color: rgb(11,11,11);">CONTADORA</p>
                     <p class="description">ÁREA CONTABLE</p>
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
@@ -37,9 +37,9 @@
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
                 <div class="col-md-6 col-lg-4 mr-auto item"><img class="rounded-circle" src="assets/img/photos/3.jpg">
-                    <h3 class="name">DRIKLE BRICEÑO</h3>
-                    <p class="title" style="color: rgb(11,11,11);">ABOGADO</p>
-                    <p class="description">ÁREA LEGAL</p>
+                    <h3 class="name">MARCOS ESPINOZA LÓPEZ</h3>
+                    <p class="title" style="color: rgb(11,11,11);">INGENIERO HIDROLÓGICO</p>
+                    <p class="description">PROGRAMA DE PROTECCIÓN RECURSO HÍDRICO Y CAMBIO CLIMÁTICO</p>
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
             </div>
