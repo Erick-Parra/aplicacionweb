@@ -10,9 +10,8 @@ use Illuminate\Queue\SerializesModels;
 class coments extends Mailable
 {
     use Queueable, SerializesModels;
-
     public $subject = 'Mensaje recibido';
-    
+
     public $msg;
 
     /**
@@ -20,7 +19,7 @@ class coments extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($msg)
     {
         $this->msg = $msg;
     }
@@ -32,6 +31,6 @@ class coments extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('emails.coments-received');
     }
 }

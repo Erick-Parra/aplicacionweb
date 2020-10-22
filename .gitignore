@@ -14,3 +14,4 @@ resources/views/partials/Quienes Somos/JuntaDirectiva.blade.php
 resources/views/partials/Quienes Somos/JuntaDirectiva.blade.php
 resources/views/partials/Informacion/noticias.blade.php
 resources/views/partials/Quienes Somos/JuntaDirectiva.blade.php
+app/Http/Controllers/MessagesController.php

@@ -1,33 +1,30 @@
-@include('partials.nav')
+
 <?php
 require '../php/Funciones.php';
 $obj = new Funciones();
 
-$posts = $obj->getposts();
+$posts = $obj->getPublicacion($_POST['blog_id']);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Publicaciones</title>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
 </head>
 <body>
-	<div class="team-clean" style="background-color: rgb(190,241,241);">
-	<div class="container">
-		<h2 style="color: #003357; padding: 30px">NOTICIAS</h2>
-		<div class="row">
-			<?php foreach ($posts as $publicacion): ?>
-				<div class="col-lg-4 col-md-4">
-					<img src="{{ Storage::url ($publicacion['imagen'])}}" class="img-responsive" style="width: 200px; ">
-					<h3 style="color:#003357; padding: 30px"><?php echo $publicacion['TituloNoti']; ?></h3>
-					<a href="post.php?blog_id=<?php echo $publicacion['Id']; ?>" style="color: #003357; padding: 30px">VER MÁS</a>
-				</div>
-			<?php endforeach; ?>
-		</div>
-		<form method="POST" action="{{ route('news')}}">
+  <div class="team-clean" style="background-color: rgb(190,241,241);">
+  <div class="container">
+    <h2 style="color: #003357; padding: 30px"><?php echo $posts["TituloNoti"] ?></h2>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-6">
+          <img src="{{ Storage::url ($posts['imagen'])}}" class="img-responsive" style="width: 200px; ">
+          <div>
+          <p text-align: center><?php echo $posts["InfoNoti"] ?></p></div>
+        </div>
+    </div>
+     <form method="POST" action="{{ route('news')}}">
            @csrf
 <div class="flash-message" style="background-color: #5DADE2;"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
@@ -81,13 +78,14 @@ $posts = $obj->getposts();
                     @enderror
                 </div>
                 <div class="col-sm-12 col-xs-12" align="center">
-                <button class="btn btn-primary shadow btn-block border rounded" role="button" style="color: rgba(243,246,248,0.99); background-color: rgb(15,112,183);">Enviar Comentario</button></form>
+                <button class="btn btn-primary shadow btn-block border rounded" role="button" style="color: rgba(243,246,248,0.99); background-color: rgb(15,112,183);">Enviar</button></form>
                 <br>
         </div>
     </form>
         <div class="clearfix"></div>
-	</div>
-	<script src="assets/js/jquery.min.js"></script>
+    </div>
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </div>
 </body>

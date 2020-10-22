@@ -12,7 +12,9 @@ Route::view('/serviciosTecn','partials.servicios.servicesLegal')->name('services
 
 Route::view('/informacion','info')->name('info');
 Route::view('/noticias','partials.informacion.noticias')->name('news');
-Route::post('comentario', 'comentsController@store');
+Route::post('noticias', 'comentsController@store');
+Route::get('/pub/{blog_id}','PostsController@show')->name('pub.id');
+ 
 
 
 //Ruta de contáctenos
