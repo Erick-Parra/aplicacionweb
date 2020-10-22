@@ -27,8 +27,8 @@ $posts = $obj->getposts();
 				</div>
 			<?php endforeach; ?>
 		</div>
-		<form method="POST" action="{{ route('news')}}">
-           @csrf
+ <form method="POST" action="{{ route('news')}}">
+    @csrf
 <div class="flash-message" style="background-color: #5DADE2;"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
   @if(Session::has('alert-' . $msg)) 

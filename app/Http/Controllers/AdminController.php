@@ -13,9 +13,10 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+ 
+         public function index(Request $request)
     {
-        if ($request){
+          if ($request){
                 $query = trim($request->get('searchasa'));
 
                 $asada = TblRegistroasada::where('Nom_Asada', 'LIKE', '%' . $query . '%')
@@ -25,6 +26,15 @@ class AdminController extends Controller
                 return view('admin.buscarasada', ['asada' => $asada, 'searchasa' => $query]);
                 
             }
+                
+            
+    }
+
+    public function buscar(Request $request){
+      
+            return view('admin.index',[
+            'asadas' => TblRegistroasada::paginate(5)
+        ]);
     }
 
     public function show(TblRegistroasada $asada)

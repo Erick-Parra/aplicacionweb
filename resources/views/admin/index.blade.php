@@ -49,31 +49,23 @@
     <section class="content">
 
       <!-- Default box -->
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Lista de ASADAS</h3>
-
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-              <i class="fas fa-minus"></i></button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-              <i class="fas fa-times"></i></button>
-          </div>
-        </div>
-        <div class="card-body">
-        
-          <ul>
-            @forelse($asadas as $asadaitem)
-            <li><a href="{{ route('admin.show', $asadaitem)}}">{{ $asadaitem->Nom_Asada }}</a></li>
+     
+<div class="card" style="width: auto;">
+  <div class=" text-center card-header" style="font-family: Antic; background-color: rgb(13, 71, 161); color: #FDFEFE;">
+<img id="logo" style="align-content: center;"src="assets/img/logos/Logotipo-LigadelAgua_2.png">{{ __('Lista de ASADAS registradas') }}
+    
+    <!--<b><legend class="text-center header" style="font-size: 15px;">Lista de ASADAS registradas</legend></b>
+    <img id="logo" style="align-content: right;"src="assets/img/logos/Logotipo-LigadelAgua_2.png">-->
+    
+  </div>
+  <ul class="list-group list-group-flush" style="text-align: center;">
+    @forelse($asadas as $asadaitem)
+            <li class="list-group-item"><a href="{{ route('admin.show', $asadaitem)}}">{{ $asadaitem->Nom_Asada }}</a></li>
             @empty
-            <li>No hay asadas registradas</li>
+            <li class="list-group-item">No hay ASADAS registradas</li>
             @endforelse
             {{$asadas->links()}}
-          </ul>
-        </div>
-
-
-
+  </ul>
         <!-- /.card-body -->
         <div class="card-footer">
           <!--Footer-->
@@ -87,7 +79,7 @@
   </div>
   <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
+  <footer class="main-footer" style="height: 10vh;">
     <div class="float-right d-none d-sm-block">
       <b>Created By</b> NEPV
     </div>
