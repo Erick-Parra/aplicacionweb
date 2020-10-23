@@ -6,7 +6,7 @@
   	public function getPosts()
   	{
   		global $pdo;
-  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', 'rootvivi');
+  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
 
   		$query = $pdo->prepare("
   			SELECT *
@@ -20,7 +20,7 @@
   		public function getPublicacion($blog_id)
   	{
   		global $pdo;
-  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', 'rootvivi');
+  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
 
   		$query = $pdo->prepare("
   			SELECT *

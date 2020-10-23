@@ -136,7 +136,7 @@
                   <p>Junta Directiva</p>
                 </a>
               </li>
-              <li class="nav-item">
+             <li class="nav-item">
                 <a href="{{ route('pub')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Crear Publicación</p>
@@ -148,6 +148,7 @@
                   <p>Listar Publicación</p>
                 </a>
               </li>
+                
             </ul>
           </li>
         </ul>

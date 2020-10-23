@@ -64,7 +64,7 @@
                         <ul>
                             <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href={{ route('servicesAdmi') }}>Administrativos</a></li>
                             <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href={{ route('servicesTecn') }}>Técnicos</a></li>
-                            <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href={{ route('servicesLegal') }}>Legales</a></li>
+                           
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="">Información</a>

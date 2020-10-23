@@ -76,8 +76,10 @@ Route::get('roles/crear', 'RoleController@create')->name('roles.create');
 Route::post('/roles', 'RoleController@store')->name('roles.store');
 
 //Publicaciones
-Route::get('/pub/crearpub','PostsController@create')->name('pub');
-Route::post('/pub','PostsController@store')->name('pub.store');
+//Route::get('/pub/crearpub','PostsController@create')->name('pub');
+Route::get('/pub','PostsController@create')->name('pub');
+Route::post('/crearpu', 'PostsController@store')->name('pub.store');
+
 
 Route::get('/buscarpub','PostsController@index')->name('buscarpub');
 
