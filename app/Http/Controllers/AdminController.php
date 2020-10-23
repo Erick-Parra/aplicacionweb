@@ -13,25 +13,25 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
- 
+
          public function index(Request $request)
     {
           if ($request){
-                $query = trim($request->get('searchasa'));
+                $searchasa = trim($request->get('searchasa'));
 
-                $asada = TblRegistroasada::where('Nom_Asada', 'LIKE', '%' . $query . '%')
+                $asada = TblRegistroasada::where('Nom_Asada', 'LIKE', '%' . $searchasa . '%')
                           ->orderBy('idAsada', 'asc')
                         ->paginate(5);
 
-                return view('admin.buscarasada', ['asada' => $asada, 'searchasa' => $query]);
-                
+                return view('admin.buscarasada', compact('asada','searchasa'));
+
             }
-                
-            
+
+
     }
 
     public function buscar(Request $request){
-      
+
             return view('admin.index',[
             'asadas' => TblRegistroasada::paginate(5)
         ]);
@@ -74,7 +74,7 @@ class AdminController extends Controller
             'Telefono' =>Request('Telefono'),
             'Correo' =>Request('Correo'),
         ]);
-        $request->session()->flash('alert-success', 'Añadido exitosamente!'); 
+        $request->session()->flash('alert-success', 'Añadido exitosamente!');
          return back();
       //  return redirect()->route('admin');
     }
@@ -106,7 +106,7 @@ class AdminController extends Controller
             'Correo' =>Request('Correo'),
         ]);
 
-          $request->session()->flash('alert-success', 'Actualización exitosa!'); 
+          $request->session()->flash('alert-success', 'Actualización exitosa!');
 
         return back();
 
@@ -117,7 +117,7 @@ class AdminController extends Controller
     }
     public function destroy(Request $request, TblRegistroasada $asada)
     {
-        $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+        $request->session()->flash('alert-success', 'Eliminado exitosamente!');
         $asada->delete();
         return back();
 
