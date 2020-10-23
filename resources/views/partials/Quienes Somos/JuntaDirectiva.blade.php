@@ -10,7 +10,7 @@
 
     table, th, td {
         border: 6px solid #003357;
-        border-collapse: separate; 
+        border-collapse: separate;
         color: #efeffb;
         background-color: #003357 ;
     }
@@ -19,15 +19,15 @@
 
     }
 </style>
-<body> 
+<body>
    <div class="team-clean" style="background-color: rgb(190,241,241);">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center" style="opacity: 0.63;filter: white(0px) brightness(83%);">JUNTA DIRECTIVA DE LA LIGA COMUNAL DEL AGUA</h2>
             </div>
             <?php
-// Te recomiendo utilizar esta conexión. 
-$link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
+// Te recomiendo utilizar esta conexión.
+$link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', 'root');
 
 ?>
             <table class= "table" style="background-color: #7FB3D5; opacity: 1; border="5" style="margin: 0 auto;">
@@ -36,9 +36,9 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '12
              <tr>
 
      </th>
-       
+
        <th scope="col">Nombre</th>
-        
+
        <th scope="col">Puesto</th>
 
       <th scope="col">Asada</th>
@@ -46,20 +46,20 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '12
   </tr>
 
   <?php foreach ($link->query('SELECT * from junta_directiva') as $mostrar){
- 
-    ?> 
+
+    ?>
 <tr>
 
 
     <td><?php echo $mostrar["Nombre"]?></td>
 
     <td><?php echo $mostrar["Puesto"]?></td>
-    
+
     <td><?php echo $mostrar["Asada"]?></td>
-    
+
 
   </tr>
- 
+
 <?php
   }
 ?>
@@ -67,7 +67,7 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '12
         </div>
     </div>
     </body>
-    
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>

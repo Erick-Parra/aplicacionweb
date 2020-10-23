@@ -19,8 +19,8 @@
 </style>
 
 <?php
-// Te recomiendo utilizar esta conexión. 
-$link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234'); 
+// Te recomiendo utilizar esta conexión.
+$link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', 'root');
 ?>
 
 <div class="container">
@@ -34,15 +34,15 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '12
 
 <table class="table table-responsive">
 <?php foreach ($link->query('SELECT * from posts') as $jb){
-    ?> 
+    ?>
 	<tr>
 		<td style="width: 200px;">
-		
+
 	    </td>
 		<td>
 			<img src="{{ Storage::url ($jb['imagen'])}}" class="img-responsive" style="width: 200px; ">
 			<h4><?php echo $jb["TituloNoti"] ?></h4>
-			<p><?php echo $jb["InfoNoti"] ?></p> 
+			<p><?php echo $jb["InfoNoti"] ?></p>
 		</td>
 	</tr>
 <?php
@@ -58,19 +58,19 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '12
 
  <form method="POST" action="{{ route('news')}}">
     @csrf
-<div class="flash-message" style="background-color: #5DADE2;"> 
- @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
-  @if(Session::has('alert-' . $msg)) 
+<div class="flash-message" style="background-color: #5DADE2;">
+ @foreach (['danger', 'warning', 'success', 'info'] as $msg)
+  @if(Session::has('alert-' . $msg))
 
-  <p class="border rounded alert alert-primary-{{ $msg }}" style="color: rgba(243,246,248,0.99); size: 15px;">{{ Session::get('alert-' . $msg) }} <a href="{{ route('news')}}" class="close" data-dismiss="alert" aria-label="close">&times;</a></p> 
-  @endif 
- @endforeach 
+  <p class="border rounded alert alert-primary-{{ $msg }}" style="color: rgba(243,246,248,0.99); size: 15px;">{{ Session::get('alert-' . $msg) }} <a href="{{ route('news')}}" class="close" data-dismiss="alert" aria-label="close">&times;</a></p>
+  @endif
+ @endforeach
 
- </div> <!-- end .flash-message --> 
+ </div> <!-- end .flash-message -->
 
     <div class="row">
         <div class="col-md-12">
-            <br> 
+            <br>
             <h2 class="text-center text-info" style="color: rgba(243,246,248,0.99); ">COMENTARIOS</h2>
             @if(session('status'))
             {{ session('status')}}
@@ -78,7 +78,7 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '12
             <form method="POST" action="{{ route('news')}}">
            @csrf
         </div>
-   
+
 <div class="panel panel-default">
 <div class="panel-heading" style="color:#5DADE2">Escribir comentario</div>
 <div class="panel-body">
