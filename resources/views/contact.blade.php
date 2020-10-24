@@ -33,7 +33,7 @@
             <form style="background-color: #FF0000;">
                 <div class="form-group">
 
-                    <input type="text" class="form-control bg-light shadow-sm @error('firstname') is-invalid @else border-0 @enderror" id="firstname" name="firstname" placeholder="Nombre" 
+                    <input type="text" class="form-control bg-light shadow-sm @error('firstname') is-invalid @else border-0 @enderror" id="firstname" name="firstname" placeholder="Nombre" autofocus
                     value="{{ old('firstname')}}">
                     @error('firstname')
                     <span class="invalid-feedback" role="alert">
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="int" class="form-control bg-light shadow-sm @error('phonenumber') is-invalid @enderror" id="phonenumber" name="phonenumber" placeholder="Número de teléfono"
+                    <input type="int" class="form-control bg-light shadow-sm @error('phonenumber') is-invalid @else border-0 @enderror" id="phonenumber" name="phonenumber" placeholder="Número de teléfono"
                     value="{{ old('phonenumber')}}">  
 
                        @error('phonenumber')
@@ -88,7 +88,7 @@
 
                  <div class="form-group">
                     <input type="text" class="form-control bg-light shadow-sm @error('asunto') is-invalid @else border-0 @enderror" id="firstname" 
-                    name="asunto" placeholder="Asunto" autofocus 
+                    name="asunto" placeholder="Asunto" 
                     value="{{ old('asunto')}}">
 
                       @error('nameasada')
@@ -115,3 +115,7 @@
         <div class="clearfix"></div>
     </div>
 </div>
+<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>

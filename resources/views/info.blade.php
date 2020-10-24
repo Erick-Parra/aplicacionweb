@@ -107,23 +107,23 @@
 	<div style="text-align:center; background-color: PALETURQUOISE;">
     <br>
    
-	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA</h1>
+	<h1>ASADAS DEL ÁREA DE INFLUENCIA DE LA LCA (Abonados)</h1>
     <br>
 	<div style="text-align:center;">
    
 	<table class= "table table-hover table-dark" style="opacity: 1; border="5" title="center" style="margin: 0 auto;">
-		<caption>Lista de ASADAS del área de influencia de la LCA</caption>
+		<caption>Lista de ASADAS del área de influencia de la LCA (Abonados)</caption>
 		<thead class="thead-dark">
 
 		<th>Rango Por Abonados</th>
 
     <th colspan="2"><p>  Hojancha</p> <br>
-    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Procentaje</th>
+    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Porcentaje</th>
     <th colspan="2"><p> Nandayure</p> <br>
-    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Procentaje</th>
+    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Porcentaje</th>
 
     <th colspan="2"><p>Nicoya</p> <br>
-    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Procentaje</th>
+    Cantidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Porcentaje</th>
 
     <th><p>Total</p><br><br></th>
 
@@ -249,3 +249,8 @@
 
 </body>
 </html>
+
+<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>

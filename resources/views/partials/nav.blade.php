@@ -47,35 +47,92 @@
 
 <body>
       
-    <nav class="navbar navbar-light navbar-expand sticky-top" style="background-color: #003357;">
-        <div class="container"><img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png"><a class="navbar-brand"  style="color: rgba(243,246,248,0.99);" href="#"><strong>Liga Comunal del Agua</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>       
-            
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a  style="color: rgba(243,246,248,0.99);" class="nav-link active"  href={{ route('inicio') }}>Inicio</a></li>
-                    <li class="nav-item" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="">¿Quiénes Somos?</a>
-                     <ul>
-                            <li class="nav-item" style="background-color: #003357;" role="presentation"><a  style="color: rgba(243,246,248,0.99);" class="nav-link" href={{ route('JuntaDirectiva') }}>Junta Directiva</a></li>
-                           <li class="nav-item" style="background-color: #003357;" role="presentation" ><a style="color: rgba(243,246,248,0.99);" class="nav-link"  href={{ route('Funcionarios') }}>  Funcionarios</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="">Servicios</a>
-                        <ul>
-                            <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href={{ route('servicesAdmi') }}>Administrativos</a></li>
-                            <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href={{ route('servicesTecn') }}>Técnicos</a></li>
-                           
-                        </ul>
-                    </li>
-                    <li class="nav-item" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="">Información</a>
-                         <ul>
-                            <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href={{route('info') }}>Gráficos</a></li>
-                            <li class="nav-item" style="background-color: #003357;" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="{{route('news') }}">Noticias<a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" role="presentation"><a style="color: rgba(243,246,248,0.99);" class="nav-link" href="{{ route('contact') }}">CONTÁCTENOS</a></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
+   <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #003357; color: rgba(243,246,248,0.99);">
+  <div class="container-fluid">
+   <a class="navbar-brand" href="#" style="color: rgba(243,246,248,0.99);">
+      <img
+        src="assets/img/logos/Logotipo-LigadelAgua_2.png"
+        height="30"
+        alt=""
+        loading="lazy"/>
+      Liga Comunal del Agua
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ route('inicio') }}" style="color: rgba(243,246,248,0.99);">Inicio</a>
+        </li>
+        <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle" style="color: rgba(243,246,248,0.99);"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false">
+          ¿Quiénes somos?
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357; 
+        color: rgba(243,246,248,0.99);">
+          <li><a class="dropdown-item" href="{{ route('JuntaDirectiva') }}" style="background-color: #003357; color: rgba(243,246,248,0.99);">Junta directiva</a></li>
+          <li><a class="dropdown-item" href="{{ route('Funcionarios') }}" style="background-color: #003357; 
+          color: rgba(243,246,248,0.99);">Funcionarios</a></li>
+        </ul>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle" style="color: rgba(243,246,248,0.99);"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false">
+          Servicios
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357; 
+        color: rgba(243,246,248,0.99);">
+          <li><a class="dropdown-item" href="{{ route('servicesAdmi') }}" style="background-color: #003357; 
+          color: rgba(243,246,248,0.99);">Administrativos</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesTecn') }}" style="background-color: #003357; 
+          color: rgba(243,246,248,0.99);">Técnicos</a></li>
+        </ul>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle" style="color: rgba(243,246,248,0.99);"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false">
+          Información
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357; color: rgba(243,246,248,0.99);">
+          <li><a class="dropdown-item" href="{{route('info') }}" style="background-color: #003357; color: rgba(243,246,248,0.99);">Gráficos</a></li>
+          <li><a class="dropdown-item" href="{{route('news') }}" style="background-color: #003357; color: rgba(243,246,248,0.99);">Noticias</a></li>
+        </ul>
+      </li>
+       <li class="nav-item">
+          <a class="nav-link" href="{{ route('contact') }}" style="color: rgba(243,246,248,0.99);">Contáctenos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <body>
