@@ -4,12 +4,14 @@ require '../php/Funciones.php';
 $obj = new Funciones();
 
 $posts = $obj->getPublicacion($_POST['blog_id']);
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
 </head>
@@ -33,8 +35,7 @@ $posts = $obj->getPublicacion($_POST['blog_id']);
   <p class="border rounded alert alert-primary-{{ $msg }}" style="color: rgba(243,246,248,0.99); size: 15px;">{{ Session::get('alert-' . $msg) }} <a href="{{ route('news')}}" class="close" data-dismiss="alert" aria-label="close">&times;</a></p> 
   @endif 
  @endforeach 
-
- </div> <!-- end .flash-message --> 
+ </div> <!-- end .flash-message -->
 
     <div class="row">
         <div class="col-md-12">
@@ -85,8 +86,8 @@ $posts = $obj->getPublicacion($_POST['blog_id']);
         <div class="clearfix"></div>
     </div>
   </div>
-  <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </div>
 </body>
+  <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </html>

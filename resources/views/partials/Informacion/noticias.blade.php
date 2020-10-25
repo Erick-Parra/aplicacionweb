@@ -23,10 +23,12 @@ $posts = $obj->getposts();
 				<div class="col-lg-4 col-md-4">
 					<img src="{{ Storage::url ($publicacion['imagen'])}}" class="img-responsive" style="width: 200px; ">
 					<h3 style="color:#003357; padding: 30px"><?php echo $publicacion['TituloNoti']; ?></h3>
-					<a href="post.php?blog_id=<?php echo $publicacion['Id']; ?>" style="color: #003357; padding: 30px">VER MÁS</a>
+					<p text-align: center><?php echo $publicacion["InfoNoti"] ?></p></div>
 				</div>
 			<?php endforeach; ?>
 		</div>
+    <br>
+    <br>
     <form method="POST" action="{{ route('news')}}">
            @csrf
 <div class="flash-message" style="background-color: #5DADE2;"> 
@@ -81,7 +83,7 @@ $posts = $obj->getposts();
                     @enderror
                 </div>
                 <div class="col-sm-12 col-xs-12" align="center">
-                <button class="btn btn-primary shadow btn-block border rounded" role="button" style="color: rgba(243,246,248,0.99); background-color: rgb(15,112,183);">Enviar</button></form>
+                <button class="btn btn-primary shadow btn-block border rounded" role="button" style="color: rgba(243,246,248,0.99); background-color: rgb(15,112,183);">Enviar Comentario</button></form>
                 <br>
         </div>
     </form>
