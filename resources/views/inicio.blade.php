@@ -1,13 +1,12 @@
 @include('partials.nav')
 
    </nav>
-    <div id="info" style="height: 400px;">
+    <div id="info" style="height: 300px;">
         <br>
         <br>
         <div class="jumbotron">
             <p style="font-size: 20px;">Horario: lunes a viernes de 8: 00 am a 4: 00 pm</p>
             <p style="font-size: 20px;">Somos su mejor opción para mejorar los servicios de las ASADAS de Hojancha, Nicoya y Nandayure.</p>
-            <p><a class="btn btn-primary border rounded" role="button" style="color: rgba(243,246,248,0.99);background-color: #337894;">LEER MÁS</a></p>
         </div>
     </div>
     <div class="site-section text-primary dark-section" id="information" style="font-size: 16px; background-color:
@@ -243,7 +242,7 @@
                         <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).png" width="150" height="200" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.png" width="100" style="filter: contrast(200%);"></p>
                     </div>
                     <div class="col-sm-6 col-md-4 item" style="margin: 0px;padding: -5px;width: 168px;">
-                        <h3 style="color: #78909C;">CONTÁCTOS</h3>
+                        <h3 style="color: #78909C;">CONTACTOS</h3>
                         <ul>
                             <li style="font-size: 15px; text-align: left;">CORREO: ligacomunaldelagua@gmail.com</li>
                             <li><a href="#" style="opacity: 1;font-size: 15px;">OFICINA: 4080-1086</a></li>
