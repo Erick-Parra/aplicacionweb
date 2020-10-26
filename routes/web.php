@@ -91,4 +91,4 @@ Route::delete('/eliminarpub/{idpub}', 'PostsController@eliminar')->name('pub.eli
 Route::get('/leerpub/{idpub}', 'PostsController@show')->name('pub.leer');
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
