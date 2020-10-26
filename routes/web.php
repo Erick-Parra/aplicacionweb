@@ -6,15 +6,15 @@ Route::get('/','HomeController@index')->name('inicio');
 Route::view('/junta-directiva','partials.Quienes Somos.JuntaDirectiva')->name('JuntaDirectiva');
 Route::view('/funcionarios','partials.Quienes Somos.Funcionarios')->name('Funcionarios');
 
-Route::view('/serviciosAdmi','partials.servicios.servicesAdmi')->name('servicesAdmi');
-Route::view('/serviciosLegal','partials.servicios.servicesTecn')->name('servicesTecn');
+Route::view('/serviciosAdmi','partials.Servicios.servicesAdmi')->name('servicesAdmi');
+Route::view('/serviciosLegal','partials.Servicios.servicesTecn')->name('servicesTecn');
 Route::view('/serviciosTecn','partials.servicios.servicesLegal')->name('servicesLegal');
 
 Route::view('/informacion','info')->name('info');
 Route::view('/noticias','partials.informacion.noticias')->name('news');
 Route::post('noticias', 'comentsController@store');
 Route::get('/pub/{blog_id}','PostsController@show')->name('pub.id');
- 
+
 
 
 //Ruta de contáctenos
