@@ -11,7 +11,7 @@ Route::view('/serviciosLegal','partials.Servicios.servicesTecn')->name('services
 Route::view('/serviciosTecn','partials.servicios.servicesLegal')->name('servicesLegal');
 
 Route::view('/informacion','info')->name('info');
-Route::view('/noticias','partials.informacion.noticias')->name('news');
+Route::view('/noticias','partials.Informacion.noticias')->name('news');
 Route::post('noticias', 'comentsController@store');
 Route::get('/pub/{blog_id}','PostsController@show')->name('pub.id');
 
