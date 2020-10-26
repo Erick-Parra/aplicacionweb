@@ -2,11 +2,11 @@
 
   class Funciones
   {
-  	
+
   	public function getPosts()
   	{
   		global $pdo;
-  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
+  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', 'root');
 
   		$query = $pdo->prepare("
   			SELECT *
@@ -20,7 +20,7 @@
   		public function getPublicacion($blog_id)
   	{
   		global $pdo;
-  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
+  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', 'root');
 
   		$query = $pdo->prepare("
   			SELECT *

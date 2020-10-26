@@ -19,7 +19,7 @@
      </div>
     <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
         <div class="container site-section" id="mision" style="padding: 21px;">
-            
+
             <div class="row">
                 <div class="col-md-6"><i class="fa fa-check-square-o"></i>
                     <h3>MISIÓN</h3>
@@ -43,7 +43,7 @@
                                     <h1 style="font-size: 15px;text-align: center;">ADMINISTRATIVO</h1><i class=" fa fa-cogs"></i>
                     <p></p>
                                     <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;
-                                    font-size: 16px; height: 300px;"> 
+                                    font-size: 16px; height: 300px;">
                                     Se ofrece el servicio contable de acuerdo al catálogo de cuentas del AyA. Incluye la elaboración de estados financieros mensuales, declaraciones anuales al ministerio de hacienda, manejo de caja chica, registro
                         de ingresos, egresos, acompañamiento en asambleas y facturación electrónica mediante dos plataformas.</p>
                                 </div>
@@ -55,8 +55,8 @@
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h1 style="font-size: 15px; text-align: center;">SERVICIOS LEGALES</h1><i class="fa fa-legal"></i>
                     <p></p>
-                                    <p style="font-family: Antic, sans-serif;margin-top: 10px; 
-                                    font-size:16px; height: 300px;"> 
+                                    <p style="font-family: Antic, sans-serif;margin-top: 10px;
+                                    font-size:16px; height: 300px;">
                                     Con el propósito de que las ASADAS tengan servicios legales a precios razonables y además pueda cumplir con todas las obligaciones legales que demandan una ASADA, la LCA llegó a un acuerdo con un grupo de profesionales legales capacitados y con amplio conocimiento en el manejo de ASADAS para brindar este servicio.</p>
                                 </div>
                             </div>
@@ -67,8 +67,8 @@
                                 <div style="margin-top: 12px;padding: 12px;">
                                     <h1 style="font-size: 15px; text-align: center;">SERVICIOS TÉCNICOS</h1><i class="icon ion-waterdrop"></i>
                     <p></p>
-                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px; 
-                                    font-size:16px; height: 300px;"> 
+                                    <p style="font-family: Antic, sans-serif;font-size: 12px;margin-top: 10px;
+                                    font-size:16px; height: 300px;">
                                     Con el fin de cubrir las necesidades de las ASADAS y protegerlas de los cobros excesivos, la LCA realizó un acuerdo con un grupo de profesionales capacitados en servicios técnicos y con precios razonables, esto con el fin de que las ASADAS tengan la oportunidad de hacer los estudios que necesiten.</p>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
 
         <div class="text-secondary dark-section" style= "height:700px; background-color: #80c5e8;">
         <div class="container site-section" id="convenios" style= "height:650px;"><h1 style="color: #1B2631;">Convenios</h1>
-        <br>     
+        <br>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators" style="background-color: #003357;">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -142,7 +142,7 @@
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
 <br>
     <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">PNUD</h5>
-    <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Con el proyecto de fortalecimiento de ASADAS PNUD, para el apoyo a la creación 
+    <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Con el proyecto de fortalecimiento de ASADAS PNUD, para el apoyo a la creación
                                       y operación de la USEDES para prestar servicios a las ASADAS.</p>
   </div>
     </div>
@@ -203,9 +203,9 @@
       <img class="card-img-width" src="assets/img/convenios/logo_ice.png" style="height: 300px;" alt="Eighth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
-        
+
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">INSTITUTO COSTARRICENSE DE ELECTRICIDAD</h5>
-          <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Para la donación de árboles cada año, destinados a la campaña de reforestación de áreas de recarga y zonas de protección de nacientes 
+          <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Para la donación de árboles cada año, destinados a la campaña de reforestación de áreas de recarga y zonas de protección de nacientes
                                         y pozos de las ASADAS.</p>
     </div>
      </div>
@@ -214,9 +214,9 @@
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
         <br>
-        
+
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">CORREDOR BIOLÓGICO RÍO NOSARA</h5>
-          
+
     </div>
      </div>
      <a class="carousel-control-prev" style="background-color: #003357;width: 20px;" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -227,7 +227,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>  
+</div>
 </div>
 </div>
     <div class="footer-dark" style="background-color: #003357;">
@@ -258,7 +258,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col item social" style="margin-top:15px;"><a href="#"><i class="fa fa-facebook-official" style="filter: brightness(200%) contrast(200%);"></i></a><a href="#"><i class="icon ion-social-whatsapp-outline" style="filter: brightness(200%) contrast(200%);"></i></a></div>
+                <div class="col item social" style="margin-top:15px;"><a href="https://www.facebook.com/liga.comunaldelagua/"><i class="fa fa-facebook-official" style="filter: brightness(200%) contrast(200%);"></i></a></div>
                 <div style="text-align:center;margin-top:-40px; color: #78909C;">
                     <h2 class="divider-style"></h2>
                 </div>
