@@ -24,13 +24,13 @@
                     <p class="description">USEDES DEPARTAMENTO TÉCNICO</p>
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/3.jpg">
+                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/cuarto.jpeg">
                     <h3 class="name">Lic. YOHAIRY ARIAS LÓPEZ</h3>
                     <p class="title" style="color: rgb(11,11,11);">CONTADORA</p>
                     <p class="description">ÁREA CONTABLE</p>
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/3.jpg">
+                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/photos/marielos.jpeg">
                     <h3 class="name">BACH. MARIELOS RODRÍGUEZ MEJÍAS</h3>
                     <p class="title" style="color: rgb(11,11,11);">SECRETARIA</p>
                     <p class="description">ÁREA ADMINISTRATIVA</p>
