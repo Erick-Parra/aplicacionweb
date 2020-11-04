@@ -76,13 +76,6 @@
 
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																vicePresidente<br></label>
-																<input style="display: table-column text-align: center" name="vicePresidente" type="text" class="form-control  {{ $errors->has('vicePresidente')?'is-invalid':''}} "
-																value="{{$nota->vicePresidente}}">
-																 {!! $errors->first('vicepresidente','<div class="invalid-feedback">Campo vicepresidente requerido</div>')!!}
-														</div>
 												</div>
 
 												<div class="form-group row">

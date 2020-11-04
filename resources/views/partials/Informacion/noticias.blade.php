@@ -14,6 +14,18 @@ $posts = $obj->getposts();
 	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
 </head>
+<style type="text/css">
+
+    p {
+        text-align: center;
+        text-align: justify;
+        border:1px;
+        margin:auto;
+    }
+    div{
+        text-align: center;
+    }
+</style>
 <body>
 	<div class="team-clean" style="background-color: rgb(190,241,241);">
 	<div class="container">
@@ -23,7 +35,7 @@ $posts = $obj->getposts();
 				<div class="col-lg-4 col-md-4">
 					<img src="{{ Storage::url ($publicacion['imagen'])}}" class="img-responsive" style="width: 200px; ">
 					<h3 style="color:#003357; padding: 30px"><?php echo $publicacion['TituloNoti']; ?></h3>
-					<p text-align: center><?php echo $publicacion["InfoNoti"] ?></p></div>
+					<p><?php echo $publicacion["InfoNoti"] ?></p></div>
 				</div>
 			<?php endforeach; ?>
 		</div>
@@ -41,15 +53,15 @@ $posts = $obj->getposts();
 
  </div> <!-- end .flash-message --> 
 
-    <div class="row">
+    <div class="row" text-align= "center">
         <div class="col-md-12">
             <br> 
-            <h2 class="text-center text-info" style="color: rgba(243,246,248,0.99); ">COMENTARIOS</h2>
+            <h2 class="text-center text-info" style="color: rgba(243,246,248,0.99); ">COMENTARIOS NOTICIAS</h2>
            
             <form method="POST" action="{{ route('news')}}">
            @csrf
         </div>
-        <div class="col-12 col-sm-6 col-md-6 shadow rounded py-3 site-form" style="background-color: #d7f5f5;">
+        <div class="col-12 col-sm-6 col-md-6 shadow rounded py-3 site-form" style="background-color: #d7f5f5;" text-align= "center">
             <form style="background-color: #FF0000;">
                 <div class="form-group">
 
