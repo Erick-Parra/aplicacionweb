@@ -36,11 +36,12 @@
                     <p class="description">ÁREA ADMINISTRATIVA</p>
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
-                <div class="col-md-6 col-lg-4 mr-auto item"><img class="rounded-circle" src="assets/img/photos/3.jpg">
+                <div class="col-md-6 col-lg-4 mr-auto item"><img class="rounded-circle" src="assets/img/photos/fotoHidro.jpeg">
                     <h3 class="name">MARCOS ESPINOZA LÓPEZ</h3>
                     <p class="title" style="color: rgb(11,11,11);">INGENIERO HIDROLÓGICO</p>
                     <p class="description">PROGRAMA DE PROTECCIÓN RECURSO HÍDRICO Y CAMBIO CLIMÁTICO</p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+
                 </div>
             </div>
         </div>
