@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TblMapeo;
+use App\Models\TblRegistroasada;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\MapeoRequest;
 
@@ -75,7 +76,8 @@ class ControllerMap extends Controller
 
     public function create()
     {
-        return view('admin.createmapeo');
+      $categorias = TblRegistroasada::all();
+        return view('admin.createmapeo', compact('categorias'));
     }
 
      public function store(MapeoRequest $request){

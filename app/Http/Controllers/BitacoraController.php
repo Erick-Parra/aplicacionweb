@@ -6,21 +6,22 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests\BitacoraRequest;
 use App\Models\TblControloperativo;
+use App\Models\TblRegistroasada;
 
 class BitacoraController extends Controller
 {
     public function index(Request $request)
     { 
         if ($request){
-                $query = trim($request->get('searchcon'));
+            $query = trim($request->get('searchcon'));
 
-                $control = TblControloperativo::where('Nom_Asada', 'LIKE', '%' . $query . '%')
-                          ->orderBy('idControl', 'asc')
-                        ->paginate(5);
+            $control = TblControloperativo::where('Nom_Asada', 'LIKE', '%' . $query . '%')
+            ->orderBy('idControl', 'asc')
+            ->paginate(5);
 
-                return view('admin.buscarbitacora', ['control' => $control, 'searchcon' => $query]);
-                
-            }
+            return view('admin.buscarbitacora', ['control' => $control, 'searchcon' => $query]);
+            
+        }
     }
 
     public function show()
@@ -67,7 +68,9 @@ class BitacoraController extends Controller
 
     public function create()
     {
-        return view('admin.crearbitacora');
+        $categorias = TblRegistroasada::all();
+      
+        return view('admin.crearbitacora', compact('categorias'));
     }
 
     public function store(BitacoraRequest $request){

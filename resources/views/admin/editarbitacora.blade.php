@@ -64,124 +64,126 @@
   @endif 
  @endforeach 
  </div> <!-- end .flash-message --> 
-		<div class="row">
-				<div class="col-md-12">
-						<div class="well well-sm">
-								<form class="form-horizontal" method="PUT">
-										<fieldset>
-											<b><legend class="text-center header">Unidades de servicios de desarrollo
-											(USEDES)</legend>
-												<legend class="text-center header">Bitácora Control Operativo</legend></b>
+ <div class="row">
+ 	<div class="col-md-12">
+ 		<div class="well well-sm">
+ 			<form class="form-horizontal" method="PUT">
+ 				<fieldset>
+ 					<b><legend class="text-center header">Unidades de servicios de desarrollo
+ 					(USEDES)</legend>
+ 					<legend class="text-center header">Bitácora Control Operativo</legend></b>
 
-												<div class="form-group row">
-														
-													
-														<span class="col-md-2 col-md-offset-2 text-center"></span>
-														
-														<div class="col-md-8">
-														<label>
-																Nombre de la ASADA<br></label>
-																<input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$nota->Nom_Asada}}"  class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
-                                 {!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
-				
-														</div>
-												</div>
-												<div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-												</div>
+ 					<div class="form-group row">
+ 						
+ 						
+ 						<span class="col-md-2 col-md-offset-2 text-center"></span>
+ 						
+ 						<div class="col-md-8">
+ 							<label>
+ 								Nombre de la ASADA<br></label>
+ 								<input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$nota->Nom_Asada}}"  class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
+ 								{!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
+ 								
+ 							</div>
+ 						</div>
+ 						<div class="form-group row">
+ 							<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 						</div>
 
-												<div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Encargado<br></label>
-																<input style="display: table-column text-align: center" name="Encargado" type="text" value="{{$nota->Encargado}}" class="form-control {{ $errors->has('Encargado')?'is-invalid':''}} ">
-                                 {!! $errors->first('Encargado','<div class="invalid-feedback">Campo encargado requerido</div>')!!}
-														</div>
-												</div>
+ 						<div class="form-group row">
+ 							<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 							<div class="col-md-8">
+ 								<label>
+ 									Encargado<br></label>
+ 									<input style="display: table-column text-align: center" name="Encargado" type="text" value="{{$nota->Encargado}}" class="form-control {{ $errors->has('Encargado')?'is-invalid':''}} ">
+ 									{!! $errors->first('Encargado','<div class="invalid-feedback">Campo encargado requerido</div>')!!}
+ 								</div>
+ 							</div>
 
-												<div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Ubicación/acueducto<br></label>
-																<input name="Ubicacion" type="text" value="{{$nota->Ubicacion}}" class="form-control {{ $errors->has('Ubicacion')?'is-invalid':''}} ">
-                                 {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicación requerido</div>')!!}
-														</div>
-												</div>
-												<b><legend class="text-center header">Detalles de resultado del monitoreo</legend></b>
-														<div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Turbiedad<br></label>
-																<input name="Turbiedad" type="text" value="{{$nota->Turbiedad}}" class="form-control {{ $errors->has('Turbiedad')?'is-invalid':''}} ">
-                                 {!! $errors->first('Turbiedad','<div class="invalid-feedback">Campo turbiedad requerido</div>')!!}
-														</div>
-												</div>
+ 							<div class="form-group row">
+ 								<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 								<div class="col-md-8">
+ 									<label>
+ 										Ubicación/acueducto<br></label>
+ 										<input name="Ubicacion" type="text" value="{{$nota->Ubicacion}}" class="form-control {{ $errors->has('Ubicacion')?'is-invalid':''}} ">
+ 										{!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicación requerido</div>')!!}
+ 									</div>
+ 								</div>
+ 								<b><legend class="text-center header">Detalles de resultado del monitoreo</legend></b>
+ 								<div class="form-group row">
+ 									<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 									<div class="col-md-8">
+ 										<label>
+ 											Turbiedad<br></label>
+ 											<input name="Turbiedad" type="text" value="{{$nota->Turbiedad}}" class="form-control {{ $errors->has('Turbiedad')?'is-invalid':''}} ">
+ 											{!! $errors->first('Turbiedad','<div class="invalid-feedback">Campo turbiedad requerido</div>')!!}
+ 										</div>
+ 									</div>
 
-												<div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Olor<br></label>
-																<input name="Olor" type="text"  value="{{$nota->Olor}}" class="form-control {{ $errors->has('Olor')?'is-invalid':''}} ">
-                                 {!! $errors->first('Olor','<div class="invalid-feedback">Campo olor requerido</div>')!!}
-														</div>
-												</div>
-												 <div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Cloro residual<br></label>
-																<input name="Cloro" type="text"  value="{{$nota->Cloro}}" class="form-control {{ $errors->has('Cloro')?'is-invalid':''}} ">
-                                 {!! $errors->first('Cloro','<div class="invalid-feedback">Campo cloro requerido</div>')!!}
-														</div>
-												</div>
+ 									<div class="form-group row">
+ 										<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 										<div class="col-md-8">
+ 											<label>
+ 												Olor<br></label>
+ 												  <select name="Olor" class="form-control">
+                          <option value="Aceptable">Aceptable</option>
+                          <option value="No Aceptable">No Aceptable</option>
+                        </select>
+ 											</div>
+ 										</div>
+ 										<div class="form-group row">
+ 											<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 											<div class="col-md-8">
+ 												<label>
+ 													Cloro residual<br></label>
+ 													<input name="Cloro" type="text"  value="{{$nota->Cloro}}" class="form-control {{ $errors->has('Cloro')?'is-invalid':''}} ">
+ 													{!! $errors->first('Cloro','<div class="invalid-feedback">Campo cloro requerido</div>')!!}
+ 												</div>
+ 											</div>
 
-												<div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																PH<br></label>
-																<input name="PH" type="text" value="{{$nota->PH}}" class="form-control {{ $errors->has('PH')?'is-invalid':''}} ">
-                                 {!! $errors->first('PH','<div class="invalid-feedback">Campo PH requerido</div>')!!}
-														</div>
-												</div>
+ 											<div class="form-group row">
+ 												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 												<div class="col-md-8">
+ 													<label>
+ 														PH<br></label>
+ 														<input name="PH" type="text" value="{{$nota->PH}}" class="form-control {{ $errors->has('PH')?'is-invalid':''}} ">
+ 														{!! $errors->first('PH','<div class="invalid-feedback">Campo PH requerido</div>')!!}
+ 													</div>
+ 												</div>
 
-												<div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Sabor<br></label>
-																<input name="Sabor" type="text"  value="{{$nota->Sabor}}" class="form-control {{ $errors->has('Sabor')?'is-invalid':''}} ">
-                                 {!! $errors->first('Sabor','<div class="invalid-feedback">Campo sabor requerido</div>')!!}
-														</div>
-												</div>
+ 												<div class="form-group row">
+ 													<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 													<div class="col-md-8">
+ 														<label>
+ 															Sabor<br></label>
+ 															<input name="Sabor" type="text"  value="{{$nota->Sabor}}" class="form-control {{ $errors->has('Sabor')?'is-invalid':''}} ">
+ 															{!! $errors->first('Sabor','<div class="invalid-feedback">Campo sabor requerido</div>')!!}
+ 														</div>
+ 													</div>
 
-												 <div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Temperatura<br></label>
-																<input name="Temperatura" type="text"  value="{{$nota->Temperatura}}"  class="form-control {{ $errors->has('Temperatura')?'is-invalid':''}} ">
-                                 {!! $errors->first('Temperatura','<div class="invalid-feedback">Campo temperatura requerido</div>')!!}
-														</div>
-												</div>
-												<div class="form-group row">
-														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-														<div class="col-md-8">
-															<label>
-																Observaciones<br></label>
-																<input textarea class="form-control {{ $errors->has('Observacion')?'is-invalid':''}} "id="message" name="Observacion"rows="4" value="{{$nota->Observacion}}"></textarea>
-																 {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observación requerido</div>')!!}
-														</div>
-												</div>
-														<div class="col-sm-12 col-xs-12" align="center">
-														 <button class="btn btn-primary border rounded" type="submit">Actualizar</button>
-														 <a href="{{route('search')}}" class="btn btn-success border rounded">Regresar</a>
-												</div>
-											
+ 													<div class="form-group row">
+ 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 														<div class="col-md-8">
+ 															<label>
+ 																Temperatura<br></label>
+ 																<input name="Temperatura" type="text"  value="{{$nota->Temperatura}}"  class="form-control {{ $errors->has('Temperatura')?'is-invalid':''}} ">
+ 																{!! $errors->first('Temperatura','<div class="invalid-feedback">Campo temperatura requerido</div>')!!}
+ 															</div>
+ 														</div>
+ 														<div class="form-group row">
+ 															<span class="col-md-2 col-md-offset-2 text-center"></i></span>
+ 															<div class="col-md-8">
+ 																<label>
+ 																	Observaciones<br></label>
+ 																	<input textarea class="form-control {{ $errors->has('Observacion')?'is-invalid':''}} "id="message" name="Observacion"rows="4" value="{{$nota->Observacion}}"></textarea>
+ 																	{!! $errors->first('Observacion','<div class="invalid-feedback">Campo observación requerido</div>')!!}
+ 																</div>
+ 															</div>
+ 															<div class="col-sm-12 col-xs-12" align="center">
+ 																<button class="btn btn-primary border rounded" type="submit">Actualizar</button>
+ 																<a href="{{route('search')}}" class="btn btn-success border rounded">Regresar</a>
+ 															</div>
+ 															
 			</form>
 		</section>
 		<!-- /.content -->
