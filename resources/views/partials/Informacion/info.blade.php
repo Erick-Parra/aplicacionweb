@@ -1,6 +1,7 @@
 @include('partials.nav')
 
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>

@@ -34,7 +34,7 @@
             position: absolute;
             min-width: 100px;
         }
-   
+
 
         .nav li:hover > ul{
             display: block;
@@ -46,7 +46,7 @@
     </style>
 
 <body>
-      
+
    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #003357; color: rgba(243,246,248,0.99);">
   <div class="container-fluid">
    <a class="navbar-brand" href="#" style="color: rgba(243,246,248,0.99);">
@@ -83,10 +83,10 @@
           aria-expanded="false">
           ¿Quiénes somos?
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357; 
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357;
         color: rgba(243,246,248,0.99);">
           <li><a class="dropdown-item" href="{{ route('JuntaDirectiva') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Junta directiva</a></li>
-          <li><a class="dropdown-item" href="{{ route('Funcionarios') }}" style="background-color: #003357; 
+          <li><a class="dropdown-item" href="{{ route('Funcionarios') }}" style="background-color: #003357;
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Funcionarios</a></li>
         </ul>
       </li>
@@ -102,11 +102,11 @@
           aria-expanded="false">
           Servicios
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357; 
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357;
         color: rgba(243,246,248,0.99);">
-          <li><a class="dropdown-item" href="{{ route('servicesAdmi') }}" style="background-color: #003357; 
+          <li><a class="dropdown-item" href="{{ route('servicesAdmi') }}" style="background-color: #003357;
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Administrativos</a></li>
-          <li><a class="dropdown-item" href="{{ route('servicesTecn') }}" style="background-color: #003357; 
+          <li><a class="dropdown-item" href="{{ route('servicesTecn') }}" style="background-color: #003357;
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Técnicos</a></li>
         </ul>
       </li>
@@ -134,12 +134,17 @@
 
 
         <!--Botón login-->
+        @if (Auth::guest())
       <li class="nav-item mr-3 mr-lg-0">
-        <a class="nav-link btn-info rounded" type="button" href="{{ route('login') }}" 
+        <a class="nav-link btn-info rounded" type="button" href="{{ route('login') }}"
         role="button" aria-expanded="false" style="width: 140px;">
           <span class="glyphicon glyphicon-log-in fas fa-user"></span>Iniciar sesión</a>
-          
-
+                @else
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+  @endif
       </ul>
     </div>
   </div>

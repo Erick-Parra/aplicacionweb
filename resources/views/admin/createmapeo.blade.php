@@ -78,8 +78,20 @@
                             <div class="col-md-8">
                             <label>
                                 Nombre de la ASADA<br></label>
-                                <input style="display: table-column text-align: center" name="Nom_Asada"  value="{{ old('Nom_Asada')}}" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
-                                 {!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
+
+                                <select name="Nom_Asada" id="idAsada" class="form-control">
+                                    <option value="">Seleccione la Asada</option>
+                                  @foreach ($categorias as $categoria)
+                                 
+
+                                  <option value="{{$categoria['Nom_Asada']}}">{{$categoria['Nom_Asada']}}</option>
+
+                                  @endforeach
+                                </select>
+                                 
+                                
+                               <!--- <input style="display: table-column text-align: center" name="Nom_Asada"  value="{{ old('Nom_Asada')}}" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
+                                 {!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!} -->
                             </div>
                         </div>
 
@@ -88,7 +100,7 @@
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <label>
                           Archivo SHP
-                              </labe>
+                              </label>
                        
                          </div>
                         </div>

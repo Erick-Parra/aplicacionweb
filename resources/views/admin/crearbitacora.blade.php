@@ -62,162 +62,190 @@
  @endforeach 
  </div> <!-- end .flash-message --> 
 
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well well-sm">
-                <form class="form-horizontal" method="post">
-                    <fieldset>
-                     <b> <legend class="text-center header">Unidades de servicios de desarrollo
-                      (USEDES)</legend>
-                        <legend class="text-center header">Bitácora Control Operativo</legend></b>
+ <div class="row">
+  <div class="col-md-12">
+    <div class="well well-sm">
+      <form class="form-horizontal" method="post">
+        <fieldset>
+         <b> <legend class="text-center header">Unidades de servicios de desarrollo
+         (USEDES)</legend>
+         <legend class="text-center header">Bitácora Control Operativo</legend></b>
+
+         <div class="form-group row">
+
+
+          <span class="col-md-2 col-md-offset-2 text-center"></span>
+
+          <div class="col-md-8">
+            <label>
+              Nombre de la ASADA<br></label>
+
+              <select name="Nom_Asada" id="idAsada" class="form-control">
+                 <option value="">Seleccione la Asada</option>
+                @foreach ($categorias as $categoria)
+                <option value="{{$categoria['Nom_Asada']}}">{{$categoria['Nom_Asada']}}</option>
+                @endforeach
+              </select>                 
+            </div>
+          </div>
+          <div class="form-group row">
+            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+            <div class="col-md-8">
+              <label>
+                Fecha Control<br></label>
+                <input name="Fecha Control" value="{{ old('Fecha_Control')}}" type="date" class="form-control {{ $errors->has('Fecha_Control')?'is-invalid':''}} ">
+                {!! $errors->first('Fecha_Control','<div class="invalid-feedback">Campo fecha requerido</div>')!!}
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+              <div class="col-md-8">
+                <label>
+                  Encargado<br></label>
+                  <input style="display: table-column text-align: center" name="Encargado" value="{{ old('Encargado')}}" type="text" placeholder="Nombre del Encargado" class="form-control {{ $errors->has('Encargado')?'is-invalid':''}} ">
+                  {!! $errors->first('Encargado','<div class="invalid-feedback">Campo encargado requerido</div>')!!}
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                <div class="col-md-8">
+                  <label>
+                    Ubicación/acueducto<br></label>
+                    <input name="Ubicacion" value="{{ old('Ubicacion')}}"type="text" placeholder="Digite Ubicación/acueducto" class="form-control {{ $errors->has('Ubicacion')?'is-invalid':''}} ">
+                    {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicación requerido</div>')!!}
+                  </div>
+                </div>
+                <b><legend class="text-center header">Detalles de resultado del monitoreo</legend></b>
+                <div class="form-group row">
+                  <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                  <div class="col-md-8">
+                    <label>
+                      Turbiedad<br></label>
+                      <select name="Turbiedad" class="form-control">
+                         <option value="">Seleccione--</option>
+                        <option value="Alerta: 1">Alerta: 1</option>
+                        <option value="Admisible: 5">Admisible: 5</option>
+                      </select>
+
+                      <!--<input name="Turbiedad" value="{{ old('Turbiedad')}}"type="text" placeholder="Ingrese rango alerta:1 max.adamisible: 5 " class="form-control {{ $errors->has('Turbiedad')?'is-invalid':''}} ">
+                      {!! $errors->first('Turbiedad','<div class="invalid-feedback">Campo turbiedad requerido</div>')!!}-->
+                   
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                    <div class="col-md-8">
+                      <label>
+                        Olor<br></label>                 
+                        <select name="Olor" class="form-control">
+                          <option value="">Seleccione--</option>
+                          <option value="Aceptable">Aceptable</option>
+                          <option value="No Aceptable">No Aceptable</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                      <div class="col-md-8">
+                        <label>
+                          Cloro residual<br></label>
+                          <select name="Cloro" class="form-control">
+                             <option value="">Seleccione--</option>
+                            <option value="0,3">0,3</option>
+                            <option value="0,6">0,6</option>
+                          </select>
+                         <!-- <input name="Cloro" value="{{ old('Cloro')}}" type="text" placeholder="Ingrese rango 0,3 A 0,6" class="form-control {{ $errors->has('Cloro')?'is-invalid':''}} ">
+                          {!! $errors->first('Cloro','<div class="invalid-feedback">Campo cloro requerido</div>')!!}-->
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                        <div class="col-md-8">
+                          <label>
+                            PH<br></label>
+                            <select name="PH" class="form-control">
+                               <option value="">Seleccione--</option>
+                              <option value="0,6">0,6</option>
+                              <option value="8,0">8,0</option>
+                            </select>
+
+                          <!--  <input name="PH"  value="{{ old('PH')}}"type="text" placeholder="Ingrese rango 0,6 A 8,0" class="form-control {{ $errors->has('PH')?'is-invalid':''}} ">
+                            {!! $errors->first('PH','<div class="invalid-feedback">Campo PH requerido</div>')!!}-->
+                          </div>
+                        </div>
 
                         <div class="form-group row">
-                            
-                          
-                            <span class="col-md-2 col-md-offset-2 text-center"></span>
-                            
-                            <div class="col-md-8">
+                          <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                          <div class="col-md-8">
                             <label>
-                                Nombre de la ASADA<br></label>
-                                <input style="display: table-column text-align: center" name="Nom_Asada" value="{{ old('Nom_Asada')}}" type="text" placeholder="Ingrese el nombre de la ASADA" class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
-                                 {!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
-        
+                              Sabor<br></label>
+                              <select name="Sabor" class="form-control">
+                                 <option value="">Seleccione--</option>
+                                <option value="Aceptable">Aceptable</option>
+                                <option value="No Aceptable">No Aceptable</option>
+                              </select>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Fecha Control<br></label>
-                                <input name="Fecha Control" value="{{ old('Fecha_Control')}}" type="date" class="form-control {{ $errors->has('Fecha_Control')?'is-invalid':''}} ">
-                                 {!! $errors->first('Fecha_Control','<div class="invalid-feedback">Campo fecha requerido</div>')!!}
-                            </div>
-                        </div>
+                          </div>
 
-                        <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Encargado<br></label>
-                                <input style="display: table-column text-align: center" name="Encargado" value="{{ old('Encargado')}}" type="text" placeholder="Nombre del Encargado" class="form-control {{ $errors->has('Encargado')?'is-invalid':''}} ">
-                                 {!! $errors->first('Encargado','<div class="invalid-feedback">Campo encargado requerido</div>')!!}
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Ubicación/acueducto<br></label>
-                                <input name="Ubicacion" value="{{ old('Ubicacion')}}"type="text" placeholder="Digite Ubicación/acueducto" class="form-control {{ $errors->has('Ubicacion')?'is-invalid':''}} ">
-                                 {!! $errors->first('Ubicacion','<div class="invalid-feedback">Campo ubicación requerido</div>')!!}
-                            </div>
-                        </div>
-                        <b><legend class="text-center header">Detalles de resultado del monitoreo</legend></b>
-                            <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Turbiedad<br></label>
-                                <input name="Turbiedad" value="{{ old('Turbiedad')}}"type="text" placeholder="Ingrese rango alerta:1 max.adamisible: 5 " class="form-control {{ $errors->has('Turbiedad')?'is-invalid':''}} ">
-                                 {!! $errors->first('Turbiedad','<div class="invalid-feedback">Campo turbiedad requerido</div>')!!}
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Olor<br></label>
-                                <input name="Olor" value="{{ old('Olor')}}" type="text" placeholder="No aceptable / aceptable " class="form-control {{ $errors->has('Olor')?'is-invalid':''}} ">
-                                 {!! $errors->first('Olor','<div class="invalid-feedback">Campo olor requerido</div>')!!}
-                            </div>
-                        </div>
-                         <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Cloro residual<br></label>
-                                <input name="Cloro" value="{{ old('Cloro')}}" type="text" placeholder="Ingrese rango 0,3 A 0,6" class="form-control {{ $errors->has('Cloro')?'is-invalid':''}} ">
-                                 {!! $errors->first('Cloro','<div class="invalid-feedback">Campo cloro requerido</div>')!!}
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                PH<br></label>
-                                <input name="PH"  value="{{ old('PH')}}"type="text" placeholder="Ingrese rango 0,6 A 8,0" class="form-control {{ $errors->has('PH')?'is-invalid':''}} ">
-                                 {!! $errors->first('PH','<div class="invalid-feedback">Campo PH requerido</div>')!!}
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Sabor<br></label>
-                                <input name="Sabor" value="{{ old('Sabor')}}" type="text" placeholder="No aceptable / aceptable" class="form-control {{ $errors->has('Sabor')?'is-invalid':''}} ">
-                                 {!! $errors->first('Sabor','<div class="invalid-feedback">Campo sabor requerido</div>')!!}
-                            </div>
-                        </div>
-
-                         <div class="form-group row">
+                          <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">
                               <label>
                                 Temperatura<br></label>
                                 <input name="Temperatura" value="{{ old('Temperatura')}}"type="text" placeholder="NO aplica" class="form-control {{ $errors->has('Temperatura')?'is-invalid':''}} ">
-                                 {!! $errors->first('Temperatura','<div class="invalid-feedback">Campo temperatura requerido</div>')!!}
+                                {!! $errors->first('Temperatura','<div class="invalid-feedback">Campo temperatura requerido</div>')!!}
+                              </div>
                             </div>
+                            <div class="form-group row">
+                              <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                              <div class="col-md-8">
+                                <label>
+                                  Observaciones<br></label>
+                                  <textarea class="form-control {{ $errors->has('Observacion')?'is-invalid':''}} " id="message" name="Observacion" value="{{ old('Observacion')}}"placeholder="Observaciones" rows="4"></textarea>
+                                  {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observación requerido</div>')!!}
+                                </div>
+                              </div>
+                              <div class="col-sm-12 col-xs-12" align="center">
+                                <button class="btn btn-primary border rounded">REGISTRAR</button>
+                              </div>
+                              <br>
+                              <br>
+                            </form>
+                          </section>
+                          <!-- /.content -->
                         </div>
-                        <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Observaciones<br></label>
-                                <textarea class="form-control {{ $errors->has('Observacion')?'is-invalid':''}} " id="message" name="Observacion" value="{{ old('Observacion')}}"placeholder="Observaciones" rows="4"></textarea>
-                                 {!! $errors->first('Observacion','<div class="invalid-feedback">Campo observación requerido</div>')!!}
-                            </div>
-                            </div>
-  <div class="col-sm-12 col-xs-12" align="center">
-    <button class="btn btn-primary border rounded">REGISTRAR</button>
-  </div>
-  <br>
-  <br>
-      </form>
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+                        <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-      <b>Created By</b> NEPV
-    </div>
-    <strong>Copyright &copy; 2020.</strong> All rights
-    reserved.
-  </footer>
+                        <footer class="main-footer">
+                          <div class="float-right d-none d-sm-block">
+                            <b>Created By</b> NEPV
+                          </div>
+                          <strong>Copyright &copy; 2020.</strong> All rights
+                          reserved.
+                        </footer>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+                        <!-- Control Sidebar -->
+                        <aside class="control-sidebar control-sidebar-dark">
+                          <!-- Control sidebar content goes here -->
+                        </aside>
+                        <!-- /.control-sidebar -->
+                      </div>
+                      <!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
-</body>
-</html>
+                      <!-- jQuery -->
+                      <script src="../../plugins/jquery/jquery.min.js"></script>
+                      <!-- Bootstrap 4 -->
+                      <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+                      <!-- AdminLTE App -->
+                      <script src="../../dist/js/adminlte.min.js"></script>
+                      <!-- AdminLTE for demo purposes -->
+                      <script src="../../dist/js/demo.js"></script>
+                    </body>
+                    </html>
 
 
 
