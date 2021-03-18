@@ -230,42 +230,70 @@
 </div>
 </div>
 </div>
-    <div class="footer-dark" style="background-color: #003357;">
-        <div style="text-align:center;">
-            <h2 class="divider-style" style="margin-top:0px;"><span style="background-color:#003357; color: rgba(243,246,248,0.99);"><a href="#"></a>&nbsp;LIGA COMUNAL DEL AGUA</span></h2>
+   <section class="">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+<!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <div style="text-align:center;">
+            <h2 class="divider-style" style="margin-top:0px;"><span style="background-color:#0a4275; color: rgba(243,246,248,0.99);"><a href="#"></a>&nbsp;LIGA COMUNAL DEL AGUA</span></h2>
         </div>
-        <footer>
-            <div class="container">
-                <div class="row" style="margin-top:10px;">
-                    <div class="col-md-5 item text" style="margin-bottom:0px; text-align: left;">
-                        <h3 style="color: #78909C;">desarrollado por</h3>
-                        <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).png" width="150" height="200" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.png" width="100" style="filter: contrast(200%);"></p>
-                    </div>
-                    <div class="col-sm-6 col-md-4 item" style="margin: 0px;padding: -5px;width: 168px;">
-                        <h3 style="color: #78909C;">CONTACTOS</h3>
-                        <ul>
-                            <li style="font-size: 15px; text-align: left;">CORREO: ligacomunaldelagua@gmail.com</li>
-                            <li><a href="#" style="opacity: 1;font-size: 15px;">OFICINA: 4080-1086</a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3 style="color: #78909C;">SERVICIOS</h3>
-                        <ul>
-                            <li><a href="#" style="opacity: 1;font-size: 15px;">Servicios Administrativos</a></li>
-                            <li><a href="#" style="opacity: 1;font-size: 15px;">Servicios Legales</a></li>
-                            <li><a href="#" style="opacity: 1;font-size: 15px;">Servicios Técnicos</a></li>
-                        </ul>
-                    </div>
+     <div class="footer-dark row text-white" style="text-align: center;">
+                <div class="col-sm-6 col-md-5 item">
+                    <h3>Servicios LCA</h3>
+                  <ul>
+                        <li>-Administrativos</li>
+                        <li>-Técnicos</li>
+                        <li>-Legales y Notariales</li>
+                        <li><a></a></li>
+                  </ul>
                 </div>
-                <div class="col item social" style="margin-top:15px;"><a href="https://www.facebook.com/liga.comunaldelagua/"><i class="fa fa-facebook-official" style="filter: brightness(200%) contrast(200%);"></i></a></div>
-                <div style="text-align:center;margin-top:-40px; color: #78909C;">
-                    <h2 class="divider-style"></h2>
+                  <div class="col-sm-6 col-md-4 item text">
+                    <h3>Contactos</h3>
+                  <ul>
+                        <li>CORREO: ligacomunaldelagua@gmail.com</li>
+                        <li>OFICINA: 4080-1086</li>
+                        <li><a></a></li>
+                  </ul>
                 </div>
-                <p class="copyright" style="filter: blur(0px) contrast(80%) grayscale(5%) saturate(115%) sepia(0%);opacity: 0.99;">Created by NEPV © 2020</p>
-            </div>
-        </footer>
+                  <div class="col-sm-6 col-md-3 item" style="text-align: right;">
+                    <h3>Desarrollado por</h3>
+                    <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light">
+           <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).png" width="150" height="200" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.png" width="100" style="filter: contrast(200%);"></p>
+        </div>
+        </div>
+        </div>
+   
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="https://www.facebook.com/liga.comunaldelagua/"
+        role="button"><i class="fab fa-facebook-f"></i></a>
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="https://www.instagram.com/ligacomunaldelagua/?hl=es-la"
+        role="button"><i class="fab fa-instagram"></i></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Created by NEPV © 2021
     </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+<link rel="stylesheet" href="assets/css/Footer.css">
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
