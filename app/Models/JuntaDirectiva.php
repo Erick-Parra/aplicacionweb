@@ -33,8 +33,8 @@ class JuntaDirectiva extends Model
 	protected $primaryKey = 'id';
 
 	protected $fillable = [
-		'Asada',
 		'Nombre',
 		'Puesto',
+		'Asada'
 	];
 }

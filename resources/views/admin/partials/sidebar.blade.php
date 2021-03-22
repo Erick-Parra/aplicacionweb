@@ -131,6 +131,12 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+                <a href="{{ route('create')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Crear Junta Directiva</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="{{ route('buscarjunta')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Junta Directiva</p>

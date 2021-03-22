@@ -14,6 +14,12 @@ class juntaController extends Controller
         $registro = JuntaDirectiva::all();
         return view('admin.buscarjunta', compact('registro'));
     }
+    public function create()
+    {
+        $categorias = JuntaDirectiva::all();
+      
+        return view('admin.crearjunta', compact('categorias'));
+    }
 
     public function editarjunta($id)
     {
@@ -25,9 +31,9 @@ class juntaController extends Controller
 
         JuntaDirectiva::create([
             'id' => Request('id'),
-            'Asada' => Request('Asada'),
             'Nombre' => Request('Nombre'),
             'Puesto' => Request('Puesto'),
+            'Asada' => Request('Asada')
 
         ]);
 
