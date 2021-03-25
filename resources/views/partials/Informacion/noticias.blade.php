@@ -53,5 +53,10 @@ $posts = $obj->getposts();
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </div>
+<div class="intro">
+        <h2 class="text-center">Vídeos Informativos</h2>
+        <p class="text-center">Sección de labores que realizan la Liga Comunal del Agua.</p>
+            </div>
+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <iframe width="560" height="315" src="https://www.youtube.com/embed/ct3m1WzyYdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
