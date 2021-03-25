@@ -1,25 +1,49 @@
 @include('partials.nav')
 
-    <div class="features-blue" style="background-color: rgb(17,227,237);filter: brightness(79%) contrast(88%) saturate(146%) sepia(0%);">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    
+</head>
+
+<body>
+    <section class="features-boxed">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center">Servicios Administrativos</h2>
-                <p class="text-center">Servicios que brinda la Liga Comunal del Agua a las ASADAS de los cantones de Nicoya - Hojancha - Nandayure</p>
+                 <h2 class="text-center">Servicios Administrativos</h2>
+                <p class="text-center">Servicios que brinda la Liga Comunal del Agua a las ASADAS de los cantones de Hojancha - Nicoya - Nandayure.</p>
             </div>
-            <div class="row features">
-                <div class="col-sm-6 col-md-4 item"><i class="far fa-list-alt icon"></i>
-                    <h3 class="name">FACTURACIÓN ELECTRÓNICA</h3>
-                    <p class="description"><br>Considerando que muchas de las asadas del territorio no tienen acceso a internet ni cuentan con oficina, la LCA diseño este servicio con el fin de brindar la posibilidad de cumplir con este parámetro exigido por el AYA y Ministerio Hacienda<br><br></p>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-file-text-o icon"></i>
+                      
+                        <p class="description">FACTURACIÓN ELECTRÓNICA</p>
+                    </div>
                 </div>
-                    <div class="col-sm-6 col-md-4 item"><i class="fa fa-legal icon"></i>
-                    <h3 class="name">CONTABILIDAD DE ASADAS</h3>
-                    <p class="description"><br>El servicio de Contabilidad que realiza la LCA es basado en el manual de contabilidades establecido por el AYA,además la contadora encargada, trabaja exclusivamente con ASADAS,
-                      permitiéndonos tener más experiencia en el área y cumplido con los entes rectores<br><br></p>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-bar-chart icon"></i>
+                        <p class="description">CONTABILIDAD DE ASADAS</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    </section>
+
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script id="bs-live-reload" data-sseport="64388" data-lastchange="1615942561900" src="/js/livereload.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</body>
+
+</html>

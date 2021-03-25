@@ -108,6 +108,8 @@
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Administrativos</a></li>
           <li><a class="dropdown-item" href="{{ route('servicesTecn') }}" style="background-color: #003357;
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Técnicos</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesLegal') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">Legales y Notariales</a></li>
         </ul>
       </li>
 

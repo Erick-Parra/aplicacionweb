@@ -1,48 +1,45 @@
 @include('partials.nav')
 
-    <div class="features-blue" style="background-color: rgb(17,227,237);filter: brightness(79%) contrast(88%) saturate(146%) sepia(0%);">
+<div class="features-boxed">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Servicios Técnicos</h2>
-                <p class="text-center">Servicios que brinda la Liga Comunal del Agua a las ASADAS de los cantones de Nicoya - Hojancha - Nandayure</p>
+                <p class="text-center">Servicios que brinda la Liga Comunal del Agua a las ASADAS de los cantones de Hojancha - Nicoya - Nandayure.</p>
             </div>
-            <div class="row features">
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-thermometer-half icon" id="icon-services-1"></i>
-                    <h3 class="name">CONTROL OPERATIVO</h3>
-                    <p class="description"><br>Este servicio se realiza basado en el reglamento de calidad de agua potable (RCA) 38924-S,que establece el control operativo como un análisis de calidad de agua básico para conocer la situación operacional<br><br></p>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-cogs icon"></i>
+                        <br>
+                        <p class="description">CONTROL OPERATIVO</p></div>
                 </div>
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-flask icon" id="icon-services"></i>
-                    <h3 class="name">ANÁLISIS DE CALIDAD DE AGUA</h3>
-                    <p class="description"><br>Los análisis de laboratorio son parte del reglamento 38924-S, 
-                    este servicio se subcontrata con el laboratorio TecnoLab y la Liga Comunal del Agua realiza el muestreo con todos los protocolos establecidos por el laboratorio.
-                    Dentro de los Análisis realizados por parte del laboratorio se tiene Análisis N1, 
-                    este análisis determina principalmente la presencia de Coliiformes fecales y  E. coli y se debe realizar semestralmente,el análisis N2 lo que determina principalmente es los minerales presentes en el agua y se debe realizar cada tres años y el análisis N3 que analiza los principales metales pesados y se debe realizar igualmente cada 3 años<br><br></p>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-flask icon"></i>
+                        <p class="description">ANÁLISIS DE CALIDAD DE AGUA</p></div>
                 </div>
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-list-alt icon"></i>
-                    <h3 class="name">VENTAS DE EQUIPOS E INSUMOS</h3>
-                    <p class="description"><br>La LCA maneja dos líneas de cloradores cámara seca y bomba de inyección, esto con el fin de adaptarse a la necesidad de cada subsistema y garantizar la eficiencia y homogeneidad del cloro residual libre de la red de distribución, cumpliendo con uno de los parámetros indispensables en temas de calidad de agua<br><br></p>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-tags icon"></i>
+                        <p class="description">VENTAS DE EQUIPOS E INSUMOS</p></div>
                 </div>
-                <div class="col-sm-6 col-md-4 offset-lg-0 item"><i class="fas fa-hands-helping icon"></i>
-                    <h3 class="name">VENTA E INSTALACIÓN DE CLORADORES</h3>
-                    <p class="description"><br>La LCA maneja dos líneas de cloradores cámara seca y bomba de inyección,
-                     esto con el fin de adaptarse a la necesidad de cada subsistema y garantizar la eficiencia y homogeneidad del cloro residual libre de la red de distribución, 
-                     cumpliendo con uno de los parámetros indispensables en temas de calidad de agua<br><br></p>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fas fa-cog icon"></i>
+                        <p class="description">VENTA E INSTALACIÓN DE CLORADORES</p></div>
                 </div>
-                <div class="col-sm-6 col-md-4 offset-lg-4 item"><i class="icon ion-person-stalker icon"></i>
-                    <h3 class="name">LEVANTAMIENTO DE INFORMACIÓN GEOESPACIAL Y MAPEO</h3>
-                    <p class="description"><br>Este servicio consiste en el levantamiento GPS para la elaboración de croquis de campo de los acueductos comunales,identificando todos los subsistemas, características y complementarios con su debida georreferenciación<br><br></p>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-map icon"></i>
+                        <p class="description">LEVANTAMIENTO DE INFORMACIÓN GEOESPACIAL Y MAPEO</p></div>
                 </div>
-
-                <div class="col-sm-6 col-md-4 offset-lg-4 item"><i class="fa fa-file-o icon"></i>
-                    <h3 class="name">AVALÚO E INVENTARIO DEL ACUEDUCTO COMUNAL</h3>
-                    <p class="description"><br>Como parte de los labores para tener una contabilidad ordenada y en regla con base en el manual de cuentas del AYA,se debe inventariar y dar valor a todo el acueducto, 
-                    por esta razón la LCA brinda este servicio con personal capacitado y certificado para la labor, brindando a las ASADAS del territorio soluciones económicas y eficientes<br><br></p>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-file-text-o icon"></i>
+                        <p class="description">AVALÚO E INVENTARIO DEL ACUEDUCTO COMUNAL</p></div>
                 </div>
-
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+
+
+</html>
