@@ -123,15 +123,8 @@
                   <div class="col-md-8">
                     <label>
                       Turbiedad<br></label>
-                      <select name="Turbiedad" class="form-control">
-                         <option value="">Seleccione--</option>
-                        <option value="Alerta: 1">Alerta: 1</option>
-                        <option value="Admisible: 5">Admisible: 5</option>
-                      </select>
-
-                      <!--<input name="Turbiedad" value="{{ old('Turbiedad')}}"type="text" placeholder="Ingrese rango alerta:1 max.adamisible: 5 " class="form-control {{ $errors->has('Turbiedad')?'is-invalid':''}} ">
-                      {!! $errors->first('Turbiedad','<div class="invalid-feedback">Campo turbiedad requerido</div>')!!}-->
-                   
+                        <input name="Turbiedad" value="{{ old('Turbiedad')}}"type="text" placeholder="Ingrese rango alerta:1 max.admisible: 5 " class="form-control {{ $errors->has('Turbiedad')?'is-invalid':''}} ">
+                      {!! $errors->first('Turbiedad','<div class="invalid-feedback">Campo turbiedad requerido</div>')!!}
                     </div>
                   </div>
 
@@ -152,13 +145,8 @@
                       <div class="col-md-8">
                         <label>
                           Cloro residual<br></label>
-                          <select name="Cloro" class="form-control">
-                             <option value="">Seleccione--</option>
-                            <option value="0,3">0,3</option>
-                            <option value="0,6">0,6</option>
-                          </select>
-                         <!-- <input name="Cloro" value="{{ old('Cloro')}}" type="text" placeholder="Ingrese rango 0,3 A 0,6" class="form-control {{ $errors->has('Cloro')?'is-invalid':''}} ">
-                          {!! $errors->first('Cloro','<div class="invalid-feedback">Campo cloro requerido</div>')!!}-->
+                          <input name="Cloro" value="{{ old('Cloro')}}" type="text" placeholder="Ingrese rango 0,3 A 0,6" class="form-control {{ $errors->has('Cloro')?'is-invalid':''}} ">
+                          {!! $errors->first('Cloro','<div class="invalid-feedback">Campo cloro requerido</div>')!!}
                         </div>
                       </div>
 
@@ -167,14 +155,8 @@
                         <div class="col-md-8">
                           <label>
                             PH<br></label>
-                            <select name="PH" class="form-control">
-                               <option value="">Seleccione--</option>
-                              <option value="0,6">0,6</option>
-                              <option value="8,0">8,0</option>
-                            </select>
-
-                          <!--  <input name="PH"  value="{{ old('PH')}}"type="text" placeholder="Ingrese rango 0,6 A 8,0" class="form-control {{ $errors->has('PH')?'is-invalid':''}} ">
-                            {!! $errors->first('PH','<div class="invalid-feedback">Campo PH requerido</div>')!!}-->
+                            <input name="PH"  value="{{ old('PH')}}"type="text" placeholder="Ingrese rango 0,6 A 8,0" class="form-control {{ $errors->has('PH')?'is-invalid':''}} ">
+                            {!! $errors->first('PH','<div class="invalid-feedback">Campo PH requerido</div>')!!}
                           </div>
                         </div>
 

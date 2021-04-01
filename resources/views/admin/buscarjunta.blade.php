@@ -102,6 +102,11 @@
 
       <td>
      <a href="{{route('editar', $reg)}}" class="btn btn-primary border rounded">Editar</a>
+     <form action="{{ route('junta.eliminar', $reg) }}" class="d-inline" method="POST">
+    @method('DELETE')
+    @csrf
+    <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Está seguro de eliminar el registro?')">Eliminar</button>
+</form>
 </form>
     </td>
 

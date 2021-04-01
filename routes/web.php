@@ -37,8 +37,9 @@ Route::get('/searchasada','AdminController@index')->name('searchasada');
 Route::get('/buscar/buscarjunta','juntaController@buscar')->name('buscarjunta');
 Route::get('/editarjunta/{idjunta}', 'juntaController@editarjunta' )->name('editar');
 Route::put('/editarjunta/{idjunta}', 'juntaController@update' )->name('update');
-Route::get('/junta/crear','juntaController@create')->name('create');
+Route::get('/junta/crear','juntaController@create')->name('createjunta');
 Route::post('/crearjunta', 'juntaController@store')->name('junta.store');
+Route::delete('/eliminarjunta/{idjunta}', 'juntaController@eliminar')->name('junta.eliminar');
 
 //Rutas controlador mapeo con diferente rutas
 Route::get('/admapeo/crearmapeo','ControllerMap@create')->name('map');

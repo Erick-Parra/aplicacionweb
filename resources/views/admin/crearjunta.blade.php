@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Administración</title>
-	<!-- Tell the browser to be responsive to screen width -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
-	<!-- Ionicons -->
-	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-	<!-- overlayScrollbars -->
-	<link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-	<!-- Google Font: Source Sans Pro -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Administración LCA</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
 
-		@include('admin.partials.navbar')
+    @include('admin.partials.navbar')
 
-	<!-- /.navbar -->
+  <!-- /.navbar -->
 {{-- Sidebar en la carpeta admin/partials --}}
 @include('admin.partials.sidebar')
 
-	<!-- Content Wrapper. Contains page content -->
-	<div class="content-wrapper">
-		<!-- Content Header (Page header) -->
-	 <section class="content-header">
-			<div class="container-fluid">
-				<div class="row mb-1">
-					<div class="col-sm-6">
-						
-				 
-					</div>
-					<div class="col-sm-12">
-						
-					<div class="card">
-						<div class="card-header">
-
-						<ol class="breadcrumb float-sm-left">
-							<li class="breadcrumb-item"><a href="{{ route('admin') }}">Regresar al inicio</a></li>
-							<li class="breadcrumb-item active">Administración Liga Comunal del Agua</li>
-						</ol>
-					</div>
-				</div>
-			</div><!-- /.container-fluid -->
-	</section>
-
-		<!-- Main content -->
-		<section class="content">
-			<form method="POST" action="{{ route('junta.store')}}">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-1">
+          <div class="col-sm-6"> 
+          </div>
+          <div class="col-sm-12">    
+          <div class="card">
+            <div class="card-header">
+            <ol class="breadcrumb float-sm-left">
+              <li class="breadcrumb-item"><a href="{{ route('admin') }}">Regresar al inicio</a></li>
+              <li class="breadcrumb-item active">Administración Liga Comunal del Agua</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content">
+          <form method="POST" action="{{ route('junta.store')}}" enctype= "multipart/form-data" >
         @csrf
-<div class="container">
-	<div class="container">
-			<div class="flash-message"> 
+       
+        <div class="container">
+<div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
   @if(Session::has('alert-' . $msg)) 
 
@@ -62,47 +56,49 @@
   @endif 
  @endforeach 
  </div> <!-- end .flash-message --> 
-		<div class="row">
-				<div class="col-md-12">
-						<div class="well well-sm">
-								<form class="form-horizontal" method="PUT">
-										<fieldset>
-											<b><legend class="text-center header">Junta Directiva</legend></b>
-											<div class="form-group row">
-												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-											</div>
-											<div class="form-group row">
-												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-											</div>
-											<div class="form-group row">
-												<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-												<div class="col-md-8">
-													<label>Nombre<br></label>
-													<input name="Nombre" value="{{ old('Nombre')}}" type="text" placeholder="Ingrese el nombre" class="form-control {{ $errors->has('Nombre')?'is-invalid':''}} ">{!! $errors->first('Nombre','<div class="invalid-feedback">Campo nombre requerido</div>')!!}</div>
-												</div>
-												<div class="form-group row">
-													<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-													<div class="col-md-8">
-														<label>Puesto<br></label>
-														<input name="Puesto" value="{{ old('Puesto')}}" type="text" placeholder="Ingrese el nombre del puesto" class="form-control {{ $errors->has('Puesto')?'is-invalid':''}} ">
-                                {!! $errors->first('Puesto','<div class="invalid-feedback">Campo puesto requerido</div>')!!}</div>
+   <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                       <b> <legend class="text-center header">Registro Junta Directiva</legend></b>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></span>    
+                            <div class="col-md-8">
+                            <label>
+                                Nombre<br></label>
+                                <input name="Nombre" value="{{ old('Nombre')}}" type="text" placeholder="Ingrese el Nombre" class="form-control {{ $errors->has('Nombre')?'is-invalid':''}} ">
+                                {!! $errors->first('Nombre','<div class="invalid-feedback">Campo Nombre requerido</div>')!!}
                             </div>
-                            <div class="form-group row">
-                            	<span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            	<div class="col-md-8">
-													<label>ASADA<br></label>
-													<input name="Asada" value="{{ old('Asada')}}" type="text" placeholder="Ingrese la ASADA" class="form-control {{ $errors->has('Asada')?'is-invalid':''}} ">{!! $errors->first('ASADA','<div class="invalid-feedback">Campo ASADA requerido</div>')!!}</div>
-												</div>
-        <div class="col-sm-12 col-xs-12" align="center">
-        	<button class="btn btn-primary border rounded">REGISTRAR</button>
-        </div>
-			</form>
-		</section>
-		<!-- /.content -->
-	</div>
-	<!-- /.content-wrapper -->
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></span>
+                            <div class="col-md-8">
+                            <label>Puesto</label>
+                            </label>
+                                <input name="Puesto" value="{{ old('Puesto')}}" type="text" placeholder="Ingrese el nombre del Puesto" class="form-control {{ $errors->has('Puesto')?'is-invalid':''}} ">
+                                {!! $errors->first('Puesto','<div class="invalid-feedback">Campo Puesto requerido</div>')!!}
+                            </div>
+                         </div>
+                         <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></span>
+                            <div class="col-md-8">
+                            <label>ASADA</label>
+                            </label>
+                                <input name="Asada" value="{{ old('Asada')}}" type="text" placeholder="Ingrese el nombre ASADA" class="form-control {{ $errors->has('Asada')?'is-invalid':''}} ">
+                                {!! $errors->first('Asada','<div class="invalid-feedback">Campo ASADA requerido</div>')!!}
+                            </div>
+                        </div>
+                            <div class="col-sm-12 col-xs-12" align="center">
+                             <button class="btn btn-primary border rounded">REGISTRAR</button>
+                        </div>
+</form>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
-	<footer class="main-footer">
+  <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
       <b>Created By</b> NEPV
     </div>
@@ -110,14 +106,12 @@
     reserved.
   </footer>
 
-	<!-- Control Sidebar -->
-	<aside class="control-sidebar control-sidebar-dark">
-		<!-- Control sidebar content goes here -->
-	</aside>
-	<!-- /.control-sidebar -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
-<!-- ./wrapper -->
-
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->

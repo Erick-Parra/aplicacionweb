@@ -53,4 +53,12 @@ class juntaController extends Controller
 
         return back();
     }
+
+    public function eliminar(Request $request,$idjunta){
+
+        $juntaEliminar = JuntaDirectiva::findOrFail($idjunta);
+        $juntaEliminar->delete();
+        return back();
+        $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+    }
 }
