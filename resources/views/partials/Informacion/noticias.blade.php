@@ -49,14 +49,21 @@ $posts = $obj->getposts();
     </section>
     <br>
     <br>
+    <div class="col-6 col-sm-6 col-md-4 shadow rounded py-3 site-form" style="background-color: #d7f5f5;" >
+<div class="form-group">
+        <h2 class="text-center">Vídeos Informativos</h2>
+        <p class="text-center">Sección de labores que realizan la Liga Comunal del Agua.</p>
+            </div>
+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <iframe class="video_info" src="https://www.youtube.com/embed/ct3m1WzyYdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <div class="form-group">
+        <h2 class="text-center">Documentos Informativos</h2>
+        <p class="text-center">Información de la Liga Comunal del Agua.</p>
+            </div>
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe src="https://drive.google.com/file/d/1fbNA2IhLnbDN1vkcx8uuNdF93MkESx4h/preview" width="240" height="280"></iframe>
+        </div>
       </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </div>
-<div class="intro">
-        <h2 class="text-center">Vídeos Informativos</h2>
-        <p class="text-center">Sección de labores que realizan la Liga Comunal del Agua.</p>
-            </div>
- &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <iframe width="460" height="300" src="https://www.youtube.com/embed/ct3m1WzyYdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
