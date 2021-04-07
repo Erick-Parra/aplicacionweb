@@ -61,10 +61,23 @@
 								<form class="form-horizontal" method="PUT">
 										<fieldset>
 											<b><legend class="text-center header">Registro de Mapeo</legend></b>
+											
+ 					<div class="form-group row">
+ 						
+ 						
+ 						<span class="col-md-2 col-md-offset-2 text-center"></span>
 
-												<div class="form-group row">
-														<legend class="text-center header">ASADA: {{$mapeos->Nom_Asada}}</legend>
-												</div>
+							<div class="col-md-8">
+ 							<label>
+ 								Nombre de la ASADA<br></label>
+
+ 								<input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$mapeos->Nom_Asada}}"  class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} "  disabled>
+ 								{!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
+ 								
+ 							</div>
+ 						</div>
+														<!--<legend class="text-center header">ASADA: {{$mapeos->Nom_Asada}}</legend>-->
+												
 												<div class="form-group row">
 														<span class="col-md-2 col-md-offset-2 text-center"></i></span>
 														<label> Archivo SHP</label>

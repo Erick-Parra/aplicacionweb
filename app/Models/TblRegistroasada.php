@@ -26,6 +26,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $Vocal_1
  * @property string $Vocal_2
  * @property string $Fiscal
+ * @property string $Fontanero
  * @property string $Razon_Afiliacion
  * @property int $Telefono
  * @property string $Correo
@@ -73,6 +74,7 @@ class TblRegistroasada extends Model
 		'Vocal_1',
 		'Vocal_2',
 		'Fiscal',
+		'Fontanero',
 		'Razon_Afiliacion',
 		'Telefono',
 		'Correo',

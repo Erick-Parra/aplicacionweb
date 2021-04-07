@@ -185,6 +185,16 @@
                                 {!! $errors->first('Fiscal','<div class="invalid-feedback">Campo fiscal requerido</div>')!!}
                             </div>
                         </div>
+                          <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                Fontanero<br></label>
+                                <input name="Fontanero" type="text" value="{{$asadas->Fontanero}}"  class="form-control {{ $errors->has('Fontanero')?'is-invalid':''}} ">
+                                {!! $errors->first('Fontanero','<div class="invalid-feedback">Campo fontanero requerido</div>')!!}
+                            </div>
+                        </div>
+
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">

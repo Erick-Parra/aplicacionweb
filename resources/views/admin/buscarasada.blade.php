@@ -162,12 +162,18 @@
     <td>{{$reg->Correo}}</td>
 
     <td>
+      
       <a href="{{route('admin.edit', $reg)}}" class="btn btn-primary border rounded">Editar</a>
-      <form action="{{ route('admin.destroy', $reg) }}" class="d-inline" method="POST">
+      
+     
+      <form action="{{ route('admin.destroy', $reg) }}" class="d-inline" method="POST" >
+     
     @method('DELETE')
     @csrf
-    <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
+    <button type="submit" class="btn btn-danger btn-sm" value="enable" onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
+  
 </form>
+
     </td>
 
   </tr>

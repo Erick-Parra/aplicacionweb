@@ -27,7 +27,7 @@ class juntaController extends Controller
         return view('admin.editarjunta', compact('nota'));
     }
 
-    public function store(){
+    public function store(JuntaRequest $request){
 
         JuntaDirectiva::create([
             'id' => Request('id'),
@@ -37,7 +37,8 @@ class juntaController extends Controller
 
         ]);
 
-        return back();
+         $request->session()->flash('alert-success', 'Añadido exitosamente!');
+         return back();
     }
 
     public function update(Request $request, $id)

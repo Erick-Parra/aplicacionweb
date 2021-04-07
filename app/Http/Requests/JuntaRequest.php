@@ -25,14 +25,10 @@ class JuntaRequest extends FormRequest
     public function rules()
     {
         return [
-            'Presidente' => ' required',
-            'vicePresidente' => ' required',
-            'Secretario' => ' required',
-            'Tesorero' => ' required',
-            'Vocal' => ' required',
-            'Suplente1' => ' required',
-            'Suplente2' => ' required',
-            'Fiscal' => ' required',
+            'Nombre' => ' required',
+            'Puesto' => ' required',
+            'Asada' => ' required',
+           
         ];
     }
 }

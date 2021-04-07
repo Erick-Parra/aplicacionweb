@@ -38,6 +38,7 @@ class AsadasRequest extends FormRequest
             'Vocal_1' => 'required',
             'Vocal_2' => 'required',
             'Fiscal' => 'required',
+            'Fontanero'=>'required',
             'Region' => 'required',
             'Razon_Afiliacion' => 'required',
             'Telefono' => 'required|numeric',
