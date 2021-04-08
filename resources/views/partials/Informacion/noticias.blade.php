@@ -53,12 +53,23 @@ $posts = $obj->getposts();
         <h2 class="text-center">Vídeos Informativos</h2>
         <p class="text-center">Sección de labores que realizan la Liga Comunal del Agua.</p>
             </div>
- <div style=”text-align: center;”><iframe class="video_info" src="https://www.youtube.com/embed/ct3m1WzyYdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+ <div style=”text-align:right;”><iframe width="300" height="150" src="https://www.youtube.com/embed/b-VFaX1cOvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="300" height="150" src="https://www.youtube.com/embed/Ey4Q_hK5qDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="300" height="150" src="https://www.youtube.com/embed/Y60-_0E0IFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="300" height="150" src="https://www.youtube.com/embed/T3Z-emHsgss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="300" height="150" src="https://www.youtube.com/embed/_KkNpEQD1NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="300" height="150" src="https://www.youtube.com/embed/nXQhJkWcPK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="300" height="150" src="https://www.youtube.com/embed/2y39h0QoH_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
  <div class="form-group">
         <h2 class="text-center">Documentos Informativos</h2>
         <p class="text-center">Información de la Liga Comunal del Agua.</p>
             </div>
-            <div style=”text-align: center;”><iframe src="https://drive.google.com/file/d/1fbNA2IhLnbDN1vkcx8uuNdF93MkESx4h/preview" width="240" height="280"></iframe></div>
+            <div style=”text-align:right;”><iframe src="https://drive.google.com/file/d/16TOc0sgG5PMbuuHC5G5-rveHBOEERx4p/preview" width="440" height="280"></iframe>
+            <iframe src="https://drive.google.com/file/d/1So5wlognBznegLdXOaSmx5kA4K_IMJKw/preview" width="440" height="280"></iframe></div>
+      </div>
+      <div>
+      </div>
+      <div>
       </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
