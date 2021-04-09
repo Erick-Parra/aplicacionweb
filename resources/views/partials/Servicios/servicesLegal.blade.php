@@ -9,7 +9,7 @@
     <title>Untitled</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Features.css">
     
 </head>
 
@@ -22,36 +22,36 @@
             </div>
             <div class="row justify-content-center features">
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-pencil-square-o icon"></i>
+                    <div class="box"><i class="fas fa-tint icon"></i>
                       
                         <p class="description">TRÁMITES PARA RENOVACIÓN DE PERSONERÍA JURÍDICA</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-gavel icon"></i>
+                    <div class="box"><i class="fas fa-tint icon"></i>
                         <p class="description">TRÁMITES JUDICIALES Y EXTRAJUDICIALES</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-file-text-o icon"></i>
+                    <div class="box"><i class="fas fa-tint icon"></i>
     
                         <p class="description">CONTRATOS DE PRESTACIÓN DE SERVICIOS DE COLABORADORES Y EMPRESAS</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-file-o icon"></i>
+                    <div class="box"><i class="fas fa-tint icon"></i>
                         
                         <p class="description">INSCRIPCIÓN DE PROPIEDADES Y SERVIDUMBRES DE ACCESO</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-users icon"></i>
+                    <div class="box"><i class="fas fa-tint icon"></i>
                         
                         <p class="description">ASESORÍA EN GESTIÓN ADMINISTRATIVA Y MARCO LEGAL</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-phone-square icon"></i>
+                    <div class="box"><i class="fas fa-tint icon"></i>
                         
                         <p class="description">ATENCIÓN DE CONSULTA DE LAS ASADAS</p>
                     </div>

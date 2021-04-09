@@ -104,10 +104,16 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357;
         color: rgba(243,246,248,0.99);">
-          <li><a class="dropdown-item" href="{{ route('servicesAdmi') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">Administrativos</a></li>
           <li><a class="dropdown-item" href="{{ route('servicesTecn') }}" style="background-color: #003357;
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Técnicos</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesAdmi') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">Administrativos y Financieros</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesConta') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">Contables</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesGestAmbi') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">De Gestión Ambiental</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesSoporte') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">De Soporte</a></li>
           <li><a class="dropdown-item" href="{{ route('servicesLegal') }}" style="background-color: #003357;
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Legales y Notariales</a></li>
         </ul>

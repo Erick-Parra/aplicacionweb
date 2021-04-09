@@ -9,6 +9,9 @@ Route::view('/funcionarios','partials.Quienes Somos.Funcionarios')->name('Funcio
 Route::view('/serviciosAdmi','partials.Servicios.servicesAdmi')->name('servicesAdmi');
 Route::view('/serviciosLegal','partials.Servicios.servicesLegal')->name('servicesLegal');
 Route::view('/serviciosTecn','partials.Servicios.servicesTecn')->name('servicesTecn');
+Route::view('/serviciosConta','partials.Servicios.servicesConta')->name('servicesConta');
+Route::view('/serviciosGestAmbi','partials.Servicios.servicesGestAmbi')->name('servicesGestAmbi');
+Route::view('/serviciosSoporte','partials.Servicios.servicesSoporte')->name('servicesSoporte');
 
 Route::view('/informacion','info')->name('info');
 Route::view('/noticias','partials.Informacion.noticias')->name('news');
