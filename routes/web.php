@@ -10,7 +10,7 @@ Route::view('/serviciosAdmi','partials.Servicios.servicesAdmi')->name('servicesA
 Route::view('/serviciosLegal','partials.Servicios.servicesLegal')->name('servicesLegal');
 Route::view('/serviciosTecn','partials.Servicios.servicesTecn')->name('servicesTecn');
 
-Route::view('/informacion','info')->name('info');
+Route::view('/informacion','partials.Informacion.inform')->name('inform');
 Route::view('/noticias','partials.Informacion.noticias')->name('news');
 Route::post('noticias', 'comentsController@store');
 Route::get('/pub/{blog_id}','PostsController@show')->name('pub.id');
@@ -82,7 +82,6 @@ Route::post('/roles', 'RoleController@store')->name('roles.store');
 Route::get('/pub','PostsController@create')->name('pub');
 Route::post('/crearpu', 'PostsController@store')->name('pub.store');
 
-
 Route::get('/buscarpub','PostsController@index')->name('buscarpub');
 
 Route::get('/editarpub/{idpub}','PostsController@editar')->name('pub.editar');
@@ -92,5 +91,13 @@ Route::delete('/eliminarpub/{idpub}', 'PostsController@eliminar')->name('pub.eli
 
 Route::get('/leerpub/{idpub}', 'PostsController@show')->name('pub.leer');
 
+//Imagen de porcentaje
+Route::get('/imagen','TblImgporcentController@create')->name('img');
+Route::post('/crearimg', 'TblImgporcentController@store')->name('img.store');
+Route::get('/buscarimg','TblImgporcentController@index')->name('buscarimg');
+Route::get('/editarimg/{idimg}','TblImgporcentController@editar')->name('img.editar');
+Route::put('/editarimg/{idimg}','TblImgporcentController@update')->name('img.update');
+
+Route::delete('/eliminarimg/{idimg}', 'TblImgporcentController@eliminar')->name('img.eliminar');
 
 Auth::routes(['register' => false]);  //['register' => false]

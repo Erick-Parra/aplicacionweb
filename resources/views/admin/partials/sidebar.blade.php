@@ -154,7 +154,18 @@
                   <p>Listar Publicación</p>
                 </a>
               </li>
-                
+              <li class="nav-item">
+                <a href="{{ route('img')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tablas informativas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('buscarimg')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Listar Imagenes</p>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
