@@ -86,10 +86,10 @@
             <p style="font-size: 15px;"></p>
             <div class="row">
                 <div class="col-md-4" >
-                    <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/gallery/Ima2.jpg"></div>
+                    <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/gallery/junta.jpg"></div>
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="card"><img class="img-fluid card-img-top w-100 d-block" id="largas" src="assets/img/gallery/7.jpg"></div>
+                    <div class="card"><img class="img-fluid card-img-top w-100 d-block" id="largas" src="assets/img/gallery/grupo.jpg"></div>
                 </div>
                 <div class="col-md-4">
                     <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/gallery/Ima3.jpg"></div>
@@ -97,13 +97,13 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card"><img class="card-img-top w-100 d-block"  style="height: 500px" src="assets/img/gallery/Ima4.jpg"></div>
+                    <div class="card"><img class="card-img-top w-100 d-block"  style="height: 500px" src="assets/img/gallery/excavacion.jpg"></div>
                 </div>
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="height: 500px" src="assets/img/gallery/5.jpg"></div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card"><img class="card-img-top w-100 d-block" style="height: 500px" src="assets/img/gallery/6.jpg"></div>
+                    <div class="card"><img class="card-img-top w-100 d-block" style="height: 500px" src="assets/img/gallery/excava.jpg"></div>
                 </div>
             </div>
         </div>
@@ -265,7 +265,7 @@
         </div>
         </div>
         </div>
-   
+
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Facebook -->
