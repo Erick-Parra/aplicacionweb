@@ -15,7 +15,7 @@
         <p style="font-size: 16px;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
     </div>
     <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #d7f5f5;">
-         <p><img id="logoleras" src="assets/img/logos/olas.png" style="max-width:100%;width:100%;height:auto; margin-top: 0px;"></p>
+         <p><img id="logoleras" src="assets/img/logos/newlogo.jpg" style="max-width:90%;width:100%;height:auto; margin-top: 0px;"></p>
      </div>
     <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
         <div class="container site-section" id="mision" style="padding: 21px;">
@@ -33,36 +33,7 @@
         </div>
     </div>
 
-    <div>
-        <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
-        <div class="container site-section" id="Gallery">
-            <h1>GALERÍA</h1>
-            <br>
-            <p style="font-size: 15px;"></p>
-            <div class="row">
-                <div class="col-md-4" >
-                    <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/gallery/junta.jpg"></div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="card"><img class="img-fluid card-img-top w-100 d-block" id="largas" src="assets/img/gallery/grupo.jpg"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/gallery/Ima3.jpg"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card"><img class="card-img-top w-100 d-block"  style="height: 500px" src="assets/img/gallery/excavacion.jpg"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card"><img class="card-img-top w-100 d-block" style="height: 500px" src="assets/img/gallery/5.jpg"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card"><img class="card-img-top w-100 d-block" style="height: 500px" src="assets/img/gallery/excava.jpg"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="bg-light-section-ubication">
         <div class="container site-section" id="ubication">
             <h1>Ubicación</h1>
@@ -185,6 +156,9 @@
 </div>
 </div>
 </div>
+
+
+
    <section class="">
   <!-- Footer -->
   <footer class="text-center text-white" style="background-color: #0a4275;">
