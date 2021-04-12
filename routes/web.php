@@ -95,12 +95,12 @@ Route::delete('/eliminarpub/{idpub}', 'PostsController@eliminar')->name('pub.eli
 Route::get('/leerpub/{idpub}', 'PostsController@show')->name('pub.leer');
 
 //Imagen de porcentaje
-Route::get('/imagen','TblImgporcentController@create')->name('img');
-Route::post('/crearimg', 'TblImgporcentController@store')->name('img.store');
-Route::get('/buscarimg','TblImgporcentController@index')->name('buscarimg');
-Route::get('/editarimg/{idimg}','TblImgporcentController@editar')->name('img.editar');
-Route::put('/editarimg/{idimg}','TblImgporcentController@update')->name('img.update');
+Route::get('/imagen','imgporcentController@create')->name('img');
+Route::post('/crearimg', 'imgporcentController@store')->name('img.store');
+Route::get('/buscarimg','imgporcentController@index')->name('buscarimg');
+Route::get('/editarimg/{idimg}','imgporcentController@editar')->name('img.editar');
+Route::put('/editarimg/{idimg}','imgporcentController@update')->name('img.update');
 
-Route::delete('/eliminarimg/{idimg}', 'TblImgporcentController@eliminar')->name('img.eliminar');
+Route::delete('/eliminarimg/{idimg}', 'imgporcentController@eliminar')->name('img.eliminar');
 
 Auth::routes(['register' => false]);  //['register' => false]

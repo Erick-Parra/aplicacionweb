@@ -75,10 +75,8 @@
                 <form class="form-horizontal" method="post">
                     <fieldset>
                        <b> <legend class="text-center header">Registros de Estadísticas</legend></b>
-
                         <div class="form-group row"> 
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
-
                             <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
                             <div class="col-md-8">

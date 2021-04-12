@@ -8,7 +8,7 @@ use App\Models\tbl_imgporcent;
 use Illuminate\Support\Facades\Storage;
 Use App\Http\Requests\ImgporcentRequest;
 
-class TblImgporcentController extends Controller
+class imgporcentController extends Controller
 {
     /**
      * Display a listing of the resource.
