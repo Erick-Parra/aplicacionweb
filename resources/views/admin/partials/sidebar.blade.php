@@ -121,6 +121,30 @@
               </li>
             </ul>
           </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa fa-edit"></i>
+              <p>
+                Galeria
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+
+                  <a href="{{ route('creargaleria') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                  <p>Agregar Imagen</p>
+                  </a>
+
+                 <a href="{{route('buscargale')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista de Imagenes</p>
+                </a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas  fa-file"></i>

@@ -134,6 +134,7 @@
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357; color: rgba(243,246,248,0.99);">
           <li><a class="dropdown-item" href="{{route('inform') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Tablas Informativas</a></li>
           <li><a class="dropdown-item" href="{{route('news') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Publicaciones</a></li>
+             <li><a class="dropdown-item" href="{{route('galeri') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Galeria</a></li>
         </ul>
       </li>
        <li class="nav-item">
