@@ -75,7 +75,7 @@
               <i class="fas fa-times"></i></button>
           </div>
         </div>
-        <div class="card-body">    
+        <div class="card-body" style="background-color: #00c8e8;">    
         
           <h1>{{$asadas->Nom_Asada}}</h1>
           <h5>Se registró el día: {{$asadas->Fecha_Registro}}</h5>
@@ -88,7 +88,7 @@
 
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
+        <div class="card-footer" style="background-color: #00d7f3">
          
         </div>
         <!-- /.card-footer-->

@@ -51,7 +51,7 @@
       <!-- Default box -->
      
 <div class="card" style="width: auto;">
-  <div class=" text-center card-header" style="font-family: Antic; background-color: rgb(13, 71, 161); color: #FDFEFE;">
+  <div class=" text-center card-header" style="font-family: Antic; background-color: #003357; color: #FDFEFE;">
 <img id="logo" style="align-content: center;"src="assets/img/logos/Logotipo-LigadelAgua_2.png">{{ __('Lista de ASADAS registradas') }}
     
     <!--<b><legend class="text-center header" style="font-size: 15px;">Lista de ASADAS registradas</legend></b>
@@ -60,7 +60,7 @@
   </div>
   <ul class="list-group list-group-flush" style="text-align: center;">
     @forelse($asadas as $asadaitem)
-            <li class="list-group-item"><a href="{{ route('admin.show', $asadaitem)}}">{{ $asadaitem->Nom_Asada }}</a></li>
+            <li class="list-group-item"><a href="{{ route('admin.show', $asadaitem)}}" >{{ $asadaitem->Nom_Asada }}</a></li>
             @empty
             <li class="list-group-item">No hay ASADAS registradas</li>
             @endforelse

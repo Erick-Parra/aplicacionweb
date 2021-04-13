@@ -1,7 +1,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-10"
 
-  style= "background-color: rgb(13, 71, 161) ;">
+  style= "background-color: #003357;">
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link user-panel mt-3 pb-3 mb-3 d-flex">
       <img src="../../dist/img/LCA.png"
@@ -11,7 +11,7 @@
       <span class="brand-text font-weight-light" style= "font-size: 18px;">Liga Comunal del Agua</span>
     </a>
     <!-- Sidebar -->
-    <div class="sidebar" style= "background-color: rgb(13, 71, 161);">
+    <div class="sidebar" style= "background-color: #003357;">
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-2 pb-2 mb-2 d-flex">
         <div class="image">

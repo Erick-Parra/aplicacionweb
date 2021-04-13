@@ -2,7 +2,7 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark navbar-light" style="color: rgba(251, 252, 252); background-color: rgb(3, 169, 244);height:70px;">
+  <nav class="main-header navbar navbar-expand navbar-dark navbar-light" style="color: rgba(251, 252, 252); background-color:#00cbf0;height:70px;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">

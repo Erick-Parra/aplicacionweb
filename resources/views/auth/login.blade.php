@@ -9,9 +9,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="background-color: #337894; color: rgba(243,246,248,0.99); height: 58px;text-align: center;"> <img id="logo" style="align-content: left;"src="assets/img/logos/Logotipo-LigadelAgua_2.png">{{ __('Iniciar sesión') }}</div>
+                <div class="card-header" style="background-color: #003357; color: rgba(243,246,248,0.99); height: 58px;text-align: center;"> <img id="logo" style="align-content: left;"src="assets/img/logos/Logotipo-LigadelAgua_2.png">{{ __('Iniciar sesión') }}</div>
 
-                <div class="card-body" style="background-color: #AFEEEE;height: 370px;" >
+                <div class="card-body" style="background-color: #7eeefa; height: 370px;" >
                     <br>
                     
                     <form method="POST" action="{{ route('login') }}">
@@ -50,32 +50,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <br>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Recordar') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Iniciar sesión') }}
                                 </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Olvidó su contraseña?') }}
-                                    </a>
-                                @endif
                             </div>
                         </div>
                     </form>
