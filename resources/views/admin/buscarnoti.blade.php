@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -81,30 +83,10 @@
                           
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
 
-                            <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Nombre Publicación <br></label>
-                                <form class="form-inline ml-2">
-                              <div class="input-group input-group-sm">
-                                <input class="form-control " name="searchpu" type="search">
-                                <div class="input-group-append">
-                                  <button class="btn btn-primary" type="submit">
-                                    <i class="fas fa-search"></i>
-                                  </button>
-                                </div>
-                              </div>
-                            </form>                            
-                              
-                            </div>
-                            <br>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              </div>
-                              </br>
+                           
                                          <div class="table-responsive">
-<table class="table table-hover", style="background-color: white">
-    <thead >
+<table id="table_id" class="table table-hover", style="background-color: white">
+     <thead>
   <tr>
    <th scope="col">#</th>
     <th scope="col">Título Noticia</th>
@@ -118,6 +100,7 @@
   </tr>
  
   </thead>
+   <tbody>
   @foreach($noticia as $pub)
   <tr>
     <td scope="row">{{$loop->iteration}}</td>
@@ -137,6 +120,7 @@
 
   </tr>
  @endforeach
+</tbody>
 
 </table>
 </div>
@@ -170,5 +154,26 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+
 </body>
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#table_id').DataTable({
+        "language": {
+            "lengthMenu": "Mostrar _MENU_ registros por pagina",
+            "zeroRecords": "Registros no encontrados!!",
+            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay registros disponibles",
+            "infoFiltered": "(filtrado  por _MAX_ registros totales)",
+            "search" : "Buscar: ",
+            "paginate" : {
+              "next" : "Siguiente",
+              "previous" : "Anterior"
+            }
+        }
+    } );
+} );
+</script>
 </html>

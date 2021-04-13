@@ -10,7 +10,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class tbl_imgporcent
+ * Class imgporcent
  * 
  * @property int $id
  * @property string $imagen
@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package App\Models
  */
-class tbl_imgporcent extends Model
+class imgporcent extends Model
 {
 	protected $table = 'tbl_imgporcent';
 	protected $primaryKey = 'id';
