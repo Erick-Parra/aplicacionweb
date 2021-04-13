@@ -60,7 +60,6 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-
                   <a href="{{ route('create') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                   <p>Crear una nueva ASADA</p>
@@ -123,7 +122,7 @@
           </li>
              <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas   fa-picture-o"></i>
+              <i class="nav-icon fas fa-picture-o"></i>
               <p>
                 Galeria
                 <i class="fas fa-angle-left right"></i>
@@ -145,6 +144,29 @@
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+                Tablas Porcentaje
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('img') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Insertar Imagen</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('buscarimg') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Listar imagenes</p>
+                </a>
+              </li>
+              </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -179,11 +201,7 @@
                   <p>Listar Publicación</p>
                 </a>
               </li>
-
-               <p>
-              
-              
-                
+               <p>   
             </ul>
           </li>
         </ul>
