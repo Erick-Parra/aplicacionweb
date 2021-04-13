@@ -22,7 +22,7 @@
             </div>
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
-                    <div class="box" style="background-image:url(assets/img/funcionarios/EMEL.png)">
+                    <div class="box" style="background-image:url(assets/img/funcionarios/EMEL.webp)">
                         <div class="cover">
                             <h3 class="name">EMEL RODRÍGUEZ PANIAGUA</h3>
                             <p class="title">ING. FORESTAL</p>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <div class="box" style="background-image:url(assets/img/funcionarios/JESUSMONTERO.png)">
+                    <div class="box" style="background-image:url(assets/img/funcionarios/JESUSMONTERO.webp)">
                         <div class="cover">
                             <h3 class="name">JESÚS MONTERO PRENDAS</h3>
                             <p class="title">ING. AGRÓNOMO</p>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <div class="box" style="background-image:url(assets/img/funcionarios/GANCARLOSBARRANTES.png)">
+                    <div class="box" style="background-image:url(assets/img/funcionarios/GANCARLOSBARRANTES.webp)">
                         <div class="cover">
                             <h3 class="name">GAN CARLOS BARRANTES</h3>
                             <p class="title">ING. AGRÓNOMO</p>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <div class="box" style="background-image:url(assets/img/funcionarios/YOHAIRYARIAS.png)">
+                    <div class="box" style="background-image:url(assets/img/funcionarios/YOHAIRYARIAS.webp)">
                         <div class="cover">
                             <h3 class="name">Lic. YOHAIRY ARIAS LÓPEZ</h3>
                             <p class="title">CONTADORA</p>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                  <div class="col-md-6 col-lg-4 item">
-                    <div class="box" style="background-image:url(assets/img/funcionarios/MARIELOSRODRIGUEZ.png)">
+                    <div class="box" style="background-image:url(assets/img/funcionarios/MARIELOSRODRIGUEZ.webp)">
                         <div class="cover">
                             <h3 class="name">BACH. MARIELOS RODRÍGUEZ MEJÍAS</h3>
                             <p class="title">SECRETARIA</p>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                   <div class="col-md-6 col-lg-4 item">
-                    <div class="box" style="background-image:url(assets/img/funcionarios/MARCOSESPINOZA.png)">
+                    <div class="box" style="background-image:url(assets/img/funcionarios/MARCOSESPINOZA.webp)">
                         <div class="cover">
                             <h3 class="name">MARCOS ESPINOZA LÓPEZ</h3>
                             <p class="title">INGENIERO HIDROLÓGICO</p>
