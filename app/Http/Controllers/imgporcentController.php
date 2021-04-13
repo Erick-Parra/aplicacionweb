@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App;
 use Illuminate\Http\Request;
-use App\Models\imgporcent;
+use App\Models\Imgporcent;
 use Illuminate\Support\Facades\Storage;
 Use App\Http\Requests\ImgporcentRequest;
 
@@ -67,10 +67,6 @@ class imgporcentController extends Controller
      * @param  \App\tbl_imgporcent  $tbl_imgporcent
      * @return \Illuminate\Http\Response
      */
-    public function show(tbl_imgporcent $tbl_imgporcent)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
