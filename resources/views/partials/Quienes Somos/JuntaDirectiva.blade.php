@@ -20,7 +20,7 @@
     }
 </style>
 <body>
-   <div class="team-clean" style="background-color: rgb(190,241,241);">
+   <div class="team-clean" style="background-color: #7eeefa;">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center" style="opacity: 0.63;filter: white(0px) brightness(83%);">JUNTA DIRECTIVA DE LA LIGA COMUNAL DEL AGUA</h2>

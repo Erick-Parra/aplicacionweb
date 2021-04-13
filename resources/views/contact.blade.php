@@ -29,7 +29,7 @@
             <br>
             <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">TELÉFONO: </span><span>4080-1086</span></div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 shadow rounded py-3 site-form" style="background-color: #d7f5f5;">
+        <div class="col-12 col-sm-6 col-md-6 shadow rounded py-3 site-form" style="background-color: #7eeefa;">
             <form style="background-color: #FF0000;">
                 <div class="form-group">
 
@@ -108,7 +108,7 @@
                     @enderror
                 </div>
                 <div class="col-sm-12 col-xs-12" align="center">
-                <button class="btn btn-primary shadow btn-block border rounded" role="button" style="color: rgba(243,246,248,0.99); background-color: rgb(15,112,183);">Enviar</button></form>
+                <button class="btn btn-primary shadow btn-block border rounded" role="button" style="color: rgba(243,246,248,0.99); background-color: #003357;">Enviar</button></form>
                 <br>
         </div>
     </form>
