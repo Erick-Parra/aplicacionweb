@@ -32,11 +32,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $Correo
  * @property int $idAsada
  * @property string $nombreRegion
-<<<<<<< HEAD
  *
-=======
- *
->>>>>>> 91076b8b1643b8279469f979072e5693c1ddc38e
  * @property Collection|TblControloperativo[] $tbl_controloperativos
  * @property Collection|TblMapeo[] $tbl_mapeos
  *

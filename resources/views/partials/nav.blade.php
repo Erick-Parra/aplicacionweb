@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/Team-Clean.css">
+    <link rel="icon" href="/assets/img/logotipo.ico">
 </head>
     <style type="text/css">
         .nav ul{
