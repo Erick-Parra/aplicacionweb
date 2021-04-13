@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
         </div>
     </div>
     <div>
@@ -106,6 +106,9 @@
                     <div class="card"><img class="card-img-top w-100 d-block" style="height: 500px" src="assets/img/gallery/6.jpg"></div>
                 </div>
             </div>
+          <div>
+        <a href="{{route('galeri')}}" class="btn btn-secondary">Ir a Galeria</a>
+      </div>
         </div>
     </div>
     <div class="bg-light-section-ubication">

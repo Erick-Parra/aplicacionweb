@@ -15,7 +15,17 @@ Route::view('/noticias','partials.Informacion.noticias')->name('news');
 Route::post('noticias', 'comentsController@store');
 Route::get('/pub/{blog_id}','PostsController@show')->name('pub.id');
 
+//Galeria
 
+Route::view('/galeria','partials.Informacion.galeria')->name('galeri');
+Route::get('/creargaleria','GaleriaController@create')->name('creargaleria');
+Route::post('/creargaleria', 'GaleriaController@store')->name('galeria.store');
+Route::get('/buscargaleria','GaleriaController@index')->name('buscargaleria');
+
+Route::get('/editargaleria/{idgaleria}','GaleriaController@editar')->name('galeria.editar');
+Route::put('/editargaleria/{idgaleria}','GaleriaController@update')->name('galeria.update');
+
+Route::delete('/eliminargaleria/{idgaleria}', 'GaleriaController@eliminar')->name('galeria.eliminar');
 
 //Ruta de contáctenos
 

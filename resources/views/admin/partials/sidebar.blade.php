@@ -121,6 +121,31 @@
               </li>
             </ul>
           </li>
+             <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas   fa-picture-o"></i>
+              <p>
+                Galeria
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('creargaleria')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Crear Galeria</p>
+                </a>
+              </li>
+            </ul>
+             <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('buscargaleria')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista Galeria</p>
+                </a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas  fa-file"></i>
@@ -154,6 +179,10 @@
                   <p>Listar Publicación</p>
                 </a>
               </li>
+
+               <p>
+              
+              
                 
             </ul>
           </li>

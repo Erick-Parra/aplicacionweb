@@ -6,7 +6,7 @@
   	public function getPosts()
   	{
   		global $pdo;
-  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'usuario', 'password');
+  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
 
   		$query = $pdo->prepare("
   			SELECT *
@@ -20,7 +20,7 @@
   		public function getPublicacion($blog_id)
   	{
   		global $pdo;
-  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'usuario', 'password');
+  		$pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
 
   		$query = $pdo->prepare("
   			SELECT *
@@ -33,5 +33,35 @@
 
   		return $query->fetch();
   	}
-  }
+
+    public function getImagen(){
+      global $pdo;
+      $pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
+
+      $query = $pdo->prepare("
+        SELECT *
+        FROM tbl_galeria
+        ");
+      $query->execute();
+
+      return $query->fetchAll();
+    }
+
+      public function getGaleria($blog_id)
+    {
+      global $pdo;
+      $pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
+
+      $query = $pdo->prepare("
+        SELECT *
+        FROM tbl_galeria
+        WHERE idGaleria = :blog_id
+        ");
+      $query->execute([
+        'idGaleria' => $blog_id
+      ]);
+
+      return $query->fetch();
+    }
+   }
 ?>

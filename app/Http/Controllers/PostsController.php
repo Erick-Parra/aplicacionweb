@@ -17,7 +17,7 @@ class PostsController extends Controller
 
                 $noticia = Post::where('TituloNoti', 'LIKE', '%' . $query . '%')
                           ->orderBy('Id', 'asc')
-                        ->paginate(5);
+                        ->paginate();
 
                 return view('admin.buscarnoti', ['noticia' => $noticia, 'searchpu' => $query]);
                 

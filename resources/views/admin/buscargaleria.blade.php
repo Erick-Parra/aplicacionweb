@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -54,11 +54,11 @@
 
     <!-- Main content -->
     <section class="content">
-      <form method="GET" action="{{ route('searchasada')}}">
-           @if($searchasa)
+      <form method="GET" action="{{ route('buscargaleria')}}">
+          @if($search)
           <h6>
             <div class="alert alert-primary" role="alert">
-                 Los resultados para '{{$searchasa}}' son:
+                 Los resultados para '{{$search}}' son:
             </div>
           </h6>
           @endif
@@ -76,99 +76,61 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                      <legend class="text-center header"></legend>
-                        <b><legend class="text-center header">Registros de ASADAS</legend></b>
+                       <b> <legend class="text-center header">Registros de Galeria</legend></b>
 
-                        <div class="form-group row">
+                       <!<div class="form-group row">
                             
                           
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
-                                   <div class="table-responsive">
-                          <table id="datatable" class="table table-hover", style="background-color: white">
+
+                            
+                                         <div class="table-responsive">
+<table id="datatable" class="table table-hover", style="background-color: white">
     <thead >
   <tr>
-    <th  scope="col">#</th>
+   <th scope="col">#</th>
 
-    <th  scope="col">Nombre ASADA</th>
+    <th scope="col">Imagen</th>
 
-    <th  scope="col">Cédula Jurídica</th>
-
-    <th  scope="col">Abonados</th>
-
-    <th scope="col">Presidente</th>
-
-    <th scope="col">Vicepresidente</th>
-
-    <th scope="col">Tesorero</th>
-
-    <th scope="col">Vocal1</th>
-
-    <th scope="col">Vocal2</th>
-
-    <th scope="col">Fiscal</th>
-
-    <th scope="col">Teléfono</th>
-
-    <th  scope="col">Correo</th>
-    
-     <th scope="col">Acción</th>
+    <th scope="col">Acción</th>
 
   </tr>
+ 
   </thead>
-<tbody>
-  @foreach($asada as $reg)
+  <tbody>
+  @foreach($galeria as $ga)
   <tr>
     <td scope="row">{{$loop->iteration}}</td>
-
-    <td>{{$reg->Nom_Asada}}</td>
-
-    <td>{{$reg->ced_Juridica}}</td>
-
-    <td>{{$reg->Cant_Abonados}}</td>
-
-    <td>{{$reg->Presidente}}</td>
-
-    <td>{{$reg->VicePresidente}}</td>
-
-    <td>{{$reg->Tesorero}}</td>
-
-    <td>{{$reg->Vocal_1}}</td>
-
-    <td>{{$reg->Vocal_2}}</td>
-
-    <td>{{$reg->Fiscal}}</td>
-
-    <td>{{$reg->Telefono}}</td>
-
-    <td>{{$reg->Correo}}</td>
-
     <td>
-      
-      <a href="{{route('admin.edit', $reg)}}" class="btn btn-primary border rounded">Editar</a>
-      
-     
-      <form action="{{ route('admin.destroy', $reg) }}" class="d-inline" method="POST" >
-     
+    <img width="100px"src="{{ Storage::url ($ga->Nombre)}}"  class="rounded float-left">
+    </td>
+    <td>
+      <a href="{{route('galeria.editar', $ga)}}" class="btn btn-primary border rounded">Editar</a>
+      <form action="{{ route('galeria.eliminar', $ga) }}" class="d-inline" method="POST">
     @method('DELETE')
     @csrf
-    <button type="submit" class="btn btn-danger btn-sm" value="enable" onclick="return confirm('¿Esta seguro de eliminar el registro?')">Eliminar</button>
-  
+    <button type="submit" class="btn btn-danger btn-sm"  onclick="return confirm('¿Está seguro de eliminar el registro?')">Eliminar</button>
 </form>
-
     </td>
 
   </tr>
  @endforeach
 </tbody>
 </table>
-</div>
-      </form>
-    </section>
+<style type="text/css">
+
+    
+    div{
+        text-align: center;
+    }
+</style>
+<body>
+   
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
- <footer class="main-footer">
+    <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
       <b>Created By</b> NEPV
     </div>
@@ -192,9 +154,9 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 </body>
+
 <script type="text/javascript">
 $(document).ready(function() {
     $('#datatable').DataTable( {

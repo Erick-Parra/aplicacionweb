@@ -24,7 +24,7 @@ class ControllerMap extends Controller
 
                 $mapeo = TblMapeo::where('Nom_Asada', 'LIKE', '%' . $query . '%')
                           ->orderBy('IdMapeo', 'asc')
-                        ->paginate(5);
+                        ->paginate();
 
                 return view('admin.buscarmapeo', ['mapeo' => $mapeo, 'searchm' => $query]);
                 
