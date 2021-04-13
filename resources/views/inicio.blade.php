@@ -10,14 +10,14 @@
         </div>
     </div>
     <div class="site-section text-primary dark-section" id="information" style="font-size: 16px; background-color:
-    #d7f5f5;">
+    #7eeefa;">
         <h1>¿Quiénes Somos?</h1>
         <p style="font-size: 16px;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
     </div>
-    <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #d7f5f5;">
+    <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #7eeefa;">
          <p><img id="logoleras" src="assets/img/logos/logonuevo.webp" style="max-width:90%;width:100%;height:auto; margin-top: 0px;"></p>
      </div>
-    <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
+    <div class="text-secondary dark-section" style="background-color: #7eeefa;">
         <div class="container site-section" id="mision" style="padding: 21px;">
 
             <div class="row">
@@ -45,7 +45,7 @@
 </div>
 </div>
 
-        <div class="text-secondary dark-section" style= "height:700px; background-color: #80c5e8;">
+        <div class="text-secondary dark-section" style= "height:700px; background-color: #7eeefa;">
         <div class="container site-section" id="convenios" style= "height:650px;"><h1 style="color: #1B2631;">Convenios</h1>
         <br>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -57,8 +57,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
   </ol>
   <div class="carousel-inner" style="height: 420px; background-color: #FDFEFE;">
 
@@ -135,16 +134,7 @@
                                         y pozos de las ASADAS.</p>
     </div>
      </div>
-     <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/corredorbiologico.webp" style="height: 300px;" alt="Nine slide">
-       <div class="carousel-caption d-none d-md-block" style="height: 10px;">
-        <br>
-        <br>
-
-         <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">CORREDOR BIOLÓGICO RÍO NOSARA</h5>
-
-    </div>
-     </div>
+     
      <a class="carousel-control-prev" style="background-color: #003357;width: 20px;" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -174,8 +164,8 @@
                         <li>-Técnicos</li>
                         <li>-Administrativos y Financieros</li>
                         <li>-Contables</li>
-                        <li>-De gestión ambiental</li>
-                        <li>-De soporte</li>
+                        <li>-De Gestión Ambiental</li>
+                        <li>-De Soporte</li>
                         <li>-Legales y Notariales</li>
                         <li><a></a></li>
                   </ul>
