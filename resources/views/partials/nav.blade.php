@@ -51,7 +51,7 @@
   <div class="container-fluid">
    <a class="navbar-brand" href="#" style="color: rgba(243,246,248,0.99);">
       <img
-        src="assets/img/logos/Logotipo-LigadelAgua_2.png"
+        src="assets/img/logos/Logotipo-LigadelAgua_2.webp"
         height="30"
         alt=""
         loading="lazy"/>

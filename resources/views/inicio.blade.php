@@ -64,7 +64,7 @@
 
 
     <div class="text-center w-100 carousel-item active">
-      <img class="card-img-width" src="assets/img/convenios/PNUD.jpeg" style="height: 300px;" alt="First slide">
+      <img class="card-img-width" src="assets/img/convenios/PNUD.webp" style="height: 300px;" alt="First slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
 <br>
     <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">PNUD</h5>
@@ -73,7 +73,7 @@
   </div>
     </div>
     <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/ElToledo.jpeg" style="height: 300px;" alt="Second slide">
+      <img class="card-img-width" src="assets/img/convenios/ElToledo.webp" style="height: 300px;" alt="Second slide">
       <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">EL TOLEDO</h5>
@@ -81,7 +81,7 @@
     </div>
      </div>
     <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/logo_tecnolab.jpg" style="height: 300px;" alt="Third slide">
+      <img class="card-img-width" src="assets/img/convenios/logo_tecnolab.webp" style="height: 300px;" alt="Third slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">TECNOLAB</h5>
@@ -91,7 +91,7 @@
       <div class="carousel-item">
         <br>
         <br>
-      <img class="card-img-width"  style="background-color: #FDFEFE;" src="assets/img/convenios/FondoComunitario.jpeg" style="height: 300px;" alt="Fourth slide">
+      <img class="card-img-width"  style="background-color: #FDFEFE;" src="assets/img/convenios/FondoComunitario.webp" style="height: 300px;" alt="Fourth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
          <br><br><br><br><br><br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">FONDO COMUNITARIO GUANACASTE</h5>
@@ -101,7 +101,7 @@
        <div class="carousel-item">
         <br>
         <br>
-      <img class="card-img-width"  style="background-color: #FDFEFE;" src="assets/img/convenios/Harmoy.jpeg" style="height: 300px;" alt="Fifth slide">
+      <img class="card-img-width"  style="background-color: #FDFEFE;" src="assets/img/convenios/Harmoy.webp" style="height: 300px;" alt="Fifth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br><br><br><br><br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">THE HARMONY HOTEL</h5>
@@ -109,7 +109,7 @@
     </div>
      </div>
       <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/avina.png" style="height: 300px;" alt="Sixth slide">
+      <img class="card-img-width" src="assets/img/convenios/avina.webp" style="height: 300px;" alt="Sixth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">Fundación avina</h5>
@@ -117,7 +117,7 @@
     </div>
      </div>
       <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/Asesoreslegales.jpeg" style="height: 300px;" alt="Seventh slide">
+      <img class="card-img-width" src="assets/img/convenios/Asesoreslegales.webp" style="height: 300px;" alt="Seventh slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">ASESORÍA LEGAL</h5>
@@ -126,7 +126,7 @@
      </div>
 
       <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/logo_ice.png" style="height: 300px;" alt="Eighth slide">
+      <img class="card-img-width" src="assets/img/convenios/logo_ice.webp" style="height: 300px;" alt="Eighth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
 
@@ -136,7 +136,7 @@
     </div>
      </div>
      <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/corredorbiologico.jpg" style="height: 300px;" alt="Nine slide">
+      <img class="card-img-width" src="assets/img/convenios/corredorbiologico.webp" style="height: 300px;" alt="Nine slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
         <br>
@@ -171,8 +171,11 @@
                 <div class="col-sm-6 col-md-5 item">
                     <h3>Servicios LCA</h3>
                   <ul>
-                        <li>-Administrativos</li>
                         <li>-Técnicos</li>
+                        <li>-Administrativos y Financieros</li>
+                        <li>-Contables</li>
+                        <li>-De gestión ambiental</li>
+                        <li>-De soporte</li>
                         <li>-Legales y Notariales</li>
                         <li><a></a></li>
                   </ul>
@@ -190,7 +193,7 @@
                     <div
             class="bg-image hover-overlay ripple shadow-1-strong rounded"
             data-ripple-color="light">
-           <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).png" width="150" height="200" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.png" width="100" style="filter: contrast(200%);"></p>
+           <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).webp" width="150" height="200" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.webp" width="100" style="filter: contrast(200%);"></p>
         </div>
         </div>
         </div>
