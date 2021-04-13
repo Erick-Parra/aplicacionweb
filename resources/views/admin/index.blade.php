@@ -37,7 +37,7 @@
           <div class="col-sm-12">
             <div class="card">
             <div class="card-header">
-            <ol class="breadcrumb float-sm-left"> <img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png">
+            <ol class="breadcrumb float-sm-left"> <img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.webp">
               <li class="breadcrumb-item active">Administración Liga Comunal del Agua</li>
             </ol>
           </div>
@@ -52,7 +52,7 @@
      
 <div class="card" style="width: auto;">
   <div class=" text-center card-header" style="font-family: Antic; background-color: #003357; color: #FDFEFE;">
-<img id="logo" style="align-content: center;"src="assets/img/logos/Logotipo-LigadelAgua_2.png">{{ __('Lista de ASADAS registradas') }}
+<img id="logo" style="align-content: center;"src="assets/img/logos/Logotipo-LigadelAgua_2.webp">{{ __('Lista de ASADAS registradas') }}
     
     <!--<b><legend class="text-center header" style="font-size: 15px;">Lista de ASADAS registradas</legend></b>
     <img id="logo" style="align-content: right;"src="assets/img/logos/Logotipo-LigadelAgua_2.png">-->

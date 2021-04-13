@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="background-color: #003357; color: rgba(243,246,248,0.99); height: 58px;text-align: center;"><img id="logo" style="align-content: left;"src="assets/img/logos/Logotipo-LigadelAgua_2.png">{{ __('Registrarse') }}</div>
+                <div class="card-header" style="background-color: #003357; color: rgba(243,246,248,0.99); height: 58px;text-align: center;"><img id="logo" style="align-content: left;"src="assets/img/logos/Logotipo-LigadelAgua_2.webp">{{ __('Registrarse') }}</div>
 
                 <div class="card-body" style="background-color: #7eeefa; height: 370px;">
                     <br>
