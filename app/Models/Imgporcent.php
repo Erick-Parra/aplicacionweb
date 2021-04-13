@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package App\Models
  */
-class tbl_imgporcent extends Model
+class Imgporcent extends Model
 {
 	protected $table = 'tbl_imgporcent';
 	protected $primaryKey = 'id';
