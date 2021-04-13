@@ -16,24 +16,6 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-
-<style>
-.card {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:  rgb(3, 169, 244);
-  color: white;
-  text-align: center;
-
-}
-.card-header{
-  background-color: #FFFFFF;
-  color: #050629;
-}
-
-</style>
-
 <body class="hold-transition sidebar-mini">
 
     @include('admin.partials.navbar')
@@ -47,12 +29,18 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
-        <div class="row mb-2">
-
+        <div class="row mb-1">
+          <div class="col-sm-6">
+            
+         
+          </div>
           <div class="col-sm-12">
-            <div class="card">
+            
+          <div class="card">
             <div class="card-header">
+
             <ol class="breadcrumb float-sm-left">
+              <li class="breadcrumb-item"><a href="{{ route('admin') }}">Regresar al inicio</a></li>
               <li class="breadcrumb-item active">Administración Liga Comunal del Agua</li>
             </ol>
           </div>
@@ -62,39 +50,41 @@
 
     <!-- Main content -->
     <section class="content">
+          <form method="POST" action="{{ route('img.store')}}" enctype= "multipart/form-data" >
+        @csrf
+       
+        <div class="container">
+<div class="flash-message"> 
+ @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
+  @if(Session::has('alert-' . $msg)) 
 
-      <!-- Default box -->
-      <div class="card">
-        <div class="card-header">
-         <b> <h3 class="card-title">Información de la ASADA</h3></b>
+  <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p> 
+  @endif 
+ @endforeach 
+ </div> <!-- end .flash-message --> 
+  <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="POST">
+                    <fieldset>
+                        <b><legend class="text-center header">Imagen de Porcentajes</legend></b>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <label>Imagen</labe>
+                         </div>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                          <p><label for="imagen">
+                              <input type="file" name="imagen"  class="form-control {{ $errors->has('imagen')?'is-invalid':''}} "  value="{{ old('imagen')}}">
+                              </label></p>
+                               {!! $errors->first('imagen','<div class="invalid-feedback">Campo imagen requerido</div>')!!}
+                        </div>
+                            <div class="col-sm-12 col-xs-12" align="center">
+                             <button class="btn btn-primary border rounded">Registrar</button>
+                        </div>
 
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-              <i class="fas fa-minus"></i></button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-              <i class="fas fa-times"></i></button>
-          </div>
-        </div>
-        <div class="card-body">    
-        
-          <h1>{{$asadas->Nom_Asada}}</h1>
-          <h5>Se registró el día: {{$asadas->Fecha_Registro}}</h5>
-          <h5>Presidente: {{$asadas->Presidente}}</h5>
-          <h5>Fontanero: {{$asadas->Fontanero}}</h5>
-          <h5>Teléfono: {{$asadas->Telefono}}</h5>
-          <h5>Correo: {{$asadas->Correo}}</h5>
-
-           <a href="{{route('admin')}}" class="btn btn-success border rounded">Regresar</a>
-
-        </div>
-        <!-- /.card-body -->
-        <div class="card-footer">
-         
-        </div>
-        <!-- /.card-footer-->
-      </div>
-      <!-- /.card -->
-
+</form>
     </section>
     <!-- /.content -->
   </div>
@@ -114,8 +104,6 @@
   </aside>
   <!-- /.control-sidebar -->
 </div>
-<!-- ./wrapper -->
-
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
@@ -126,4 +114,3 @@
 <script src="../../dist/js/demo.js"></script>
 </body>
 </html>
-

@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
     <meta charset="UTF-8"/>
-    <title> LCA </title>
+    <title> Liga Comunal Del Agua </title>
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
@@ -104,10 +104,16 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357;
         color: rgba(243,246,248,0.99);">
-          <li><a class="dropdown-item" href="{{ route('servicesAdmi') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">Administrativos</a></li>
           <li><a class="dropdown-item" href="{{ route('servicesTecn') }}" style="background-color: #003357;
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Técnicos</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesAdmi') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">Administrativos y Financieros</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesConta') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">Contables</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesGestAmbi') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">De Gestión Ambiental</a></li>
+          <li><a class="dropdown-item" href="{{ route('servicesSoporte') }}" style="background-color: #003357;
+          color: rgba(243,246,248,0.99); text-transform: uppercase;">De Soporte</a></li>
           <li><a class="dropdown-item" href="{{ route('servicesLegal') }}" style="background-color: #003357;
           color: rgba(243,246,248,0.99); text-transform: uppercase;">Legales y Notariales</a></li>
         </ul>
@@ -125,7 +131,7 @@
           Información
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357; color: rgba(243,246,248,0.99);">
-          <li><a class="dropdown-item" href="{{route('info') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Tablas Informativas</a></li>
+          <li><a class="dropdown-item" href="{{route('inform') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Tablas Informativas</a></li>
           <li><a class="dropdown-item" href="{{route('news') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Publicaciones</a></li>
           <li><a class="dropdown-item" href="{{route('galeri') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Galeria</a></li>
         </ul>

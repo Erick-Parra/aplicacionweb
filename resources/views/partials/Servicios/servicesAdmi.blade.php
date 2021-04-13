@@ -9,7 +9,7 @@
     <title>Untitled</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Features2.css">
     
 </head>
 
@@ -17,19 +17,24 @@
     <section class="features-boxed">
         <div class="container">
             <div class="intro">
-                 <h2 class="text-center">Servicios Administrativos</h2>
+                 <h2 class="text-center">Servicios Administrativos y Financieros</h2>
                 <p class="text-center">Servicios que brinda la Liga Comunal del Agua a las ASADAS de los cantones de Hojancha - Nicoya - Nandayure.</p>
             </div>
             <div class="row justify-content-center features">
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-file-text-o icon"></i>
+                    <div class="box"><i class="fas fa-tint icon"></i>
                       
-                        <p class="description">FACTURACIÓN ELECTRÓNICA</p>
+                        <p class="description">FACTURACIÓN ELECTRÓNICA Y TARIFAS DE HIDRANTES</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-bar-chart icon"></i>
-                        <p class="description">CONTABILIDAD DE ASADAS</p>
+                    <div class="box"><i class="fas fa-tint icon"></i>
+                        <p class="description">EXPEDIENTES ELECTRÓNICOS Y FÍSICO DE ASADAS</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fas fa-tint icon"></i>
+                        <p class="description">FINANCIAMIENTO DEL FONDO DEL AGUA DE LA LCA, PARA MEJORAS DE LOS ACUEDUCTOS EN CONDICIONES MUY FAVORABLES Y ACORDE AL FLUJO DE CAJA DE LA ASADA</p>
                     </div>
                 </div>
             </div>

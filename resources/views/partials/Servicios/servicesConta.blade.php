@@ -3,42 +3,35 @@
 <div class="features-boxed">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center">Servicios Técnicos</h2>
+                <h2 class="text-center">Servicios Contables</h2>
                 <p class="text-center">Servicios que brinda la Liga Comunal del Agua a las ASADAS de los cantones de Hojancha - Nicoya - Nandayure.</p>
             </div>
             <div class="row justify-content-center features">
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fas fa-tint icon"></i>
                         <br>
-                        <p class="description">FABRICACIÓN E INSTALACIONES DE CLORADORES</p></div>
+                        <p class="description">ELABORACIÓN DE ESTADOS FINANCIEROS DE LAS ASADAS</p></div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fas fa-tint icon"></i>
-                        <p class="description">CONTROL OPERATIVO DE CALIDAD DE AGUA</p></div>
+                        <p class="description">APOYO EN LA ELABORACIÓN DE PRESUPUESTO ANUAL DE LA ASADA</p></div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fas fa-tint icon"></i>
-                        <p class="description">DISEÑO DE MEJORAS Y AMPLIACIÓN DE ACUEDUCTOS</p></div>
+                        <p class="description">PRESENTACIÓN DE ESTADOS FINANCIERO ANTE JUNTAS DIRECTIVAS Y ASAMBLEAS</p></div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fas fa-tint icon"></i>
-                        <p class="description">GESTIÓN DE INSUMOS, MATERIALES Y EQUIPOS</p></div>
+                        <p class="description">ASESORÍA Y ACOMPAÑAMIENTO DE LAS ASADAS PARA LA TOMA DE DECISIONES CONTABLES Y FINANCIERAS
+                        </p></div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fas fa-tint icon"></i>
-                        <p class="description">VENTA, INSTALACIÓN Y MANTENIMIENTO DE EQUIPO ELÉCTRICOS DE BOMBEO</p></div>
+                        <p class="description">PRESENTACIÓN DE DECLARACIONES AL MINISTERIO DE HACIENDA (IVA, RENTA)</p></div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fas fa-tint icon"></i>
-                        <p class="description">EXTRACCIÓN DE EQUIPO DE BOMBEO CON GRÚA</p></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fas fa-tint icon"></i>
-                        <p class="description">SUPERVISIÓN DE PROYECTOS</p></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fas fa-tint icon"></i>
-                        <p class="description">GESTIÓN EN ANÁLISIS DE LABORATORIO PARA CALIDAD DE AGUA</p></div>
+                        <p class="description">INSCRIPCIÓN ANTE EL MINISTERIO DE HACIENDA</p></div>
                 </div>
             </div>
         </div>
