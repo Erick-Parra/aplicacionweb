@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use App;
 use Illuminate\Http\Request;
-use App\Models\imgporcent;
+use App\Models\tbl_imgporcent;
 use Illuminate\Support\Facades\Storage;
 Use App\Http\Requests\ImgporcentRequest;
 
-class imgporcentController extends Controller
+class TblImgporcentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,7 +20,7 @@ class imgporcentController extends Controller
         if ($request){
                 $query = trim($request->get('searchpu'));
 
-                $noticia = imgporcent::where('id', 'LIKE', '%' . $query . '%')
+                $noticia = tbl_imgporcent::where('id', 'LIKE', '%' . $query . '%')
                           ->orderBy('id', 'asc')
                         ->paginate();
 
@@ -56,7 +56,7 @@ class imgporcentController extends Controller
 
          $request->session()->flash('alert-success', 'Añadido exitosamente!'); 
 
-        imgporcent::create($pubAgregado);
+        tbl_imgporcent::create($pubAgregado);
 
         return back();
     }
@@ -80,7 +80,7 @@ class imgporcentController extends Controller
      */
     public function editar($idimg)
     {
-        $publicacion = imgporcent::findOrFail($idimg);
+        $publicacion = tbl_imgporcent::findOrFail($idimg);
         return view('admin.editarimgporcent', compact('publicacion'));
     }
 
@@ -97,7 +97,7 @@ class imgporcentController extends Controller
 
         if($request->hasFile('imagen'))
         {
-          $publicacion= imgporcent::findOrFail($idimg);
+          $publicacion= tbl_imgporcent::findOrFail($idimg);
 
           Storage::delete('public/'.$publicacion->imagen);
         
@@ -106,9 +106,9 @@ class imgporcentController extends Controller
 
           $request->session()->flash('alert-success', 'Actualización exitosa!'); 
 
-        imgporcent::where('id','=',$idimg)->update($pubActualizado);
+        tbl_imgporcent::where('id','=',$idimg)->update($pubActualizado);
 
-        $publicacion = imgporcent::findOrFail($idimg);
+        $publicacion = tbl_imgporcent::findOrFail($idimg);
         return view('admin.editarimgporcent',compact('publicacion'));
        
             return back();
@@ -124,7 +124,7 @@ class imgporcentController extends Controller
      
         $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
 
-        $pubEliminar = imgporcent::findOrFail($idimg);
+        $pubEliminar = tbl_imgporcent::findOrFail($idimg);
         $pubEliminar->delete();
         return back();
     }

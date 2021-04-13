@@ -17,7 +17,7 @@ class BitacoraController extends Controller
 
             $control = TblControloperativo::where('Nom_Asada', 'LIKE', '%' . $query . '%')
             ->orderBy('idControl', 'asc')
-            ->paginate();
+            ->paginate(5);
 
             return view('admin.buscarbitacora', ['control' => $control, 'searchcon' => $query]);
             

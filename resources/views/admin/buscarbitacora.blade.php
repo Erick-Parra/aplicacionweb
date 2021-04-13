@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -80,16 +78,36 @@
                     <fieldset>
                       <b><legend class="text-center header">Unidades de servicios de desarrollo
                       (USEDES)</legend>
-                        <legend class="text-center header">Registros Control Operativo</legend></b>
+                        <legend class="text-center header">Bitácora Control Operativo</legend></b>
 
                         <div class="form-group row">
                             
                           
                             <span class="col-md-2 col-md-offset-2 text-center"></span>
 
+                            <div class="form-group row">
+                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
+                            <div class="col-md-8">
+                              <label>
+                                 Nombre ASADA<br></label>
+                                <form class="form-inline ml-2">
+                              <div class="input-group input-group-sm">
+                                <input class="form-control " name="searchcon" type="search">
+                                <div class="input-group-append">
+                                  <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </form>  
+                            </div>
+                            <br>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                              </div>
+                              <br>
  
-    <div class="table-responsive">
-    <table id="table_id" class="table table-hover", style="background-color: white">
+                       <div class="table-responsive">
+                       <table class="table table-hover", style="background-color: white">
     <thead >
  <tr>
 
@@ -121,7 +139,7 @@
 
   </tr>
  </thead>
-  <tbody>
+  
   @foreach($control as $con)
   <tr>
     <td scope="row">{{$loop->iteration}}</td>
@@ -158,7 +176,6 @@
     </td>
   </tr>
  @endforeach
- </tbody>
 </table>
 </div>
       </form>
@@ -191,28 +208,5 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 </body>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#table_id').DataTable( {
-        "language": {
-            "lengthMenu": "Mostrar _MENU_ registros por pagina",
-            "zeroRecords": "Registros no encontrados!!",
-            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
-            "infoEmpty": "No hay registros disponibles",
-            "infoFiltered": "(filtrado  por _MAX_ registros totales)",
-            "search" : "Buscar: ",
-            "paginate" : {
-              "next" : "Siguiente",
-              "previous" : "Anterior"
-            }
-        }
-    } );
-} );
-
-</script>
-
-
 </html>

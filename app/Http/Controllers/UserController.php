@@ -22,7 +22,7 @@ class UserController extends Controller
 
                 $users = User::where('name', 'LIKE', '%' . $query . '%')
                         ->orderBy('id', 'asc')
-                        ->paginate();
+                        ->paginate(5);
                 return view('admin.usuarios.index', ['users' => $users, 'search' => $query]);
             }
 

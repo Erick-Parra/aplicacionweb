@@ -18,8 +18,6 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
 </head>
 <body class="hold-transition sidebar-mini">
 
@@ -59,7 +57,7 @@
             </div>
           </h6>
           @endif
-<table id="table_id" class="table table-hover", style="background-color: white">
+<table class="table table-hover", style="background-color: white">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -128,27 +126,6 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 </body>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#table_id').DataTable( {
-        "language": {
-            "lengthMenu": "Mostrar _MENU_ registros por pagina",
-            "zeroRecords": "Registros no encontrados!!",
-            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
-            "infoEmpty": "No hay registros disponibles",
-            "infoFiltered": "(filtrado  por _MAX_ registros totales)",
-            "search" : "Buscar: ",
-            "paginate" : {
-              "next" : "Siguiente",
-              "previous" : "Anterior"
-            }
-        }
-    } );
-} );
-
-</script>
 </html>
 
