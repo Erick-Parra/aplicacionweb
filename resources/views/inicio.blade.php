@@ -15,7 +15,7 @@
         <p style="font-size: 16px;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
     </div>
     <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #d7f5f5;">
-         <p><img id="logoleras" src="assets/img/logos/newlogo.jpg" style="max-width:90%;width:100%;height:auto; margin-top: 0px;"></p>
+         <p><img id="logoleras" src="assets/img/logos/logonuevo.webp" style="max-width:90%;width:100%;height:auto; margin-top: 0px;"></p>
      </div>
     <div class="text-secondary dark-section" style="background-color: #d7f5f5;">
         <div class="container site-section" id="mision" style="padding: 21px;">
