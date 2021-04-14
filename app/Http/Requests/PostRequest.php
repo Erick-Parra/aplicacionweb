@@ -27,7 +27,7 @@ class PostRequest extends FormRequest
         return [
                 'TituloNoti' => ' required',
                 'InfoNoti' => ' required',
-                'imagen' => ' required|mimes:jpg,jpeg,bmp,png',
+                'imagen' => ' required|mimes:jpg,jpeg,bmp,png,webp',
         ];
     }
 }

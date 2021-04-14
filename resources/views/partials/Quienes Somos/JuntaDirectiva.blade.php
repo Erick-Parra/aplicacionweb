@@ -9,10 +9,10 @@
 <style type="text/css">
 
     table, th, td {
-        border: 6px solid #003357;
+        border: 6px solid #7eeefa;
         border-collapse: separate;
-        color: #efeffb;
-        background-color: #003357 ;
+        color: #003357;
+        background-color: #7eeefa;
     }
     th, td{
         padding: 15px;
@@ -30,7 +30,7 @@
 $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'usuario', 'password');
 
 ?>
-            <table class= "table" style="background-color: #7FB3D5; opacity: 1; border="5" style="margin: 0 auto;">
+            <table class= "table" style="background-color: #003357; opacity: 1; border="5" style="margin: 0 auto;">
         <caption>Personas responsables en la Junta Directiva de la LCA</caption>
         <thead class="#003357">
              <tr>
@@ -59,15 +59,15 @@ $link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'usuario', 
 
 
   </tr>
-
 <?php
   }
-?>
-  </table>
+?>  </table>
         </div>
     </div>
     </body>
-
+  </thead>
+</table>
+</div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>

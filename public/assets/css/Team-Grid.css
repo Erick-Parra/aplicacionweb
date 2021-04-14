@@ -101,5 +101,18 @@
   opacity: 1;
 }
 
+.team-grid .img{
+  height: auto;
+  width: auto;
+}
+
+.team-grid .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 560%;
+    height: 315%;
+    border: 0;
+  }
 
 

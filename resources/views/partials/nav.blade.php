@@ -1,5 +1,6 @@
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE. TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
     <meta charset="UTF-8"/>
@@ -14,14 +15,11 @@
     <link rel="stylesheet" href="/assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="/assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="/assets/css/3-Cards-per-Row.css">
-    <link rel="stylesheet" href="/assets/css/Bold-BS4-CSS-Image-Slider.css">
-    <link rel="stylesheet" href="/assets/css/cards.css">
-    <link rel="stylesheet" href="/assets/css/Dark-Footer.css">
     <link rel="stylesheet" href="/assets/css/Features-Blue.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/Team-Clean.css">
+    <link rel="stylesheet" href="/assets/css/Team-Grid.css">
     <link rel="icon" href="/assets/img/logotipo.ico">
 </head>
     <style type="text/css">
@@ -54,7 +52,8 @@
       <img
         src="assets/img/logos/Logotipo-LigadelAgua_2.webp"
         height="30"
-        alt=""
+        width=auto
+        alt="Logotipo-LigadelAgua"
         loading="lazy"/>
       Liga Comunal del Agua
     </a>

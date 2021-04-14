@@ -12,10 +12,10 @@
     <div class="site-section text-primary dark-section" id="information" style="font-size: 16px; background-color:
     #7eeefa;">
         <h1>¿Quiénes Somos?</h1>
-        <p style="font-size: 16px;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
+        <p style="font-size: 16px; text-align: center; text-align: justify;border:1px;margin:auto;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
     </div>
     <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #7eeefa;">
-         <p><img id="logoleras" src="assets/img/logos/logonuevo.webp" style="max-width:90%;width:100%;height:auto; margin-top: 0px;"></p>
+         <p><img id="logoleras" src="assets/img/logos/logonuevo.webp" width="640" height="360" alt="logo" style="max-width:90%;width:100%;height:auto; margin-top: 0px;"></p>
      </div>
     <div class="text-secondary dark-section" style="background-color: #7eeefa;">
         <div class="container site-section" id="mision" style="padding: 21px;">
@@ -23,28 +23,31 @@
             <div class="row">
                 <div class="col-md-6"><i class="fa fa-check-square-o"></i>
                     <h3>MISIÓN</h3>
-                    <p style="font-size: 16px;">FORTALECEMOS LA GESTIÓN COMUNITARIA DEL AGUA, PROMOVIENDO ORGANIZACIONES QUE PRESTEN SERVICIOS DE CALIDAD. TRABAJAMOS PARA CONSOLIDAR LA ASOCIATIVIDAD, ARTICULANDO ESFUERZOS CON LOS ACTORES INVOLUCRADOS EN LA GESTIÓN INTEGRAL DEL RECURSO HÍDRICO.</p>
+                    <p style="font-size: 16px; text-align: center;
+        text-align: justify;border:1px;margin:auto;">FORTALECEMOS LA GESTIÓN COMUNITARIA DEL AGUA, PROMOVIENDO ORGANIZACIONES QUE PRESTEN SERVICIOS DE CALIDAD. TRABAJAMOS PARA CONSOLIDAR LA ASOCIATIVIDAD, ARTICULANDO ESFUERZOS CON LOS ACTORES INVOLUCRADOS EN LA GESTIÓN INTEGRAL DEL RECURSO HÍDRICO.</p>
                 </div>
                 <div class="col-md-6"><i class="fa fa-eye"></i>
                     <h3>Visión</h3>
-                    <p style="font-size: 16px;">TODAS LAS COMUNIDADES DEL TERRITORIO ACCEDEN A SERVICIOS DE AGUA Y SANEAMIENTO SOSTENIBLES Y DE CALIDAD, PARTICIPANDO ACTIVAMENTE EN EL MANEJO Y PROTECCIÓN DEL RECURSO HÍDRICO</p>
+                    <p style="font-size: 16px; text-align: center;
+        text-align: justify;border:1px;margin:auto;">TODAS LAS COMUNIDADES DEL TERRITORIO ACCEDEN A SERVICIOS DE AGUA Y SANEAMIENTO SOSTENIBLES Y DE CALIDAD, PARTICIPANDO ACTIVAMENTE EN EL MANEJO Y PROTECCIÓN DEL RECURSO HÍDRICO</p>
                 </div>
             </div>
         </div>
     </div>
 
-
+<div class="team-grid">
+    <div class=".contenedor-responsivo">
     <div class="bg-light-section-ubication">
         <div class="container site-section" id="ubication">
             <h1>Ubicación</h1>
             <h5>200 metros al oeste del supermecado Hermanos pineda en hojancha</h5>
             <p style="font-size: 15px;"></p><div>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5078103674364!2d-85.42217458571767!3d10.057412174803826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9fbb6d24e2ed3d%3A0xb59b2b5d2f0f9a7b!2sCooc!5e0!3m2!1ses-419!2scr!4v1597436460605!5m2!1ses-419!2scr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<iframe title="ubication LCA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5078103674364!2d-85.42217458571767!3d10.057412174803826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9fbb6d24e2ed3d%3A0xb59b2b5d2f0f9a7b!2sCooc!5e0!3m2!1ses-419!2scr!4v1597436460605!5m2!1ses-419!2scr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 </div>
 </div>
-
+</div>
+</div>
         <div class="text-secondary dark-section" style= "height:700px; background-color: #7eeefa;">
         <div class="container site-section" id="convenios" style= "height:650px;"><h1 style="color: #1B2631;">Convenios</h1>
         <br>
@@ -63,7 +66,7 @@
 
 
     <div class="text-center w-100 carousel-item active">
-      <img class="card-img-width" src="assets/img/convenios/PNUD.webp" style="height: 300px;" alt="First slide">
+      <img class="card-img-width" src="assets/img/convenios/PNUD.webp" width="640" height="360" alt="PNUD" style="height: 300px;" alt="First slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
 <br>
     <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">PNUD</h5>
@@ -71,52 +74,51 @@
                                       y operación de la USEDES para prestar servicios a las ASADAS.</p>
   </div>
     </div>
-    <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/ElToledo.webp" style="height: 300px;" alt="Second slide">
+    <div class="text-center w-100 carousel-item">
+      <img class="card-img-width" src="assets/img/convenios/ElToledo.webp" width="300" height="150" alt="toledo"style="height: 300px;" alt="Second slide">
       <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">EL TOLEDO</h5>
           <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Para la ejecución de proyectos y administración de oficinas de la sede de la LCA, fortalecimiento y consolidación organizacional de la Liga.</p>
     </div>
      </div>
-    <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/logo_tecnolab.webp" style="height: 300px;" alt="Third slide">
+    <div class="text-center w-100 carousel-item">
+      <img class="card-img-width" src="assets/img/convenios/logo_tecnolab.webp" width="300" height="150" alt="tecnolab" style="height: 300px;" alt="Third slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">TECNOLAB</h5>
           <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Para dar el servicio de análisis de la calidad del agua del las ASADAS.</p>
     </div>
      </div>
-      <div class="carousel-item">
-        <br>
-        <br>
-      <img class="card-img-width"  style="background-color: #FDFEFE;" src="assets/img/convenios/FondoComunitario.webp" style="height: 300px;" alt="Fourth slide">
+      <div class="text-center w-100 carousel-item">
+        <br><br><br><br>
+      <img class="card-img-width"  style="background-color: #FDFEFE;" src="assets/img/convenios/FondoComunitario.webp" width="300" height="150" alt="FondoComunitario" style="height: 300px;" alt="Fourth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
-         <br><br><br><br><br><br>
+         <br><br><br><br><br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">FONDO COMUNITARIO GUANACASTE</h5>
           <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Para el fortalecimiento de la LCA y las ASADAS.</p>
     </div>
      </div>
-       <div class="carousel-item">
+       <div class="text-center w-100 carousel-item">
         <br>
         <br>
-      <img class="card-img-width"  style="background-color: #FDFEFE;" src="assets/img/convenios/Harmoy.webp" style="height: 300px;" alt="Fifth slide">
+      <img class="card-img-width"  style="background-color: #FDFEFE;" src="assets/img/convenios/Harmoy.webp" width="360" height="200" alt="Harmoy" style="height: 300px;" alt="Fifth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
-        <br><br><br><br><br>
+        <br><br><br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">THE HARMONY HOTEL</h5>
           <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Con el programa de responsabilidad empresarial del Hotel Harmony para el fortalecimiento y consolidación de la LCA.</p>
     </div>
      </div>
-      <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/avina.webp" style="height: 300px;" alt="Sixth slide">
+      <div class="text-center w-100 carousel-item">
+      <img class="card-img-width" src="assets/img/convenios/avina.webp" width="300" height="150" alt="avina"style="height: 300px;" alt="Sixth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">Fundación avina</h5>
           <p style="font-family: Antic, sans-serif;color: #17202A; font-size: 16px;">Para la creación y operación de la Unidad de Prestación de Servicios a las ASADAS (USEDES).</p>
     </div>
      </div>
-      <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/Asesoreslegales.webp" style="height: 300px;" alt="Seventh slide">
+      <div class="text-center w-100 carousel-item">
+      <img class="card-img-width" src="assets/img/convenios/Asesoreslegales.webp" width="300" height="150" alt="Asesoreslegales" style="height: 300px;" alt="Seventh slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
          <h5 style="font-family: Antic, sans-serif;color: #0D47A1; font-size: 16px;">ASESORÍA LEGAL</h5>
@@ -124,8 +126,8 @@
     </div>
      </div>
 
-      <div class="carousel-item">
-      <img class="card-img-width" src="assets/img/convenios/logo_ice.webp" style="height: 300px;" alt="Eighth slide">
+      <div class="text-center w-100 carousel-item">
+      <img class="card-img-width" src="assets/img/convenios/logo_ice.webp" width="300" height="150" alt="ICE" style="height: 300px;" alt="Eighth slide">
        <div class="carousel-caption d-none d-md-block" style="height: 10px;">
         <br>
 
@@ -183,7 +185,7 @@
                     <div
             class="bg-image hover-overlay ripple shadow-1-strong rounded"
             data-ripple-color="light">
-           <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).webp" width="150" height="200" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.webp" width="100" style="filter: contrast(200%);"></p>
+           <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).webp" width="150" height="200" alt="logo" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.webp" width="150" height="200" alt="logo"width="100" style="filter: contrast(200%);"></p>
         </div>
         </div>
         </div>

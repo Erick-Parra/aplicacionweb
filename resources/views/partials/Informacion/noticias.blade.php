@@ -45,7 +45,6 @@ $posts = $obj->getposts();
                     <?php endforeach; ?>
                 </div>
             </div>
-        </div>
     </section>
     <br>
     <br>
@@ -53,10 +52,12 @@ $posts = $obj->getposts();
         <h2 class="text-center">Vídeos Informativos</h2>
         <p class="text-center">Sección de labores que realizan la Liga Comunal del Agua.</p>
             </div>
- <div style=”text-align:right;”><iframe width="560" height="315" src="https://www.youtube.com/embed/b-VFaX1cOvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div style="text-align:center;">
+    <iframe width="560" height="315" position="absolute" top="0" left="0" src="https://www.youtube.com/embed/b-VFaX1cOvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <br>
+    <br>
    <div style=”text-align:right;”> 
-    <p class="text-center">Acceder a nuestros servicios dan clic en los siguientes links.</p></div>
+    <p class="text-center">Accede a nuestros servicios dan clic en los siguientes links.</p></div>
     <div style=”text-align:right;”>
  <a href="https://www.youtube.com/watch?v=Ey4Q_hK5qDc">Servicios Legales y Notariales</a></div>
  <div style=”text-align:right;”>
@@ -73,17 +74,15 @@ $posts = $obj->getposts();
         <h2 class="text-center">Documentos Informativos</h2>
         <p class="text-center">Información de la Liga Comunal del Agua.</p>
             </div>
-            <div style=”text-align:right;”>
+            <div style="text-align:center;">
             <iframe src="https://drive.google.com/file/d/1So5wlognBznegLdXOaSmx5kA4K_IMJKw/preview" width="440" height="280"></iframe></div>
             <div style=”text-align:right;”> 
-    <p class="text-center">Acceder a nuestro estudio de caso en el siguientes links.</p></div>
+    <p class="text-center">Accede a nuestro estudio de caso en el siguiente link.</p></div>
     <div style=”text-align:right;”>
  <a href="https://drive.google.com/file/d/16TOc0sgG5PMbuuHC5G5-rveHBOEERx4p/view">Estudio de Caso</a></div>
-      </div>
-      <div>
-      </div>
-      <div>
-      </div>
+ </div>
+  <br>
+    <br>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </div>

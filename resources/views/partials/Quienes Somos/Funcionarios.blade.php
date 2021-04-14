@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Grid.css">
 </head>
-
 <body>
     <div class="team-grid">
         <div class="container">

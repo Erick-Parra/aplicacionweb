@@ -25,7 +25,7 @@ class imgporcentRequest extends FormRequest
     public function rules()
     {
         return [
-                'imagen' => ' required|mimes:jpg,jpeg,bmp,png',
+                'imagen' => ' required|mimes:jpg,jpeg,bmp,png,webp',
         ];
     }
 }
