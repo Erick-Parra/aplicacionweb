@@ -25,7 +25,7 @@ class GaleriaRequest extends FormRequest
     public function rules()
     {
         return [
-            'Nombre' => ' required |mimes:jpg,jpeg,bmp,png',
+            'Nombre' => ' required |mimes:jpg,jpeg,bmp,png,webp',
         ];
     }
 }
