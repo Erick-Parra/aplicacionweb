@@ -151,6 +151,7 @@
 
 
 
+   
    <section class="">
   <!-- Footer -->
   <footer class="text-center text-white" style="background-color: #0a4275;">
@@ -185,7 +186,7 @@
                     <div
             class="bg-image hover-overlay ripple shadow-1-strong rounded"
             data-ripple-color="light">
-           <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).webp" width="150" height="200" alt="logo" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.webp" width="150" height="200" alt="logo"width="100" style="filter: contrast(200%);"></p>
+           <p class="logoU"><img src="assets/img/logos/LOGO%20IG%20NEGRO%20(1).webp" width="150" height="200" style="filter: blur(0px) brightness(65%) contrast(200%);"><img class="img-fluid" src="assets/img/logos/Logo-UNA-Rojo_FondoTransparente.webp"  width="100" height="200"style="filter: contrast(200%);"></p>
         </div>
         </div>
         </div>
