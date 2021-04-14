@@ -52,7 +52,7 @@
   	}
     public function getImagen(){
       global $pdo;
-      $pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
+      $pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'usuario', 'password');
 
       $query = $pdo->prepare("
         SELECT *
@@ -66,7 +66,7 @@
       public function getGaleria($blog_id)
     {
       global $pdo;
-      $pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'root', '1234');
+      $pdo = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'usuario', 'password');
 
       $query = $pdo->prepare("
         SELECT *
