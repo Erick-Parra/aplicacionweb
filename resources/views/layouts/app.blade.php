@@ -24,7 +24,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light" style="background-color: #003357;">
-            <div class="container"><img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png">
+            <div class="container"><img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.webp">
                 <a class="navbar-brand" style="color: rgba(243,246,248,0.99);" href="{{ url('/') }}"><strong>Liga Comunal del Agua</strong></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

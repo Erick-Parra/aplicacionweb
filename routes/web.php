@@ -113,4 +113,4 @@ Route::put('/editarimg/{idimg}','TblImgporcentController@update')->name('img.upd
 
 Route::delete('/eliminarimg/{idimg}', 'TblImgporcentController@eliminar')->name('img.eliminar');
 
-Auth::routes();  //['register' => false]
+Auth::routes(['register' => false]);  //['register' => false]
