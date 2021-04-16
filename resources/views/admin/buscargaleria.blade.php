@@ -84,17 +84,7 @@
 
                             <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                Nombre ASADA<br></label>
-                                <form class="form-inline ml-2">
-                              <div class="input-group input-group-sm">
-                                <input class="form-control " name="searchm" type="search">
-                                <div class="input-group-append">
-                                  <button class="btn btn-primary" type="submit">
-                                    <i class="fas fa-search"></i>
-                                  </button>
-                                </div>
+                           
                               </div>
                             </form>
                             </div>
