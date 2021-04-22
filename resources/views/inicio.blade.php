@@ -10,14 +10,14 @@
         </div>
     </div>
     <div class="site-section text-primary dark-section" id="information" style="font-size: 16px; background-color:
-    #7eeefa;">
+    #00cbf0;">
         <h1>¿Quiénes Somos?</h1>
         <p style="font-size: 16px; text-align: center; text-align: justify;border:1px;margin:auto;">SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE... TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.</p>
     </div>
-    <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #7eeefa;">
+    <div class="container" style="max-width:100%;width:100%;height:auto; background-color: #00cbf0;">
          <p><img id="logoleras" src="assets/img/logos/logonuevo.webp" width="640" height="360" alt="logo" style="max-width:90%;width:100%;height:auto; margin-top: 0px;"></p>
      </div>
-    <div class="text-secondary dark-section" style="background-color: #7eeefa;">
+    <div class="text-secondary dark-section" style="background-color: #00cbf0;">
         <div class="container site-section" id="mision" style="padding: 21px;">
 
             <div class="row">
@@ -48,7 +48,7 @@
 </div>
 </div>
 </div>
-        <div class="text-secondary dark-section" style= "height:700px; background-color: #7eeefa;">
+        <div class="text-secondary dark-section" style= "height:700px; background-color: #00cbf0;">
         <div class="container site-section" id="convenios" style= "height:650px;"><h1 style="color: #1B2631;">Convenios</h1>
         <br>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
