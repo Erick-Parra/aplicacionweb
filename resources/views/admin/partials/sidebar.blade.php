@@ -124,6 +124,29 @@
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
+              <i class="nav-icon fas fa fa-file"></i>
+              <p>
+                Junta Directiva
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+
+                  <a href="{{ route('createjunta') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                  <p>Crear Junta Directiva</p>
+                  </a>
+
+                 <a href="{{route('buscarjunta')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista Junta Directiva</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa fa-edit"></i>
               <p>
                 Galeria
@@ -154,18 +177,6 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ route('createjunta')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Crear Junta Directiva</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('buscarjunta')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Junta Directiva</p>
-                </a>
-              </li>
              <li class="nav-item">
                 <a href="{{ route('pub')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
