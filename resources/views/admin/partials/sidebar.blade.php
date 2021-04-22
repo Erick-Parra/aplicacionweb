@@ -3,7 +3,7 @@
 
   style= "background-color: #003357;">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link user-panel mt-3 pb-3 mb-3 d-flex">
+    <a href="{{ route('admin') }}" class="brand-link user-panel mt-3 pb-3 mb-3 d-flex">
       <img src="../../dist/img/LCA.png"
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-10"
