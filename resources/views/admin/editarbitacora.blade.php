@@ -81,7 +81,7 @@
  						<div class="col-md-8">
  							<label>
  								Nombre de la ASADA<br></label>
- 								<input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$nota->Nom_Asada}}"  class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} ">
+ 								<input style="display: table-column text-align: center" name="Nom_Asada" type="text" value="{{$nota->Nom_Asada}}"  class="form-control {{ $errors->has('Nom_Asada')?'is-invalid':''}} " disabled>
  								{!! $errors->first('Nom_Asada','<div class="invalid-feedback">Campo nombre requerido</div>')!!}
  								
  							</div>
