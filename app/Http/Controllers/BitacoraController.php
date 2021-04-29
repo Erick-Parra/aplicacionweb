@@ -40,7 +40,6 @@ class BitacoraController extends Controller
     {
 
         $notaActualizada = TblControloperativo::findOrFail($id);
-        $notaActualizada->Nom_Asada = $request->input('Nom_Asada');
         $notaActualizada->Encargado = $request->input('Encargado');
         $notaActualizada->Ubicacion = $request->input('Ubicacion');
         $notaActualizada->Turbiedad = $request->input('Turbiedad');

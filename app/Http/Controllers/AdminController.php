@@ -90,7 +90,7 @@ class AdminController extends Controller
     public function update(Request $request, TblRegistroasada $asada)
     {
         $asada->update([
-            'Nom_Asada' => Request('Nom_Asada'),
+         
             'ced_Juridica' => Request('ced_Juridica'),
             'Num_Convenio' => Request('Num_Convenio'),
             'Cant_Abonados' => Request('Cant_Abonados'),
