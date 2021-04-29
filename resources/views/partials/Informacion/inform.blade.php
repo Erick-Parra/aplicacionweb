@@ -24,11 +24,13 @@ $imgporcent = $obj->getTblImgporcent();
             </div>
         <div class="row projects">
             <?php foreach ($imgporcent as $publicacion): ?>
-                <div class="col-sm-6 col-lg-4 item">
-                    <div class="shadow p-3 mb-5 bg-white rounded box">
-                    <img class="img-fluid" src="{{ Storage::url ($publicacion['imagen'])}}">
-                </div>
-            </div>
+                <div class="col-lg-6 col-md-6 col-xs-6">
+                        <div class="client-logo">
+                            <a class="text-center" href="https://www.facebook.com/liga.comunaldelagua/" target="_blank"><img
+                                    style="width: auto; height: auto;" src="{{ Storage::url ($publicacion['imagen'])}}" class="img-fluid"
+                                    alt="LCA"></a>
+                        </div>
+                    </div>
         <?php endforeach; ?>
                 </div>
             </div>

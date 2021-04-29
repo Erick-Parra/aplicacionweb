@@ -37,7 +37,7 @@ $galery = $obj->getImagen();
             <?php foreach ($galery as $imagen): ?>
                 <div class="col-sm-6 col-lg-4 item">
                     <div class="shadow p-3 mb-5 bg-white rounded box">
-                    <img class="img-fluid" src="{{ Storage::url ($imagen['Nombre'])}}"></div>
+                    <img style="width: 100%; height: 25%;"class="img-fluid" src="{{ Storage::url ($imagen['Nombre'])}}"></div>
                 </div>
                     <?php endforeach; ?>
                 </div>
