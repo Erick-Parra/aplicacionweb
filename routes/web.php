@@ -63,7 +63,7 @@ Route::get('/searchmap','ControllerMap@index')->name('searchmap');
 Route::get('/editarmapeo/{idmap}','ControllerMap@editar')->name('mapeos.editar');
 Route::put('/editarmapeo/{idmap}','ControllerMap@update')->name('mapeos.update');
 
-Route::delete('/eliminarmapeo/{idmap}', 'ControllerMap@eliminar')->name('mapeos.eliminar');
+Route::delete('/eliminarmapeo/{idmap}', 'ControllerMap@destroy')->name('mapeos.eliminar');
 
 //Rutas controlador control operativo con diferente rutas /administracion
 Route::get('/adcontrolop/crearbitacora', 'BitacoraController@create')->name('bitacora');

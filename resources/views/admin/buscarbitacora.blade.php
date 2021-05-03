@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -54,14 +56,6 @@
     <section class="content">
       <form method="GET" action="{{ route('search')}}">
 
-        @if($searchcon)
-          <h6>
-            <div class="alert alert-primary" role="alert">
-                 Los resultados para '{{$searchcon}}' son:
-            </div>
-          </h6>
-          @endif  
-
 <div class="container">
   <div class="flash-message"> 
  @foreach (['danger', 'warning', 'success', 'info'] as $msg) 
@@ -71,6 +65,7 @@
   @endif 
  @endforeach 
  </div> <!-- end .flash-message --> 
+   
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
@@ -79,35 +74,14 @@
                       <b><legend class="text-center header">Unidades de servicios de desarrollo
                       (USEDES)</legend>
                         <legend class="text-center header">Bitácora Control Operativo</legend></b>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              
 
-                        <div class="form-group row">
-                            
-                          
-                            <span class="col-md-2 col-md-offset-2 text-center"></span>
-
-                            <div class="form-group row">
-                            <span class="col-md-2 col-md-offset-2 text-center"></i></span>
-                            <div class="col-md-8">
-                              <label>
-                                 Nombre ASADA<br></label>
-                                <form class="form-inline ml-2">
-                              <div class="input-group input-group-sm">
-                                <input class="form-control " name="searchcon" type="search">
-                                <div class="input-group-append">
-                                  <button class="btn btn-primary" type="submit">
-                                    <i class="fas fa-search"></i>
-                                  </button>
-                                </div>
-                              </div>
-                            </form>  
-                            </div>
-                            <br>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-                              </div>
-                              <br>
- 
                        <div class="table-responsive">
-                       <table class="table table-hover", style="background-color: white">
+                       <table id="table_id" class="table table-hover", style="background-color: white">
     <thead >
  <tr>
 
@@ -139,7 +113,7 @@
 
   </tr>
  </thead>
-  
+  <tbody>
   @foreach($control as $con)
   <tr>
     <td scope="row">{{$loop->iteration}}</td>
@@ -176,6 +150,7 @@
     </td>
   </tr>
  @endforeach
+ </tbody>
 </table>
 </div>
       </form>
@@ -208,5 +183,26 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 </body>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#table_id').DataTable( {
+        "language": {
+            "lengthMenu": "Mostrar _MENU_ registros por paginas",
+            "zeroRecords": "Ningun registro",
+            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay registros disponibles",
+            "infoFiltered": "(filtrado de _MAX_ registros totales)",
+             "emptyTable": "Ningún dato disponible en esta tabla",
+            "search": "Buscar: ",
+            "paginate": {
+              "next": "Siguiente",
+              "previous": "Anterior"
+            }
+        }
+    } );
+} );
+</script>
 </html>

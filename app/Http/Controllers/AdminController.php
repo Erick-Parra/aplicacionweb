@@ -21,7 +21,7 @@ class AdminController extends Controller
 
                 $asada = TblRegistroasada::where('Nom_Asada', 'LIKE', '%' . $searchasa . '%')
                           ->orderBy('idAsada', 'asc')
-                        ->paginate(5);
+                        ->paginate();
 
                 return view('admin.buscarasada', compact('asada','searchasa'));
 

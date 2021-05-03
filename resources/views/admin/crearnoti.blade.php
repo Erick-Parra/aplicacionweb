@@ -68,7 +68,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="POST">
                     <fieldset>
-                        <b><legend class="text-center header">Publicación</legend></b>
+                        <b><legend class="text-center header">Registrar Publicación</legend></b>
                         
                         <div class="form-group row">
                             <span class="col-md-2 col-md-offset-2 text-center"></span>  
