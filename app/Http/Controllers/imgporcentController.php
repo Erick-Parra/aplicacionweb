@@ -95,7 +95,7 @@ class imgporcentController extends Controller
         {
           $publicacion= imgporcent::findOrFail($idimg);
 
-          Storage::delete('public/'.$publicacion->imagen);
+          Storage::delete($publicacion->imagen);
         
           $pubActualizado['imagen'] = $request->file('imagen')->store('public');
         }
@@ -118,10 +118,12 @@ class imgporcentController extends Controller
      */
     public function eliminar(Request $request,$idimg){
      
-        $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+       $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+            
+        $eliminar = imgporcent::where('id', $idimg)->get()->first();
+        Storage::delete($eliminar->imagen);
+         imgporcent::destroy($idimg);
 
-        $pubEliminar = imgporcent::findOrFail($idimg);
-        $pubEliminar->delete();
-        return back();
+         return back();
     }
 }

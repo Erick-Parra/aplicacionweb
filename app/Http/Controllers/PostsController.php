@@ -17,7 +17,7 @@ class PostsController extends Controller
 
                 $noticia = Post::where('TituloNoti', 'LIKE', '%' . $query . '%')
                           ->orderBy('Id', 'asc')
-                        ->paginate(5);
+                        ->paginate();
 
                 return view('admin.buscarnoti', ['noticia' => $noticia, 'searchpu' => $query]);
                 
@@ -59,7 +59,7 @@ class PostsController extends Controller
         {
           $publicacion= Post::findOrFail($idpub);
 
-          Storage::delete('public/'.$publicacion->imagen);
+          Storage::delete($publicacion->imagen);
         
           $pubActualizado['imagen'] = $request->file('imagen')->store('public');
         }
@@ -75,11 +75,13 @@ class PostsController extends Controller
     }
     public function eliminar(Request $request,$idpub){
      
-        $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+      $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+            
+        $eliminar = Post::where('Id', $idpub)->get()->first();
+        Storage::delete($eliminar->imagen);
+         Post::destroy($idpub);
 
-        $pubEliminar = Post::findOrFail($idpub);
-        $pubEliminar->delete();
-        return back();
+         return back();
     }
 
     public function show(Post $idpub)

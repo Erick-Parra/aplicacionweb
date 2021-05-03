@@ -24,7 +24,7 @@ class ControllerMap extends Controller
 
                 $mapeo = TblMapeo::where('Nom_Asada', 'LIKE', '%' . $query . '%')
                           ->orderBy('IdMapeo', 'asc')
-                        ->paginate(5);
+                        ->paginate();
 
                 return view('admin.buscarmapeo', ['mapeo' => $mapeo, 'searchm' => $query]);
                 
@@ -47,7 +47,7 @@ class ControllerMap extends Controller
         {
           $mapeos= TblMapeo::findOrFail($idmap);
 
-          Storage::delete('public/'.$mapeos->Archivo_SHP);
+          Storage::delete($mapeos->Archivo_SHP);
         
           $mapeoActualizado['Archivo_SHP'] = $request->file('Archivo_SHP')->store('public');
         }
@@ -61,16 +61,15 @@ class ControllerMap extends Controller
        // $mapeoActualizado->save();
             return back();
     }
-    public function eliminar(Request $request,$idmap){
+    public function destroy(Request $request, $idmap){
      
         $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+            
+        $eliminar = TblMapeo::where('IdMapeo', $idmap)->get()->first();
+        Storage::delete($eliminar->Archivo_SHP);
+         TblMapeo::destroy($idmap);
 
-        $mapeoEliminar = TblMapeo::findOrFail($idmap);
-        $mapeoEliminar->delete();
- 
-
-
-        return back();
+         return back();
     }
 
 

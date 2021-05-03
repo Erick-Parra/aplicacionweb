@@ -46,7 +46,7 @@ class ControllerGaleria extends Controller
         {
           $galeria= TblGaleria::findOrFail($idgaleria);
 
-          Storage::delete('public/'.$galeria->Nombre);
+          Storage::delete($galeria->Nombre);
         
           $gaActualizado['Nombre'] = $request->file('Nombre')->store('public');
         }
@@ -62,14 +62,13 @@ class ControllerGaleria extends Controller
     }
     public function eliminar(Request $request,$idgaleria){
      
-        $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+     $request->session()->flash('alert-success', 'Eliminado exitosamente!'); 
+            
+        $eliminar = TblGaleria::where('IdGaleria', $idgaleria)->get()->first();
+        Storage::delete($eliminar->Nombre);
+         TblGaleria::destroy($idgaleria);
 
-        $gaEliminar = TblGaleria::findOrFail($idgaleria);
-        $gaEliminar->delete();
- 
-
-
-        return back();
+         return back();
     }
 
 
