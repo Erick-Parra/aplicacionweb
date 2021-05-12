@@ -1,10 +1,4 @@
 @include('partials.nav')
-<?php
-require '../php/Funciones.php';
-$obj = new Funciones();
-
-$posts = $obj->getposts();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,14 +29,14 @@ $posts = $obj->getposts();
         <p class="text-center">Actividades que se realizan periódicamente en la LCA.</p>
             </div>
         <div class="row projects">
-            <?php foreach ($posts as $publicacion): ?>
+            @foreach ($posts as $publicacion)
                 <div class="col-sm-6 col-lg-4 item">
                     <div class="shadow p-3 mb-5 bg-white rounded box">
                     <img class="img-fluid" src="{{ Storage::url ($publicacion['imagen'])}}">
-                    <h3 class="name"><?php echo $publicacion['TituloNoti']; ?></h3>
-                    <p><?php echo $publicacion["InfoNoti"] ?></p></div>
+                    <h3 class="name">{{$publicacion->TituloNoti}}</h3>
+                    <p>{{$publicacion->InfoNoti}}</p></div>
                 </div>
-                    <?php endforeach; ?>
+                    @endforeach
                 </div>
             </div>
     </section>

@@ -9,6 +9,12 @@ use App;
 
 class juntaController extends Controller
 {
+
+    public function index()
+    {
+    
+    }
+
    public function buscar()
     {
         $registro = JuntaDirectiva::all();

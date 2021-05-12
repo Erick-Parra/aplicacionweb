@@ -1,10 +1,5 @@
 @include('partials.nav')
-<?php
-require '../php/Funciones.php';
-$obj = new Funciones();
 
-$imgporcent = $obj->getTblImgporcent();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +18,7 @@ $imgporcent = $obj->getTblImgporcent();
         <p class="text-center">Estadisticas que se realizan periódicamente en la LCA.</p>
             </div>
         <div class="row projects">
-            <?php foreach ($imgporcent as $publicacion): ?>
+            @foreach ($imgporcent as $publicacion)
                 <div class="col-lg-6 col-md-6 col-xs-6">
                         <div class="client-logo">
                             <a class="text-center" href="https://www.facebook.com/liga.comunaldelagua/" target="_blank"><img
@@ -31,7 +26,7 @@ $imgporcent = $obj->getTblImgporcent();
                                     alt="LCA"></a>
                         </div>
                     </div>
-        <?php endforeach; ?>
+        @endforeach
                 </div>
             </div>
         </div>

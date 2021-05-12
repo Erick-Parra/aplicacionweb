@@ -1,10 +1,4 @@
 @include('partials.nav')
-<?php
-require '../php/Funciones.php';
-$obj = new Funciones();
-
-$galery = $obj->getImagen();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,12 +28,12 @@ $galery = $obj->getImagen();
         <h2 class="text-center">Galeria</h2>
             </div>
         <div class="row projects">
-            <?php foreach ($galery as $imagen): ?>
+            @foreach ($galeria as $imagen)
                 <div class="col-sm-6 col-lg-4 item">
                     <div class="shadow p-3 mb-5 bg-white rounded box">
                     <img style="width: 100%; height: 25%;"class="img-fluid" src="{{ Storage::url ($imagen['Nombre'])}}"></div>
                 </div>
-                    <?php endforeach; ?>
+                    @endforeach
                 </div>
             </div>
     </section>

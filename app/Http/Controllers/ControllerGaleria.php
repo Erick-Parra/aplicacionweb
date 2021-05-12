@@ -92,11 +92,12 @@ class ControllerGaleria extends Controller
          $request->session()->flash('alert-success', 'Añadido exitosamente!'); 
 
         TblGaleria::create($gaAgregado);
-
-  
-     
-
         return back();
+    }
+    public function show()
+    {
+      $galeria = TblGaleria::all();
+        return view('partials.Informacion.galeria', compact('galeria'));
     }
     }
     

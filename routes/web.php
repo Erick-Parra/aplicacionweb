@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','HomeController@index')->name('inicio');
 Route::view('/junta-directiva','partials.Quienes Somos.JuntaDirectiva')->name('JuntaDirectiva');
+Route::get('/junta-directiva','HomeController@show')->name('JuntaDirectiva');
+
 Route::view('/funcionarios','partials.Quienes Somos.Funcionarios')->name('Funcionarios');
 
 Route::view('/serviciosAdmi','partials.Servicios.servicesAdmi')->name('servicesAdmi');
@@ -14,13 +16,15 @@ Route::view('/serviciosGestAmbi','partials.Servicios.servicesGestAmbi')->name('s
 Route::view('/serviciosSoporte','partials.Servicios.servicesSoporte')->name('servicesSoporte');
 
 Route::view('/informacion','partials.Informacion.inform')->name('inform');
+Route::get('/informacion','imgporcentController@show')->name('inform');
 Route::view('/noticias','partials.Informacion.noticias')->name('news');
 Route::post('noticias', 'comentsController@store');
-Route::get('/pub/{blog_id}','PostsController@show')->name('pub.id');
+Route::get('/noticias','PostsController@show')->name('news');
 
 //Galeria
 
 Route::view('/galeria','partials.Informacion.galeria')->name('galeri');
+Route::get('/galeria','ControllerGaleria@show')->name('galeri');
 Route::get('/creargaleria','ControllerGaleria@create')->name('creargaleria');
 Route::post('/creargaleria', 'ControllerGaleria@store')->name('galeria.store');
 Route::get('/buscargaleria','ControllerGaleria@index')->name('buscargale');

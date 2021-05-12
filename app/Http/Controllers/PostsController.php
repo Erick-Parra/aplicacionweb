@@ -84,10 +84,9 @@ class PostsController extends Controller
          return back();
     }
 
-    public function show(Post $idpub)
+    public function show()
     {
-       //$publicacion = Post::findOrFail($idpub);
-        //return view('partials.Informacion.post-view', compact('publicacion'));
-      return view('partials.Informacion.post-view');
+      $posts = Post::all();
+        return view('partials.Informacion.noticias', compact('posts'));
     }
 }

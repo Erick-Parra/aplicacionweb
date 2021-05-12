@@ -29,6 +29,12 @@ class imgporcentController extends Controller
             }
     }
 
+    public function show()
+    {
+      $imgporcent = imgporcent::all();
+        return view('partials.Informacion.inform', compact('imgporcent'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

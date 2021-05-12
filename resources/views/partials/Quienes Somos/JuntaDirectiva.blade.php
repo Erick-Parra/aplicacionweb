@@ -25,43 +25,26 @@
             <div class="intro">
                 <h2 class="text-center" style="opacity: 0.63;filter: white(0px) brightness(83%);">JUNTA DIRECTIVA DE LA LIGA COMUNAL DEL AGUA</h2>
             </div>
-            <?php
-// Te recomiendo utilizar esta conexión.
-$link = new PDO('mysql:host=localhost;dbname=gest_lca;charset=utf8', 'usuario', 'password');
-
-?>
-            <table class= "table" style="background-color: #003357; opacity: 1; border="5" style="margin: 0 auto;">
-        <caption>Personas responsables en la Junta Directiva de la LCA</caption>
-        <thead class="#003357">
-             <tr>
-
-     </th>
-
-       <th scope="col">Nombre</th>
-
-       <th scope="col">Puesto</th>
-
-      <th scope="col">Asada</th>
-
-  </tr>
-
-  <?php foreach ($link->query('SELECT * from junta_directiva') as $mostrar){
-
-    ?>
-<tr>
-
-
-    <td><?php echo $mostrar["Nombre"]?></td>
-
-    <td><?php echo $mostrar["Puesto"]?></td>
-
-    <td><?php echo $mostrar["Asada"]?></td>
-
-
-  </tr>
-<?php
-  }
-?>  </table>
+            <div class="table-responsive">
+                                <table class="table zero-configuration">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Puesto</th>
+                                            <th>Asada</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            @foreach ($asada as $asadas)
+                                            <tr>
+                                            <td>{{ $asadas->Nombre }}</td>
+                                            <td>{{ $asadas->Puesto }}</td>
+                                            <td>{{ $asadas->Asada }}</td>
+                                            @endforeach
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
         </div>
     </div>
     </body>
