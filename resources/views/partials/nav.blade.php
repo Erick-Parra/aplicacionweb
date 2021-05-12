@@ -147,10 +147,10 @@
       <li class="nav-item mr-3 mr-lg-0">
         <a class="nav-link btn-info rounded" type="button" href="{{ route('login') }}"
         role="button" aria-expanded="false" style="width: 140px;">
-          <span class="glyphicon glyphicon-log-in fas fa-user"></span>Iniciar sesión</a>
+          <span class="glyphicon glyphicon-log-in fas fa-user"></span> Iniciar sesión</a>
                 @else
-                    <li class="dropdown">
-                        <a href="#" class="nav-link btn-info rounded" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <li class="nav-item mr-3 mr-lg-0">
+                        <a href="{{ URL::previous() }}" class="nav-link btn-info rounded" data-toggle="dropdown" role="button" aria-expanded="false">
                             {{ Auth::user()->name }} <span class="glyphicon glyphicon-log-in fas fa-user"></span>
                         </a>
   @endif
