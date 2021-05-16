@@ -198,7 +198,7 @@
               <li class="nav-item">
                 <a href="{{ route('buscarimg')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Listar Imagenes</p>
+                  <p>Listar Tablas</p>
                 </a>
               </li>
             </ul>
