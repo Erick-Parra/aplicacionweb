@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<?xml version="1.0" encoding="UTF-8"?>
 <meta charset="utf-8">
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 </head>
@@ -16,7 +15,6 @@
     }
     th, td{
         padding: 15px;
-
     }
 </style>
 <body>
@@ -26,7 +24,7 @@
                 <h2 class="text-center" style="opacity: 0.63;filter: white(0px) brightness(83%);">JUNTA DIRECTIVA DE LA LIGA COMUNAL DEL AGUA</h2>
             </div>
             <div class="table-responsive">
-                                <table class="table zero-configuration">
+                                <table class="table zero-configuration" style="background-color: #003357;">
                                     <thead>
                                         <tr>
                                             <th>Nombre</th>

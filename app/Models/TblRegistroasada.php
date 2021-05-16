@@ -15,9 +15,9 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property string $Nom_Asada
  * @property Carbon $Fecha_Registro
- * @property int $ced_Juridica
+ * @property string $ced_Juridica
  * @property string $Num_Convenio
- * @property int $Cant_Abonados
+ * @property string $Cant_Abonados
  * @property Carbon $Fecha_Solicitud
  * @property int $Num_Sesion
  * @property string $Presidente
@@ -45,8 +45,6 @@ class TblRegistroasada extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'ced_Juridica' => 'int',
-		'Cant_Abonados' => 'int',
 		'Num_Sesion' => 'int',
 		'Telefono' => 'int'
 	];
