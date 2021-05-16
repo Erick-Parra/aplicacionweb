@@ -140,7 +140,9 @@
                                     <label for="Telefono">
                                       Teléfono</label>
                                     <div class="custom-file">
-                                      <input id="phone" name="Telefono" type="int" value="{{$asadas->Telefono}}" class="form-control {{ $errors->has('Telefono')?'is-invalid':''}} ">
+                                      <input id="phone"
+                                      pattern="^[0-9]{8}"
+                                      title="########" name="Telefono" type="int" value="{{$asadas->Telefono}}" class="form-control {{ $errors->has('Telefono')?'is-invalid':''}} ">
                                       {!! $errors->first('Telefono','<div class="invalid-feedback">Campo teléfono requerido</div>')!!}
                                     </div>
                                   </div>
