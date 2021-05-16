@@ -27,9 +27,9 @@ class AsadasRequest extends FormRequest
         return [
             'Nom_Asada' => ' required',
             'Fecha_Registro'=> 'required',
-            'ced_Juridica' => 'required|numeric',
+            'ced_Juridica' => 'required',
             'Num_Convenio' => 'required|numeric',
-            'Cant_Abonados' => 'required|numeric',
+            'Cant_Abonados' => 'required',
             'Fecha_Solicitud' => 'required',
             'Num_Sesion' => 'required|numeric',
             'Presidente' => 'required',
