@@ -43,7 +43,7 @@
     <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
     <!-- Image Logo -->
-    <a class="navbar-brand logo-image"><img src="assets/img/logos/Logotipo-LigadelAgua_2.webp" alt="alternative">Liga Comunal del Agua</a>
+    <a class="navbar-brand logo-image"><img src="assets/img/logos/Logotipo-LigadelAgua_1.webp" alt="alternative">Liga Comunal del Agua</a>
     
     <!-- Mobile Menu Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
