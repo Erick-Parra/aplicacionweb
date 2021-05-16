@@ -59,7 +59,7 @@
         </li>
         <!-- Dropdown Menu 1 -->          
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Quiénes somos?</a>
+          <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Quiénes somos?</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ route('JuntaDirectiva') }}"><span class="item-text">Junta Directiva</span></a>
             <div class="dropdown-items-divide-hr"></div>
@@ -69,7 +69,7 @@
         <!-- end of dropdown menu -->
         <!-- Dropdown Menu 2 -->          
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ route('servicesTecn') }}"><span class="item-text">Técnicos</span></a>
             <div class="dropdown-items-divide-hr"></div>
@@ -87,7 +87,7 @@
         <!-- end of dropdown menu -->
         <!-- Dropdown Menu 3 -->          
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Información</a>
+          <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Información</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{route('inform') }}"><span class="item-text">Tablas Informativas</span></a>
             <div class="dropdown-items-divide-hr"></div>
@@ -126,8 +126,8 @@
           </span>
           <span class="fa-stack">
             <a href="https://www.instagram.com/ligacomunaldelagua/?hl=es-la">
-              <i class="fas fa-circle fa-stack-2x twitter"></i>
-              <i class="fab fa-twitter fa-stack-1x"></i>
+              <i class="fas fa-circle fa-stack-2x instagram"></i>
+              <i class="fab fa-instagram fa-stack-1x"></i>
             </a>
           </span>
         </span>
