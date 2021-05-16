@@ -54,25 +54,25 @@
     </div>
     <br>
     <br>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <p class="text-center">Accede a nuestros servicios dan clic en los siguientes links.</p>
     </div>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <a href="https://www.youtube.com/watch?v=Ey4Q_hK5qDc">Servicios Legales y Notariales</a>
     </div>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <a href="https://www.youtube.com/watch?v=Y60-_0E0IFE">Servicios Técnicos</a>
     </div>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <a href="https://www.youtube.com/watch?v=T3Z-emHsgss">Servicios Contables</a>
     </div>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <a href="https://www.youtube.com/watch?v=_KkNpEQD1NI">Servicios Gestión Ambiental</a>
     </div>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <a href="https://www.youtube.com/watch?v=nXQhJkWcPK8">Servicios Administrativos y Financieros</a>
     </div>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <a href="https://www.youtube.com/watch?v=2y39h0QoH_c">Servicios Administrativos y Financieros</a>
     </div>
     <div class="form-group">
@@ -82,10 +82,10 @@
     <div style="text-align:center;">
         <iframe src="https://drive.google.com/file/d/1So5wlognBznegLdXOaSmx5kA4K_IMJKw/preview" width="440" height="280"></iframe>
     </div>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <p class="text-center">Accede a nuestro estudio de caso en el siguiente link.</p>
     </div>
-    <div style=”text-align:right;”>
+    <div style="text-align:center;">
         <a href="https://drive.google.com/file/d/16TOc0sgG5PMbuuHC5G5-rveHBOEERx4p/view">Estudio de Caso</a>
     </div>
     </div>
