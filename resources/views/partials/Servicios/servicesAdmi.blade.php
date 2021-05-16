@@ -9,7 +9,7 @@
     <title>Untitled</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Features2.css">
+    <link rel="stylesheet" href="assets/css/Features-2.css">
     
 </head>
 
