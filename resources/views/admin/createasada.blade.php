@@ -136,7 +136,9 @@
                                     <label for="Telefono">
                                       Teléfono</label>
                                     <div class="custom-file">
-                                      <input id="phone" name="Telefono" value="{{ old('Telefono')}}" type="int" placeholder="Ingrese el número de teléfono" class="form-control {{ $errors->has('Telefono')?'is-invalid':''}} ">
+                                      <input id="phone" name="Telefono"
+                                      pattern="^[0-9]{8}"
+                                      title="########" value="{{ old('Telefono')}}" type="int" placeholder="########" class="form-control {{ $errors->has('Telefono')?'is-invalid':''}} ">
                                       {!! $errors->first('Telefono','<div class="invalid-feedback">Campo telefono requerido</div>')!!}
                                     </div>
                                   </div>
