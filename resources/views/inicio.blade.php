@@ -158,7 +158,7 @@
                             </div> <!-- end of col -->
                             <div class="col-lg-6">
                                 <div class="image-container">
-                                    <img class="img-fluid" src="assets/img/logos/Logotipo-LigadelAgua.webp" alt="alternative">
+                                    <img class="img-fluid" src="assets/img/logos/logo.webp" alt="alternative">
                                 </div> <!-- end of image-container -->
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->

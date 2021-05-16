@@ -2071,6 +2071,7 @@ input[type='checkbox'] {
 		.header .image-container {
 			margin-left: 2rem;
 			margin-right: 1rem;
+			text-align: right;
 		}
 		/* end of header */
 
