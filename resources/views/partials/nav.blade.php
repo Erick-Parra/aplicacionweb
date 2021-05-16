@@ -1,162 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE. TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
-    <meta charset="UTF-8"/>
-    <title> Liga Comunal Del Agua </title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500">
-    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="/assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="/assets/css/Features-Blue.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/Team-Clean.css">
-    <link rel="stylesheet" href="/assets/css/Team-Grid.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE. TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.">
+  <meta name="author" content="LCA">
+
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="" /> <!-- website name -->
+  <meta property="og:site" content="" /> <!-- website link -->
+  <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article" />
+
+  <!-- Website Title -->
+  <title>Liga Comunal del Agua</title>
+  
+  <!-- Styles -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet"> -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/fontawesome-all.css" rel="stylesheet">
+  <!--<link href="assets/css/swiper.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet"> -->
+    <link href="assets/css/estilo.css" rel="stylesheet">
+
+    <!-- Favicon  -->
     <link rel="icon" href="/assets/img/logotipo.ico">
-</head>
-    <style type="text/css">
-        .nav ul{
-            list-style: none;
-            padding: 0;
-        }
+  </head>
 
-        .nav li ul{
-            display: none;
-            position: absolute;
-            min-width: 100px;
-        }
+  
+  <!-- Preloader -->
 
+  <!-- end of preloader -->
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
-        .nav li:hover > ul{
-            display: block;
-        }
-
-        .nav li ul li{
-            position: relative;
-            background-color: #ffff;
-    </style>
-
-<body>
-
-   <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #003357; color: rgba(243,246,248,0.99);">
-  <div class="container-fluid">
-   <a class="navbar-brand" href="#" style="color: rgba(243,246,248,0.99);">
-      <img
-        src="assets/img/logos/Logotipo-LigadelAgua_2.webp"
-        height="30"
-        width=auto
-        alt="Logotipo-LigadelAgua"
-        loading="lazy"/>
-      Liga Comunal del Agua
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarText"
-      aria-controls="navbarText"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image"><img src="assets/img/logos/Logotipo-LigadelAgua_2.png" alt="alternative">Liga Comunal del Agua</a>
+    
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-awesome fas fa-bars"></span>
+      <span class="navbar-toggler-awesome fas fa-times"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+    <!-- end of mobile menu toggle button -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ route('inicio') }}" style="color: rgba(243,246,248,0.99);">Inicio</a>
+          <a class="nav-link page-scroll" href="{{ route('inicio') }}">Inicio<span class="sr-only">(current)</span></a>
         </li>
-        <!-- Dropdown -->
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle" style="color: rgba(243,246,248,0.99);"
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-expanded="false">
-          ¿Quiénes somos?
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357;
-        color: rgba(243,246,248,0.99);">
-          <li><a class="dropdown-item" href="{{ route('JuntaDirectiva') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Junta directiva</a></li>
-          <li><a class="dropdown-item" href="{{ route('Funcionarios') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">Funcionarios</a></li>
-        </ul>
-      </li>
-
-      <!-- Dropdown -->
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle" style="color: rgba(243,246,248,0.99);"
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-expanded="false">
-          Servicios
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357;
-        color: rgba(243,246,248,0.99);">
-          <li><a class="dropdown-item" href="{{ route('servicesTecn') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">Técnicos</a></li>
-          <li><a class="dropdown-item" href="{{ route('servicesAdmi') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">Administrativos y Financieros</a></li>
-          <li><a class="dropdown-item" href="{{ route('servicesConta') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">Contables</a></li>
-          <li><a class="dropdown-item" href="{{ route('servicesGestAmbi') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">De Gestión Ambiental</a></li>
-          <li><a class="dropdown-item" href="{{ route('servicesSoporte') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">De Soporte</a></li>
-          <li><a class="dropdown-item" href="{{ route('servicesLegal') }}" style="background-color: #003357;
-          color: rgba(243,246,248,0.99); text-transform: uppercase;">Legales y Notariales</a></li>
-        </ul>
-      </li>
-
-      <!-- Dropdown -->
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle" style="color: rgba(243,246,248,0.99);"
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-expanded="false">
-          Información
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003357; color: rgba(243,246,248,0.99);">
-          <li><a class="dropdown-item" href="{{route('inform') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Tablas Informativas</a></li>
-          <li><a class="dropdown-item" href="{{route('news') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Publicaciones</a></li>
-             <li><a class="dropdown-item" href="{{route('galeri') }}" style="background-color: #003357; color: rgba(243,246,248,0.99); text-transform: uppercase;">Galeria</a></li>
-        </ul>
-      </li>
-       <li class="nav-item">
-          <a class="nav-link" href="{{ route('contact') }}" style="color: rgba(243,246,248,0.99);">Contáctenos</a>
+        <!-- Dropdown Menu 1 -->          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Quiénes somos?</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ route('JuntaDirectiva') }}"><span class="item-text">Junta Directiva</span></a>
+            <div class="dropdown-items-divide-hr"></div>
+            <a class="dropdown-item" href="{{ route('Funcionarios') }}"><span class="item-text">Funcionarios</span></a>
+          </div>
         </li>
+        <!-- end of dropdown menu -->
+        <!-- Dropdown Menu 2 -->          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ route('servicesTecn') }}"><span class="item-text">Técnicos</span></a>
+            <div class="dropdown-items-divide-hr"></div>
+            <a class="dropdown-item" href="{{ route('servicesAdmi') }}"><span class="item-text">Administrativos y Financieros</span></a>
+            <div class="dropdown-items-divide-hr"></div>
+            <a class="dropdown-item" href="{{ route('servicesConta') }}"><span class="item-text">Contables</span></a>
+            <div class="dropdown-items-divide-hr"></div>
+            <a class="dropdown-item" href="{{ route('servicesGestAmbi') }}"><span class="item-text">De Gestión Ambiental</span></a>
+            <div class="dropdown-items-divide-hr"></div>
+            <a class="dropdown-item" href="{{ route('servicesSoporte') }}"><span class="item-text">De Soporte</span></a>
+            <div class="dropdown-items-divide-hr"></div>
+            <a class="dropdown-item" href="{{ route('servicesLegal') }}"><span class="item-text">Legales y Notariales</span></a>
+          </div>
+        </li>
+        <!-- end of dropdown menu -->
+        <!-- Dropdown Menu 3 -->          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Información</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{route('inform') }}"><span class="item-text">Tablas Informativas</span></a>
+            <div class="dropdown-items-divide-hr"></div>
+            <a class="dropdown-item" href="{{route('news') }}"><span class="item-text">Publicaciones</span></a>
+            <div class="dropdown-items-divide-hr"></div>
+            <a class="dropdown-item" href="{{route('galeri') }}"><span class="item-text">Galería</span></a>
+          </div>
+        </li>
+        <!-- end of dropdown menu -->
 
-
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{{ route('contact') }}">Contáctenos</a>
+        </li>
 
         <!--Botón login-->
         @if (Auth::guest())
-      <li class="nav-item mr-3 mr-lg-0">
-        <a class="nav-link btn-info rounded" type="button" href="{{ route('login') }}"
-        role="button" aria-expanded="false" style="width: 140px;">
-          <span class="glyphicon glyphicon-log-in fas fa-user"></span> Iniciar sesión</a>
-                @else
-                    <li class="nav-item mr-3 mr-lg-0">
-                        <a href="{{ URL::previous() }}" class="nav-link btn-info rounded" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name }} <span class="glyphicon glyphicon-log-in fas fa-user"></span>
-                        </a>
-  @endif
-      </ul>
-    </div>
-  </div>
-</nav>
+        <li class="nav-item mr-3 mr-lg-0">
+          <a class="nav-link btn-info rounded btn-sm d-flex align-items-center" type="button" href="{{ route('login') }}"
+          role="button" aria-expanded="false">
+          <span class="glyphicon glyphicon-log-in fas fa-user"></span>Iniciar sesión</a>
+          @else
+          <li class="dropdown">
+            <a class="nav-link btn-info rounded" style="text-decoration:none;" type="button" href="{{ route('login') }}" role="button" aria-expanded="false">
+              {{ Auth::user()->name }} <span class="glyphicon glyphicon-log-in fas fa-user"></span>
+            </a>
+            @endif  <!-- end login -->
+          </ul>
 
-<body>
+        </ul>
+        <span class="nav-item social-icons">
+          <span class="fa-stack">
+            <a href="https://www.facebook.com/liga.comunaldelagua/">
+              <i class="fas fa-circle fa-stack-2x facebook"></i>
+              <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </a>
+          </span>
+          <span class="fa-stack">
+            <a href="https://www.instagram.com/ligacomunaldelagua/?hl=es-la">
+              <i class="fas fa-circle fa-stack-2x twitter"></i>
+              <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+          </span>
+        </span>
+      </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Scripts -->
+    <!--<script src="assets/js/jquery.min.js"></script> --> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="assets/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="assets/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="assets/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="assets/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="assets/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="assets/js/scripts.js"></script> <!-- Custom scripts -->
+
+
+  </body>
+  </html>
