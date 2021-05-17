@@ -158,7 +158,7 @@
                             </div> <!-- end of col -->
                             <div class="col-lg-6">
                                 <div class="image-container">
-                                    <img class="img-fluid" src="assets/img/logos/logoliga.webp" alt="alternative">
+                                    <img class="img-fluid" src="assets/img/logos/logo.webp" alt="alternative">
                                 </div> <!-- end of image-container -->
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->
@@ -205,69 +205,6 @@
                 </div> <!-- end of container -->
             </div> <!-- end of cards-1 -->
             <!-- end quienes somos -->
-
-
-            <!-- carousel actividades -->
-            <div class="slider-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h5>Actividades</h5>
-
-                            <!-- Image Slider -->
-                            <div class="slider-container">
-                                <div class="swiper-container image-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="image-container">
-                                                <img class="img-responsive" src="assets/img/galeria/01.webp" alt="alternative">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-container">
-                                                <img class="img-responsive" src="assets/img/galeria/02.webp" alt="alternative">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-container">
-                                                <img class="img-responsive" src="assets/img/galeria/03.webp" alt="alternative">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-container">
-                                                <img class="img-responsive" src="assets/img/galeria/04.webp" alt="alternative">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-container">
-                                                <img class="img-responsive" src="assets/img/galeria/05.webp" alt="alternative">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-container">
-                                                <img class="img-responsive" src="assets/img/galeria/06.webp" alt="alternative">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-container">
-                                                <img class="img-responsive" src="assets/img/galeria/07.webp" alt="alternative">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-container">
-                                                <img class="img-responsive" src="assets/img/galeria/08.webp" alt="alternative">
-                                            </div>
-                                        </div>
-                                    </div> <!-- end of swiper-wrapper -->
-                                </div> <!-- end of swiper container -->
-                            </div> <!-- end of slider-container -->
-                            <!-- end of image slider -->
-
-                        </div> <!-- end of col -->
-                    </div> <!-- end of row -->
-                </div> <!-- end of container -->
-            </div> <!-- end of slider-1 -->
-            <!-- end carousel actividades -->
 
             <!-- convenios -->
             <div class="slider-2">
