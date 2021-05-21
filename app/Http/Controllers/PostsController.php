@@ -10,6 +10,12 @@ use App;
 
 class PostsController extends Controller
 {
+
+  public function __construct()
+  {
+      $this->middleware('auth')->except('show');
+  }
+
 	 public function index(Request $request)
     {
         if ($request){
