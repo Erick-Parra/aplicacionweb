@@ -5,42 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="SOMOS UNA LIGA DE ASADAS DE LOS CANTONES DE HOJANCHA, NICOYA Y NANDAYURE. TRABAJAMOS PARA MEJORAR LOS SERVICIOS QUE PRESTAN LAS ASADAS EN NUESTRO TERRITORIO.">
+  <meta name="description" content="Somos una Liga de ASADAS de los cantones de Hojancha, Nicoya Y Nandayure. Trabajamos para mejorar los servicios que prestan las ASADAS en nuestro territorio.">
   <meta name="author" content="LCA">
 
-  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-  <meta property="og:site_name" content="" /> <!-- website name -->
-  <meta property="og:site" content="" /> <!-- website link -->
-  <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-  <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-  <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-  <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+  <meta property="og:site_name" content="" />
+  <meta property="og:site" content="" />
+  <meta property="og:title" content=""/>
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
   <meta property="og:type" content="article" />
 
   <!-- Website Title -->
   <title>Liga Comunal del Agua</title>
   
-  <!-- Styles -->
-  <!--<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet"> -->
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link href="assets/css/fontawesome-all.css" rel="stylesheet">
-  <!--<link href="assets/css/swiper.css" rel="stylesheet">
-    <link href="assets/css/magnific-popup.css" rel="stylesheet"> -->
-    <link href="assets/css/estilo.css" rel="stylesheet">
+  <link href="assets/css/styles-1.css" rel="stylesheet">
 
     <!-- Favicon  -->
     <link rel="icon" href="/assets/img/logotipo.ico">
   </head>
-
-  
-  <!-- Preloader -->
-
-  <!-- end of preloader -->
   
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
-    <!-- Text Logo - Use this if you don't have a graphic logo -->
-    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
     <!-- Image Logo -->
     <a class="navbar-brand logo-image"><img src="assets/img/logos/Logotipo-LigadelAgua_1.webp" alt="alternative">Liga Comunal del Agua</a>
@@ -59,7 +47,7 @@
         </li>
         <!-- Dropdown Menu 1 -->          
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Quiénes somos?</a>
+          <a class="nav-link dropdown-toggle page-scroll" href="" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Quiénes somos?</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ route('JuntaDirectiva') }}"><span class="item-text">Junta Directiva</span></a>
             <div class="dropdown-items-divide-hr"></div>
@@ -69,7 +57,7 @@
         <!-- end of dropdown menu -->
         <!-- Dropdown Menu 2 -->          
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <a class="nav-link dropdown-toggle page-scroll" href="" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ route('servicesTecn') }}"><span class="item-text">Técnicos</span></a>
             <div class="dropdown-items-divide-hr"></div>
@@ -87,7 +75,7 @@
         <!-- end of dropdown menu -->
         <!-- Dropdown Menu 3 -->          
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Información</a>
+          <a class="nav-link dropdown-toggle page-scroll" href="" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Información</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{route('inform') }}"><span class="item-text">Tablas Informativas</span></a>
             <div class="dropdown-items-divide-hr"></div>
@@ -137,15 +125,12 @@
 
 
     <!-- Scripts -->
-    <!--<script src="assets/js/jquery.min.js"></script> --> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="assets/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="assets/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="assets/js/jquery.easing.min.js"></script><!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="assets/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="assets/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="assets/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="assets/js/scripts.js"></script> <!-- Custom scripts -->
-
-
   </body>
   </html>
