@@ -39,7 +39,7 @@
           <div class="col-sm-12">
             <div class="card">
             <div class="card-header">
-            <ol class="breadcrumb float-sm-left"> <img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.png">
+            <ol class="breadcrumb float-sm-left"> <img id="logo" src="assets/img/logos/Logotipo-LigadelAgua_2.webp">
               <li class="breadcrumb-item active">Administración Liga Comunal del Agua</li>
             </ol>
           </div>
