@@ -124,7 +124,7 @@
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa fa-file"></i>
+              <i class="nav-icon fas  fa-list-alt"></i>
               <p>
                 Junta Directiva
                 <i class="right fas fa-angle-left"></i>
@@ -147,7 +147,7 @@
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa fa-edit"></i>
+              <i class="nav-icon fas fa fa-file-image"></i>
               <p>
                 Galeria
                 <i class="right fas fa-angle-left"></i>
