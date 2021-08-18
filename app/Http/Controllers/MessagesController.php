@@ -19,7 +19,7 @@ class MessagesController extends Controller
             'messages'=>'required']);
 
         //Hace que se envíe el email a la dirección establecida
-        Mail::to('priscila.villarreal.1306@gmail.com')->queue(new MessageReceived($message));
+        Mail::to('ligacomunaldelagua@gmail.com')->queue(new MessageReceived($message));
 
         //return new MessageReceived($message);
         //return 'Mensaje enviado';
